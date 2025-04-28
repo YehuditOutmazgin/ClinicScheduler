@@ -1,0 +1,15 @@
+H:\FinalProj\Final_Project\BL\bin\Debug\net8.0\BL.deps.json
+H:\FinalProj\Final_Project\BL\bin\Debug\net8.0\BL.runtimeconfig.json
+H:\FinalProj\Final_Project\BL\bin\Debug\net8.0\BL.dll
+H:\FinalProj\Final_Project\BL\bin\Debug\net8.0\BL.pdb
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.csproj.AssemblyReference.cache
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.AssemblyInfoInputs.cache
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.AssemblyInfo.cs
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.csproj.CoreCompileInputs.cache
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.sourcelink.json
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.dll
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\refint\BL.dll
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.pdb
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.genruntimeconfig.cache
+H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\ref\BL.dll
