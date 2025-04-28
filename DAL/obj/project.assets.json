@@ -4017,23 +4017,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\סמן טוב רבקה\\.nuget\\packages\\": {},
+    "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\c#\\project\\ClinicScheduler\\DAL\\DAL.csproj",
+      "projectUniqueName": "H:\\clinic_proj\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "H:\\c#\\project\\ClinicScheduler\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\סמן טוב רבקה\\.nuget\\packages\\",
-      "outputPath": "H:\\c#\\project\\ClinicScheduler\\DAL\\obj\\",
+      "projectPath": "H:\\clinic_proj\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\",
+      "outputPath": "H:\\clinic_proj\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\סמן טוב רבקה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\איטח צפורה דודי\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
