@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\": {},
+    "C:\\Users\\גמ''\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\clinic_proj\\BL\\BL.csproj",
+      "projectUniqueName": "C:\\Users\\גמ''\\Desktop\\proj\\ClinicScheduler\\BL\\BL.csproj",
       "projectName": "BL",
-      "projectPath": "H:\\clinic_proj\\BL\\BL.csproj",
-      "packagesPath": "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\",
-      "outputPath": "H:\\clinic_proj\\BL\\obj\\",
+      "projectPath": "C:\\Users\\גמ''\\Desktop\\proj\\ClinicScheduler\\BL\\BL.csproj",
+      "packagesPath": "C:\\Users\\גמ''\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\גמ''\\Desktop\\proj\\ClinicScheduler\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\איטח צפורה דודי\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\גמ''\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,7 +51,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -72,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
