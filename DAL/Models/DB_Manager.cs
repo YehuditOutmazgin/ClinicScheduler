@@ -19,6 +19,8 @@ public partial class DB_Manager : DbContext
 
     public virtual DbSet<AvailableAppointment> AvailableAppointments { get; set; }
 
+    public virtual DbSet<CanceledAppointment> CanceledAppointments { get; set; }
+
     public virtual DbSet<PassedAppointment> PassedAppointments { get; set; }
 
     public virtual DbSet<Patient> Patients { get; set; }
@@ -65,6 +67,25 @@ public partial class DB_Manager : DbContext
                 .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__ Availabl__Thera__0697FACD");
+        });
+
+        modelBuilder.Entity<CanceledAppointment>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Canceled__3214EC07FE3D6961");
+
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.PatientId).HasColumnName("PatientID");
+
+            entity.HasOne(d => d.Appointment).WithMany(p => p.CanceledAppointments)
+                .HasForeignKey(d => d.AppointmentId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__CanceledA__Appoi__2F9A1060");
+
+            entity.HasOne(d => d.Patient).WithMany(p => p.CanceledAppointments)
+                .HasForeignKey(d => d.PatientId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__CanceledA__Patie__2EA5EC27");
         });
 
         modelBuilder.Entity<PassedAppointment>(entity =>

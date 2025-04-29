@@ -15,6 +15,8 @@ public partial class Appointment
 
     public TimeOnly AppointmentTime { get; set; }
 
+    public virtual ICollection<CanceledAppointment> CanceledAppointments { get; set; } = new List<CanceledAppointment>();
+
     public virtual Patient Patient { get; set; } = null!;
 
     public virtual Therapist Therapist { get; set; } = null!;
