@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\",
   "Documents": [
     {
@@ -68,12 +69,86 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D2\u05DE\u0027\u0027\\desktop\\proj\\clinicscheduler\\dal\\api\\ipatientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\api\\iworkhourdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iworkhourdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\api\\iavailableappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iavailableappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\api\\itherapistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\itherapistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\api\\ipatientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
       "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\ipatientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\api\\ipassedappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\ipassedappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\api\\iappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\models\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\models\\availableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\availableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\services\\passedappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\passedappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\clinic_proj\\DAL\\Api\\IAppointmentsPassedDal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\services\\therapistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\therapistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\services\\patientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\patientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\c#\\project\\Final_Project\\DAL\\Api\\IPatiantDal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D2\u05DE\u0027\u0027\\desktop\\proj\\clinicscheduler\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -99,6 +174,29 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\\u05D2\u05DE\u0027\u0027\\desktop\\proj\\clinicscheduler\\web_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+=======
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\data\\queries\\bankaccount create.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\data\\queries\\bankaccount create.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\dal\\data\\queries\\all.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\data\\queries\\all.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\bl\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\web_api\\web_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\web_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\web_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\this user\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\web_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
       "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
@@ -133,6 +231,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -323,6 +422,43 @@
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Api\\ITherapistDal.cs",
               "RelativeDocumentMoniker": "DAL\\Api\\ITherapistDal.cs",
               "ToolTip": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Api\\ITherapistDal.cs",
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorkHour.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\WorkHour.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\WorkHour.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\WorkHour.cs",
+              "RelativeToolTip": "DAL\\Models\\WorkHour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:49:50.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPatientDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IPatientDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IPatientDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IPatientDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IPatientDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:07:44.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITherapistDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\ITherapistDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\ITherapistDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\ITherapistDal.cs",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "RelativeToolTip": "DAL\\Api\\ITherapistDal.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -330,19 +466,196 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 11,
               "Title": "Therapist.cs",
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Models\\Therapist.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\Therapist.cs",
               "ToolTip": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Models\\Therapist.cs",
+=======
+              "DocumentIndex": 0,
+              "Title": "IWorkHourDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IWorkHourDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IWorkHourDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IWorkHourDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IWorkHourDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:07:46.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\Appointment.cs",
+              "RelativeToolTip": "DAL\\Models\\Appointment.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADwvw0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:51:30.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAvailableAppointmentDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IAvailableAppointmentDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IAvailableAppointmentDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IAvailableAppointmentDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IAvailableAppointmentDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:07:44.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPassedAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IPassedAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IPassedAppointmentsDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IPassedAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IPassedAppointmentsDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T09:49:37.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAppointmentDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IAppointmentDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IAppointmentDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Api\\IAppointmentDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IAppointmentDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:07:40.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Therapist.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\Therapist.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Therapist.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\Therapist.cs",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "RelativeToolTip": "DAL\\Models\\Therapist.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T16:17:37.422Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 17,
+=======
+              "DocumentIndex": 9,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\Patient.cs",
+              "RelativeToolTip": "DAL\\Models\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:51:47.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DB_Manager.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\DB_Manager.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\DB_Manager.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\DB_Manager.cs",
+              "RelativeToolTip": "DAL\\Models\\DB_Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:59:16.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AvailableAppointment.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\AvailableAppointment.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\AvailableAppointment.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Models\\AvailableAppointment.cs",
+              "RelativeToolTip": "DAL\\Models\\AvailableAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:49:05.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PassedAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Services\\PassedAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\PassedAppointmentsDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Services\\PassedAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Services\\PassedAppointmentsDal.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T09:20:21.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DAL.csproj",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\DAL.csproj",
+              "RelativeDocumentMoniker": "DAL\\DAL.csproj",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\DAL.csproj",
+              "RelativeToolTip": "DAL\\DAL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-23T16:57:12.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAppointmentsPassedDal.cs",
+              "DocumentMoniker": "H:\\clinic_proj\\DAL\\Api\\IAppointmentsPassedDal.cs",
+              "ToolTip": "H:\\clinic_proj\\DAL\\Api\\IAppointmentsPassedDal.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:07:43.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\Web_api\\Program.cs",
+              "RelativeDocumentMoniker": "Web_api\\Program.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\Web_api\\Program.cs",
+              "RelativeToolTip": "Web_api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:03:21.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TherapistDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Services\\TherapistDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\TherapistDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Services\\TherapistDal.cs",
+              "RelativeToolTip": "DAL\\Services\\TherapistDal.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:12:16.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "Title": "IPatiantDal.cs",
               "DocumentMoniker": "H:\\c#\\project\\Final_Project\\DAL\\Api\\IPatiantDal.cs",
               "ToolTip": "H:\\c#\\project\\Final_Project\\DAL\\Api\\IPatiantDal.cs",
@@ -352,6 +665,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 16,
+<<<<<<< HEAD
               "Title": "IPatientDal.cs",
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Api\\IPatientDal.cs",
               "RelativeDocumentMoniker": "DAL\\Api\\IPatientDal.cs",
@@ -360,17 +674,35 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T16:07:44.915Z"
+=======
+              "Title": "PatientDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Services\\PatientDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\PatientDal.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Services\\PatientDal.cs",
+              "RelativeToolTip": "DAL\\Services\\PatientDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:09:38.736Z",
+              "EditorCaption": ""
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "bankAccount create.sql",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Data\\queries\\bankAccount create.sql",
               "RelativeDocumentMoniker": "DAL\\Data\\queries\\bankAccount create.sql",
               "ToolTip": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Data\\queries\\bankAccount create.sql",
+=======
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Data\\queries\\bankAccount create.sql",
+              "RelativeDocumentMoniker": "DAL\\Data\\queries\\bankAccount create.sql",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Data\\queries\\bankAccount create.sql",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "RelativeToolTip": "DAL\\Data\\queries\\bankAccount create.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-04-27T12:19:54.3Z"
+              "WhenOpened": "2025-04-27T12:19:54.3Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -403,37 +735,58 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "appsettings.json",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\Web_api\\appsettings.json",
               "RelativeDocumentMoniker": "Web_api\\appsettings.json",
               "ToolTip": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\Web_api\\appsettings.json",
+=======
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\Web_api\\appsettings.json",
+              "RelativeDocumentMoniker": "Web_api\\appsettings.json",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\Web_api\\appsettings.json",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "RelativeToolTip": "Web_api\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-26T14:03:39.456Z"
+              "WhenOpened": "2025-03-26T14:03:39.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "appsettings.Development.json",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\Web_api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Web_api\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\Web_api\\appsettings.Development.json",
+=======
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\Web_api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Web_api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\Web_api\\appsettings.Development.json",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "RelativeToolTip": "Web_api\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-26T14:03:36.414Z"
+              "WhenOpened": "2025-03-26T14:03:36.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "Web_api.http",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\Web_api\\Web_api.http",
               "RelativeDocumentMoniker": "Web_api\\Web_api.http",
               "ToolTip": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\Web_api\\Web_api.http",
+=======
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\Web_api\\Web_api.http",
+              "RelativeDocumentMoniker": "Web_api\\Web_api.http",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\Web_api\\Web_api.http",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "RelativeToolTip": "Web_api\\Web_api.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-26T14:03:10.026Z"
+              "WhenOpened": "2025-03-26T14:03:10.026Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -475,15 +828,23 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "all.sql",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Data\\queries\\all.sql",
               "RelativeDocumentMoniker": "DAL\\Data\\queries\\all.sql",
               "ToolTip": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\Data\\queries\\all.sql",
+=======
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Data\\queries\\all.sql",
+              "RelativeDocumentMoniker": "DAL\\Data\\queries\\all.sql",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\DAL\\Data\\queries\\all.sql",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "RelativeToolTip": "DAL\\Data\\queries\\all.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-25T00:06:50.378Z"
+              "WhenOpened": "2025-03-25T00:06:50.378Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 18,
               "Title": "DAL.csproj",
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\DAL\\DAL.csproj",
@@ -502,10 +863,18 @@
               "DocumentMoniker": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\BL\\Class1.cs",
               "RelativeDocumentMoniker": "BL\\Class1.cs",
               "ToolTip": "C:\\Users\\\u05D2\u05DE\u0027\u0027\\Desktop\\proj\\ClinicScheduler\\BL\\Class1.cs",
+=======
+              "DocumentIndex": 21,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\BL\\Class1.cs",
+              "RelativeDocumentMoniker": "BL\\Class1.cs",
+              "ToolTip": "C:\\Users\\This User\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\clinic\\BL\\Class1.cs",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "RelativeToolTip": "BL\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:39:22.828Z"
+              "WhenOpened": "2025-03-23T16:39:22.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -513,7 +882,10 @@
               "Title": "Class1.cs",
               "DocumentMoniker": "H:\\FinalProj\\Final_Project\\DAL\\Class1.cs",
               "ToolTip": "H:\\FinalProj\\Final_Project\\DAL\\Class1.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAEAAAABAAAA",
+=======
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T16:00:02.15Z"
             }

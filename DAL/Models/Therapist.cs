@@ -17,9 +17,9 @@ public partial class Therapist
 
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
-    public virtual ICollection<AppointmentsPassed> AppointmentsPasseds { get; set; } = new List<AppointmentsPassed>();
-
     public virtual ICollection<AvailableAppointment> AvailableAppointments { get; set; } = new List<AvailableAppointment>();
+
+    public virtual ICollection<PassedAppointment> PassedAppointments { get; set; } = new List<PassedAppointment>();
 
     public virtual ICollection<WorkHour> WorkHours { get; set; } = new List<WorkHour>();
 }

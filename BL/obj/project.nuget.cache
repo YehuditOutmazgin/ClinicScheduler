@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "02aPN/WfeLg=",
   "success": true,
   "projectFilePath": "C:\\Users\\גמ''\\Desktop\\proj\\ClinicScheduler\\BL\\BL.csproj",
+=======
+  "dgSpecHash": "ry9B35/0Bpw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\This User\\OneDrive\\שולחן העבודה\\clinic\\BL\\BL.csproj",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "eLeVDp8MjDM=",
   "success": true,
   "projectFilePath": "C:\\Users\\גמ''\\Desktop\\proj\\ClinicScheduler\\Web_api\\Web_api.csproj",
@@ -10,6 +11,18 @@
     "C:\\Users\\גמ''\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\8.0.0\\swashbuckle.aspnetcore.swagger.8.0.0.nupkg.sha512",
     "C:\\Users\\גמ''\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\8.0.0\\swashbuckle.aspnetcore.swaggergen.8.0.0.nupkg.sha512",
     "C:\\Users\\גמ''\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\8.0.0\\swashbuckle.aspnetcore.swaggerui.8.0.0.nupkg.sha512"
+=======
+  "dgSpecHash": "8sad+TwZm/k=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\This User\\OneDrive\\שולחן העבודה\\clinic\\Web_api\\Web_api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\This User\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\This User\\.nuget\\packages\\microsoft.openapi\\1.6.23\\microsoft.openapi.1.6.23.nupkg.sha512",
+    "C:\\Users\\This User\\.nuget\\packages\\swashbuckle.aspnetcore\\8.0.0\\swashbuckle.aspnetcore.8.0.0.nupkg.sha512",
+    "C:\\Users\\This User\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\8.0.0\\swashbuckle.aspnetcore.swagger.8.0.0.nupkg.sha512",
+    "C:\\Users\\This User\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\8.0.0\\swashbuckle.aspnetcore.swaggergen.8.0.0.nupkg.sha512",
+    "C:\\Users\\This User\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\8.0.0\\swashbuckle.aspnetcore.swaggerui.8.0.0.nupkg.sha512"
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
   ],
   "logs": []
 }
