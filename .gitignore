@@ -1,0 +1,33 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Rider / JetBrains
+.idea/
+
+# Others
+*.log
+*.tmp
+*.cache
+
+# Backup files
+*.bak
+*.old
+
+# System
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# OneDrive sync files
+*.lnk
+*.DS_Store
