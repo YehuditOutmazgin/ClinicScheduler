@@ -43,6 +43,7 @@ H:\c#\project\ClinicScheduler\DAL\obj\Debug\net8.0\refint\DAL.dll
 H:\c#\project\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.pdb
 H:\c#\project\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 H:\c#\project\ClinicScheduler\DAL\obj\Debug\net8.0\ref\DAL.dll
+<<<<<<< HEAD
 C:\Users\אוטמזגין\Downloads\Project\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
 C:\Users\אוטמזגין\Downloads\Project\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\אוטמזגין\Downloads\Project\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
@@ -58,3 +59,20 @@ C:\Users\אוטמזגין\Downloads\Project\DAL\bin\Debug\net8.0\DAL.dll
 C:\Users\אוטמזגין\Downloads\Project\DAL\bin\Debug\net8.0\DAL.pdb
 C:\Users\אוטמזגין\Downloads\Project\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 C:\Users\אוטמזגין\Downloads\Project\DAL\obj\Debug\net8.0\ref\DAL.dll
+=======
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\DAL.sourcelink.json
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\DAL.dll
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\Dal\obj\Debug\net8.0\DAL.pdb
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\DAL\obj\Debug\net8.0\ref\DAL.dll
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b

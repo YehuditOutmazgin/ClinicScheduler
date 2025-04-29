@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL.Api;
 using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 namespace DAL.Services
 {
     internal class AvailableAppointmentDal : IAvailableAppointmentDal
@@ -15,49 +16,63 @@ namespace DAL.Services
         {
             _DB_Manager = dB_Manager;
         }
-
+        
         public async Task AddAppointment(AvailableAppointment appointment)
         {
-            if(appointment == null)
-                throw new ArgumentNullException(nameof(appointment), "Appointment cannot be null.");
-             _DB_Manager.AvailableAppointments.Add(appointment);
+            await _DB_Manager.AvailableAppointments.AddAsync(appointment);
             await _DB_Manager.SaveChangesAsync();
         }
 
-        public Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId)
+        public async Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId)
         {
-            throw new NotImplementedException();
+            return await _DB_Manager.AvailableAppointments
+                .Where(a => a.AppointmentDate == date && a.TherapistId == therapistId).ToListAsync();
         }
 
-        public Task<List<AvailableAppointment>> GetAppointmentsBySpecializationAndDate(DateOnly date, int specialization)
+        public async Task<List<AvailableAppointment>> GetAppointmentsBySpecializationAndDate(DateOnly date, int specialization)
         {
-            throw new NotImplementedException();
+               return await _DB_Manager.AvailableAppointments
+                .Where(a => a.AppointmentDate == date && a.Specialization == specialization)
+                .ToListAsync();
         }
 
-        public Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId)
+        public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId)
         {
-            throw new NotImplementedException();
+            return await _DB_Manager.AvailableAppointments
+                .Where(a => a.AppointmentDate == date && a.TherapistId == therapistId)
+                .ToListAsync();
         }
 
-        public async Task RemoveAllAppointmentsByDate(DateOnly date)
+        public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndWeek(DateOnly date, int therapistId)
+        {
+            var startOfWeek = date.AddDays(-(int)date.DayOfWeek);// Assuming a method to get the start of the week
+            var endOfWeek = startOfWeek.AddDays(6); // Get the end of the week
+            return await _DB_Manager.AvailableAppointments
+                .Where(a => a.TherapistId == therapistId && a.AppointmentDate >= startOfWeek && a.AppointmentDate <= endOfWeek && a.TherapistId == therapistId)
+                .ToListAsync();
+        }
+
+        public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date)
         {
             var appointments = _DB_Manager.AvailableAppointments
                 .Where(a => a.AppointmentDate == date)
                 .ToList();
             _DB_Manager.AvailableAppointments.RemoveRange(appointments);
             await _DB_Manager.SaveChangesAsync();
+            return appointments;
         }
 
-        public async Task RemoveAllAppointmentsByDateAndTherapist(int therapistId, DateOnly date)
+        public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDateAndTherapist(int therapistId, DateOnly date)
         {
             var appointments = _DB_Manager.AvailableAppointments
                 .Where(a => a.TherapistId == therapistId && a.AppointmentDate == date)
                 .ToList();
             _DB_Manager.AvailableAppointments.RemoveRange(appointments);
             await _DB_Manager.SaveChangesAsync();
+            return appointments;
         }
 
-        public async Task RemoveAppointment(int appointmentId)
+        public async Task<AvailableAppointment> RemoveAppointment(int appointmentId)
         {
             var appointment = await _DB_Manager.AvailableAppointments.FindAsync(appointmentId);
             if (appointment == null)
@@ -65,6 +80,7 @@ namespace DAL.Services
 
             _DB_Manager.AvailableAppointments.Remove(appointment);
             await _DB_Manager.SaveChangesAsync();
+            return appointment;
         }
     }
 }

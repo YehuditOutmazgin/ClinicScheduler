@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\services\\availableappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\availableappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\api\\iavailableappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iavailableappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\services\\therapistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\therapistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\models\\availableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\availableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\api\\iappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iappointmentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\models\\passedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\passedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\downloads\\project\\dal\\models\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,20 +54,108 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TherapistDal.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Services\\TherapistDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\TherapistDal.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Services\\TherapistDal.cs",
+              "RelativeToolTip": "DAL\\Services\\TherapistDal.cs",
+              "ViewState": "AQIAACEAAACAZmZmZmYiwC8AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:00:07.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAppointmentDal.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Api\\IAppointmentDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IAppointmentDal.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Api\\IAppointmentDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IAppointmentDal.cs",
+              "ViewState": "AQIAAAwAAACAmZmZmZkdwBUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T12:47:25.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DB_Manager.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\DB_Manager.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\DB_Manager.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\DB_Manager.cs",
+              "RelativeToolTip": "DAL\\Models\\DB_Manager.cs",
+              "ViewState": "AQIAABQAAABgZmZmZmYqwCYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T11:18:09.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AvailableAppointmentDal.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Services\\AvailableAppointmentDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\AvailableAppointmentDal.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Services\\AvailableAppointmentDal.cs",
+              "RelativeToolTip": "DAL\\Services\\AvailableAppointmentDal.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAABUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T11:17:35.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PassedAppointment.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\PassedAppointment.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\PassedAppointment.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\PassedAppointment.cs",
+              "RelativeToolTip": "DAL\\Models\\PassedAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T11:17:18.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\Patient.cs",
+              "RelativeToolTip": "DAL\\Models\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T11:17:07.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Therapist.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\Therapist.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Therapist.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\Therapist.cs",
+              "RelativeToolTip": "DAL\\Models\\Therapist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T11:17:02.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IAvailableAppointmentDal.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Api\\IAvailableAppointmentDal.cs",
               "RelativeDocumentMoniker": "DAL\\Api\\IAvailableAppointmentDal.cs",
               "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Api\\IAvailableAppointmentDal.cs",
               "RelativeToolTip": "DAL\\Api\\IAvailableAppointmentDal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAYAAABgZmZmZmYkwBYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T09:38:25.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AvailableAppointment.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Downloads\\Project\\DAL\\Models\\AvailableAppointment.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\AvailableAppointment.cs",
@@ -47,7 +163,8 @@
               "RelativeToolTip": "DAL\\Models\\AvailableAppointment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:38:04.251Z"
+              "WhenOpened": "2025-04-29T09:38:04.251Z",
+              "EditorCaption": ""
             }
           ]
         }

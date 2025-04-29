@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Models;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
 namespace DAL.Api
 {
     internal interface IWorkHourDal
