@@ -17,9 +17,9 @@ public partial class DB_Manager : DbContext
 
     public virtual DbSet<Appointment> Appointments { get; set; }
 
-    public virtual DbSet<AppointmentsPassed> AppointmentsPasseds { get; set; }
-
     public virtual DbSet<AvailableAppointment> AvailableAppointments { get; set; }
+
+    public virtual DbSet<PassedAppointment> PassedAppointments { get; set; }
 
     public virtual DbSet<Patient> Patients { get; set; }
 
@@ -29,7 +29,7 @@ public partial class DB_Manager : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\c#\\project\\ClinicScheduler\\DAL\\Data\\DB.mdf;Integrated Security=True");
+        => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\This User\\OneDrive\\שולחן העבודה\\clinic\\DAL\\Data\\DB.mdf;Integrated Security=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -52,30 +52,6 @@ public partial class DB_Manager : DbContext
                 .HasConstraintName("FK__Appointme__Thera__5AB9788F");
         });
 
-        modelBuilder.Entity<AppointmentsPassed>(entity =>
-        {
-            entity.HasKey(e => e.AppointmentId).HasName("PK__Appointm__8ECDFCA2022F9A32");
-
-            entity.ToTable("AppointmentsPassed");
-
-            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
-            entity.Property(e => e.PatientId).HasColumnName("PatientID");
-            entity.Property(e => e.Status)
-                .HasMaxLength(50)
-                .IsUnicode(false);
-            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
-
-            entity.HasOne(d => d.Patient).WithMany(p => p.AppointmentsPasseds)
-                .HasForeignKey(d => d.PatientId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Appointme__Patie__7849DB76");
-
-            entity.HasOne(d => d.Therapist).WithMany(p => p.AppointmentsPasseds)
-                .HasForeignKey(d => d.TherapistId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Appointme__Thera__793DFFAF");
-        });
-
         modelBuilder.Entity<AvailableAppointment>(entity =>
         {
             entity.HasKey(e => e.AppointmentId).HasName("PK__ Availab__8ECDFCA22FD333AC");
@@ -91,6 +67,29 @@ public partial class DB_Manager : DbContext
                 .HasConstraintName("FK__ Availabl__Thera__0697FACD");
         });
 
+        modelBuilder.Entity<PassedAppointment>(entity =>
+        {
+            entity.HasKey(e => e.AppointmentId).HasName("PK__PassedAp__8ECDFCA288F68629");
+
+            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.Status)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+
+            entity.HasOne(d => d.Patient).WithMany(p => p.PassedAppointments)
+                .HasForeignKey(d => d.PatientId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__PassedApp__Patie__1B9317B3");
+
+            entity.HasOne(d => d.Therapist).WithMany(p => p.PassedAppointments)
+                .HasForeignKey(d => d.TherapistId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__PassedApp__Thera__1C873BEC");
+        });
+
         modelBuilder.Entity<Patient>(entity =>
         {
             entity.HasKey(e => e.PatientId).HasName("PK__Patients__970EC34695D48E27");
@@ -98,13 +97,16 @@ public partial class DB_Manager : DbContext
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
             entity.Property(e => e.FirstName)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(false)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.LastName)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(false)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(15)
-                .IsUnicode(false);
+                .IsUnicode(false)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
         });
 
         modelBuilder.Entity<Therapist>(entity =>
@@ -116,13 +118,16 @@ public partial class DB_Manager : DbContext
                 .HasColumnName("TherapistID");
             entity.Property(e => e.FirstName)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(false)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.LastName)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(false)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(10)
-                .IsFixedLength();
+                .IsFixedLength()
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
         });
 
         modelBuilder.Entity<WorkHour>(entity =>
@@ -132,7 +137,8 @@ public partial class DB_Manager : DbContext
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.DayOfWeek)
                 .HasMaxLength(20)
-                .IsUnicode(false);
+                .IsUnicode(false)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.WorkHours)
