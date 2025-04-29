@@ -13,3 +13,15 @@ H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\refint\BL.dll
 H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.pdb
 H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\BL.genruntimeconfig.cache
 H:\FinalProj\Final_Project\BL\obj\Debug\net8.0\ref\BL.dll
+C:\Users\אוטמזגין\Downloads\Project\BL\bin\Debug\net8.0\BL.deps.json
+C:\Users\אוטמזגין\Downloads\Project\BL\bin\Debug\net8.0\BL.dll
+C:\Users\אוטמזגין\Downloads\Project\BL\bin\Debug\net8.0\BL.pdb
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.AssemblyInfoInputs.cache
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.AssemblyInfo.cs
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.csproj.CoreCompileInputs.cache
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.sourcelink.json
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.dll
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\refint\BL.dll
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.pdb
+C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\ref\BL.dll
