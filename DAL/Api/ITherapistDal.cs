@@ -15,6 +15,7 @@ namespace DAL.Api
         Task UpdateTherapist(Therapist therapist);
         Task DeleteTherapist(int id);
         Task<List<Therapist>> GetAllTherapists();
+        Task<Therapist> GetTherapistByName(string firstName,string lastName);
 
 
     }

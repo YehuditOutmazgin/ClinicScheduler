@@ -13,7 +13,11 @@ namespace DAL.Services
     {
  
             private readonly DB_Manager _DB_Manager;
-            public async Task AddTherapist(Therapist therapist)
+        public TherapistDal(DB_Manager dB_Manager)
+        {
+            _DB_Manager = dB_Manager;
+        }
+        public async Task AddTherapist(Therapist therapist)
             {
                 if (therapist == null)
                 {
@@ -53,7 +57,25 @@ namespace DAL.Services
                 return therapist;
             }
 
-            public async Task UpdateTherapist(Therapist therapist)
+        public async Task<Therapist> GetTherapistByName(string firstName, string lastName)
+        {
+            if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName))
+            {
+                throw new ArgumentException("First name and last name cannot be null or empty.");
+            }
+
+            var therapist = await _DB_Manager.Therapists
+                .FirstOrDefaultAsync(t => t.FirstName == firstName && t.LastName == lastName);
+
+            if (therapist == null)
+            {
+                throw new KeyNotFoundException($"Therapist with name {firstName} {lastName} was not found.");
+            }
+
+            return therapist;
+        }
+
+        public async Task UpdateTherapist(Therapist therapist)
             {
                 if (therapist == null)
                 {
