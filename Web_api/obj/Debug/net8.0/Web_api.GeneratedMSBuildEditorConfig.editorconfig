@@ -9,11 +9,29 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Web_api
 build_property.RootNamespace = Web_api
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\אוטמזגין\Downloads\Project\Web_api\
+=======
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\גמ''\Desktop\proj\ClinicScheduler\Web_api\
+=======
+build_property.ProjectDir = C:\Users\This User\OneDrive\שולחן העבודה\clinic\Web_api\
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
+>>>>>>> c59cef6cea0bf8cfed7c3df7aa3c9917f3c5b74d
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\אוטמזגין\Downloads\Project\Web_api
+=======
+<<<<<<< HEAD
+build_property.MSBuildProjectDirectory = C:\Users\גמ''\Desktop\proj\ClinicScheduler\Web_api
+=======
+build_property.MSBuildProjectDirectory = C:\Users\This User\OneDrive\שולחן העבודה\clinic\Web_api
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
+>>>>>>> c59cef6cea0bf8cfed7c3df7aa3c9917f3c5b74d
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

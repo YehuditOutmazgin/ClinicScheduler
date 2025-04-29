@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "3FOXG4Tnos+ocLyC8QTvhrulYi2+tpq+9faRXDw8UFmBg2EZTvPibRUDTlN6KZgWzdnPPjatdeMUx24esECa4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\אוטמזגין\\Downloads\\Project\\BL\\BL.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "02aPN/WfeLg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\גמ''\\Desktop\\proj\\ClinicScheduler\\BL\\BL.csproj",
+=======
+  "dgSpecHash": "ry9B35/0Bpw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\This User\\OneDrive\\שולחן העבודה\\clinic\\BL\\BL.csproj",
+>>>>>>> 52dcaef1b7259ae0e0e0fe130ff342bb5f106f5b
+>>>>>>> c59cef6cea0bf8cfed7c3df7aa3c9917f3c5b74d
   "expectedPackageFiles": [],
   "logs": [
     {
