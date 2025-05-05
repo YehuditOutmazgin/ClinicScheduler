@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Api
 {
-    internal interface IAppointmentDal
+    internal interface IAppointmentsDal
     {
 
         Task AddAppointment(Appointment appointment);

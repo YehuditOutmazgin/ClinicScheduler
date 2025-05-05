@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Api
 {
-    internal interface ITherapistDal
+    internal interface ITherapistsDal
     {
 
         Task<Therapist> GetTherapistById(int id);

@@ -9,16 +9,14 @@ using System.Threading.Tasks;
 
 namespace DAL.Services
 {
-    internal class AppointmentDal : IAppointmentDal
+    internal class AppointmentsDal : IAppointmentsDal
     {
 
         private readonly DB_Manager _DB_Manager;
         // Constructor that initializes the DB_Manager instance
-        public AppointmentDal(DB_Manager db_Manager)
+        public AppointmentsDal(DB_Manager db_Manager)
         {
-            _DB_Manager = db_Manager 
-                // what is it????????????????
-                ?? throw new ArgumentNullException(nameof(db_Manager));
+            _DB_Manager = db_Manager;
         }
 
         public async Task AddAppointment(Appointment appointment)

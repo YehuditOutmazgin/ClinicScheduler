@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DAL.Models;
 namespace DAL.Api
 {
-    public interface IAvailableAppointmentDal
+    public interface IAvailableAppointmentsDal
     {
         // add available appointment 
         Task AddAppointment(AvailableAppointment appointment);

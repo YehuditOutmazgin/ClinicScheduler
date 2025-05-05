@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DAL.Services
 {
-    internal class TherapistDal:ITherapistDal
+    internal class TherapistsDal:ITherapistsDal
     {
  
             private readonly DB_Manager _DB_Manager;
-        public TherapistDal(DB_Manager dB_Manager)
+        public TherapistsDal(DB_Manager dB_Manager)
         {
             _DB_Manager = dB_Manager;
         }

@@ -9,17 +9,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Services
 {
-  
-        internal class WorkHourDal : IWorkHourDal
+
+    internal class WorkHoursDal : IWorkHoursDal
+    {
+        private readonly DB_Manager _DB_Manager;
+
+        public async Task AddWorkDay(WorkHour workHour)
         {
-            private readonly DB_Manager _DB_Manager;
 
-            public async Task AddWorkDay(WorkHour workHour)
-            {
-
-                await _DB_Manager.WorkHours.AddAsync(workHour);
-                await _DB_Manager.SaveChangesAsync();
-            }
+            await _DB_Manager.WorkHours.AddAsync(workHour);
+            await _DB_Manager.SaveChangesAsync();
+        }
 
         public async Task DeleteWorkDay(int therapistId, string dayOfWeek)
         {
@@ -34,7 +34,7 @@ namespace DAL.Services
             List<WorkHour> workHour = await _DB_Manager.WorkHours
                 .Where(wh => wh.TherapistId == therapistId && wh.DayOfWeek == dayOfWeek).ToListAsync();
 
-            if (workHour==null&& workHour.Count == 0)
+            if (workHour == null && workHour.Count == 0)
             {
                 throw new KeyNotFoundException($"No work hours found for TherapistId {therapistId} on {dayOfWeek}.");
             }
@@ -46,7 +46,7 @@ namespace DAL.Services
 
         public async Task UpdateWorkHours(WorkHour workHour)
         {
-          
+
 
             var therapistExists = await _DB_Manager.Therapists
                 .AnyAsync(t => t.TherapistId == workHour.TherapistId);
@@ -89,7 +89,7 @@ namespace DAL.Services
             return workHours;
         }
     }
-    }
+}
 
 
 
