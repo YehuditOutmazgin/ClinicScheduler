@@ -8,6 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="Api\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>

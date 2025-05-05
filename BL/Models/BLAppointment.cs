@@ -15,9 +15,9 @@ public partial class BLAppointment
 
     public TimeOnly AppointmentTime { get; set; }
 
-    public virtual ICollection<CanceledAppointment> CanceledAppointments { get; set; } = new List<CanceledAppointment>();
+    public virtual ICollection<BLCanceledAppointment> CanceledAppointments { get; set; } = new List<BLCanceledAppointment>();
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual BLPatient Patient { get; set; } = null!;
 
-    public virtual Therapist Therapist { get; set; } = null!;
+    public virtual BLTherapist Therapist { get; set; } = null!;
 }

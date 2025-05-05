@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DAL.Models;
+namespace BL.Models;
 
-public partial class Therapist
+public partial class BLTherapist
 {
     public int TherapistId { get; set; }
 
@@ -15,11 +15,11 @@ public partial class Therapist
 
     public string PhoneNumber { get; set; } = null!;
 
-    public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+    public virtual ICollection<BLAppointment> Appointments { get; set; } = new List<BLAppointment>();
 
     public virtual ICollection<BLAvailableAppointment> AvailableAppointments { get; set; } = new List<BLAvailableAppointment>();
 
-    public virtual ICollection<PassedAppointment> PassedAppointments { get; set; } = new List<PassedAppointment>();
+    public virtual ICollection<BLPassedAppointment> PassedAppointments { get; set; } = new List<BLPassedAppointment>();
 
-    public virtual ICollection<WorkHour> WorkHours { get; set; } = new List<WorkHour>();
+    public virtual ICollection<BLWorkHour> WorkHours { get; set; } = new List<BLWorkHour>();
 }

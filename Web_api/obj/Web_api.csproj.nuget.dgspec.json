@@ -1,23 +1,92 @@
 {
   "format": 1,
   "restore": {
-    "H:\\c#\\new\\ClinicScheduler\\Web_api\\Web_api.csproj": {}
+    "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\Web_api\\Web_api.csproj": {}
   },
   "projects": {
-    "H:\\c#\\new\\ClinicScheduler\\Web_api\\Web_api.csproj": {
+    "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\c#\\new\\ClinicScheduler\\Web_api\\Web_api.csproj",
-        "projectName": "Web_api",
-        "projectPath": "H:\\c#\\new\\ClinicScheduler\\Web_api\\Web_api.csproj",
-        "packagesPath": "C:\\Users\\סמן טוב רבקה\\.nuget\\packages\\",
-        "outputPath": "H:\\c#\\new\\ClinicScheduler\\Web_api\\obj\\",
+        "projectUniqueName": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\BL\\BL.csproj",
+        "projectName": "BL",
+        "projectPath": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\BL\\BL.csproj",
+        "packagesPath": "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\",
+        "outputPath": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\סמן טוב רבקה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\איטח צפורה דודי\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj": {
+                "projectPath": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\",
+        "outputPath": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\איטח צפורה דודי\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,6 +102,97 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\Web_api\\Web_api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\Web_api\\Web_api.csproj",
+        "projectName": "Web_api",
+        "projectPath": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\Web_api\\Web_api.csproj",
+        "packagesPath": "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\",
+        "outputPath": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\Web_api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\איטח צפורה דודי\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\BL\\BL.csproj": {
+                "projectPath": "H:\\‏‏תיקיה חדשה (2)\\newwwwwwwwwww\\ClinicScheduler\\BL\\BL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

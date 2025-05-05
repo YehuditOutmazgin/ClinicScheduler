@@ -25,3 +25,11 @@ C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.dll
 C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\refint\BL.dll
 C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\BL.pdb
 C:\Users\אוטמזגין\Downloads\Project\BL\obj\Debug\net8.0\ref\BL.dll
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.AssemblyInfoInputs.cache
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.AssemblyInfo.cs
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.csproj.CoreCompileInputs.cache
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.sourcelink.json
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.dll
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\refint\BL.dll
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.pdb

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DAL.Models;
+namespace BL.Models;
 
 public partial class BLAvailableAppointment
 {
@@ -17,5 +17,5 @@ public partial class BLAvailableAppointment
 
     public int Specialization { get; set; }
 
-    public virtual Therapist Therapist { get; set; } = null!;
+    public virtual BLTherapist Therapist { get; set; } = null!;
 }

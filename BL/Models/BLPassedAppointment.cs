@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DAL.Models;
+namespace BL.Models;
 
-public partial class PassedAppointment
+public partial class BLPassedAppointment
 {
     public int AppointmentId { get; set; }
 
@@ -17,7 +17,7 @@ public partial class PassedAppointment
 
     public string? Status { get; set; }
 
-    public virtual Patient Patient { get; set; } = null!;
+    public virtual BLPatient Patient { get; set; } = null!;
 
-    public virtual Therapist Therapist { get; set; } = null!;
+    public virtual BLTherapist Therapist { get; set; } = null!;
 }
