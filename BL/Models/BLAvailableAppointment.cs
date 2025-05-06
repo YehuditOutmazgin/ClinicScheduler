@@ -11,7 +11,7 @@ public partial class BLAvailableAppointment
 
     public DateOnly AppointmentDate { get; set; }
 
-    public TimeOnly TimeSlot { get; set; }
+    public TimeOnly Time { get; set; }
 
     public int DurationMinutes { get; set; }
 
