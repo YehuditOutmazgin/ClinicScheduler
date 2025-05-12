@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace BL
 {
-    internal class Mapper
+    public static class Mapper
     {
-        public Patient MapToPatient(BLPatient bLPatient)
+        public static Patient MapToPatient(BLPatient bLPatient)
         {
            return  new Patient()
             {
@@ -23,7 +23,7 @@ namespace BL
          
             };
         }
-        public Therapist MapToTherapist(BLTherapist bLTherapist)
+        public static Therapist MapToTherapist(BLTherapist bLTherapist)
         {
             return new Therapist()
             {
@@ -34,21 +34,21 @@ namespace BL
                 Specialization = bLTherapist.Specialization
             };
         }
-        public AvailableAppointment MapToAvailableAppointment(BLAvailableAppointment blAvailableAppointment)
+        public static AvailableAppointment MapToAvailableAppointment(BLAvailableAppointment blAvailableAppointment)
         {
             return new AvailableAppointment()
             {
                 AppointmentId = blAvailableAppointment.AppointmentId,
                 TherapistId = blAvailableAppointment.TherapistId,
                 AppointmentDate = blAvailableAppointment.AppointmentDate,
-                AppointmentTime = blAvailableAppointment.Time,
+                TimeSlot = blAvailableAppointment.TimeSlot,
                 DurationMinutes = blAvailableAppointment.DurationMinutes,
                 Specialization = blAvailableAppointment.Specialization,
                 Therapist = MapToTherapist(blAvailableAppointment.Therapist)
 
             };
         }
-        public Appointment MapToAppointment(BLAppointment blAppointment)
+        public static Appointment MapToAppointment(BLAppointment blAppointment)
         {
             return new Appointment()
             {
@@ -61,7 +61,7 @@ namespace BL
                 Therapist = MapToTherapist(blAppointment.Therapist)
             };
         }
-        public PassedAppointment MapToPassedAppointment(BLPassedAppointment blPassedAppointment)
+        public static PassedAppointment MapToPassedAppointment(BLPassedAppointment blPassedAppointment)
         {
             return new PassedAppointment()
             {
@@ -75,7 +75,7 @@ namespace BL
                 Therapist = MapToTherapist(blPassedAppointment.Therapist)
             };
         }
-        public CanceledAppointment MapToCanceledAppointment(BLCanceledAppointment blCanceledAppointment)
+        public static CanceledAppointment MapToCanceledAppointment(BLCanceledAppointment blCanceledAppointment)
         {
             return new CanceledAppointment()
             {
@@ -88,7 +88,7 @@ namespace BL
            
             };
         }
-        public WorkHour MapToWorkHour(BLWorkHour blWorkHour)
+        public static WorkHour MapToWorkHour(BLWorkHour blWorkHour)
         {
             return new WorkHour()
             {
