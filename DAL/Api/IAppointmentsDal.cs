@@ -1,4 +1,5 @@
 ﻿using DAL.Models;
+using DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace DAL.Api
     {
 
         Task AddAppointment(Appointment appointment);
-        Task DeleteAppointment(int id);
+        Task<Appointment> DeleteAppointment(int id);
         Task<List<Appointment>> GetAppointmentsByPatientId(int patientId);
         Task<List<Appointment>> GetAppointmentsByPatientIdAndDate(int patientId, DateOnly date);
         Task<List<Appointment>> GetAppointmentsByDate(DateOnly? date);

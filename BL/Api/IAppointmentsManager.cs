@@ -13,11 +13,11 @@ namespace BL.Api
         Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly date);
         Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int therapistId, DateOnly date, int patientId);
         Task<List<BLAppointment>> GetAllAppointmentsByDate();
-        Task<BLAppointment> GetAllAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
+        Task<List<BLAppointment>> GetAllAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
         #endregion
         #region available appointments
-        Task<BLAvailableAppointment> GetAvailableAppointmentForSpecificSpecializationForWeek(string specialization, DateOnly date);
-        Task<BLAvailableAppointment> GetAvailableAppointmentForSpecificTherapistForWeek(int therapistId, DateOnly date);
+        Task<List<BLAvailableAppointment>> GetAvailableAppointmentsForSpecificSpecializationForWeek(string specialization, DateOnly date);
+        Task<List<BLAvailableAppointment>> GetAvailableAppointmentsForSpecificTherapistForWeek(int therapistId, DateOnly date);
         #endregion
         #region passed appointments
         Task<List<BLAppointment>> GetPassedAppointmentsByPatientId(int patientId);
@@ -37,7 +37,7 @@ namespace BL.Api
         #endregion
         #region available appointment
         Task<BLAvailableAppointment> SetAvailableAppointment(BLAvailableAppointment availableAppointment);
-        Task<BLAvailableAppointment> SetAvailableAppointmentForPeriod(BLAvailableAppointment availableAppointment);
+        Task<BLAvailableAppointment> SetAvailableAppointmentForPeriod(BLAvailableAppointment availableAppointment);// monthly or yearly
         #endregion
         #region canceled appointment
         //nothing for now
@@ -80,7 +80,7 @@ namespace BL.Api
         Task<bool> DeleteAppointmentForDate(DateOnly date);
         #endregion
 
-        // if you thintk that you need to add something, please discuss it with me
+        // if you think that you need to add something, please discuss it with me
         //good luck!!
     }
 }

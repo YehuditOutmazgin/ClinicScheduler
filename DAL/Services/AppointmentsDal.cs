@@ -28,7 +28,7 @@ namespace DAL.Services
             await _DB_Manager.SaveChangesAsync();
         }
 
-        public async Task DeleteAppointment(int id)
+        public async Task<Appointment> DeleteAppointment(int id)
         {
             var appointment = await _DB_Manager.Appointments.FindAsync(id);
             if (appointment == null)
@@ -36,6 +36,7 @@ namespace DAL.Services
 
             _DB_Manager.Appointments.Remove(appointment);
             await _DB_Manager.SaveChangesAsync();
+            return appointment;
         }
 
         public async Task<List<Appointment>> GetAppointmentsByPatientId(int patientId)

@@ -34,3 +34,19 @@ H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8
 H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\refint\BL.dll
 H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.pdb
 H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.csproj.AssemblyReference.cache
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.csproj.AssemblyReference.cache
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.AssemblyInfoInputs.cache
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.AssemblyInfo.cs
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.csproj.CoreCompileInputs.cache
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.sourcelink.json
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.dll
+H:\ClinicScheduler\BL\obj\Debug\net8.0\refint\BL.dll
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.pdb
+H:\ClinicScheduler\BL\bin\Debug\net8.0\BL.deps.json
+H:\ClinicScheduler\BL\bin\Debug\net8.0\BL.dll
+H:\ClinicScheduler\BL\bin\Debug\net8.0\BL.pdb
+H:\ClinicScheduler\BL\bin\Debug\net8.0\DAL.dll
+H:\ClinicScheduler\BL\bin\Debug\net8.0\DAL.pdb
+H:\ClinicScheduler\BL\obj\Debug\net8.0\BL.csproj.Up2Date
+H:\ClinicScheduler\BL\obj\Debug\net8.0\ref\BL.dll
