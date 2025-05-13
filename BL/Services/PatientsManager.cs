@@ -53,14 +53,34 @@ namespace BL.Services
 
         }
 
-        public Task<BLPatient> GetPatientById(int id)
+        public async Task<BLPatient> GetPatientById(int id)
         {
-            throw new NotImplementedException();
+            if (id < 0)
+                throw new NullReferenceException(nameof(id));
+
+
+           var p= await _patientsDal.GetPatientById(id);
+            if(p == null)
+                throw new NullReferenceException(nameof(p));
+            var mp = _mapper.Map<BLPatient>(p);
+
+            if (mp == null)
+                throw new NullReferenceException(nameof(mp));
+            return mp;
         }
 
-        public Task UpdatePatient(BLTherapist therapist)
+        public  async Task UpdatePatient(BLPatient patient)
         {
-            throw new NotImplementedException();
+            if (patient == null)
+                throw new NullReferenceException(nameof(patient));
+            var _patient = _mapper.Map<Patient>(patient);
+
+            if (_patient == null)
+                throw new NullReferenceException(nameof(_patient));
+           await _patientsDal.UpdatePatient(_patient);
+
         }
+
+       
     }
 }
