@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Api
 {
-    internal interface IPatientsDal
+    public interface IPatientsDal
     {
 
         Task<List<Patient>> GetAllPatients();

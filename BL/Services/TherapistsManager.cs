@@ -11,15 +11,15 @@ using System.Threading.Tasks;
 namespace BL.Services
 {
 
-   
-    internal class TherapistManajer : ITherapistManager
+
+    internal class TherapistManajer : ITherapistManajer
     {
-        ITherapistsDal _therapists;
+        private  _therapists;
         public TherapistManajer(ITherapistsDal therapists)
         {
             _therapists = therapists;
         }
-            public Task AddTherapist(BLTherapist therapist)
+        public Task AddTherapist(BLTherapist therapist)
         {
             throw new NotImplementedException();
         }
