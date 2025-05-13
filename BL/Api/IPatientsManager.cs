@@ -19,8 +19,6 @@ namespace BL.Api
 
         public Task<BLPatient> GetPatientById(int id);
 
-        public Task<BLPatient> GetPatientByName(string firstName, string lastName);
-
         public Task UpdatePatient(BLTherapist therapist);
 
     }

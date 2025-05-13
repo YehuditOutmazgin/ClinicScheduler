@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Api
 {
-    internal interface ICanceledAppointmentsDal
+    public interface ICanceledAppointmentsDal
     {
         /// <summary>
         /// Adds a new canceled appointment to the system.

@@ -1,9 +1,9 @@
 ﻿using BL.Models;
 using DAL.Models;
 
-namespace BL.Services
+namespace BL.Api
 {
-    internal interface ITherapistManajer
+    public  interface ITherapistManajer
     {
         Task AddTherapist(BLTherapist therapist);
         Task AddWorkDay(BLWorkHour workHour);

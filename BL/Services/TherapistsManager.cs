@@ -1,6 +1,5 @@
 ﻿using BL.Api;
 using BL.Models;
-using DAL.Models;
 using DAL.Api;
 using System;
 using System.Collections.Generic;
@@ -14,7 +13,7 @@ namespace BL.Services
 
     internal class TherapistManajer : ITherapistManajer
     {
-        private  _therapists;
+        public ITherapistsDal  _therapists;
         public TherapistManajer(ITherapistsDal therapists)
         {
             _therapists = therapists;
@@ -70,9 +69,6 @@ namespace BL.Services
             throw new NotImplementedException();
         }
 
-        Task<BLTherapist> ITherapistManager.GetTherapistById(int id)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
