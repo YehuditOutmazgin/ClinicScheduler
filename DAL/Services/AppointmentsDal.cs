@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Services
 {
-    internal class AppointmentsDal : IAppointmentsDal
+    public class AppointmentsDal : IAppointmentsDal
     {
 
         private readonly DB_Manager _DB_Manager;
@@ -56,7 +56,7 @@ namespace DAL.Services
         public async Task<Appointment> GetAppointmentsByPatientIdAndThetherapistIdAndDate(int patientId, DateOnly date, int therapistId)
         {
             var patients = _DB_Manager.Patients.Where(c => c.PatientId == patientId);
-            if (patients==null)
+            if (patients == null)
                 throw new Exception("Patient details were worng");
             var therapists = _DB_Manager.Therapists.Where(c => c.TherapistId == therapistId);
             if (therapists == null)
@@ -66,7 +66,7 @@ namespace DAL.Services
                 .FirstOrDefaultAsync();
             if (appointment == null)
                 throw new Exception("Appointment not found");
-            return  appointment;
+            return appointment;
         }
 
         public async Task<List<Appointment>> GetAppointmentsByTherapistIdAndDate(int therapistId, DateOnly? date)
@@ -77,11 +77,11 @@ namespace DAL.Services
                 throw new Exception("therapist details were worng");
             if (date == null)
                 date = DateOnly.FromDateTime(DateTime.Now);
-            else if(!_DB_Manager.Appointments.Any(c => c.AppointmentDate == date))
+            else if (!_DB_Manager.Appointments.Any(c => c.AppointmentDate == date))
                 throw new Exception("date detailes were worng");
             List<Appointment> appointments = await _DB_Manager.Appointments.Where(c => c.AppointmentDate == date && c.TherapistId == therapistId)
                 .ToListAsync();
-            return appointments ;
+            return appointments;
         }
 
         public async Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDay(int therapistId, DateOnly date)
@@ -90,13 +90,17 @@ namespace DAL.Services
             if (therapists == null)
                 throw new Exception("therapist details were worng");
 
-            List < Appointment > deleteApointments= await _DB_Manager.Appointments.Where(c => c.AppointmentDate == date&&c.TherapistId==therapistId).ToListAsync();
-            
+            List<Appointment> deleteApointments = await _DB_Manager.Appointments.Where(c => c.AppointmentDate == date && c.TherapistId == therapistId).ToListAsync();
+
             _DB_Manager.Appointments.RemoveRange(deleteApointments);
             await _DB_Manager.SaveChangesAsync();
 
             return deleteApointments;
 
+        }
+        public async Task<List<Appointment>> GetAllAppointments()
+        {
+            return await _DB_Manager.Appointments.ToListAsync();
         }
 
         public async Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDayGoingEarlier(int therapistId, DateOnly date, TimeOnly starthour, TimeOnly endhour)
@@ -109,13 +113,14 @@ namespace DAL.Services
             if (dt == null)
                 throw new Exception($"therapit doesn't work on this date:{date}\nor date details were worng\n try again!");
             List<Appointment> deleteApointments = _DB_Manager.Appointments.Where(c => c.AppointmentDate == date && c.TherapistId == therapistId && c.AppointmentTime >= starthour || c.AppointmentTime <= endhour).ToList();
-            
-                _DB_Manager.Appointments.RemoveRange(deleteApointments);
-           await _DB_Manager.SaveChangesAsync();
+
+            _DB_Manager.Appointments.RemoveRange(deleteApointments);
+            await _DB_Manager.SaveChangesAsync();
             return deleteApointments;
         }
-       
-        public async Task<List<Appointment>> GetAppointmentsByDate(DateOnly? date) {
+
+        public async Task<List<Appointment>> GetAppointmentsByDate(DateOnly? date)
+        {
             if (date == null)
             {
                 date = DateOnly.FromDateTime(DateTime.Now.AddDays(1));
@@ -124,12 +129,22 @@ namespace DAL.Services
 
             else if (!_DB_Manager.Appointments.Any(c => c.AppointmentDate == date))
                 throw new Exception("date detailes were worng");
-            List<Appointment> appointments =await _DB_Manager.Appointments.Where(c => c.AppointmentDate == date).ToListAsync();
-            
+            List<Appointment> appointments = await _DB_Manager.Appointments.Where(c => c.AppointmentDate == date).ToListAsync();
+
             return appointments;
 
         }
 
+        public async Task<List<Appointment>> DeleteAppointmentsByDate(DateOnly date)
+        {
+            var dt = _DB_Manager.Appointments.Where(c => c.AppointmentDate == date);
+            if (dt == null)
+                throw new Exception($"therapit doesn't work on this date:{date}\nor date details were worng\n try again!");
+            List<Appointment> deleteApointments = _DB_Manager.Appointments.Where(c => c.AppointmentDate == date).ToList();
+            _DB_Manager.Appointments.RemoveRange(deleteApointments);
+            await _DB_Manager.SaveChangesAsync();
+            return deleteApointments;
 
+        }
     }
 }

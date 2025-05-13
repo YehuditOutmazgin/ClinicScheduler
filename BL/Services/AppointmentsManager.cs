@@ -2,6 +2,7 @@
 using BL.Api;
 using BL.Models;
 using DAL.Api;
+using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,27 +18,41 @@ namespace BL.Services
         ICanceledAppointmentsDal _canceledAppointmentsDal;
         IPatientsDal _patientsDal;
         IMapper _mapper;///
-        public AppointmentManager(IAppointmentsDal appointmentsDal,IAvailableAppointmentsDal availableAppointmentsDal, IPassedAppointmentsDal passedAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal)
+        public AppointmentManager(IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPassedAppointmentsDal passedAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal)
         {
             _appointmentsDal = appointmentsDal;
             _availableAppointmentsDal = availableAppointmentsDal;
             _passedAppointmentsDal = passedAppointmentsDal;
             _canceledAppointmentsDal = canceledAppointmentsDal;
         }
-        public Task<BLAppointment> DeleteAppointmentByPatientId(int patientId, int appointmentId)
+        public async Task<BLAppointment> DeleteAppointmentByPatientId(int patientId, int appointmentId)
         {
-            var Appointment = _appointmentsDal.DeleteAppointment(appointmentId);
-            //if (Appointment == null)
-            //    throw new NullReferenceException(nameof(Appointment));
-
-            //BLAppointment Appointment =_mapper.Map<BLAppointment>( _appointmentsDal.DeleteAppointment(appointmentId));
-            throw new NotImplementedException();
+            Appointment appointment = await _appointmentsDal.DeleteAppointment(appointmentId);
+            if (appointment == null)
+                throw new NullReferenceException(nameof(appointment));
+            return await Task.FromResult(_mapper.Map<BLAppointment>(appointment));
         }
 
-        public Task<bool> DeleteAppointmentForDate(DateOnly date)
+        public async Task<bool> DeleteAppointmentForDate(DateOnly date,string? reason=null)
         {
-            throw new NotImplementedException();
+            List<Appointment> app = await _appointmentsDal.GetAppointmentsByDate(date);
+            //List<BLAppointment> appointments = _mapper.Map<List<BLAppointment>>(await _appointmentsDal.DeleteAppointmentsByDate(date));
+            //if (appointments == null)
+            //return false;
+            foreach (var appointment in app)
+            {
+                appointment.Status="cancel";
+
+                await _canceledAppointmentsDal.AddCanceledAppointment(new CanceledAppointment()
+                {
+                    AppointmentId = appointment.AppointmentId,
+                    PatientId = appointment.PatientId,
+                    Note= reason
+                });
+            }
+            return true;
         }
+
 
         public Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date)
         {
@@ -62,6 +77,11 @@ namespace BL.Services
         public bool DeleteOldPassedAppointment()
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<List<BLAppointment>> GetAllAppointments()
+        {
+            return _mapper.Map<List<BLAppointment>>( await _appointmentsDal.GetAllAppointments());
         }
 
         public Task<List<BLAppointment>> GetAllAppointmentsByDate()

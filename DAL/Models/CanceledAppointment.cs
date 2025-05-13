@@ -10,6 +10,7 @@ public partial class CanceledAppointment
     public int AppointmentId { get; set; }
 
     public int PatientId { get; set; }
+    public string? Note { get; set; }
 
     public virtual Appointment Appointment { get; set; } = null!;
 

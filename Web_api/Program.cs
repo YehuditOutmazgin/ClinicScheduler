@@ -1,15 +1,36 @@
+
+using DAL.Models;
+using DAL.Services;
+using BL.Api;
+using BL.Services;
+using DAL.Api;
+using AutoMapper;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Add services to the container
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Register application services
+builder.Services.AddSingleton<DB_Manager>();
+builder.Services.AddSingleton<IPatientsManager, PatientsManager>();
+builder.Services.AddSingleton<IAppointmentsManager, AppointmentManager>();
+builder.Services.AddSingleton<IAppointmentsDal, AppointmentsDal>();
+builder.Services.AddSingleton<IAvailableAppointmentsDal, AvailableAppointmentsDal>();
+builder.Services.AddSingleton<IPatientsDal, PatientsDal>();
+builder.Services.AddSingleton<IPassedAppointmentsDal, PassedAppointmentsDal>();
+builder.Services.AddSingleton<ICanceledAppointmentsDal, CanceledAppointmentsDal>();
+
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
+
+// Register AutoMapper
+//builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Program).Assembly));
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -17,9 +38,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

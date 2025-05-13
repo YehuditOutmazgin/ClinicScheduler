@@ -10,7 +10,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DAL.Services
 {
-    internal class CanceledAppointmentsDal : ICanceledAppointmentsDal
+    public class CanceledAppointmentsDal : ICanceledAppointmentsDal
     {
 
         private readonly DB_Manager _DB_Manager;

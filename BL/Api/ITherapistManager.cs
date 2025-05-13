@@ -1,6 +1,7 @@
 ﻿using BL.Models;
 using DAL.Models;
 
+
 namespace BL.Api
 {
     public  interface ITherapistManager
@@ -17,3 +18,4 @@ namespace BL.Api
         Task UpdateWorkHours(BLWorkHour workHour);
     }
 }
+

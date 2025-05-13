@@ -16,6 +16,7 @@ namespace DAL.Api
         Task<List<Appointment>> GetAppointmentsByPatientId(int patientId);
         Task<List<Appointment>> GetAppointmentsByPatientIdAndDate(int patientId, DateOnly date);
         Task<List<Appointment>> GetAppointmentsByDate(DateOnly? date);
+        Task<List<Appointment>> GetAllAppointments();
 
         Task<Appointment> GetAppointmentsByPatientIdAndThetherapistIdAndDate(int patientId, DateOnly date, int therapistId);
 
@@ -23,6 +24,7 @@ namespace DAL.Api
          Task<List<Appointment>> GetAppointmentsByTherapistIdAndDate(int therapistId, DateOnly? date);
         //delete apointments of therapist that cant work on a specific day
          Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDay(int therapistId, DateOnly date);
+         Task<List<Appointment>> DeleteAppointmentsByDate(DateOnly date);
         //delete apointments of therapist that have change working hours 
          Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDayGoingEarlier(int therapistId, DateOnly date, TimeOnly starthour, TimeOnly endhour);
 

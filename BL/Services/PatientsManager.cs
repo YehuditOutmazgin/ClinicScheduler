@@ -11,7 +11,7 @@ using AutoMapper;
 
 namespace BL.Services
 {
-    internal class PatientsManager : IPatientsManager
+    public class PatientsManager : IPatientsManager
     {
       private IPatientsDal _patientsDal;
         private readonly IMapper _mapper;
@@ -45,11 +45,11 @@ namespace BL.Services
 
         public async Task<List<BLPatient>> GetAllPatients()
         {
-            var deleteList =await _patientsDal.GetAllPatients();
-          if(deleteList == null )
-                throw new NullReferenceException(nameof(deleteList));
+            var list =await _patientsDal.GetAllPatients();
+          if(list == null )
+                throw new NullReferenceException(nameof(list));
 
-            return  _mapper.Map<List<BLPatient>>(deleteList);
+            return  _mapper.Map<List<BLPatient>>(list);
 
         }
 

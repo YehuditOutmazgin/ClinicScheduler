@@ -8,7 +8,7 @@ using DAL.Models;
 using Microsoft.EntityFrameworkCore;
 namespace DAL.Services
 {
-    internal class AvailableAppointmentsDal : IAvailableAppointmentsDal
+    public class AvailableAppointmentsDal : IAvailableAppointmentsDal
     {
         private readonly DB_Manager _DB_Manager;
 

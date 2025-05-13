@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "an6GoxOyOdA=",
+  "dgSpecHash": "ihw23bpIluA=",
   "success": true,
-  "projectFilePath": "H:\\ClinicScheduler\\DAL\\DAL.csproj",
+  "projectFilePath": "H:\\new\\ClinicScheduler\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\אוטמזגין יהודית\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\אוטמזגין יהודית\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

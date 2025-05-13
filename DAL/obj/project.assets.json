@@ -4083,11 +4083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\ClinicScheduler\\DAL\\DAL.csproj",
+      "projectUniqueName": "H:\\new\\ClinicScheduler\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "H:\\ClinicScheduler\\DAL\\DAL.csproj",
+      "projectPath": "H:\\new\\ClinicScheduler\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\אוטמזגין יהודית\\.nuget\\packages\\",
-      "outputPath": "H:\\ClinicScheduler\\DAL\\obj\\",
+      "outputPath": "H:\\new\\ClinicScheduler\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
