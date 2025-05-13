@@ -3,10 +3,84 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using BL.Models;
 namespace BL.Api
 {
     public interface IAppointmentsManager
     {
+        #region get appointments
+        #region appointments
+        Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly date);
+        Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int therapistId, DateOnly date, int patientId);
+        Task<List<BLAppointment>> GetAllAppointmentsByDate();
+        Task<BLAppointment> GetAllAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
+        #endregion
+        #region available appointments
+        Task<BLAvailableAppointment> GetAvailableAppointmentForSpecificSpecializationForWeek(string specialization, DateOnly date);
+        Task<BLAvailableAppointment> GetAvailableAppointmentForSpecificTherapistForWeek(int therapistId, DateOnly date);
+        #endregion
+        #region passed appointments
+        Task<List<BLAppointment>> GetPassedAppointmentsByPatientId(int patientId);
+        Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId,int therapistId);
+        Task<List<BLAppointment>> GetPassedAppointmentsByTherapistAndDate(int therapistId, DateOnly date);
+        #endregion
+        #region cancel appointments
+        Task<List<BLAppointment>> GetCanceleAppointmentsByPatientId(int patientId);
+        Task<List<BLAppointment>> GetCanceleAppointmentsByTherapistIdAndDate(int therapistId,DateOnly date);
+        Task<List<BLAppointment>> GetCanceleAppointmentsByDate(int therapistId,DateOnly date);
+        #endregion
+        #endregion
+
+        #region set appointments
+        #region appointment
+        Task<BLAppointment> SetAppointment(int availAppointmentId);
+        #endregion
+        #region available appointment
+        Task<BLAvailableAppointment> SetAvailableAppointment(BLAvailableAppointment availableAppointment);
+        Task<BLAvailableAppointment> SetAvailableAppointmentForPeriod(BLAvailableAppointment availableAppointment);
+        #endregion
+        #region canceled appointment
+        //nothing for now
+        #endregion
+        #region passed appointment
+        Task<List<BLPassedAppointment>> SetPassedAppointments();//Daily
+        #endregion
+        #endregion
+
+        #region update appointments
+        #region appointment
+
+        #endregion
+        #region available appointment
+
+        #endregion
+        #region canceled appointment
+
+        #endregion
+        #region passed appointment
+
+        #endregion
+        #endregion
+
+        #region delete appointments
+        #region appointment
+        Task<BLAppointment> DeleteAppointmentByPatientId(int patientId,int appointmentId);
+        #endregion
+        #region available appointment
+        Task<BLAvailableAppointment> DeleteAvailableAppointment(int appointmentId);
+        #endregion
+        #region cancele appointment
+        Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId);
+        #endregion
+        #region passed appointment
+        bool DeleteOldPassedAppointment();
+        #endregion
+        Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId,DateOnly date);
+        Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId,DateOnly date); // move after to canceled
+        Task<bool> DeleteAppointmentForDate(DateOnly date);
+        #endregion
+
+        // if you thintk that you need to add something, please discuss it with me
+        //good luck!!
     }
 }
