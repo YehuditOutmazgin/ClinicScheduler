@@ -6,16 +6,16 @@ namespace BL.Api
 {
     public  interface ITherapistManager
     {
-        Task AddTherapist(BLTherapist therapist);
-        Task AddWorkDay(BLWorkHour workHour);
-        Task DeleteTherapist(int id);
-        Task DeleteWorkDay(int therapistId, string DayOfWeek);
+        Task<BLTherapist> AddTherapist(BLTherapist therapist);
+        Task<BLWorkHour> AddWorkDay(BLWorkHour workHour);
+        Task<BLTherapist> DeleteTherapist(int id);
+        Task <List<BLWorkHour>> DeleteWorkDay(int therapistId, string DayOfWeek);
         Task<List<BLTherapist>> GetAllTherapists();
         Task<BLTherapist> GetTherapistById(int id);
         Task<BLTherapist> GetTherapistByName(string firstName, string lastName);
         Task<List<BLWorkHour>> GetTherapistSchedule(string firstName, string lastName);
-        Task UpdateTherapist(BLTherapist therapist);
-        Task UpdateWorkHours(BLWorkHour workHour);
+        Task <BLTherapist> UpdateTherapist(BLTherapist therapist);
+        Task<List<BLWorkHour>> UpdateWorkHours(BLWorkHour workHour);
     }
 }
 

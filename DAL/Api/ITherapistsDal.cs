@@ -11,11 +11,14 @@ namespace DAL.Api
     {
 
         Task<Therapist> GetTherapistById(int id);
-        Task AddTherapist(Therapist therapist);
-        Task UpdateTherapist(Therapist therapist);
-        Task DeleteTherapist(int id);
+        Task <Therapist> AddTherapist(Therapist therapist);
+        Task<Therapist> UpdateTherapist(Therapist therapist);
+        Task<Therapist> DeleteTherapist(int id);
         Task<List<Therapist>> GetAllTherapists();
-        Task<Therapist> GetTherapistByName(string firstName,string lastName);
+        Task<Therapist> GetTherapistByName(string firstName, string lastName);
+
+
+
 
 
     }
