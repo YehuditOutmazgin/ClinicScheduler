@@ -33,3 +33,4 @@ H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8
 H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.dll
 H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\refint\BL.dll
 H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.pdb
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\BL\obj\Debug\net8.0\BL.csproj.AssemblyReference.cache

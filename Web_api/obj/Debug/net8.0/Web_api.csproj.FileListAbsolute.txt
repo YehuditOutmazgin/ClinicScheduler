@@ -64,3 +64,14 @@ C:\Users\אוטמזגין\Downloads\Project\Web_api\obj\Debug\net8.0\refint\Web_
 C:\Users\אוטמזגין\Downloads\Project\Web_api\obj\Debug\net8.0\Web_api.pdb
 C:\Users\אוטמזגין\Downloads\Project\Web_api\obj\Debug\net8.0\Web_api.genruntimeconfig.cache
 C:\Users\אוטמזגין\Downloads\Project\Web_api\obj\Debug\net8.0\ref\Web_api.dll
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.csproj.AssemblyReference.cache
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.GeneratedMSBuildEditorConfig.editorconfig
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.AssemblyInfoInputs.cache
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.AssemblyInfo.cs
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.csproj.CoreCompileInputs.cache
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.MvcApplicationPartsAssemblyInfo.cs
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.MvcApplicationPartsAssemblyInfo.cache
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.sourcelink.json
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.dll
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\refint\Web_api.dll
+H:\‏‏תיקיה חדשה (2)\newwwwwwwwwww\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.pdb

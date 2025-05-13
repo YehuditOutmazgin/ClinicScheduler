@@ -89,7 +89,7 @@ namespace DAL.Services
             if (therapists == null)
                 throw new Exception("therapist details were worng");
 
-            List < Appointment > deleteApointments= _DB_Manager.Appointments.Where(c => c.AppointmentDate == date&&c.TherapistId==therapistId))
+            List < Appointment > deleteApointments= await _DB_Manager.Appointments.Where(c => c.AppointmentDate == date&&c.TherapistId==therapistId).ToListAsync();
             
             _DB_Manager.Appointments.RemoveRange(deleteApointments);
             await _DB_Manager.SaveChangesAsync();
