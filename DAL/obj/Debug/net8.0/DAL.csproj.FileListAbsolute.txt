@@ -43,3 +43,35 @@ H:\new\ClinicScheduler\DAL\obj\Debug\net8.0\refint\DAL.dll
 H:\new\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.pdb
 H:\new\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 H:\new\ClinicScheduler\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\This User\OneDrive\שולחן העבודה\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\Data\DB.mdf
+C:\Tzip_project\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\Data\DB.mdf
+C:\Tzip_project\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Tzip_project\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+C:\Tzip_project\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\DAL.dll
+C:\Tzip_project\clinic\ClinicScheduler\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.dll
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+C:\Tzip_project\clinic\ClinicScheduler\DAL\obj\Debug\net8.0\ref\DAL.dll

@@ -13,7 +13,7 @@ namespace BL.Services
 {
 
 
-    public class TherapistManager : ITherapistManager
+    public class TherapistsManager : ITherapistManager
     {
         private ITherapistsDal _therapistsDal;  
         private readonly IMapper _mapper;
@@ -22,7 +22,7 @@ namespace BL.Services
         /// Therapist
         /// </summary>
 
-        public TherapistManager(ITherapistsDal therapists,IMapper mapper, IWorkHoursDal workHoursDal)
+        public TherapistsManager(ITherapistsDal therapists,IMapper mapper, IWorkHoursDal workHoursDal)
         {
             _therapistsDal = therapists;
             _mapper = mapper;

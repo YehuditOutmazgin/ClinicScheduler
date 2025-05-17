@@ -1,10 +1,10 @@
-
 using DAL.Models;
 using DAL.Services;
 using BL.Api;
 using BL.Services;
 using DAL.Api;
 using AutoMapper;
+using BL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,19 +14,26 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Register application services
+//bl
 builder.Services.AddSingleton<DB_Manager>();
 builder.Services.AddSingleton<IPatientsManager, PatientsManager>();
 builder.Services.AddSingleton<IAppointmentsManager, AppointmentManager>();
+builder.Services.AddSingleton<ITherapistManager, TherapistsManager>();
+//Dal
+builder.Services.AddSingleton<IWorkHoursDal, WorkHoursDal>();
+builder.Services.AddSingleton<ITherapistsDal, TherapistsDal>();
 builder.Services.AddSingleton<IAppointmentsDal, AppointmentsDal>();
 builder.Services.AddSingleton<IAvailableAppointmentsDal, AvailableAppointmentsDal>();
 builder.Services.AddSingleton<IPatientsDal, PatientsDal>();
 builder.Services.AddSingleton<IPassedAppointmentsDal, PassedAppointmentsDal>();
 builder.Services.AddSingleton<ICanceledAppointmentsDal, CanceledAppointmentsDal>();
+//manager
+builder.Services.AddScoped<BLManager>();
+
+// Register AutoMapper
 
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
 
-// Register AutoMapper
-//builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Program).Assembly));
 
 var app = builder.Build();
 

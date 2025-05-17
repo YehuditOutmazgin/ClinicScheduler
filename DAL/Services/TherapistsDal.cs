@@ -9,53 +9,55 @@ using System.Threading.Tasks;
 
 namespace DAL.Services
 {
-    public class TherapistsDal:ITherapistsDal
+    public class TherapistsDal : ITherapistsDal
     {
- 
-            private readonly DB_Manager _DB_Manager;
+
+        private readonly DB_Manager _DB_Manager;
         public TherapistsDal(DB_Manager dB_Manager)
         {
             _DB_Manager = dB_Manager;
         }
-        public async Task AddTherapist(Therapist therapist)
+        public async Task<Therapist> AddTherapist(Therapist therapist)
+        {
+            if (therapist == null)
             {
-                if (therapist == null)
-                {
-                    throw new ArgumentNullException(nameof(therapist), "Therapist cannot be null.");
-                }
-                _DB_Manager.Therapists.Add(therapist);
-                await _DB_Manager.SaveChangesAsync();
+                throw new ArgumentNullException(nameof(therapist), "Therapist cannot be null.");
+            }
+            _DB_Manager.Therapists.Add(therapist);
+            await _DB_Manager.SaveChangesAsync();
+            return therapist;
+        }
+
+        public async Task<Therapist> DeleteTherapist(int id)
+        {
+            var therapist = await _DB_Manager.Therapists.FindAsync(id);
+
+            if (therapist == null)
+            {
+                throw new KeyNotFoundException($"Therapist with ID {id} was not found.");
             }
 
-            public async Task DeleteTherapist(int id)
+            _DB_Manager.Therapists.Remove(therapist);
+
+            await _DB_Manager.SaveChangesAsync();
+            return therapist;
+        }
+        public async Task<List<Therapist>> GetAllTherapists()
+        {
+            return await _DB_Manager.Therapists.ToListAsync();
+        }
+
+        public async Task<Therapist> GetTherapistById(int id)
+        {
+            var therapist = await _DB_Manager.Therapists.FindAsync(id);
+
+            if (therapist == null)
             {
-                var therapist = await _DB_Manager.Therapists.FindAsync(id);
-
-                if (therapist == null)
-                {
-                    throw new KeyNotFoundException($"Therapist with ID {id} was not found.");
-                }
-
-                _DB_Manager.Therapists.Remove(therapist);
-
-                await _DB_Manager.SaveChangesAsync();
-            }
-            public async Task<List<Therapist>> GetAllTherapists()
-            {
-                return await _DB_Manager.Therapists.ToListAsync();
+                throw new KeyNotFoundException($"Therapist with ID {id} was not found.");
             }
 
-            public async Task<Therapist> GetTherapistById(int id)
-            {
-                var therapist = await _DB_Manager.Therapists.FindAsync(id);
-
-                if (therapist == null)
-                {
-                    throw new KeyNotFoundException($"Therapist with ID {id} was not found.");
-                }
-
-                return therapist;
-            }
+            return therapist;
+        }
 
         public async Task<Therapist> GetTherapistByName(string firstName, string lastName)
         {
@@ -75,24 +77,27 @@ namespace DAL.Services
             return therapist;
         }
 
-        public async Task UpdateTherapist(Therapist therapist)
+        public async Task<Therapist> UpdateTherapist(Therapist therapist)
+        {
+            if (therapist == null)
             {
-                if (therapist == null)
-                {
-                    throw new ArgumentNullException(nameof(therapist), "Therapist cannot be null.");
-                }
-
-                var existingTherapist = await _DB_Manager.Therapists.FindAsync(therapist.TherapistId);
-                if (existingTherapist == null)
-                {
-                    throw new KeyNotFoundException($"Therapist with ID {therapist.TherapistId} was not found.");
-                }
-
-                _DB_Manager.Entry(existingTherapist).CurrentValues.SetValues(therapist);
-
-                await _DB_Manager.SaveChangesAsync();
+                throw new ArgumentNullException(nameof(therapist), "Therapist cannot be null.");
             }
+
+            var existingTherapist = await _DB_Manager.Therapists.FindAsync(therapist.TherapistId);
+            if (existingTherapist == null)
+            {
+                throw new KeyNotFoundException($"Therapist with ID {therapist.TherapistId} was not found.");
+            }
+
+            _DB_Manager.Entry(existingTherapist).CurrentValues.SetValues(therapist);
+
+            await _DB_Manager.SaveChangesAsync();
+            return existingTherapist;
         }
+
+
     }
+}
 
 

@@ -1,4 +1,5 @@
-﻿using BL.Api;
+﻿using BL;
+using BL.Api;
 using BL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,10 +12,10 @@ namespace Web_api.Controllers
     public class PatientsController : ControllerBase
     {
 
-        private readonly IPatientsManager _patientsManager;
+        private readonly BLManager _patientsManager;
         private readonly IAppointmentsManager _appointmentsManager;
 
-        public PatientsController(IPatientsManager patientsManager,IAppointmentsManager appointmentsManager)
+        public PatientsController(BLManager patientsManager,IAppointmentsManager appointmentsManager)
         {
             _patientsManager = patientsManager;
             _appointmentsManager = appointmentsManager;

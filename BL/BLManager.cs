@@ -39,12 +39,12 @@ namespace BL
                 await _patientsManager.AddPatient(patient);
             }
 
-            public async Task DeletePatientAsync(int patientId)
+            public async Task DeletePatient(int patientId)
             {
                 await _patientsManager.DeletePatient(patientId);
             }
 
-            public async Task UpdatePatientAsync(BLPatient patient)
+            public async Task UpdatePatient(BLPatient patient)
             {
                 await _patientsManager.UpdatePatient(patient);
             }
@@ -75,27 +75,27 @@ namespace BL
 
             #region Therapist
             // Therapist-related methods
-            public async Task<List<BLTherapist>> GetAllTherapistsAsync()
+            public async Task<List<BLTherapist>> GetAllTherapists()
             {
                 return await _therapistManager.GetAllTherapists();
             }
 
-            public async Task<BLTherapist> GetTherapistByIdAsync(int therapistId)
+            public async Task<BLTherapist> GetTherapistById(int therapistId)
             {
                 return await _therapistManager.GetTherapistById(therapistId);
             }
 
-            public async Task AddTherapistAsync(BLTherapist therapist)
+            public async Task AddTherapist(BLTherapist therapist)
             {
                 await _therapistManager.AddTherapist(therapist);
             }
 
-            public async Task UpdateTherapistAsync(BLTherapist therapist)
+            public async Task UpdateTherapist(BLTherapist therapist)
             {
                 await _therapistManager.UpdateTherapist(therapist);
             }
 
-            public async Task DeleteTherapistAsync(int therapistId)
+            public async Task DeleteTherapist(int therapistId)
             {
                 await _therapistManager.DeleteTherapist(therapistId);
             }
