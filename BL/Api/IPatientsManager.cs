@@ -13,11 +13,11 @@ namespace BL.Api
 
 
 
-        public Task AddPatient(BLPatient bLPatient);
-        public Task DeletePatient(int id);
-        public Task<List<BLPatient>> GetAllPatients();
+        public  Task AddPatient(BLPatient bLPatient);
+        public  Task DeletePatient(int id);
+        public  Task<List<BLPatient>> GetAllPatients();
 
-        public Task<BLPatient> GetPatientById(int id);
+        public  Task<BLPatient> GetPatientById(int id);
 
         public Task UpdatePatient(BLPatient bLPatient);
 

@@ -10,9 +10,9 @@ namespace BL.Api
     {
         #region get appointments
         #region appointments
-        Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly date);
+        Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly? date);
         Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int therapistId, DateOnly date, int patientId);
-        Task<List<BLAppointment>> GetAllAppointmentsByDate();
+        Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date );
         Task<List<BLAppointment>> GetAllAppointments();
         Task<List<BLAppointment>> GetAllAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
         #endregion

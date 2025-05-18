@@ -102,6 +102,14 @@ namespace DAL.Services
         {
             return await _DB_Manager.Appointments.ToListAsync();
         }
+        public async Task<List<Appointment>> GetAllAppointmentsSet()
+        {
+            return await _DB_Manager.Appointments.Where(a => a.Status != "cancel").ToListAsync();
+        }
+        public async Task<List<Appointment>> GetAllAppointmentsCanceled()
+        {
+            return await _DB_Manager.Appointments.Where(a => a.Status == "cancel").ToListAsync();
+        }
 
         public async Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDayGoingEarlier(int therapistId, DateOnly date, TimeOnly starthour, TimeOnly endhour)
 

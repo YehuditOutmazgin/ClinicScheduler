@@ -32,17 +32,19 @@ namespace Web_api.Controllers
             return Ok(patients);
         }
 
-        //[HttpGet("appointment")]
-        //public async Task<ActionResult<List<BLAppointment>>> GetAllAppointment()
-        //{
-        //    var appointment = await _appointmentsManager.GetAllAppointments();
-        //    if (appointment == null || appointment.Count == 0)
-        //        return NotFound("No patients found.");
+    //    [HttpGet("appointment")]
+    //    public async Task<ActionResult<List<BLAppointment>>> GetAllAppointment()
+    //    {
+    //        var appointment = await _appointmentsManager.GetAllAppointments();
+    //        if (appointment == null || appointment.Count == 0)
+    //            return NotFound("No patients found.");
 
-        //    return Ok(appointment);
-        //}
-        // GET: api/Patient/{id}
-        [HttpGet("{id}")]
+    //        return Ok(appointment);
+    //    }
+    
+    ////GET: api/Patient/{id
+
+    [HttpGet("{id}")]
         public async Task<ActionResult<BLPatient>> GetPatientById(int id)
         {
             if (id <= 0)

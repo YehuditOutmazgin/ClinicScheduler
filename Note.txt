@@ -1,1 +1,6 @@
 1. change the id in patiant to string.
+2. in order toupdate the db do:{
+	dotnet ef migrations add <the massage // i sew it not necessary>
+	dotnet ef database update// }
+	i didnt do it i just did: dotnet ef migrations add NameOfMigration
+3. 

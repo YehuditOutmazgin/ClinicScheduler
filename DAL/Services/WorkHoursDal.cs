@@ -13,7 +13,10 @@ namespace DAL.Services
     public class WorkHoursDal : IWorkHoursDal
     {
         private readonly DB_Manager _DB_Manager;
-
+        public WorkHoursDal(DB_Manager db_Manager)
+        {
+            _DB_Manager = db_Manager;
+        }
         public async Task AddWorkDay(WorkHour workHour)
         {
 

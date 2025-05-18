@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Tzip_project\\clinic\\ClinicScheduler\\BL\\BL.csproj": {}
+    "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\BL\\BL.csproj": {}
   },
   "projects": {
-    "C:\\Tzip_project\\clinic\\ClinicScheduler\\BL\\BL.csproj": {
+    "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Tzip_project\\clinic\\ClinicScheduler\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Tzip_project\\clinic\\ClinicScheduler\\BL\\BL.csproj",
-        "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-        "outputPath": "C:\\Tzip_project\\clinic\\ClinicScheduler\\BL\\obj\\",
+        "projectPath": "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\BL\\BL.csproj",
+        "packagesPath": "C:\\Users\\אוטמזגין\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\This User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\אוטמזגין\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Tzip_project\\clinic\\ClinicScheduler\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Tzip_project\\clinic\\ClinicScheduler\\DAL\\DAL.csproj"
+              "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\DAL\\DAL.csproj"
               }
             }
           }
@@ -75,24 +74,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Tzip_project\\clinic\\ClinicScheduler\\DAL\\DAL.csproj": {
+    "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Tzip_project\\clinic\\ClinicScheduler\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Tzip_project\\clinic\\ClinicScheduler\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-        "outputPath": "C:\\Tzip_project\\clinic\\ClinicScheduler\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\אוטמזגין\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\אוטמזגין\\Desktop\\ליהודית\\ClinicScheduler\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\This User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\אוטמזגין\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,8 +100,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -166,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

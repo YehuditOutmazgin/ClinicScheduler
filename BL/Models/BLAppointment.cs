@@ -13,7 +13,7 @@ public partial class BLAppointment
 
     public DateOnly AppointmentDate { get; set; }
 
-    public TimeOnly AppointmentTime { get; set; }
+    public  TimeOnly AppointmentTime { get; set; }
     public string? Status { get; set; }
 
 

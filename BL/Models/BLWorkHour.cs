@@ -11,9 +11,9 @@ public partial class BLWorkHour
 
     public string DayOfWeek { get; set; } = null!;
 
-    public TimeOnly StartTime { get; set; }
+    public  TimeOnly StartTime { get; set; }
 
-    public TimeOnly EndTime { get; set; }
+    public  TimeOnly EndTime { get; set; }
 
     public virtual BLTherapist Therapist { get; set; } = null!;
 }
