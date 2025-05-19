@@ -39,9 +39,9 @@ namespace BL
                 await _patientsManager.AddPatient(patient);
             }
 
-            public async Task DeletePatient(int patientId)
+            public async Task<BLPatient> DeletePatient(int patientId)
             {
-                await _patientsManager.DeletePatient(patientId);
+              return  await _patientsManager.DeletePatient(patientId);
             }
 
             public async Task UpdatePatient(BLPatient patient)
