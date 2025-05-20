@@ -20,15 +20,7 @@ namespace Web_api.Controllers
             _patientsManager = patientsManager;
             _appointmentsManager = appointmentsManager;
         }
-        [HttpGet("appointment")]
-        public async Task<ActionResult<List<BLAppointment>>> GetAllAppointment()
-        {
-            var appointment = await _appointmentsManager.GetAllAppointments();
-            if (appointment == null || appointment.Count == 0)
-                return NotFound("No appointment found.");
 
-            return Ok(appointment);
-        }
         // GET: api/Patient
         [HttpGet]
         public async Task<ActionResult<List<BLPatient>>> GetAllPatients()
@@ -64,7 +56,7 @@ namespace Web_api.Controllers
         }
 
         // POST: api/Patient
-        [HttpPost]
+        [HttpPost("Add patient")]
         public async Task<ActionResult> AddPatient([FromBody] BLPatient patient)
         {
             if (patient == null)
@@ -76,15 +68,17 @@ namespace Web_api.Controllers
 
         // DELETE: api/Patient/{id}
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeletePatient(int id)
+        public async Task<ActionResult<BLPatient>> DeletePatient([FromRoute] int id)
         {
             if (id <= 0)
-                return BadRequest("Invalid patient ID.");
+                return BadRequest("Invalid ID");
 
-            await _patientsManager.DeletePatient(id);
-            return NoContent();
+            var delPatient = await _patientsManager.DeletePatient(id);
+            if (delPatient == null)
+                return NotFound($"No patient found with ID {id}");
+
+            return Ok(new { patientId = id,first_name= delPatient.FirstName, last_name = delPatient.LastName, message = "Patient deleted" });
         }
-
         // PUT: api/Patient/{id}
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdatePatient(int id, [FromBody] BLPatient patient)
@@ -96,7 +90,7 @@ namespace Web_api.Controllers
                 return BadRequest("Patient ID mismatch.");
 
             await _patientsManager.UpdatePatient(patient);
-            return NoContent();
+            return Ok(new { patientId = id, first_name = patient.FirstName, last_name = patient.LastName});
         }
     }
 }

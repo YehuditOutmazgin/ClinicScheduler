@@ -29,18 +29,25 @@ namespace BL.Services
 
             var p = _mapper.Map<Patient>(bLPatient);
 
-            if(p == null)
+            if (p == null)
                 throw new NullReferenceException(nameof(p));
+            else p.PatientId = 0;
              await   _patientsDal.AddPatient(p);
 
         }
 
-        public async Task DeletePatient(int id)
+        public async Task<BLPatient> DeletePatient(int id)
         {
             if (id<0)
                 throw new NullReferenceException(nameof(id));
+     
+            var delpatient =   await _patientsDal.DeletePatient(id);
 
-            await _patientsDal.DeletePatient(id);
+            if (delpatient != null)
+               
+                return await Task.FromResult(_mapper.Map<BLPatient>(delpatient));
+            else
+                 return null;
         }
 
         public async Task<List<BLPatient>> GetAllPatients()
@@ -81,6 +88,14 @@ namespace BL.Services
 
         }
 
-       
+        public Task<List<Appointment>> GetPatientAppointments(int patientId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Appointment>> GetPatientAppointmentsByDate(int patientId, DateOnly date)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
