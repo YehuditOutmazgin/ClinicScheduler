@@ -5,6 +5,7 @@ using BL.Services;
 using DAL.Api;
 using AutoMapper;
 using BL;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,7 @@ builder.Services.AddScoped<BLManager>();
 
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
 
+builder.Services.AddControllers().AddJsonOptions(opt=>opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
 var app = builder.Build();
 

@@ -30,13 +30,42 @@ namespace DAL.Services
 
         public async Task<Therapist> DeleteTherapist(int id)
         {
-            var therapist = await _DB_Manager.Therapists.FindAsync(id);
+          
+            var therapist=await _DB_Manager.Therapists.FindAsync(id);
+                var appointments = await _DB_Manager.Appointments.Include(a => a.Therapist)
+                    .Where(pa => pa.PatientId == id)
+                    .ToListAsync();
 
-            if (therapist == null)
-            {
-                throw new KeyNotFoundException($"Therapist with ID {id} was not found.");
-            }
+                if (appointments.Any())
+                {
+                    var availableAppointments = appointments.Select(a => new AvailableAppointment
+                    {
+                        AppointmentId = 0,
+                        AppointmentDate = a.AppointmentDate,
+                        TherapistId = a.TherapistId,
+                        Specialization = a.Therapist.Specialization,
+                        AppointmentTime = a.AppointmentTime,
 
+                    });
+                    var appointmentIds = appointments.Select(a => a.AppointmentId).ToList();
+
+                    var canceledAppointments = _DB_Manager.CanceledAppointments
+                        .Where(c => appointmentIds.Contains(c.AppointmentId))
+                        .ToList();
+                    var passedAppointments = _DB_Manager.PassedAppointments
+                    .Where(p => p.PatientId == id)
+                    .ToList();
+
+                _DB_Manager.PassedAppointments.RemoveRange(passedAppointments);
+
+                _DB_Manager.CanceledAppointments.RemoveRange(canceledAppointments);
+
+                // שלב 2: מחיקת הפגישות עצמן
+                _DB_Manager.Appointments.RemoveRange(appointments);
+
+                _DB_Manager.AvailableAppointments.AddRange(availableAppointments);
+                }
+             
             _DB_Manager.Therapists.Remove(therapist);
 
             await _DB_Manager.SaveChangesAsync();
