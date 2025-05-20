@@ -39,7 +39,7 @@ namespace DAL.Services
 
         public async Task<List<CanceledAppointment>> GetCanceledAppointmentsByDate(DateOnly date)
         {
-            return await _DB_Manager.CanceledAppointments.Where(a => a.Appointment.AppointmentDate == date).ToListAsync();
+            return await _DB_Manager.CanceledAppointments.Where(a => a.AppointmentDate == date).ToListAsync();
         }
 
         public async Task<List<CanceledAppointment>> GetCanceledAppointmentsByPatientId(int patientId)
@@ -59,7 +59,7 @@ namespace DAL.Services
 
         public async Task<List<CanceledAppointment>> RemoveCanceledAppointmentsOlderThan(DateOnly date)
         {
-            List<CanceledAppointment> appointments = await _DB_Manager.CanceledAppointments.Where(a => a.Appointment.AppointmentDate<=date).ToListAsync();
+            List<CanceledAppointment> appointments = await _DB_Manager.CanceledAppointments.Where(a => a.AppointmentDate<=date).ToListAsync();
             if(appointments == null)
             {
                 throw new KeyNotFoundException("There is no appointment to remove");

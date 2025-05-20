@@ -3,16 +3,21 @@ using System.Collections.Generic;
 
 namespace DAL.Models;
 
-public partial class CanceledAppointment
+public partial class CanceledAppointment:AppointmentBase
 {
-    public int Id { get; set; }
-
-    public int AppointmentId { get; set; }
+    //public int AppointmentId { get; set; }
 
     public int PatientId { get; set; }
+
+    //public int TherapistId { get; set; }
+
+    //public DateOnly AppointmentDate { get; set; }
+
+    //public TimeOnly AppointmentTime { get; set; }
+
     public string? Note { get; set; }
 
-    public virtual Appointment Appointment { get; set; } = null!;
-
     public virtual Patient Patient { get; set; } = null!;
+
+    //public virtual Therapist Therapist { get; set; } = null!;
 }

@@ -20,7 +20,15 @@ namespace Web_api.Controllers
             _patientsManager = patientsManager;
             _appointmentsManager = appointmentsManager;
         }
+        [HttpGet("appointment")]
+        public async Task<ActionResult<List<BLAppointment>>> GetAllAppointment()
+        {
+            var appointment = await _appointmentsManager.GetAllAppointments();
+            if (appointment == null || appointment.Count == 0)
+                return NotFound("No appointment found.");
 
+            return Ok(appointment);
+        }
         // GET: api/Patient
         [HttpGet]
         public async Task<ActionResult<List<BLPatient>>> GetAllPatients()

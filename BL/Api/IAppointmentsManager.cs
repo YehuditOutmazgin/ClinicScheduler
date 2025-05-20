@@ -10,9 +10,9 @@ namespace BL.Api
     {
         #region get appointments
         #region appointments
-        Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly date);
+        Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly? date);
         Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int therapistId, DateOnly date, int patientId);
-        Task<List<BLAppointment>> GetAllAppointmentsByDate();
+        Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date);
         Task<List<BLAppointment>> GetAllAppointments();
         Task<List<BLAppointment>> GetAllAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
         #endregion
@@ -22,13 +22,13 @@ namespace BL.Api
         #endregion
         #region passed appointments
         Task<List<BLAppointment>> GetPassedAppointmentsByPatientId(int patientId);
-        Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId,int therapistId);
+        Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
         Task<List<BLAppointment>> GetPassedAppointmentsByTherapistAndDate(int therapistId, DateOnly date);
         #endregion
         #region cancel appointments
         Task<List<BLAppointment>> GetCanceleAppointmentsByPatientId(int patientId);
-        Task<List<BLAppointment>> GetCanceleAppointmentsByTherapistIdAndDate(int therapistId,DateOnly date);
-        Task<List<BLAppointment>> GetCanceleAppointmentsByDate(int therapistId,DateOnly date);
+        Task<List<BLAppointment>> GetCanceleAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date);
+        Task<List<BLAppointment>> GetCanceleAppointmentsByDate(int therapistId, DateOnly date);
         #endregion
         #endregion
 
@@ -65,7 +65,7 @@ namespace BL.Api
 
         #region delete appointments
         #region appointment
-        Task<BLAppointment> DeleteAppointmentByPatientId(int patientId,int appointmentId);
+        Task<BLAppointment> DeleteAppointmentByPatientId(int patientId, int appointmentId);
         #endregion
         #region available appointment
         Task<BLAvailableAppointment> DeleteAvailableAppointment(int appointmentId);
@@ -76,8 +76,8 @@ namespace BL.Api
         #region passed appointment
         bool DeleteOldPassedAppointment();
         #endregion
-        Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId,DateOnly date);
-        Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId,DateOnly date); // move after to canceled
+        Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId, DateOnly date);
+        Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date); // move after to canceled
         Task<bool> DeleteAppointmentForDate(DateOnly date, string? reason = null);
         #endregion
 
