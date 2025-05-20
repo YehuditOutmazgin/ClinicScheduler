@@ -30,12 +30,20 @@ public partial class DB_Manager : DbContext
     public virtual DbSet<WorkHour> WorkHours { get; set; }
 
 
-  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\c#\new\ClinicScheduler\DAL\Data\DB.mdf;Integrated Security=True;MultipleActiveResultSets=true";
-            optionsBuilder.UseSqlServer(connectionString, options => options.EnableRetryOnFailure());
+            string relativePath = @"Data\ClinicDB.mdf"; // או ClinicDB.mdf, תלוי בשם האמיתי
+            string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
+
+            string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;
+                                     AttachDbFilename={fullPath};
+                                     Integrated Security=True;
+                                     Connect Timeout=30";
+
+            optionsBuilder.UseSqlServer(connectionString);
         }
     }
 
