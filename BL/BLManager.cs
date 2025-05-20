@@ -95,9 +95,9 @@ namespace BL
                 await _therapistManager.UpdateTherapist(therapist);
             }
 
-            public async Task DeleteTherapist(int therapistId)
+            public async Task<BLTherapist> DeleteTherapist(int therapistId)
             {
-                await _therapistManager.DeleteTherapist(therapistId);
+              return  await _therapistManager.DeleteTherapist(therapistId);
             }
             #endregion
         }

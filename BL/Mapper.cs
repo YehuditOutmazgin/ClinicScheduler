@@ -108,14 +108,11 @@
 
 #endregion
 using AutoMapper;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 public class Mapper : Profile
 {
     public Mapper()
     {
-        // Example Mappings (Add your actual class mappings here):
-
         // Patient
         CreateMap<DAL.Models.Patient, BL.Models.BLPatient>().ReverseMap();
 
@@ -133,6 +130,9 @@ public class Mapper : Profile
 
         // CanceledAppointment
         CreateMap<DAL.Models.CanceledAppointment, BL.Models.BLCanceledAppointment>().ReverseMap();
+
+        // WorkHour
+        CreateMap<DAL.Models.WorkHour, BL.Models.BLWorkHour>().ReverseMap();
 
         // Add more mappings here as needed for other models...
     }

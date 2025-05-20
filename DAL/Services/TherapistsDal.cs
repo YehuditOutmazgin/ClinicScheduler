@@ -28,44 +28,93 @@ namespace DAL.Services
             return therapist;
         }
 
+        //public async Task<Therapist> DeleteTherapist(int id)
+        //{
+
+        //    var therapist=await _DB_Manager.Therapists.FindAsync(id);
+        //    if (therapist == null)
+        //        throw new NullReferenceException(nameof(therapist));
+        //        var appointments = await _DB_Manager.Appointments
+        //            .Where(th => th.TherapistId == id)
+        //            .ToListAsync();
+
+        //        if (appointments.Any())
+        //        {
+        //            var availableAppointments = appointments.Select(a => new AvailableAppointment
+        //            {
+        //                AppointmentId = 0,
+        //                AppointmentDate = a.AppointmentDate,
+        //                TherapistId = a.TherapistId,
+        //                Specialization = a.Therapist.Specialization,
+        //                AppointmentTime = a.AppointmentTime,
+
+        //            });
+        //            var appointmentIds = appointments.Select(a => a.AppointmentId).ToList();
+
+        //            var canceledAppointments = _DB_Manager.CanceledAppointments
+        //                .Where(c => appointmentIds.Contains(c.AppointmentId))
+        //                .ToList();
+        //            var passedAppointments = _DB_Manager.PassedAppointments
+        //            .Where(p => p.PatientId == id)
+        //            .ToList();
+
+        //        _DB_Manager.PassedAppointments.RemoveRange(passedAppointments);
+
+        //        _DB_Manager.CanceledAppointments.RemoveRange(canceledAppointments);
+
+        //        // שלב 2: מחיקת הפגישות עצמן
+        //        _DB_Manager.Appointments.RemoveRange(appointments);
+
+        //        _DB_Manager.AvailableAppointments.AddRange(availableAppointments);
+        //        }
+        //        var workHour=_DB_Manager.WorkHours.Where(c=>c.TherapistId == id).ToList();
+        //             _DB_Manager.WorkHours.RemoveRange(workHour);
+
+        //             _DB_Manager.Therapists.Remove(therapist);
+
+        //              await _DB_Manager.SaveChangesAsync();
+        //    return therapist;
+        //}
         public async Task<Therapist> DeleteTherapist(int id)
         {
-          
-            var therapist=await _DB_Manager.Therapists.FindAsync(id);
-                var appointments = await _DB_Manager.Appointments.Include(a => a.Therapist)
-                    .Where(pa => pa.PatientId == id)
-                    .ToListAsync();
+            var therapist = await _DB_Manager.Therapists.FirstAsync(th=>th.TherapistId==id);
+            if (therapist == null)
+                throw new NullReferenceException(nameof(therapist));
 
-                if (appointments.Any())
-                {
-                    var availableAppointments = appointments.Select(a => new AvailableAppointment
-                    {
-                        AppointmentId = 0,
-                        AppointmentDate = a.AppointmentDate,
-                        TherapistId = a.TherapistId,
-                        Specialization = a.Therapist.Specialization,
-                        AppointmentTime = a.AppointmentTime,
+            // Remove all available appointments for this therapist
+            var availableAppointments = _DB_Manager.AvailableAppointments
+                .Where(a => a.TherapistId == id)
+                .ToList();
+            _DB_Manager.AvailableAppointments.RemoveRange(availableAppointments);
 
-                    });
-                    var appointmentIds = appointments.Select(a => a.AppointmentId).ToList();
+            // Find all appointments for this therapist
+            var appointments = await _DB_Manager.Appointments
+                .Where(th => th.TherapistId == id)
+                .ToListAsync();
 
-                    var canceledAppointments = _DB_Manager.CanceledAppointments
-                        .Where(c => appointmentIds.Contains(c.AppointmentId))
-                        .ToList();
-                    var passedAppointments = _DB_Manager.PassedAppointments
-                    .Where(p => p.PatientId == id)
+            if (appointments.Any())
+            {
+                var appointmentIds = appointments.Select(a => a.AppointmentId).ToList();
+
+                var canceledAppointments = _DB_Manager.CanceledAppointments
+                    .Where(c => appointmentIds.Contains(c.AppointmentId))
                     .ToList();
 
-                _DB_Manager.PassedAppointments.RemoveRange(passedAppointments);
+                var passedAppointments = _DB_Manager.PassedAppointments
+                    .Where(p => appointmentIds.Contains(p.AppointmentId))
+                    .ToList(); // Use AppointmentId, not PatientId
 
+                _DB_Manager.PassedAppointments.RemoveRange(passedAppointments);
                 _DB_Manager.CanceledAppointments.RemoveRange(canceledAppointments);
 
-                // שלב 2: מחיקת הפגישות עצמן
                 _DB_Manager.Appointments.RemoveRange(appointments);
 
-                _DB_Manager.AvailableAppointments.AddRange(availableAppointments);
-                }
-             
+                // Do NOT add available appointments for this therapist here!
+            }
+
+            var workHour = _DB_Manager.WorkHours.Where(c => c.TherapistId == id).ToList();
+            _DB_Manager.WorkHours.RemoveRange(workHour);
+
             _DB_Manager.Therapists.Remove(therapist);
 
             await _DB_Manager.SaveChangesAsync();

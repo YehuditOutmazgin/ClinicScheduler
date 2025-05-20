@@ -1,6 +1,8 @@
 ﻿using BL;
 using BL.Api;
 using BL.Models;
+using BL.Services;
+using DAL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,7 +24,11 @@ namespace Web_api.Controllers
         [HttpGet]
         public async Task<ActionResult<List<BLTherapist>>> GetAllTherapists()
         {
-            return await _therapistManager.GetAllTherapists();
+            var list =await _therapistManager.GetAllTherapists();
+            if (list == null || list.Count == 0)
+                return NotFound("No patients found.");
+
+            return Ok(list);
         }
 
         // GET: api/Therapists/{id}
@@ -48,9 +54,16 @@ namespace Web_api.Controllers
 
         // DELETE: api/Therapists/{id}
         [HttpDelete("{therapistId}")]
-        public async Task DeleteTherapist([FromRoute] int therapistId)
+        public async Task<ActionResult<BLPatient>> DeleteTherapist([FromRoute] int therapistId)
         {
-            await _therapistManager.DeleteTherapist(therapistId);
+            if (therapistId <= 0)
+                return BadRequest("Invalid ID");
+
+            var delTherapist = await _therapistManager.DeleteTherapist(therapistId);
+            if (delTherapist == null)
+                return NotFound($"No patient found with ID {therapistId}");
+
+            return Ok(new { patientId = therapistId, first_name = delTherapist.FirstName, last_name = delTherapist.LastName, message = "Therapist  deleted" });
         }
     }
 }
