@@ -76,7 +76,10 @@ namespace BL.Services
         {
             if (therapist == null)
                 throw new NullReferenceException(nameof(therapist));
-
+            if (therapist.TherapistId>0)
+            {
+                therapist.TherapistId = 0;
+            }
             var t = _mapper.Map<Therapist>(therapist);
 
             if (t == null)
@@ -109,13 +112,13 @@ namespace BL.Services
                 throw new ArgumentNullException(nameof(therapist), "Therapist cannot be null.");
 
 
-            var dalTherapist = _mapper.Map<Therapist>(therapist);
+            var upTherapist = _mapper.Map<Therapist>(therapist);
 
-            if (dalTherapist == null)
+            if (upTherapist == null)
                 throw new InvalidOperationException("Mapping from BLTherapist to Therapist failed.");
 
 
-            var updatedTherapist = await _therapistsDal.UpdateTherapist(dalTherapist);
+            var updatedTherapist = await _therapistsDal.UpdateTherapist(upTherapist);
 
             if (updatedTherapist == null)
                 throw new InvalidOperationException("Failed to update the therapist in the database.");

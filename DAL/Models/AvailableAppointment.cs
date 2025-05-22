@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Common;
+using System;
 using System.Collections.Generic;
 
 namespace DAL.Models;
@@ -15,7 +16,7 @@ public partial class AvailableAppointment:AppointmentBase
 
     public int DurationMinutes { get; set; }
 
-    public int Specialization { get; set; }
+    public Specialization Specialization { get; set; }
 
     //public virtual Therapist Therapist { get; set; } = null!;
 }

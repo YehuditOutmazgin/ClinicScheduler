@@ -40,16 +40,23 @@ namespace Web_api.Controllers
 
         // POST: api/Therapists
         [HttpPost]
-        public async Task AddTherapist(BLTherapist therapist)
+        public async Task<ActionResult<BLPatient>> AddTherapist([FromBody] BLTherapist therapist)
         {
+            if (therapist == null)
+                return BadRequest("Patient data is required.");
+
             await _therapistManager.AddTherapist(therapist);
+            return Ok( new { id = therapist.TherapistId, first_name = therapist.FirstName, last_name = therapist.LastName });  
         }
+        
 
         // PUT: api/Therapists/{id}
         [HttpPut("{id}")]
-        public async Task UpdateTherapist(BLTherapist therapist)
+        public async Task<ActionResult<BLTherapist>> UpdateTherapist(BLTherapist therapist)
         {
-            await _therapistManager.UpdateTherapist(therapist);
+            if (therapist == null)
+                return BadRequest("Patient data is required.");
+            return  await _therapistManager.UpdateTherapist(therapist);
         }
 
         // DELETE: api/Therapists/{id}
@@ -63,7 +70,7 @@ namespace Web_api.Controllers
             if (delTherapist == null)
                 return NotFound($"No patient found with ID {therapistId}");
 
-            return Ok(new { patientId = therapistId, first_name = delTherapist.FirstName, last_name = delTherapist.LastName, message = "Therapist  deleted" });
+            return Ok(new { therapist_id = therapistId, first_name = delTherapist.FirstName, last_name = delTherapist.LastName, message = "Therapist  deleted" });
         }
     }
 }

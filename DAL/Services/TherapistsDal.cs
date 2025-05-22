@@ -27,7 +27,7 @@ namespace DAL.Services
             await _DB_Manager.SaveChangesAsync();
             return therapist;
         }
-
+        #region delete_func
         //public async Task<Therapist> DeleteTherapist(int id)
         //{
 
@@ -75,6 +75,7 @@ namespace DAL.Services
         //              await _DB_Manager.SaveChangesAsync();
         //    return therapist;
         //}
+        #endregion
         public async Task<Therapist> DeleteTherapist(int id)
         {
             var therapist = await _DB_Manager.Therapists.FirstAsync(th=>th.TherapistId==id);

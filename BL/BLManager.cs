@@ -90,9 +90,9 @@ namespace BL
                 await _therapistManager.AddTherapist(therapist);
             }
 
-            public async Task UpdateTherapist(BLTherapist therapist)
+            public async Task<BLTherapist> UpdateTherapist(BLTherapist therapist)
             {
-                await _therapistManager.UpdateTherapist(therapist);
+              return  await _therapistManager.UpdateTherapist(therapist);
             }
 
             public async Task<BLTherapist> DeleteTherapist(int therapistId)

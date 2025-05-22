@@ -69,10 +69,13 @@ public partial class DB_Manager : DbContext
                 .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Appointme__Thera__68D28DBC");
+  
         });
 
         modelBuilder.Entity<AvailableAppointment>(entity =>
         {
+            entity.Property(e => e.Specialization)
+      .HasConversion<string>();
             entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA26860CDA0");
 
             entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
@@ -148,6 +151,9 @@ public partial class DB_Manager : DbContext
 
         modelBuilder.Entity<Therapist>(entity =>
         {
+            entity.Property(t => t.Specialization)
+                      .HasConversion<string>();         
+
             entity.HasKey(e => e.TherapistId).HasName("PK__tmp_ms_x__4D621912942A1C8E");
 
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");

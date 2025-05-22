@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Api;
+using DAL.Common;
 using DAL.Models;
 using Microsoft.EntityFrameworkCore;
 namespace DAL.Services
@@ -29,12 +30,14 @@ namespace DAL.Services
                 .Where(a => a.AppointmentDate == date && a.TherapistId == therapistId).ToListAsync();
         }
 
-        public async Task<List<AvailableAppointment>> GetAppointmentsBySpecializationAndDate(DateOnly date, int specialization)
+        public async Task<List<AvailableAppointment>> GetAppointmentsBySpecializationAndDate(DateOnly date, Specialization specialization)
         {
                return await _DB_Manager.AvailableAppointments
                 .Where(a => a.AppointmentDate == date && a.Specialization == specialization)
                 .ToListAsync();
         }
+
+     
 
         public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId)
         {

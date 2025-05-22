@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BL.Models;
+using DAL.Models;
 namespace BL.Api
 {
     public interface IAppointmentsManager
@@ -79,6 +80,9 @@ namespace BL.Api
         Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId, DateOnly date);
         Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date); // move after to canceled
         Task<bool> DeleteAppointmentForDate(DateOnly date, string? reason = null);
+        //delete appointmet range
+       // Task DeleteRangeAppointments(List<Appointment> appointments);
+
         #endregion
 
         // if you think that you need to add something, please discuss it with me

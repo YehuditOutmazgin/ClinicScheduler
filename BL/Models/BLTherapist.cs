@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Common;
+using System;
 using System.Collections.Generic;
 
 namespace BL.Models;
@@ -11,7 +12,7 @@ public partial class BLTherapist
 
     public string LastName { get; set; } = null!;
 
-    public int Specialization { get; set; }
+    public Specialization Specialization { get; set; }
 
     public string PhoneNumber { get; set; } = null!;
 

@@ -38,6 +38,11 @@ namespace DAL.Services
             await _DB_Manager.SaveChangesAsync();
             return appointment;
         }
+        public async Task DeleteRangeAppointments(List<Appointment> appointments)
+        {
+            _DB_Manager.Appointments.RemoveRange(appointments); 
+            await _DB_Manager.SaveChangesAsync();
+        }
 
         public async Task<List<Appointment>> GetAppointmentsByPatientId(int patientId)
         {
