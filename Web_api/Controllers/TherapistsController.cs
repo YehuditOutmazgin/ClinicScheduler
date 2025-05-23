@@ -27,7 +27,7 @@ namespace Web_api.Controllers
             var list =await _therapistManager.GetAllTherapists();
             if (list == null || list.Count == 0)
                 return NotFound("No patients found.");
-
+            list.ForEach(t => t.Specialization.ToString());
             return Ok(list);
         }
 
@@ -55,8 +55,10 @@ namespace Web_api.Controllers
         public async Task<ActionResult<BLTherapist>> UpdateTherapist(BLTherapist therapist)
         {
             if (therapist == null)
-                return BadRequest("Patient data is required.");
-            return  await _therapistManager.UpdateTherapist(therapist);
+                return BadRequest("detailes were null");
+            var th = await _therapistManager.UpdateTherapist(therapist);
+            return Ok(new { therapist_id = th.TherapistId, first_name = th.FirstName, last_name = th.LastName,Specializion=th.Specialization.ToString(), message = "Therapist  updeted" });
+
         }
 
         // DELETE: api/Therapists/{id}

@@ -1,4 +1,5 @@
-﻿using DAL.Models;
+﻿using DAL.Common;
+using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -35,7 +36,7 @@ namespace DAL.Api
         /// <summary>
         /// Returns all passed appointments for a specific patient in a specific specialization.
         /// </summary>
-        Task<List<PassedAppointment>> GetAllPassedAppointmentsByPatientIdAndSpecialization(int patientId, int specialization);
+        Task<List<PassedAppointment>> GetAllPassedAppointmentsByPatientIdAndSpecialization(int patientId, Specialization specialization);
 
         /// <summary>
         /// Returns all passed appointments between a specific patient and therapist.
@@ -52,7 +53,7 @@ namespace DAL.Api
         /// <summary>
         /// Returns all passed appointments for a given specialization.
         /// </summary>
-        Task<List<PassedAppointment>> GetAllPassedAppointmentsBySpecialization(int specialization);
+        Task<List<PassedAppointment>> GetAllPassedAppointmentsBySpecialization(Specialization specialization);
 
         // ======= ADMIN ACTIONS =======
 

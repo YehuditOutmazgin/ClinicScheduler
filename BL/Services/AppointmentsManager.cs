@@ -136,10 +136,10 @@ namespace BL.Services
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointmentsCanceled());
         }
 
-        public async Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date)
-        {
-            return _mapper.Map<List<BLAppointment>>(await .GetAppointmentsByDate(date ?? DateOnly.FromDateTime(DateTime.Now)));
-        }
+        //public async Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date)
+        //{
+        //    return _mapper.Map<List<BLAppointment>>(await .GetAppointmentsByDate(date ?? DateOnly.FromDateTime(DateTime.Now)));
+        //}
 
         public async Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly? date)
         {
@@ -227,6 +227,11 @@ namespace BL.Services
         }
 
         public Task DeleteRangeAppointments(List<Appointment> appointments)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date)
         {
             throw new NotImplementedException();
         }

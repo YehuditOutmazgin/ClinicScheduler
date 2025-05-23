@@ -1,4 +1,5 @@
 ﻿using DAL.Api;
+using DAL.Common;
 using DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -57,7 +58,7 @@ namespace DAL.Services
             return await _dB_Manager.PassedAppointments.Where(c => c.PatientId == patientId).ToListAsync();
         }
 
-        public async Task<List<PassedAppointment>> GetAllPassedAppointmentsByPatientIdAndSpecialization(int patientId, int specialization)
+        public async Task<List<PassedAppointment>> GetAllPassedAppointmentsByPatientIdAndSpecialization(int patientId, Specialization specialization)
         {
             return await _dB_Manager.PassedAppointments.Where(c => c.PatientId == patientId&&c.Therapist.Specialization==specialization).ToListAsync();
 
@@ -88,7 +89,7 @@ namespace DAL.Services
 
         }
 
-        public async Task<List<PassedAppointment>> GetAllPassedAppointmentsBySpecialization(int specialization)
+        public async Task<List<PassedAppointment>> GetAllPassedAppointmentsBySpecialization(Specialization specialization)
         {
             return await _dB_Manager.PassedAppointments.Where(c => c.Therapist.Specialization == specialization).ToListAsync();
 

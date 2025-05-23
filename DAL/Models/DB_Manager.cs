@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DAL.Common;
 using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Models;
@@ -35,17 +36,17 @@ public partial class DB_Manager : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            string relativePath = @"Data\ClinicDB.mdf"; // או ClinicDB.mdf, תלוי בשם האמיתי
-            string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
+            string fullPath = @"C:\Tzip_project\ClinicScheduler\DAL\Data\ClinicDB.mdf";
 
             string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;
-                                     AttachDbFilename={fullPath};
-                                     Integrated Security=True;
-                                     Connect Timeout=30";
+                                 AttachDbFilename={fullPath};
+                                 Integrated Security=True;
+                                 Connect Timeout=30";
 
             optionsBuilder.UseSqlServer(connectionString);
         }
     }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -152,7 +153,9 @@ public partial class DB_Manager : DbContext
         modelBuilder.Entity<Therapist>(entity =>
         {
             entity.Property(t => t.Specialization)
-                      .HasConversion<string>();         
+            .HasConversion(
+                v => v.ToString(),                    // מ־enum למחרוזת ב־DB
+                v => (Specialization)Enum.Parse(typeof(Specialization), v));
 
             entity.HasKey(e => e.TherapistId).HasName("PK__tmp_ms_x__4D621912942A1C8E");
 

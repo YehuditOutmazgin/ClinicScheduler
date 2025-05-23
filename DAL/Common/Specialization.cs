@@ -8,7 +8,7 @@ namespace DAL.Common
 {
     public enum Specialization
     {
-        SpeechTherapy,
+        SpeechTherapy=1,
         OccupationalTherapy,
         PhysicalTherapy,
         Psychology,
