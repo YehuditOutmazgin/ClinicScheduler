@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B08rpQeb7jk=",
+  "dgSpecHash": "Xsr4s3xrmD4=",
   "success": true,
-  "projectFilePath": "H:\\newwwwwwww\\ClinicScheduler\\Web_api\\Web_api.csproj",
+  "projectFilePath": "H:\\proj_f\\ClinicScheduler\\Web_api\\Web_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -4789,11 +4789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\newwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj",
+      "projectUniqueName": "H:\\proj_f\\ClinicScheduler\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "H:\\newwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj",
+      "projectPath": "H:\\proj_f\\ClinicScheduler\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\",
-      "outputPath": "H:\\newwwwwwww\\ClinicScheduler\\DAL\\obj\\",
+      "outputPath": "H:\\proj_f\\ClinicScheduler\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4826,7 +4826,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -4873,7 +4874,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

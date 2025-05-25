@@ -2882,11 +2882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\newwwwwwww\\ClinicScheduler\\BL\\BL.csproj",
+      "projectUniqueName": "H:\\proj_f\\ClinicScheduler\\BL\\BL.csproj",
       "projectName": "BL",
-      "projectPath": "H:\\newwwwwwww\\ClinicScheduler\\BL\\BL.csproj",
+      "projectPath": "H:\\proj_f\\ClinicScheduler\\BL\\BL.csproj",
       "packagesPath": "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\",
-      "outputPath": "H:\\newwwwwwww\\ClinicScheduler\\BL\\obj\\",
+      "outputPath": "H:\\proj_f\\ClinicScheduler\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2908,8 +2908,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\newwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj": {
-              "projectPath": "H:\\newwwwwwww\\ClinicScheduler\\DAL\\DAL.csproj"
+            "H:\\proj_f\\ClinicScheduler\\DAL\\DAL.csproj": {
+              "projectPath": "H:\\proj_f\\ClinicScheduler\\DAL\\DAL.csproj"
             }
           }
         }
@@ -2923,7 +2923,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -2950,7 +2951,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
