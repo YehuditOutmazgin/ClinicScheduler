@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Web_api.Models;
 
-namespace Web_api.Contexts;
+namespace Web_api.Models;
 
-public partial class ClinicDbContext : DbContext
+public partial class DB_Manager : DbContext
 {
-    public ClinicDbContext()
+    public DB_Manager()
     {
     }
 
-    public ClinicDbContext(DbContextOptions<ClinicDbContext> options)
+    public DB_Manager(DbContextOptions<DB_Manager> options)
         : base(options)
     {
     }
@@ -32,7 +31,7 @@ public partial class ClinicDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Tzip_project\\ClinicScheduler\\DAL\\Data\\ClinicDB.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True");
+        => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\newwwwwwww\\ClinicScheduler\\DAL\\Data\\ClinicDB.mdf;Integrated Security=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -40,11 +39,18 @@ public partial class ClinicDbContext : DbContext
         {
             entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA29761D564");
 
+            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.Status).HasMaxLength(15);
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+
             entity.HasOne(d => d.Patient).WithMany(p => p.Appointments)
+                .HasForeignKey(d => d.PatientId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Appointme__Patie__51300E55");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.Appointments)
+                .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Appointme__Thera__68D28DBC");
         });
@@ -53,7 +59,12 @@ public partial class ClinicDbContext : DbContext
         {
             entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA26860CDA0");
 
+            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.Specialization).HasMaxLength(50);
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+
             entity.HasOne(d => d.Therapist).WithMany(p => p.AvailableAppointments)
+                .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Available__Thera__7AF13DF7");
         });
@@ -62,13 +73,19 @@ public partial class ClinicDbContext : DbContext
         {
             entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA2546861E7");
 
-            entity.Property(e => e.AppointmentId).ValueGeneratedNever();
+            entity.Property(e => e.AppointmentId)
+                .ValueGeneratedNever()
+                .HasColumnName("AppointmentID");
+            entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
 
             entity.HasOne(d => d.Patient).WithMany(p => p.CanceledAppointments)
+                .HasForeignKey(d => d.PatientId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__CanceledA__Patie__0E04126B");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.CanceledAppointments)
+                .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__CanceledA__Thera__0EF836A4");
         });
@@ -77,13 +94,20 @@ public partial class ClinicDbContext : DbContext
         {
             entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA2306CC965");
 
-            entity.Property(e => e.AppointmentId).ValueGeneratedNever();
+            entity.Property(e => e.AppointmentId)
+                .ValueGeneratedNever()
+                .HasColumnName("AppointmentID");
+            entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.Status).HasMaxLength(50);
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
 
             entity.HasOne(d => d.Patient).WithMany(p => p.PassedAppointments)
+                .HasForeignKey(d => d.PatientId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__PassedApp__Patie__640DD89F");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.PassedAppointments)
+                .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__PassedApp__Thera__6501FCD8");
         });
@@ -91,20 +115,35 @@ public partial class ClinicDbContext : DbContext
         modelBuilder.Entity<Patient>(entity =>
         {
             entity.HasKey(e => e.PatientId).HasName("PK__Patients__970EC34695D48E27");
+
+            entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.FirstName).HasMaxLength(50);
+            entity.Property(e => e.LastName).HasMaxLength(50);
+            entity.Property(e => e.PhoneNumber).HasMaxLength(15);
         });
 
         modelBuilder.Entity<Therapist>(entity =>
         {
             entity.HasKey(e => e.TherapistId).HasName("PK__tmp_ms_x__4D621912942A1C8E");
 
-            entity.Property(e => e.PhoneNumber).IsFixedLength();
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+            entity.Property(e => e.FirstName).HasMaxLength(50);
+            entity.Property(e => e.LastName).HasMaxLength(50);
+            entity.Property(e => e.PhoneNumber)
+                .HasMaxLength(10)
+                .IsFixedLength();
+            entity.Property(e => e.Specialization).HasMaxLength(50);
         });
 
         modelBuilder.Entity<WorkHour>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC07412110F6");
 
+            entity.Property(e => e.DayOfWeek).HasMaxLength(20);
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+
             entity.HasOne(d => d.Therapist).WithMany(p => p.WorkHours)
+                .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__WorkHours__Thera__65F62111");
         });

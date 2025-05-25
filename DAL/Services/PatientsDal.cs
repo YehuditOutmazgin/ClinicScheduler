@@ -93,7 +93,7 @@ namespace DAL.Services
                     AppointmentId = 0,
                     AppointmentDate = a.AppointmentDate,
                     TherapistId = a.TherapistId,
-                    Specialization = a.Therapist.Specialization,
+                    Specialization = a.Therapist.Specialization, 
                     AppointmentTime = a.AppointmentTime,
 
                 });
