@@ -24,6 +24,17 @@ namespace DAL.Services
             await _DB_Manager.SaveChangesAsync();
         }
 
+        //--------------------------------------------------------------------------
+        public async Task AddAppointments(List<AvailableAppointment> appointments)
+        {
+            foreach (var appointment in appointments)
+            {
+                await _DB_Manager.AvailableAppointments.AddAsync(appointment);
+            }
+            await _DB_Manager.SaveChangesAsync();
+        }
+        //----------------------------------------------------------------------
+
         public async Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId)
         {
             return await _DB_Manager.AvailableAppointments

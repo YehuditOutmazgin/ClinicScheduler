@@ -41,7 +41,7 @@ namespace BL.Api
         #endregion
         #region available appointment
         Task<BLAvailableAppointment> SetAvailableAppointment(BLAvailableAppointment availableAppointment);
-        Task<BLAvailableAppointment> SetAvailableAppointmentForPeriod(BLAvailableAppointment availableAppointment);// monthly or yearly
+        Task<List<BLAvailableAppointment>> SetAvailableAppointmentForPeriod();// monthly or yearly
         #endregion
         #region canceled appointment
         //nothing for now

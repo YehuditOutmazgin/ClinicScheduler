@@ -6,6 +6,7 @@ using DAL.Api;
 using AutoMapper;
 using BL;
 using System.Text.Json.Serialization;
+using BL.service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,10 @@ builder.Services.AddSingleton<DB_Manager>();
 builder.Services.AddSingleton<IPatientsManager, PatientsManager>();
 builder.Services.AddSingleton<IAppointmentsManager, AppointmentManager>();
 builder.Services.AddSingleton<ITherapistManager, TherapistsManager>();
+//--------------------------------------------------------------------------------------------------------------
+builder.Services.AddSingleton<IAvailableQueueManager, AvailableQueueManager>();
+//--------------------------------------------------------------------------------------------------------------
+
 //Dal
 builder.Services.AddSingleton<IWorkHoursDal, WorkHoursDal>();
 builder.Services.AddSingleton<ITherapistsDal, TherapistsDal>();
@@ -28,12 +33,19 @@ builder.Services.AddSingleton<IAvailableAppointmentsDal, AvailableAppointmentsDa
 builder.Services.AddSingleton<IPatientsDal, PatientsDal>();
 builder.Services.AddSingleton<IPassedAppointmentsDal, PassedAppointmentsDal>();
 builder.Services.AddSingleton<ICanceledAppointmentsDal, CanceledAppointmentsDal>();
+
 //manager
 builder.Services.AddScoped<BLManager>();
 
 // Register AutoMapper
 
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
+//------------------------------------------------------------
+
+builder.Services.AddHostedService<MonthlyTaskService>();
+builder.Services.AddHttpClient<IAvailableQueueManager, AvailableQueueManager>();
+
+//------------------------------------------------------------
 
 builder.Services.AddControllers().AddJsonOptions(opt=>opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 

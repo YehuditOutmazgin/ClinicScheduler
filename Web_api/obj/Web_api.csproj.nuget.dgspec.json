@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Project\\trying\\ClinicScheduler\\Web_api\\Web_api.csproj": {}
+    "H:\\c#\\neww\\ClinicScheduler\\Web_api\\Web_api.csproj": {}
   },
   "projects": {
-    "H:\\Project\\trying\\ClinicScheduler\\BL\\BL.csproj": {
+    "H:\\c#\\neww\\ClinicScheduler\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Project\\trying\\ClinicScheduler\\BL\\BL.csproj",
+        "projectUniqueName": "H:\\c#\\neww\\ClinicScheduler\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "H:\\Project\\trying\\ClinicScheduler\\BL\\BL.csproj",
-        "packagesPath": "C:\\Users\\אוטמזגין יהודית\\.nuget\\packages\\",
-        "outputPath": "H:\\Project\\trying\\ClinicScheduler\\BL\\obj\\",
+        "projectPath": "H:\\c#\\neww\\ClinicScheduler\\BL\\BL.csproj",
+        "packagesPath": "C:\\Users\\סמן טוב רבקה\\.nuget\\packages\\",
+        "outputPath": "H:\\c#\\neww\\ClinicScheduler\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\אוטמזגין יהודית\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\סמן טוב רבקה\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\Project\\trying\\ClinicScheduler\\DAL\\DAL.csproj": {
-                "projectPath": "H:\\Project\\trying\\ClinicScheduler\\DAL\\DAL.csproj"
+              "H:\\c#\\neww\\ClinicScheduler\\DAL\\DAL.csproj": {
+                "projectPath": "H:\\c#\\neww\\ClinicScheduler\\DAL\\DAL.csproj"
               }
             }
           }
@@ -57,6 +57,14 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -79,20 +87,20 @@
         }
       }
     },
-    "H:\\Project\\trying\\ClinicScheduler\\DAL\\DAL.csproj": {
+    "H:\\c#\\neww\\ClinicScheduler\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Project\\trying\\ClinicScheduler\\DAL\\DAL.csproj",
+        "projectUniqueName": "H:\\c#\\neww\\ClinicScheduler\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "H:\\Project\\trying\\ClinicScheduler\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\אוטמזגין יהודית\\.nuget\\packages\\",
-        "outputPath": "H:\\Project\\trying\\ClinicScheduler\\DAL\\obj\\",
+        "projectPath": "H:\\c#\\neww\\ClinicScheduler\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\סמן טוב רבקה\\.nuget\\packages\\",
+        "outputPath": "H:\\c#\\neww\\ClinicScheduler\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\אוטמזגין יהודית\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\סמן טוב רבקה\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -170,20 +178,20 @@
         }
       }
     },
-    "H:\\Project\\trying\\ClinicScheduler\\Web_api\\Web_api.csproj": {
+    "H:\\c#\\neww\\ClinicScheduler\\Web_api\\Web_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Project\\trying\\ClinicScheduler\\Web_api\\Web_api.csproj",
+        "projectUniqueName": "H:\\c#\\neww\\ClinicScheduler\\Web_api\\Web_api.csproj",
         "projectName": "Web_api",
-        "projectPath": "H:\\Project\\trying\\ClinicScheduler\\Web_api\\Web_api.csproj",
-        "packagesPath": "C:\\Users\\אוטמזגין יהודית\\.nuget\\packages\\",
-        "outputPath": "H:\\Project\\trying\\ClinicScheduler\\Web_api\\obj\\",
+        "projectPath": "H:\\c#\\neww\\ClinicScheduler\\Web_api\\Web_api.csproj",
+        "packagesPath": "C:\\Users\\סמן טוב רבקה\\.nuget\\packages\\",
+        "outputPath": "H:\\c#\\neww\\ClinicScheduler\\Web_api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\אוטמזגין יהודית\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\סמן טוב רבקה\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -199,8 +207,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\Project\\trying\\ClinicScheduler\\BL\\BL.csproj": {
-                "projectPath": "H:\\Project\\trying\\ClinicScheduler\\BL\\BL.csproj"
+              "H:\\c#\\neww\\ClinicScheduler\\BL\\BL.csproj": {
+                "projectPath": "H:\\c#\\neww\\ClinicScheduler\\BL\\BL.csproj"
               }
             }
           }

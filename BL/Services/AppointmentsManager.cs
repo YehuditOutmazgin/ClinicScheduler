@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using BL.Api;
 using BL.Models;
+using BL.service;
 using DAL.Api;
 using DAL.Models;
+using DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,14 +19,20 @@ namespace BL.Services
         IPassedAppointmentsDal _passedAppointmentsDal;
         ICanceledAppointmentsDal _canceledAppointmentsDal;
         IPatientsDal _patientsDal;
+        ITherapistsDal _therapistsDal;
+        IWorkHoursDal _workHoursDal;
         IMapper _mapper;///
-        public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPassedAppointmentsDal passedAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal)
+        IAvailableQueueManager _availableQueueManager;
+        public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPassedAppointmentsDal passedAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal, IAvailableQueueManager availableQueueManager, IWorkHoursDal workHoursDal,ITherapistsDal therapistsDal)
         {
             _appointmentsDal = appointmentsDal;
             _availableAppointmentsDal = availableAppointmentsDal;
             _passedAppointmentsDal = passedAppointmentsDal;
             _canceledAppointmentsDal = canceledAppointmentsDal;
             _mapper = mapper;
+            _availableQueueManager = availableQueueManager;
+            _workHoursDal = workHoursDal;
+            _therapistsDal = therapistsDal;
         }
         public async Task<BLAppointment> DeleteAppointmentByPatientId(int patientId, int appointmentId)
         {
@@ -217,11 +225,68 @@ namespace BL.Services
         {
             throw new NotImplementedException();
         }
-
-        public async Task<BLAvailableAppointment> SetAvailableAppointmentForPeriod(BLAvailableAppointment availableAppointment)
+ //----------------------------------------------------------------------------------------------------------------
+        public async Task<List<BLAvailableAppointment>> SetAvailableAppointmentForPeriod()
         {
-            throw new NotImplementedException();
+            int therapistId;
+            List<Therapist> therapists = await _therapistsDal.GetAllTherapists();
+            List<AvailableAppointment> list = new List<AvailableAppointment>();
+            foreach(Therapist therapist in therapists)
+            {
+                therapistId = therapist.TherapistId;
+                
+                List<WorkHour> therapistWorkDays = await _workHoursDal.GetTherapistSchedule(therapistId);
+
+                DateTime startDate = DateTime.Today.AddMonths(2);
+                DateTime endDate = startDate.AddMonths(1);
+
+
+                for (DateTime date = startDate; date < endDate; date = date.AddDays(1))
+                {
+                    
+                    if (date.DayOfWeek == DayOfWeek.Saturday)
+                        continue;
+
+                    
+                    var workHoursForDay = therapistWorkDays
+                        .Where(wh => Enum.TryParse<DayOfWeek>(wh.DayOfWeek, out var dw) && dw == date.DayOfWeek)
+                        .ToList();
+
+                    if (!workHoursForDay.Any())
+                        continue; 
+
+                    
+                    if (await _availableQueueManager.IsHolidayAsync(date))
+                        continue;
+
+                   
+                    foreach (var wh in workHoursForDay)
+                    {
+                        
+                        for (var time = wh.StartTime; time < wh.EndTime; time = time.AddMinutes(45))
+                        {
+                            AvailableAppointment newAvailable = new AvailableAppointment
+                            {
+                                TherapistId = therapistId,
+                                AppointmentDate = DateOnly.FromDateTime(date),
+                                AppointmentTime = time,
+                                DurationMinutes = 45,
+                                Specialization = _therapistsDal.GetTherapistById(therapistId).Result.Specialization,
+                                Therapist = _therapistsDal.GetTherapistById(therapistId).Result
+                            };
+
+                            list.Add(newAvailable);
+                            await _availableAppointmentsDal.AddAppointment(_mapper.Map<AvailableAppointment>(newAvailable));
+                        }
+                    }
+                }
+            }
+
+            await _availableAppointmentsDal.AddAppointments(list);
+            return _mapper.Map<List<BLAvailableAppointment>>(list);
         }
+
+        //---------------------------------------------------------------------------------------------------------------------------------------
 
         public async Task<List<BLPassedAppointment>> SetPassedAppointments()
         {
