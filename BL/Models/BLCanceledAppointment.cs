@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace BL.Models;
 
-public partial class BLCanceledAppointment
+public partial class BLCanceledAppointment:BLAppointmentBase
 {
-    public int Id { get; set; }
-    public int AppointmentId { get; set; }
-    public int PatientId { get; set; }
-    public string? Note { get; set; }
 
-    public virtual BLAppointment Appointment { get; set; } = null!;
+    //public int PatientId { get; set; }
+
+
+
+    public string? Note { get; set; }
     public virtual BLPatient Patient { get; set; } = null!;
+
 }
