@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "H:\\projects\\new6\\ClinicScheduler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blpassedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blpassedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blcanceledappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blcanceledappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blavailableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blavailableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blappointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blappointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\bltherapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\bltherapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blworkhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blworkhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\bltherapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\bltherapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blappointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blappointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blavailableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blavailableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blcanceledappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blcanceledappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blpassedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blpassedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|h:\\projects\\new6\\clinicscheduler\\web_api\\controllers\\appointment controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\appointment controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|h:\\projects\\new6\\clinicscheduler\\bl\\models\\blappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|h:\\projects\\new6\\clinicscheduler\\dal\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -189,19 +185,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BLPassedAppointment.cs",
-              "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLPassedAppointment.cs",
-              "RelativeDocumentMoniker": "BL\\Models\\BLPassedAppointment.cs",
-              "ToolTip": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLPassedAppointment.cs*",
-              "RelativeToolTip": "BL\\Models\\BLPassedAppointment.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:17:44.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "BLAvailableAppointment.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLAvailableAppointment.cs",
@@ -210,12 +193,11 @@
               "RelativeToolTip": "BL\\Models\\BLAvailableAppointment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:16:43.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:16:43.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "BLAppointmentBase.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLAppointmentBase.cs",
               "RelativeDocumentMoniker": "BL\\Models\\BLAppointmentBase.cs",
@@ -223,25 +205,48 @@
               "RelativeToolTip": "BL\\Models\\BLAppointmentBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:16:44.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:16:44.187Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "BLAppointment.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLAppointment.cs",
               "RelativeDocumentMoniker": "BL\\Models\\BLAppointment.cs",
               "ToolTip": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLAppointment.cs",
               "RelativeToolTip": "BL\\Models\\BLAppointment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:16:13.682Z",
+              "WhenOpened": "2025-05-26T17:16:13.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BLTherapist.cs",
+              "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLTherapist.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLTherapist.cs",
+              "ToolTip": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLTherapist.cs",
+              "RelativeToolTip": "BL\\Models\\BLTherapist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:50:58.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "BLPassedAppointment.cs",
+              "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLPassedAppointment.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLPassedAppointment.cs",
+              "ToolTip": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLPassedAppointment.cs",
+              "RelativeToolTip": "BL\\Models\\BLPassedAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:17:44.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BLCanceledAppointment.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLCanceledAppointment.cs",
               "RelativeDocumentMoniker": "BL\\Models\\BLCanceledAppointment.cs",
@@ -249,12 +254,11 @@
               "RelativeToolTip": "BL\\Models\\BLCanceledAppointment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:06:05.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:06:05.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "BLPatient.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLPatient.cs",
               "RelativeDocumentMoniker": "BL\\Models\\BLPatient.cs",
@@ -262,38 +266,11 @@
               "RelativeToolTip": "BL\\Models\\BLPatient.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:05:31.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:05:31.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BLTherapist.cs",
-              "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLTherapist.cs",
-              "RelativeDocumentMoniker": "BL\\Models\\BLTherapist.cs",
-              "ToolTip": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLTherapist.cs",
-              "RelativeToolTip": "BL\\Models\\BLTherapist.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T19:50:58.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Appointment Controller.cs",
-              "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\Web_api\\Controllers\\Appointment Controller.cs",
-              "RelativeDocumentMoniker": "Web_api\\Controllers\\Appointment Controller.cs",
-              "ToolTip": "H:\\projects\\new6\\ClinicScheduler\\Web_api\\Controllers\\Appointment Controller.cs",
-              "RelativeToolTip": "Web_api\\Controllers\\Appointment Controller.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T16:02:17.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "BLWorkHour.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Models\\BLWorkHour.cs",
               "RelativeDocumentMoniker": "BL\\Models\\BLWorkHour.cs",
@@ -301,12 +278,11 @@
               "RelativeToolTip": "BL\\Models\\BLWorkHour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:19:24.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:19:24.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "IAppointmentsManager.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Api\\IAppointmentsManager.cs",
               "RelativeDocumentMoniker": "BL\\Api\\IAppointmentsManager.cs",
@@ -318,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "TherapistsController.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\Web_api\\Controllers\\TherapistsController.cs",
               "RelativeDocumentMoniker": "Web_api\\Controllers\\TherapistsController.cs",
@@ -330,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "AppointmentsManager.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Services\\AppointmentsManager.cs",
               "RelativeDocumentMoniker": "BL\\Services\\AppointmentsManager.cs",
@@ -342,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "dbo.Appointments [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__PROJECT_TRYING_CLINICSCHEDULER_DAL_DATA_CLINICDB.MDF/True/SqlTable/dbo.Appointments.sql",
               "ToolTip": "dbo.Appointments [Data]",
@@ -351,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "AppointmentsDal.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Services\\AppointmentsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\AppointmentsDal.cs",
@@ -363,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "WorkHour.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Models\\WorkHour.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\WorkHour.cs",
@@ -371,12 +347,11 @@
               "RelativeToolTip": "DAL\\Models\\WorkHour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T17:44:29.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T17:44:29.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Appointment.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Models\\Appointment.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\Appointment.cs",
@@ -388,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "AvailableAppointmentsDal.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Services\\AvailableAppointmentsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\AvailableAppointmentsDal.cs",
@@ -400,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "PatientController.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\Web_api\\Controllers\\PatientController.cs",
               "RelativeDocumentMoniker": "Web_api\\Controllers\\PatientController.cs",
@@ -408,12 +383,11 @@
               "RelativeToolTip": "Web_api\\Controllers\\PatientController.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T17:38:29.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T17:38:29.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "TherapistsManager.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Services\\TherapistsManager.cs",
               "RelativeDocumentMoniker": "BL\\Services\\TherapistsManager.cs",
@@ -425,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "Exeptions.csproj",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\Exeptions\\Exeptions.csproj",
               "RelativeDocumentMoniker": "Exeptions\\Exeptions.csproj",
@@ -437,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "DB_Manager.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Models\\DB_Manager.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\DB_Manager.cs",
@@ -449,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "Therapist.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Models\\Therapist.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\Therapist.cs",
@@ -461,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "DAL.csproj",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\DAL.csproj",
               "RelativeDocumentMoniker": "DAL\\DAL.csproj",
@@ -473,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "TherapistsDal.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Services\\TherapistsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\TherapistsDal.cs",
@@ -485,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "PatientsDal.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Services\\PatientsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\PatientsDal.cs",
@@ -497,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "AvailableAppointment.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Models\\AvailableAppointment.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\AvailableAppointment.cs",
@@ -509,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "WorkHoursDal.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Services\\WorkHoursDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\WorkHoursDal.cs",
@@ -521,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "CanceledAppointment.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Models\\CanceledAppointment.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\CanceledAppointment.cs",
@@ -533,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "PassedAppointment.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Models\\PassedAppointment.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\PassedAppointment.cs",
@@ -545,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "Patient.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Models\\Patient.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\Patient.cs",
@@ -557,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "Specialization.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Common\\Specialization.cs",
               "RelativeDocumentMoniker": "DAL\\Common\\Specialization.cs",
@@ -569,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "PatientsManager.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Services\\PatientsManager.cs",
               "RelativeDocumentMoniker": "BL\\Services\\PatientsManager.cs",
@@ -581,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -591,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "appsettings.json",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\Web_api\\appsettings.json",
               "RelativeDocumentMoniker": "Web_api\\appsettings.json",
@@ -603,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "Mapper.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Mapper.cs",
               "RelativeDocumentMoniker": "BL\\Mapper.cs",
@@ -615,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "dbo.Appointments.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__C__NEW_CLINICSCHEDULER_DAL_DATA_DB.MDF/True/SqlTable/dbo.Appointments.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__C__NEW_CLINICSCHEDULER_DAL_DATA_DB.MDF/True/SqlTable/dbo.Appointments.sql",
@@ -624,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -634,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\Web_api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Web_api\\appsettings.Development.json",
@@ -646,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\Web_api\\Program.cs",
               "RelativeDocumentMoniker": "Web_api\\Program.cs",
@@ -658,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "CanceledAppointmentsDal.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Services\\CanceledAppointmentsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\CanceledAppointmentsDal.cs",
@@ -670,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "ITherapistManager.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\BL\\Api\\ITherapistManager.cs",
               "RelativeDocumentMoniker": "BL\\Api\\ITherapistManager.cs",
@@ -682,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "Web_api.http",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\Web_api\\Web_api.http",
               "RelativeDocumentMoniker": "Web_api\\Web_api.http",
@@ -694,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "ITherapistsDal.cs",
               "DocumentMoniker": "H:\\projects\\new6\\ClinicScheduler\\DAL\\Api\\ITherapistsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Api\\ITherapistsDal.cs",
@@ -706,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "dbo.CanceledAppointments.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__NEW_CLINICSCHEDULER_DAL_DATA_DB.MDF/True/SqlTable/dbo.CanceledAppointments.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__NEW_CLINICSCHEDULER_DAL_DATA_DB.MDF/True/SqlTable/dbo.CanceledAppointments.sql",
