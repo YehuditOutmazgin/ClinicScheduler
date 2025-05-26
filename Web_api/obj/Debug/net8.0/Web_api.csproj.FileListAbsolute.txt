@@ -608,9 +608,9 @@ H:\proj_f\ClinicScheduler\Web_api\obj\Debug\net8.0\refint\Web_api.dll
 H:\proj_f\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.pdb
 H:\proj_f\ClinicScheduler\Web_api\obj\Debug\net8.0\Web_api.genruntimeconfig.cache
 H:\proj_f\ClinicScheduler\Web_api\obj\Debug\net8.0\ref\Web_api.dll
+H:\Project\trying\ClinicScheduler\Web_api\bin\Debug\net8.0\Data\ClinicDB.mdf
 H:\Project\trying\ClinicScheduler\Web_api\bin\Debug\net8.0\appsettings.Development.json
 H:\Project\trying\ClinicScheduler\Web_api\bin\Debug\net8.0\appsettings.json
-H:\Project\trying\ClinicScheduler\Web_api\bin\Debug\net8.0\Data\ClinicDB.mdf
 H:\Project\trying\ClinicScheduler\Web_api\bin\Debug\net8.0\Web_api.exe
 H:\Project\trying\ClinicScheduler\Web_api\bin\Debug\net8.0\Web_api.deps.json
 H:\Project\trying\ClinicScheduler\Web_api\bin\Debug\net8.0\Web_api.runtimeconfig.json
