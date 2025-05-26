@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "H:\\c#\\neww\\ClinicScheduler\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|h:\\c#\\neww\\clinicscheduler\\web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +73,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAPMVAAAAAAAAAAAiwKAVAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-26T18:30:07.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AvailableQueueManager.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\BL\\Services\\AvailableQueueManager.cs",
               "RelativeDocumentMoniker": "BL\\Services\\AvailableQueueManager.cs",
@@ -78,12 +92,11 @@
               "RelativeToolTip": "BL\\Services\\AvailableQueueManager.cs",
               "ViewState": "AQIAADIAAAAAAAAAAAAYwFkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:02:19.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T18:02:19.351Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MonthlyTaskService.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\BL\\Services\\MonthlyTaskService.cs",
               "RelativeDocumentMoniker": "BL\\Services\\MonthlyTaskService.cs",
@@ -91,12 +104,11 @@
               "RelativeToolTip": "BL\\Services\\MonthlyTaskService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:53:01.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:53:01.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AvailableAppointmentsDal.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\DAL\\Services\\AvailableAppointmentsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\AvailableAppointmentsDal.cs",
@@ -104,12 +116,11 @@
               "RelativeToolTip": "DAL\\Services\\AvailableAppointmentsDal.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAxwBsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:33:37.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:33:37.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AppointmentBase.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\DAL\\Models\\AppointmentBase.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\AppointmentBase.cs",
@@ -117,12 +128,11 @@
               "RelativeToolTip": "DAL\\Models\\AppointmentBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:31:15.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:31:15.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AvailableAppointment.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\DAL\\Models\\AvailableAppointment.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\AvailableAppointment.cs",
@@ -130,12 +140,11 @@
               "RelativeToolTip": "DAL\\Models\\AvailableAppointment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:31:16.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:31:16.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ITherapistsDal.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\DAL\\Api\\ITherapistsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Api\\ITherapistsDal.cs",
@@ -143,25 +152,23 @@
               "RelativeToolTip": "DAL\\Api\\ITherapistsDal.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:25:25.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:25:25.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\Web_api\\Program.cs",
               "RelativeDocumentMoniker": "Web_api\\Program.cs",
-              "ToolTip": "H:\\c#\\neww\\ClinicScheduler\\Web_api\\Program.cs*",
-              "RelativeToolTip": "Web_api\\Program.cs*",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADAAAAAAAAAA",
+              "ToolTip": "H:\\c#\\neww\\ClinicScheduler\\Web_api\\Program.cs",
+              "RelativeToolTip": "Web_api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:47:09.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:47:09.477Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AppointmentsManager.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\BL\\Services\\AppointmentsManager.cs",
               "RelativeDocumentMoniker": "BL\\Services\\AppointmentsManager.cs",
@@ -169,12 +176,11 @@
               "RelativeToolTip": "BL\\Services\\AppointmentsManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:05:47.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:05:47.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IAppointmentsManager.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\BL\\Api\\IAppointmentsManager.cs",
               "RelativeDocumentMoniker": "BL\\Api\\IAppointmentsManager.cs",
@@ -182,12 +188,11 @@
               "RelativeToolTip": "BL\\Api\\IAppointmentsManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:22:58.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:22:58.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IAvailableAppointmentsDal.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\DAL\\Api\\IAvailableAppointmentsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Api\\IAvailableAppointmentsDal.cs",
@@ -195,12 +200,11 @@
               "RelativeToolTip": "DAL\\Api\\IAvailableAppointmentsDal.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:36:55.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:36:55.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TherapistsDal.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\DAL\\Services\\TherapistsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\TherapistsDal.cs",
@@ -208,12 +212,11 @@
               "RelativeToolTip": "DAL\\Services\\TherapistsDal.cs",
               "ViewState": "AQIAAGUAAAAAAAAAAAAwwIAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:16:44.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:16:44.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "BLWorkHour.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\BL\\Models\\BLWorkHour.cs",
               "RelativeDocumentMoniker": "BL\\Models\\BLWorkHour.cs",
@@ -221,21 +224,19 @@
               "RelativeToolTip": "BL\\Models\\BLWorkHour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:11:04.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:11:04.441Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BLAvailableAppointment.cs",
               "DocumentMoniker": "H:\\c#\\neww\\ClinicScheduler\\BL\\Models\\BLAvailableAppointment.cs",
               "RelativeDocumentMoniker": "BL\\Models\\BLAvailableAppointment.cs",
               "ToolTip": "H:\\c#\\neww\\ClinicScheduler\\BL\\Models\\BLAvailableAppointment.cs",
               "RelativeToolTip": "BL\\Models\\BLAvailableAppointment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:08:51.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T17:08:51.983Z"
             }
           ]
         }

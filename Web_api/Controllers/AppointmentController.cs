@@ -6,10 +6,10 @@ namespace Web_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Appointment_Controller : ControllerBase
+    public class AppointmentController : ControllerBase
     {   IAppointmentsManager _appointmentsManager;
 
-        public Appointment_Controller(IAppointmentsManager appointmentsManager)
+        public AppointmentController(IAppointmentsManager appointmentsManager)
         {
             _appointmentsManager = appointmentsManager;
         }
