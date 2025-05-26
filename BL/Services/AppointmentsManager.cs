@@ -110,17 +110,25 @@ namespace BL.Services
 
         public async Task<BLAvailableAppointment> DeleteAvailableAppointment(int appointmentId)
         {
-            throw new NotImplementedException();
+           return _mapper.Map < BLAvailableAppointment >(await _availableAppointmentsDal.RemoveAppointment(appointmentId));
         }
 
         public async Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<BLCanceledAppointment>(await _canceledAppointmentsDal.RemoveCanceledAppointment(appointmentId));
         }
 
-        public bool DeleteOldPassedAppointment()
+        public async Task<bool> DeleteOldPassedAppointment(DateOnly? endDate =null)
         {
-            throw new NotImplementedException();
+            if (endDate == null) { endDate = new DateOnly();
+                DateTime dateTime = DateTime.Now;
+                dateTime = dateTime.AddYears(-1);
+                endDate= DateOnly.FromDateTime(dateTime).AddDays(-1);
+            }
+            else if (endDate>= DateOnly.FromDateTime(DateTime.Now))
+                throw new ArgumentException("TheDate is not correct.", nameof(endDate));
+
+            return await _passedAppointmentsDal.DeleteAllPassedAppointmentsOlderThan(endDate.Value);
         }
 
         public async Task<List<BLAppointment>> GetAllAppointments()
@@ -145,7 +153,10 @@ namespace BL.Services
         {
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAppointmentsByTherapistIdAndDate(therapistId, date ?? DateOnly.FromDateTime(DateTime.Now)));
         }
-
+        public async Task<List<BLAppointment>> GetAppointmentsByTherapistIdAndWeek(string thrapistId, DateOnly? date)
+        {
+            throw new NotImplementedException();
+        }
         public async Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int therapistId, DateOnly date, int patientId)
         {
             throw new NotImplementedException();
@@ -159,7 +170,8 @@ namespace BL.Services
         public async Task<List<BLAvailableAppointment>> GetAvailableAppointmentsForSpecificSpecializationForWeek(string specialization, DateOnly date)
         {
             throw new NotImplementedException();
-        }
+        }        
+
 
         public async Task<List<BLAvailableAppointment>> GetAvailableAppointmentsForSpecificTherapistForWeek(int therapistId, DateOnly date)
         {

@@ -16,6 +16,8 @@ namespace BL.Api
         Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date);
         Task<List<BLAppointment>> GetAllAppointments();
         Task<List<BLAppointment>> GetAllAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
+        Task<List<BLAppointment>> GetAppointmentsByTherapistIdAndWeek(string thrapistId, DateOnly? date);
+
         #endregion
         #region available appointments
         Task<List<BLAvailableAppointment>> GetAvailableAppointmentsForSpecificSpecializationForWeek(string specialization, DateOnly date);
@@ -75,16 +77,23 @@ namespace BL.Api
         Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId);
         #endregion
         #region passed appointment
-        bool DeleteOldPassedAppointment();
+        /// <summary>
+        /// ////////////////////////////////////////////////////////////////////////////////////////////
+        /// </summary>
+        /// <returns></returns>
+        Task<bool> DeleteOldPassedAppointment(DateOnly? endDate = null);
         #endregion
         Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId, DateOnly date);
         Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date); // move after to canceled
         Task<bool> DeleteAppointmentForDate(DateOnly date, string? reason = null);
         //delete appointmet range
-       // Task DeleteRangeAppointments(List<Appointment> appointments);
+        // Task DeleteRangeAppointments(List<Appointment> appointments);
 
         #endregion
 
+        #region general
+
+        #endregion
         // if you think that you need to add something, please discuss it with me
         //good luck!!
     }

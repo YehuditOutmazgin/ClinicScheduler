@@ -4783,23 +4783,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\": {},
+    "C:\\Users\\אוטמזגין יהודית\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\proj_f\\ClinicScheduler\\DAL\\DAL.csproj",
+      "projectUniqueName": "H:\\Project\\trying\\ClinicScheduler\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "H:\\proj_f\\ClinicScheduler\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\איטח צפורה דודי\\.nuget\\packages\\",
-      "outputPath": "H:\\proj_f\\ClinicScheduler\\DAL\\obj\\",
+      "projectPath": "H:\\Project\\trying\\ClinicScheduler\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\אוטמזגין יהודית\\.nuget\\packages\\",
+      "outputPath": "H:\\Project\\trying\\ClinicScheduler\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\איטח צפורה דודי\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\אוטמזגין יהודית\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4826,8 +4826,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -4874,7 +4873,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -65,7 +65,7 @@ namespace DAL.Api
         /// <summary>
         /// Deletes all passed appointments that occurred before a given date .
         /// </summary>
-        void DeleteAllPassedAppointmentsOlderThan(DateOnly date);
+        Task<bool> DeleteAllPassedAppointmentsOlderThan(DateOnly date);
 
         /// <summary>
         /// Deletes all passed appointments that were send.

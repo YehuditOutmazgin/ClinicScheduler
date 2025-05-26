@@ -82,9 +82,9 @@ namespace DAL.Services
                 throw new Exception("therapist details were worng");
             if (date == null)
                 date = DateOnly.FromDateTime(DateTime.Now);
-            else if (!_DB_Manager.Appointments.Any(c => c.AppointmentDate == date))
-                throw new Exception("date detailes were worng");
-            List<Appointment> appointments = await _DB_Manager.Appointments.Where(c => c.AppointmentDate == date && c.TherapistId == therapistId)
+            //else if (!_DB_Manager.Appointments.Any(c => c.AppointmentDate == date))
+            //    throw new Exception("date detailes were worng");
+            List<Appointment> appointments = await _DB_Manager.Appointments.Where(c =>c.AppointmentDate == date && c.TherapistId == therapistId).Include(a => a.Patient)
                 .ToListAsync();
             return appointments;
         }

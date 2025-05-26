@@ -38,13 +38,13 @@ namespace DAL.Services
 
         }
 
-        public async void DeleteAllPassedAppointmentsOlderThan(DateOnly date)
+        public async Task<bool> DeleteAllPassedAppointmentsOlderThan(DateOnly date)
         {
             _dB_Manager.PassedAppointments.RemoveRange(
                 await _dB_Manager.PassedAppointments.Where(c => c.AppointmentDate <= date
                 ).ToListAsync()
             );
-            await _dB_Manager.SaveChangesAsync();
+            return (await _dB_Manager.SaveChangesAsync())>0;
         }
 
 
