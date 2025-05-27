@@ -28,6 +28,35 @@ namespace Web_api.Controllers
             BLAppointment appo2 =new();
             return Ok( new { Available = appo, set = appo2 });
         }
-        // Add other endpoints as needed
-    }
+
+        [HttpGet]
+
+        public async Task<IActionResult> a()
+        {
+            await _appointmentsManager.SetAvailableAppointmentForPeriod();
+            return Ok();
+        }
+
+        #region Get
+        #region available appointments
+        [HttpGet("GetAvailableAppointmentsForSpecificSpecializationForWeek")]
+        public async Task<ActionResult<List<BLAvailableAppointment>>> GetAvailableAppointmentsForSpecificSpecializationForWeek(string specialization, string date)
+        {
+            if (!DateOnly.TryParse(date, out DateOnly dateOnly))
+            {
+                dateOnly = DateOnly.FromDateTime(DateTime.Now);
+            }
+
+            var availapp = await _appointmentsManager.GetAvailableAppointmentsForSpecificSpecializationForWeek(specialization, dateOnly);
+            if (availapp == null)
+            {
+                return NotFound("No available appointments found for the specified specialization and week.");
+            }
+            return Ok(availapp);
+        }
+    
+    #endregion
+    #endregion
+    // Add other endpoints as needed
+}
 }

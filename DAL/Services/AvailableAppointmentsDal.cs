@@ -41,14 +41,21 @@ namespace DAL.Services
                 .Where(a => a.AppointmentDate == date && a.TherapistId == therapistId).ToListAsync();
         }
 
+
         public async Task<List<AvailableAppointment>> GetAppointmentsBySpecializationAndDate(DateOnly date, Specialization specialization)
         {
-               return await _DB_Manager.AvailableAppointments
-                .Where(a => a.AppointmentDate == date && a.Specialization == specialization)
+            int diff = date.DayOfWeek - DayOfWeek.Sunday;
+            if (diff < 0) diff += 7;
+            var startOfWeek = date.AddDays(-diff);
+
+            // סוף שבוע (שבת)
+            var endOfWeek = startOfWeek.AddDays(6);
+
+            return await _DB_Manager.AvailableAppointments
+                .Where(a => a.AppointmentDate >= startOfWeek
+                 && a.AppointmentDate <= endOfWeek && a.Specialization == specialization)
                 .ToListAsync();
         }
-
-     
 
         public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId)
         {

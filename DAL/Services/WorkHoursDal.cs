@@ -14,6 +14,11 @@ namespace DAL.Services
     {
         private readonly DB_Manager _DB_Manager;
 
+        public WorkHoursDal(DB_Manager dbManager)
+        {
+            _DB_Manager = dbManager ?? throw new ArgumentNullException(nameof(dbManager));
+        }
+
         public async Task AddWorkDay(WorkHour workHour)
         {
 
