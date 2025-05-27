@@ -35,14 +35,13 @@ public partial class DB_Manager : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            string relativePath = @"Data\ClinicDB.mdf"; // או ClinicDB.mdf, תלוי בשם האמיתי
-            string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
+            string projectRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\"));
+            AppDomain.CurrentDomain.SetData("DataDirectory", projectRoot);
 
-            string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;
-                                     AttachDbFilename={fullPath};
-                                     Integrated Security=True;
-                                     Connect Timeout=30";
-
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;
+                                    AttachDbFilename=|DataDirectory|\DAL\Data\ClinicDB.mdf;
+                                    Integrated Security=True;
+                                    Connect Timeout=30";
             optionsBuilder.UseSqlServer(connectionString);
         }
     }

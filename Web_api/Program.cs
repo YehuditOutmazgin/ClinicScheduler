@@ -43,8 +43,8 @@ builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
 //------------------------------------------------------------
 
 builder.Services.AddHostedService<MonthlyTaskService>();
-builder.Services.AddHttpClient<IAvailableQueueManager, AvailableQueueManager>();
-
+/*builder.Services.AddHttpClient<IAvailableQueueManager, AvailableQueueManager>();
+*/
 //------------------------------------------------------------
 
 builder.Services.AddControllers().AddJsonOptions(opt=>opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
