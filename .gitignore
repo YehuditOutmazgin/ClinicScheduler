@@ -1,6 +1,13 @@
 # Build results
 bin/
 obj/
+out/
+publish/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
 
 # User-specific files
 *.user
@@ -11,19 +18,23 @@ obj/
 # Visual Studio
 .vs/
 
-# Rider / JetBrains
+# VS Code
+.vscode/
+
+# Rider / JetBrains IDEs
 .idea/
 
-# Others
+# Logs and temp files
 *.log
 *.tmp
+*.temp
 *.cache
 
 # Backup files
 *.bak
 *.old
 
-# System
+# System files
 Thumbs.db
 ehthumbs.db
 Desktop.ini
@@ -31,3 +42,28 @@ Desktop.ini
 # OneDrive sync files
 *.lnk
 *.DS_Store
+
+# Installer files
+*.msi
+*.msm
+*.msp
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Dotnet generated files
+*.dll
+*.exe
+*.app
+*.pdb
+
+# Others
+_ReSharper*/
+*.resharper
+*.dbmdl
+*.sdf
+*.vssscc
+*.vspscc

@@ -29,13 +29,13 @@ namespace Web_api.Controllers
             return Ok( new { Available = appo, set = appo2 });
         }
 
-        [HttpGet]
+        //[HttpGet]
 
-        public async Task<IActionResult> a()
-        {
-            await _appointmentsManager.SetAvailableAppointmentForPeriod();
-            return Ok();
-        }
+        //public async Task<IActionResult> a()
+        //{
+        //    await _appointmentsManager.SetAvailableAppointmentForPeriod();
+        //    return Ok();
+        //}
 
         #region Get
         #region available appointments

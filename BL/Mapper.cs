@@ -135,5 +135,8 @@ public class Mapper : Profile
         CreateMap<DAL.Models.WorkHour, BL.Models.BLWorkHour>().ReverseMap();
 
         // Add more mappings here as needed for other models...
+
+        // Specialization
+        CreateMap<DAL.Common.Specialization, BL.Models.Specialization>().ReverseMap();
     }
 }

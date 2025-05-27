@@ -1,97 +1,88 @@
-﻿using BL;
-using BL.Api;
+﻿using Microsoft.AspNetCore.Mvc;
 using BL.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Web_api.Controllers
 {
-
-    [Route("api/[controller]")]
     [ApiController]
-    public class PatientsController : ControllerBase
+    [Route("api/[controller]")]
+    public class PatientController : ControllerBase
     {
-
-        private readonly BLManager _patientsManager;
-        private readonly IAppointmentsManager _appointmentsManager;
-
-        public PatientsController(BLManager patientsManager,IAppointmentsManager appointmentsManager)
+        public PatientController(/*Dependency injection*/)
         {
-            _patientsManager = patientsManager;
-            _appointmentsManager = appointmentsManager;
+
         }
 
-        // GET: api/Patient
-        [HttpGet]
-        public async Task<ActionResult<List<BLPatient>>> GetAllPatients()
+        // צפייה בתורים העתידיים של המטופל
+        [HttpGet("appointments/upcoming")]
+        public IActionResult GetUpcomingAppointments(int patientId)
         {
-            var patients = await _patientsManager.GetAllPatients();
-            if (patients == null || patients.Count == 0)
-                return NotFound("No patients found.");
 
-            return Ok(patients);
+            // TODO: לממש את הלוגיקה
+            return Ok();
         }
 
-        //[HttpGet("appointment")]
-        //public async Task<ActionResult<List<BLAppointment>>> GetAllAppointment()
-        //{
-        //    var appointment = await _appointmentsManager.GetAllAppointments();
-        //    if (appointment == null || appointment.Count == 0)
-        //        return NotFound("No patients found.");
-
-        //    return Ok(appointment);
-        //}
-        // GET: api/Patient/{id}
-        [HttpGet("{id}")]
-        public async Task<ActionResult<BLPatient>> GetPatientById(int id)
+        // צפייה בהיסטוריית תורים של המטופל
+        [HttpGet("appointments/history")]
+        public IActionResult GetAppointmentHistory(int patientId)
         {
-            if (id <= 0)
-                return BadRequest("Invalid patient ID.");
-
-            var patient = await _patientsManager.GetPatientById(id);
-            if (patient == null)
-                return NotFound($"Patient with ID {id} not found.");
-
-            return Ok(patient);
+            // TODO: לממש את הלוגיקה
+            return Ok();
         }
 
-        // POST: api/Patient
-        [HttpPost("Add patient")]
-        public async Task<ActionResult> AddPatient([FromBody] BLPatient patient)
+        // קביעת תור פנוי (ניתן לספק מזהה תור פנוי)
+        [HttpPost("appointments/book")]
+        public IActionResult BookAppointment(int patientId, int appointmentId)
         {
-            if (patient == null)
-                return BadRequest("Patient data is required.");
-
-            await _patientsManager.AddPatient(patient);
-            return CreatedAtAction(nameof(GetPatientById), new { id = patient.PatientId }, patient); // Assuming `BLPatient` has an `Id` property
+            // TODO: לממש את הלוגיקה
+            return Ok();
         }
 
-        // DELETE: api/Patient/{id}
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<BLPatient>> DeletePatient([FromRoute] int id)
+        // ביטול תור עתידי
+        [HttpPost("appointments/cancel")]
+        public IActionResult CancelAppointment(int patientId, int appointmentId)
         {
-            if (id <= 0)
-                return BadRequest("Invalid ID");
-
-            var delPatient = await _patientsManager.DeletePatient(id);
-            if (delPatient == null)
-                return NotFound($"No patient found with ID {id}");
-
-            return Ok(new { patientId = id,first_name= delPatient.FirstName, last_name = delPatient.LastName, message = "Patient deleted" });
+            // TODO: לממש את הלוגיקה
+            return Ok();
         }
-        // PUT: api/Patient/{id}
-        [HttpPut("{id}")]
-        public async Task<ActionResult> UpdatePatient(int id, [FromBody] BLPatient patient)
+
+        // צפייה בפרטי תור מסוים
+        [HttpGet("appointments/details")]
+        public IActionResult GetAppointmentDetails(int patientId, int appointmentId)
         {
-            if (id <= 0 || patient == null)
-                return BadRequest("Invalid patient data.");
+            // TODO: לממש את הלוגיקה
+            return Ok();
+        }
 
-            if (id != patient.PatientId) // Assuming `BLPatient` has an `Id` property
-                return BadRequest("Patient ID mismatch.");
+        // קבלת רשימת תורים פנויים להתמחות מסוימת
+        [HttpGet("appointments/available/by-specialty")]
+        public IActionResult GetAvailableAppointmentsBySpecialty(Specialization specialty)
+        {
+            // TODO: לממש את הלוגיקה
+            return Ok();
+        }
 
-            await _patientsManager.UpdatePatient(patient);
-            return Ok(new { patientId = id, first_name = patient.FirstName, last_name = patient.LastName});
+        // קבלת רשימת תורים פנויים למטפל מסוים
+        [HttpGet("appointments/available/by-therapist")]
+        public IActionResult GetAvailableAppointmentsByTherapist(int therapistId)
+        {
+            // TODO: לממש את הלוגיקה
+            return Ok();
+        }
+
+        // קבלת תזכורות לתורים עתידיים של המטופל
+        [HttpGet("appointments/reminders")]
+        public IActionResult GetAppointmentReminders(int patientId)
+        {
+            // TODO: לממש את הלוגיקה
+            return Ok();
+        }
+
+        // עדכון פרטים אישיים של המטופל
+        [HttpPut("profile/update")]
+        public IActionResult UpdatePatientProfile(int patientId, [FromBody] object/*PatientUpdateDto*/ updateDto)
+        {
+            // TODO: לממש את הלוגיקה
+            return Ok();
         }
     }
 }
-

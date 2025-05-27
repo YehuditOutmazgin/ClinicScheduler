@@ -2,7 +2,6 @@
 using BL.Api;
 using BL.Models;
 using DAL.Api;
-using DAL.Common;
 using DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -64,7 +63,7 @@ namespace BL.Services
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
                 throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
 
-            if (!Enum.TryParse<Specialization>(specialization, true, out var specializationEnum))
+            if (!Enum.TryParse<DAL.Common.Specialization>(specialization, true, out var specializationEnum))
                 throw new Exception($"The specialization {specialization} is not valid. Please use a valid specialization.");
 
             var availapp = await _availableAppointmentsDal.GetAppointmentsBySpecializationAndDate(date, specializationEnum);
