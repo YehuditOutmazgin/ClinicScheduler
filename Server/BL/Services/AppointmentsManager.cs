@@ -40,7 +40,7 @@ namespace BL.Services
         {
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAppointmentsByTherapistIdAndDate(therapistId, date ?? DateOnly.FromDateTime(DateTime.Now)));
         }
-        public Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int therapistId, DateOnly date, int patientId)
+        public async Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int patientId)
             => throw new NotImplementedException();
 
         public Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date)
