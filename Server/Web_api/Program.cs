@@ -1,0 +1,78 @@
+using DAL.Models;
+using DAL.Services;
+using BL.Api;
+using BL.Services;
+using DAL.Api;
+using AutoMapper;
+using BL;
+using System.Text.Json.Serialization;
+using BL.service;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// Register application services
+//bl
+builder.Services.AddSingleton<DB_Manager>();
+builder.Services.AddSingleton<IPatientsManager, PatientsManager>();
+builder.Services.AddSingleton<IAppointmentsManager, AppointmentManager>();
+builder.Services.AddSingleton<ITherapistManager, TherapistsManager>();
+//--------------------------------------------------------------------------------------------------------------
+builder.Services.AddSingleton<IAvailableQueueManager, AvailableQueueManager>();
+//--------------------------------------------------------------------------------------------------------------
+
+//Dal
+builder.Services.AddSingleton<IWorkHoursDal, WorkHoursDal>();
+builder.Services.AddSingleton<ITherapistsDal, TherapistsDal>();
+builder.Services.AddSingleton<IAppointmentsDal, AppointmentsDal>();
+builder.Services.AddSingleton<IAvailableAppointmentsDal, AvailableAppointmentsDal>();
+builder.Services.AddSingleton<IPatientsDal, PatientsDal>();
+builder.Services.AddSingleton<IPassedAppointmentsDal, PassedAppointmentsDal>();
+builder.Services.AddSingleton<ICanceledAppointmentsDal, CanceledAppointmentsDal>();
+
+//manager
+builder.Services.AddScoped<BLManager>();
+
+// Register AutoMapper
+
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
+//------------------------------------------------------------
+
+builder.Services.AddHostedService<MonthlyTaskService>();
+/*builder.Services.AddHttpClient<IAvailableQueueManager, AvailableQueueManager>();
+*/
+//------------------------------------------------------------
+
+builder.Services.AddControllers().AddJsonOptions(opt=>opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder => builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+app.UseCors("AllowAll");
+app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
+app.Run();

@@ -1,0 +1,18 @@
+# Ignore node_modules in any subfolder
+**/node_modules/
+
+# Ignore build outputs
+**/dist/
+**/build/
+
+# Ignore C# bin and obj folders
+**/bin/
+**/obj/
+
+# Ignore environment files
+**/.env
+# Ignore node_modules and build artifacts
+client/node_modules/
+client/dist/
+client/build/
+
