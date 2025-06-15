@@ -23,7 +23,7 @@ namespace Web_api.Controllers
             return Ok(appointments);
         }
 
-        // Get appointments for a therapist on a specific date by therapist ID
+        // Get appointments for a therapist on a specific date by therapist ID( sets and available for more details ask Yehudit or Rivka)
         [HttpGet("therapist/{therapistId}/date/{date}")]
         public async Task<IActionResult> GetAppointmentsByTherapistAndDate(int therapistId, string date)
         {
@@ -31,11 +31,6 @@ namespace Web_api.Controllers
             var appointments = await _appointmentsManager.GetAllAppointmentsByDateAndTherapistId(therapistId, dateOnly);
             return Ok(appointments);
         }
-
-        // Get a list of appointments for the next business day
-        [HttpGet("next-business-day")]
-        public async Task<IActionResult> GetAppointmentsForNextBusinessDay()
-        { /* Implementation */ return Ok(); }
 
         // Get appointments for a therapist for the week based on a given date
         [HttpGet("therapist/week/{therapistId}/date/{date}")]
@@ -46,6 +41,46 @@ namespace Web_api.Controllers
         [HttpGet("date/{date}")]
         public async Task<IActionResult> GetAppointmentsByDate(DateTime date)
         { /* Implementation */ return Ok(); }
+
+        // update not sure we give this functional
+        [HttpPut("update{appointmentId}")]
+        public async Task<IActionResult> UpdateAppointment(int appointmentId, [FromBody] BLAppointment appointment)
+        { /* Implementation */ return Ok(); }
+        #endregion
+
+        #region Appointment Confirmation
+        // Get a list of appointments for the next business day
+        [HttpGet("next-business-day")]
+        public async Task<IActionResult> GetAppointmentsForNextBusinessDay()
+        { /* Implementation */ return Ok(); }
+
+
+        // Confirm arrival for a specific appointment
+        [HttpPost("confirm/{appointmentId}")]
+        public async Task<IActionResult> ConfirmAppointment(int appointmentId)
+        { /* Implementation */ return Ok(); }
+
+        // Get the status of a specific appointment
+        [HttpGet("status/{appointmentId}")]
+        public async Task<IActionResult> GetAppointmentStatus(int appointmentId)
+        { /* Implementation */ return Ok(); }
+
+        // Update the confirmation status of a specific appointment
+        [HttpPut("update-confirmation/{appointmentId}")]
+        public async Task<IActionResult> UpdateAppointmentConfirmation(int appointmentId, bool isConfirmed)
+        { /* Implementation */ return Ok(); }
+
+        // Get all canceled appointments for a specific patient
+        [HttpGet("patient/{patientId}/canceled")]
+        public async Task<IActionResult> GetCanceledAppointmentsForPatient(string patientId)
+        { /* Implementation */ return Ok(); }
+
+        // Get all canceled appointments
+        [HttpGet("canceled")]
+        public async Task<IActionResult> GetAllCanceledAppointments()
+        { /* Implementation */ return Ok(); }
+
+
         #endregion
 
         #region Available Appointments
@@ -67,7 +102,6 @@ namespace Web_api.Controllers
             {
                 dateOnly = DateOnly.FromDateTime(DateTime.Now);
             }
-
             var availapp = await _appointmentsManager.GetAvailableAppointmentsForSpecificSpecializationForWeek(specialty, dateOnly);
             if (availapp == null)
             {
@@ -75,7 +109,6 @@ namespace Web_api.Controllers
             }
             return Ok(availapp);
         }
-
 
         // Get available appointments for a specific specialty and therapist for a specific date
         [HttpGet("available/specialty/{specialty}/therapist/{therapistId}/date/{date}")]
@@ -95,6 +128,11 @@ namespace Web_api.Controllers
         [HttpGet("past/therapist/{therapistId}/range")]
         public async Task<IActionResult> GetPastAppointmentsByTherapistInDateRange(string therapistId, DateTime startDate, DateTime endDate = default)
         { /* Implementation */ return Ok(); }
+
+        //Get history appointment for patient.
+        [HttpGet("history/{patientId}")]
+        public IActionResult GetPatientAppointmentHistory(int patientId)
+        { /* Implementation */ return Ok(); }
         #endregion
 
         #region Schedule Appointment
@@ -110,52 +148,19 @@ namespace Web_api.Controllers
         public async Task<IActionResult> DeleteAppointment(string appointmentId, string patientId)
         { /* Implementation */ return Ok(); }
 
+        // Delete a future appointment by appointment ID and patient ID therapist made need to add it to cancle appointment for confimation.
+        [HttpDelete("delete/byTherapist/{appointmentId}/patient/{patientId}/")]
+        public async Task<IActionResult> DeleteAppointmentByTherapist(string appointmentId, string patientId)
+        { /* Implementation */ return Ok(); }
         // Delete a past appointment by appointment ID and patient ID
         [HttpDelete("past/delete/{appointmentId}/patient/{patientId}")]
         public async Task<IActionResult> DeletePastAppointment(string appointmentId, string patientId)
         { /* Implementation */ return Ok(); }
+
+        // Delete a canceled appointment
+        [HttpDelete("cancel/{appointmentId}")]
+        public async Task<IActionResult> DeleteCanceledAppointment(int appointmentId)
+        { /* Implementation */ return Ok(); }
         #endregion
-
-
-
-
-
-
-
-
-        //    [HttpGet("GetAllAppointmentsByDateAndTherapistId")]
-        //    public async Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, string? date)
-        //    {
-        //    }
-
-
-
-        //    [HttpGet("GetSchedualeByTherapistForWeek")]
-
-        //    public async Task<IActionResult> GetSchedualeByTherapistForWeek(int therapistId, string date)
-        //    {
-        //        BLAvailableAppointment appo =new();
-        //        BLAppointment appo2 =new();
-        //        return Ok( new { Available = appo, set = appo2 });
-        //    }
-
-        //    //[HttpGet]
-
-        //    //public async Task<IActionResult> a()
-        //    //{
-        //    //    await _appointmentsManager.SetAvailableAppointmentForPeriod();
-        //    //    return Ok();
-        //    //}
-
-        //    #region Get
-        //    #region available appointments
-        //    [HttpGet("GetAvailableAppointmentsForSpecificSpecializationForWeek")]
-        //    public async Task<ActionResult<List<BLAvailableAppointment>>> GetAvailableAppointmentsForSpecificSpecializationForWeek(string specialization, string date)
-
-
-        //#endregion
-        //#endregion
-        //// Add other endpoints as needed
     }
-
 }

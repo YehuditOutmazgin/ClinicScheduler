@@ -60,7 +60,7 @@ namespace Web_api.Controllers
         [HttpDelete("{id}/cancel-day")]
         public async Task<IActionResult> CancelWorkDay(int id, DateTime date)
         { /* Implementation */ return Ok(); }
-        ///////////why this functions not woek????????//////////////----
+
         [HttpDelete("{id}")]
         public async Task<ActionResult<BLPatient>> DeleteTherapist([FromRoute] int therapistId)
         {
@@ -80,39 +80,14 @@ namespace Web_api.Controllers
 
         //// Add work hours for a specific day
         [HttpPost("{id}/add-work-hours")]
-        public async Task<IActionResult> AddWorkHours(int id, [FromBody] BLWorkHour hours) 
+        public async Task<IActionResult> AddWorkHours(int id, [FromBody] BLWorkHour hours)
         { /* Implementation */ return Ok(); }
 
         //// Remove work hours for a specific day
         [HttpDelete("{id}/remove-work-hours")]
         public async Task<IActionResult> RemoveWorkHours(int id, [FromBody] BLWorkHour hours)
         { /* Implementation */ return Ok(); }
-        //////////////////////////////////////////////////----
-
-
 
     }
-    //// GET: api/Therapists
-    //[HttpGet]
-    //public async Task<ActionResult<List<BLTherapist>>> GetAllTherapists()
-
-
-    //// GET: api/Therapists/{id}
-    //[HttpGet("{therapistId}")]
-    //public async Task<BLTherapist> GetTherapistById([FromRoute]int therapistId)
-
-
-    //// POST: api/Therapists
-    //[HttpPost]
-    //public async Task<ActionResult<BLPatient>> AddTherapist
-
-
-    //// PUT: api/Therapists/{id}
-    //[HttpPut("{id}")]
-    //public async Task<ActionResult<BLTherapist>> UpdateTherapist(BLTherapist therapist)
-
-    //// DELETE: api/Therapists/{id}
-    //[HttpDelete("{therapistId}")]
-
 }
 
