@@ -61,32 +61,32 @@ namespace Web_api.Controllers
         public async Task<IActionResult> CancelWorkDay(int id, DateTime date)
         { /* Implementation */ return Ok(); }
         ///////////why this functions not woek????????//////////////----
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<BLPatient>> DeleteTherapist([FromRoute] int therapistId)
+        {
+            if (therapistId <= 0)
+                return BadRequest("Invalid ID");
 
-        //public async Task<ActionResult<BLPatient>> DeleteTherapist([FromRoute] int therapistId)
-        //{
-        //    if (therapistId <= 0)
-        //        return BadRequest("Invalid ID");
+            var delTherapist = await _therapistManager.DeleteTherapist(therapistId);
+            if (delTherapist == null)
+                return NotFound($"No patient found with ID {therapistId}");
 
-        //    var delTherapist = await _therapistManager.DeleteTherapist(therapistId);
-        //    if (delTherapist == null)
-        //        return NotFound($"No patient found with ID {therapistId}");
-
-        //    return Ok(new { therapist_id = therapistId, first_name = delTherapist.FirstName, last_name = delTherapist.LastName, message = "Therapist  deleted" });
-        //}
+            return Ok(new { therapist_id = therapistId, first_name = delTherapist.FirstName, last_name = delTherapist.LastName, message = "Therapist  deleted" });
+        }
         // Update the regular schedule of a therapist
-        //[HttpPut("{id}/schedule")]
-        //public async Task<IActionResult> UpdateRegularSchedule(int id, [FromBody] List<WorkHour> schedule)
-        //{ /* Implementation */ return Ok(); }
+        [HttpPut("{id}/schedule")]
+        public async Task<IActionResult> UpdateRegularSchedule(int id, [FromBody] List<BLWorkHour> schedule)
+        { /* Implementation */ return Ok(); }
 
         //// Add work hours for a specific day
-        //[HttpPost("{id}/add-work-hours")]
-        //public async Task<IActionResult> AddWorkHours(int id, [FromBody] WorkHour hours) 
-        //{ /* Implementation */ return Ok(); }
+        [HttpPost("{id}/add-work-hours")]
+        public async Task<IActionResult> AddWorkHours(int id, [FromBody] BLWorkHour hours) 
+        { /* Implementation */ return Ok(); }
 
         //// Remove work hours for a specific day
-        //[HttpDelete("{id}/remove-work-hours")]
-        //public async Task<IActionResult> RemoveWorkHours(int id, [FromBody] WorkHour hours)
-        //{ /* Implementation */ return Ok(); }
+        [HttpDelete("{id}/remove-work-hours")]
+        public async Task<IActionResult> RemoveWorkHours(int id, [FromBody] BLWorkHour hours)
+        { /* Implementation */ return Ok(); }
         //////////////////////////////////////////////////----
 
 
