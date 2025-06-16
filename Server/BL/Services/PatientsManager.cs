@@ -69,6 +69,7 @@ namespace BL.Services
            var p= await _patientsDal.GetPatientById(id);
             if(p == null)
                 throw new NullReferenceException($"{nameof(p)} does not exist");
+
             var mp = _mapper.Map<BLPatient>(p);
 
             if (mp == null)
@@ -102,9 +103,14 @@ namespace BL.Services
             return mapapp;
         }
 
-        public Task<List<BLAppointment>> GetPatientAppointmentsByDate(int patientId, DateOnly date)
+
+
+        public async Task<List<BLAppointment>> GetPatientAppointmentsByDate(int patientId, DateOnly date)
+
         {
-            throw new NotImplementedException();
+        throw  new NullReferenceException();
         }
+
+    
     }
 }

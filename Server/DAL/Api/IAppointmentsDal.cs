@@ -22,8 +22,6 @@ namespace DAL.Api
         Task<Appointment> GetAppointmentsByPatientIdAndThetherapistIdAndDate(int patientId, DateOnly date, int therapistId);
         //on defalut return today  if there is a date return the apointments day of this date 
         Task<List<Appointment>> GetAppointmentsTherapistAndDate(int therapistId, DateOnly? date);
-
-
         //delete appointmet range
         Task DeleteRangeAppointments(List<Appointment> appointments);
         //delete one

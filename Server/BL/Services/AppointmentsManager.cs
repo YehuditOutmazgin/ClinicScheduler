@@ -1,8 +1,7 @@
-﻿using AutoMapper;
+using AutoMapper;
 using BL.Api;
 using BL.Models;
 using DAL.Api;
-using DAL.Common;
 using DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -13,15 +12,15 @@ namespace BL.Services
 {
     public class AppointmentManager : IAppointmentsManager
     {
+        #region Fields
         IAppointmentsDal _appointmentsDal;
         IAvailableAppointmentsDal _availableAppointmentsDal;
         IPassedAppointmentsDal _passedAppointmentsDal;
         ICanceledAppointmentsDal _canceledAppointmentsDal;
-        IPatientsDal _patientsDal;
-        ITherapistsDal _therapistsDal;
+        IMapper _mapper;
         IWorkHoursDal _workHoursDal;
-        IMapper _mapper;///
         IAvailableQueueManager _availableQueueManager;
+        ITherapistsDal _therapistsDal;
         public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPassedAppointmentsDal passedAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal, IAvailableQueueManager availableQueueManager, IWorkHoursDal workHoursDal, ITherapistsDal therapistsDal)
         {
             _appointmentsDal = appointmentsDal;
@@ -74,15 +73,15 @@ namespace BL.Services
         public async Task<List<BLAppointment>> GetAppointmentsByTherapistIdAndWeek(int thrapistId, DateOnly? date)
         {
 
-            if (thrapistId<0)
+            if (thrapistId < 0)
                 throw new ArgumentNullException(nameof(thrapistId));
-            if(date == null)
+            if (date == null)
             {
                 date = new DateOnly();
             }
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
                 throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
-            var apps = await _appointmentsDal.GetAppointmentsTherapistAndDate(thrapistId,date);
+            var apps = await _appointmentsDal.GetAppointmentsTherapistAndDate(thrapistId, date);
             if (apps == null)
                 throw new NullReferenceException(nameof(apps));
 
@@ -115,16 +114,15 @@ namespace BL.Services
             {
                 throw new ArgumentNullException(nameof(date));
             }
-            var availapp = await _availableAppointmentsDal.GetAppointmentsByTherapistAndWeek( date, therapistId);
+            var availapp = await _availableAppointmentsDal.GetAppointmentsByTherapistAndWeek(date, therapistId);
             if (availapp == null)
                 throw new NullReferenceException(nameof(availapp));
 
             return await Task.FromResult(_mapper.Map<List<BLAvailableAppointment>>(availapp));
         }
-    
+
         #endregion
 
-        #region passed appointments
         public Task<List<BLAppointment>> GetPassedAppointmentsByPatientId(int patientId)
             => throw new NotImplementedException();
 

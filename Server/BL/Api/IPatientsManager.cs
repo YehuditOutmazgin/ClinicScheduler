@@ -16,5 +16,6 @@ namespace BL.Api
         Task<BLPatient> DeletePatient(int id);
         Task<List<BLAppointment>> GetPatientAppointments(int patientId);
         Task<List<BLAppointment>> GetPatientAppointmentsByDate(int patientId, DateOnly date);
+
     }
 }

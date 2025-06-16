@@ -1,12 +1,12 @@
 
 import './App.css';
-import React from 'react';
-import AppRouter from './AppRouter';
+import PatientProfile from './PatientProfile';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <AppRouter/>  
+        <PatientProfile/>  
       </header>
     </div>
   );

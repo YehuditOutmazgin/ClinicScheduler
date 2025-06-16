@@ -3,20 +3,220 @@
   "WorkspaceRootPath": "C:\\Tzip_project\\new4\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\therapistsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\therapistsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\patientsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\patientsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\monthlytaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\monthlytaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\availablequeuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\availablequeuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\appointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\appointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\specialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\specialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\blworkhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blworkhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\blpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\blpassedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blpassedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\bltherapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\bltherapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\blcanceledappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blcanceledappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\blavailableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blavailableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\blappointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blappointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\models\\blappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\models\\blappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\api\\itherapistmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\api\\itherapistmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\api\\ipatientsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\api\\ipatientsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\api\\ipatientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\api\\ipatientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\api\\iavailablequeuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\api\\iavailablequeuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\api\\iappointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\api\\iappointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\iworkhoursdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iworkhoursdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\itherapistsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\itherapistsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\ipatientsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\ipatientsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\ipassedappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\ipassedappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\icanceledappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\icanceledappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\iavailableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iavailableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\iappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\passedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\passedappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\canceledappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\canceledappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\appointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\appointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\availableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\availableappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\appointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\appointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\availableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\availableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\canceledappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\canceledappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\passedappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\passedappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\patientsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\patientsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\therapistsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\therapistsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\workhoursdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\workhoursdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\therapistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\therapistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\therapistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\therapistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\terapistappointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\terapistappointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\specialtiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\specialtiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,71 +227,7 @@
       "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\terapistappointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\terapistappointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\appointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\appointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\services\\therapistsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\therapistsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\iappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Tzip_project\\new2\\ClinicScheduler\\Client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\tzip_project\\new4\\server\\web_api\\controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\api\\iavailableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iavailableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\appointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\appointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\tzip_project\\new4\\server\\bl\\api\\iappointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\api\\iappointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\availableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\availableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\appointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\appointmentbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\services\\therapistsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\therapistsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\tzip_project\\new4\\server\\dal\\models\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\models\\therapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -105,58 +241,59 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Program.cs",
-              "RelativeDocumentMoniker": "Web_api\\Program.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Program.cs",
-              "RelativeToolTip": "Web_api\\Program.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAE4AAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "BLManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\BLManager.cs",
+              "RelativeDocumentMoniker": "BL\\BLManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\BLManager.cs",
+              "RelativeToolTip": "BL\\BLManager.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAUwDMAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T08:50:43.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "Web_api\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "Web_api\\Controllers\\AppointmentController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAA9wEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:05:12.325Z",
+              "WhenOpened": "2025-06-12T09:46:20.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Web_api\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Web_api\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAJAAAA",
+              "Title": "Mapper.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Mapper.cs",
+              "RelativeDocumentMoniker": "BL\\Mapper.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Mapper.cs",
+              "RelativeToolTip": "BL\\Mapper.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:40:54.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PatientsManager.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\PatientsManager.cs",
-              "RelativeDocumentMoniker": "BL\\Services\\PatientsManager.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\PatientsManager.cs*",
-              "RelativeToolTip": "BL\\Services\\PatientsManager.cs*",
-              "ViewState": "AQIAADgAAAAAAAAAAAAhwEYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T09:48:28.515Z",
+              "WhenOpened": "2025-06-15T20:23:29.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "AppointmentsManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\AppointmentsManager.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\AppointmentsManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\AppointmentsManager.cs",
+              "RelativeToolTip": "BL\\Services\\AppointmentsManager.cs",
+              "ViewState": "AQIAAJABAAAAAAAAAAAAAH0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T14:51:54.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AvailableQueueManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\AvailableQueueManager.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\AvailableQueueManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\AvailableQueueManager.cs",
+              "RelativeToolTip": "BL\\Services\\AvailableQueueManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:28:19.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Dto.cs",
               "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\Dto.cs",
               "RelativeDocumentMoniker": "BL\\Services\\Dto.cs",
@@ -164,110 +301,674 @@
               "RelativeToolTip": "BL\\Services\\Dto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T10:13:48.394Z"
+              "WhenOpened": "2025-06-12T10:13:48.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PatientsController.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\PatientsController.cs",
-              "RelativeDocumentMoniker": "Web_api\\Controllers\\PatientsController.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\PatientsController.cs",
-              "RelativeToolTip": "Web_api\\Controllers\\PatientsController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwCQAAAAIAAAA",
+              "DocumentIndex": 2,
+              "Title": "MonthlyTaskService.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\MonthlyTaskService.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\MonthlyTaskService.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\MonthlyTaskService.cs",
+              "RelativeToolTip": "BL\\Services\\MonthlyTaskService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:05:23.31Z",
+              "WhenOpened": "2025-06-15T20:28:14.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BLManager.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\BLManager.cs",
-              "RelativeDocumentMoniker": "BL\\BLManager.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\BLManager.cs*",
-              "RelativeToolTip": "BL\\BLManager.cs*",
-              "ViewState": "AQIAABIAAAAAAAAAAAAhwCEAAAAMAAAA",
+              "Title": "PatientsManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\PatientsManager.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\PatientsManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\PatientsManager.cs",
+              "RelativeToolTip": "BL\\Services\\PatientsManager.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAAAHEAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T09:46:20.106Z",
+              "WhenOpened": "2025-06-12T09:48:28.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TherapistsManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\TherapistsManager.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\TherapistsManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\TherapistsManager.cs",
+              "RelativeToolTip": "BL\\Services\\TherapistsManager.cs",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T09:48:58.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Specialization.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\Specialization.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\Specialization.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\Specialization.cs",
+              "RelativeToolTip": "BL\\Models\\Specialization.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:43:01.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BLWorkHour.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLWorkHour.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLWorkHour.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLWorkHour.cs",
+              "RelativeToolTip": "BL\\Models\\BLWorkHour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:43:00.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BLPassedAppointment.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLPassedAppointment.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLPassedAppointment.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLPassedAppointment.cs",
+              "RelativeToolTip": "BL\\Models\\BLPassedAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:52.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BLTherapist.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLTherapist.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLTherapist.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLTherapist.cs",
+              "RelativeToolTip": "BL\\Models\\BLTherapist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:54.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BLCanceledAppointment.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLCanceledAppointment.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLCanceledAppointment.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLCanceledAppointment.cs",
+              "RelativeToolTip": "BL\\Models\\BLCanceledAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:52.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BLAvailableAppointment.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLAvailableAppointment.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLAvailableAppointment.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLAvailableAppointment.cs",
+              "RelativeToolTip": "BL\\Models\\BLAvailableAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:50.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BLAppointmentBase.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLAppointmentBase.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLAppointmentBase.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLAppointmentBase.cs",
+              "RelativeToolTip": "BL\\Models\\BLAppointmentBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:49.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BLAppointment.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLAppointment.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLAppointment.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLAppointment.cs",
+              "RelativeToolTip": "BL\\Models\\BLAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:47.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IWorkHoursDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IWorkHoursDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IWorkHoursDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IWorkHoursDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IWorkHoursDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:12.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BLPatient.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLPatient.cs",
+              "RelativeDocumentMoniker": "BL\\Models\\BLPatient.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Models\\BLPatient.cs",
+              "RelativeToolTip": "BL\\Models\\BLPatient.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:25:34.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ITherapistsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\ITherapistsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\ITherapistsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\ITherapistsDal.cs",
+              "RelativeToolTip": "DAL\\Api\\ITherapistsDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:11.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IPatientsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IPatientsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IPatientsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IPatientsDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IPatientsDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:10.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IAppointmentsManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IAppointmentsManager.cs",
+              "RelativeDocumentMoniker": "BL\\Api\\IAppointmentsManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IAppointmentsManager.cs",
+              "RelativeToolTip": "BL\\Api\\IAppointmentsManager.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAUwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:08:03.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IAvailableQueueManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IAvailableQueueManager.cs",
+              "RelativeDocumentMoniker": "BL\\Api\\IAvailableQueueManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IAvailableQueueManager.cs",
+              "RelativeToolTip": "BL\\Api\\IAvailableQueueManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:36:51.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IPatientManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IPatientManager.cs",
+              "RelativeDocumentMoniker": "BL\\Api\\IPatientManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IPatientManager.cs",
+              "RelativeToolTip": "BL\\Api\\IPatientManager.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:25:10.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IPatientsManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IPatientsManager.cs",
+              "RelativeDocumentMoniker": "BL\\Api\\IPatientsManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IPatientsManager.cs",
+              "RelativeToolTip": "BL\\Api\\IPatientsManager.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:36:32.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ITherapistManager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\ITherapistManager.cs",
+              "RelativeDocumentMoniker": "BL\\Api\\ITherapistManager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\ITherapistManager.cs",
+              "RelativeToolTip": "BL\\Api\\ITherapistManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:36:30.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IPassedAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IPassedAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IPassedAppointmentsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IPassedAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IPassedAppointmentsDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:08.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ICanceledAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\ICanceledAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\ICanceledAppointmentsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\ICanceledAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Api\\ICanceledAppointmentsDal.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA9wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:42:05.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WorkHour.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\WorkHour.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\WorkHour.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\WorkHour.cs",
+              "RelativeToolTip": "DAL\\Models\\WorkHour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:41:48.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Patient.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Patient.cs",
+              "RelativeToolTip": "DAL\\Models\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:41:47.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PassedAppointment.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\PassedAppointment.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\PassedAppointment.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\PassedAppointment.cs",
+              "RelativeToolTip": "DAL\\Models\\PassedAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:41:46.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DB_Manager.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\DB_Manager.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\DB_Manager.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\DB_Manager.cs",
+              "RelativeToolTip": "DAL\\Models\\DB_Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:41:44.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CanceledAppointment.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\CanceledAppointment.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\CanceledAppointment.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\CanceledAppointment.cs",
+              "RelativeToolTip": "DAL\\Models\\CanceledAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:41:43.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Therapist.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Therapist.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Therapist.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Therapist.cs",
+              "RelativeToolTip": "DAL\\Models\\Therapist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:07:40.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IAppointmentsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IAppointmentsDal.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:13:23.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IAvailableAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IAvailableAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Api\\IAvailableAppointmentsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IAvailableAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Api\\IAvailableAppointmentsDal.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA4wBIAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:14:45.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AvailableAppointment.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\AvailableAppointment.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\AvailableAppointment.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\AvailableAppointment.cs",
+              "RelativeToolTip": "DAL\\Models\\AvailableAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:41:40.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PatientsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\PatientsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\PatientsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\PatientsDal.cs",
+              "RelativeToolTip": "DAL\\Services\\PatientsDal.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAAAIUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:41:39.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TherapistsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\TherapistsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\TherapistsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\TherapistsDal.cs",
+              "RelativeToolTip": "DAL\\Services\\TherapistsDal.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:07:25.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "PassedAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\PassedAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\PassedAppointmentsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\PassedAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Services\\PassedAppointmentsDal.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:41:34.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CanceledAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\CanceledAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\CanceledAppointmentsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\CanceledAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Services\\CanceledAppointmentsDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:41:31.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AvailableAppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\AvailableAppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\AvailableAppointmentsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\AvailableAppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Services\\AvailableAppointmentsDal.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAkwB8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:38:55.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AppointmentBase.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\AppointmentBase.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\AppointmentBase.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\AppointmentBase.cs",
+              "RelativeToolTip": "DAL\\Models\\AppointmentBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:37:25.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "WorkHoursDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\WorkHoursDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\WorkHoursDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\WorkHoursDal.cs",
+              "RelativeToolTip": "DAL\\Services\\WorkHoursDal.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:41:59.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AppointmentsDal.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\AppointmentsDal.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\AppointmentsDal.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\AppointmentsDal.cs",
+              "RelativeToolTip": "DAL\\Services\\AppointmentsDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:13:35.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Appointment.cs",
+              "RelativeToolTip": "DAL\\Models\\Appointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:36:34.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "TherapistsController.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\TherapistsController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\TherapistsController.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\TherapistsController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\TherapistsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:44:23.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "TherapistController.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\TherapistController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\TherapistController.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\TherapistController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\TherapistController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAA3wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:44:25.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "TerapistAppointmentController.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\TerapistAppointmentController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\TerapistAppointmentController.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\TerapistAppointmentController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\TerapistAppointmentController.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAUwHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:05:38.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "SpecialtiesController.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\SpecialtiesController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\SpecialtiesController.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\SpecialtiesController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\SpecialtiesController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:44:28.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
               "Title": "SignUpController.cs",
               "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\SignUpController.cs",
               "RelativeDocumentMoniker": "Web_api\\Controllers\\SignUpController.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\SignUpController.cs*",
-              "RelativeToolTip": "Web_api\\Controllers\\SignUpController.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\SignUpController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\SignUpController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAACsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T09:57:52.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TerapistAppointmentController.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\TerapistAppointmentController.cs",
-              "RelativeDocumentMoniker": "Web_api\\Controllers\\TerapistAppointmentController.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\TerapistAppointmentController.cs",
-              "RelativeToolTip": "Web_api\\Controllers\\TerapistAppointmentController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAIwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:05:38.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "Web_api\\Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "Web_api\\Controllers\\PatientController.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAYwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:05:21.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppointmentsManager.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\AppointmentsManager.cs",
-              "RelativeDocumentMoniker": "BL\\Services\\AppointmentsManager.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\AppointmentsManager.cs",
-              "RelativeToolTip": "BL\\Services\\AppointmentsManager.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAcwDYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T14:51:54.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TherapistsManager.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\TherapistsManager.cs",
-              "RelativeDocumentMoniker": "BL\\Services\\TherapistsManager.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Services\\TherapistsManager.cs",
-              "RelativeToolTip": "BL\\Services\\TherapistsManager.cs",
-              "ViewState": "AQIAANEAAAAAAAAAAAAswAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T09:48:58.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 50,
               "Title": "SecretaryController.cs",
               "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\SecretaryController.cs",
               "RelativeDocumentMoniker": "Web_api\\Controllers\\SecretaryController.cs",
               "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\SecretaryController.cs",
               "RelativeToolTip": "Web_api\\Controllers\\SecretaryController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAGUAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:05:34.797Z"
+              "WhenOpened": "2025-06-11T18:05:34.797Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 51,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\PatientsController.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAAACQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:05:23.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\PatientController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAawBQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:05:21.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwCoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T07:40:54.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\AppointmentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:05:12.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\Web_api\\Program.cs",
+              "RelativeDocumentMoniker": "Web_api\\Program.cs",
+              "ToolTip": "C:\\Tzip_project\\new4\\Server\\Web_api\\Program.cs",
+              "RelativeToolTip": "Web_api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T08:50:43.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Tzip_project\\new2\\ClinicScheduler\\Client\\package.json",
               "RelativeDocumentMoniker": "..\\..\\new2\\ClinicScheduler\\Client\\package.json",
@@ -276,114 +977,6 @@
               "ViewState": "AQIAACEAAAAAAAAAAAAUwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-11T22:33:07.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IAppointmentsDal.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IAppointmentsDal.cs",
-              "RelativeDocumentMoniker": "DAL\\Api\\IAppointmentsDal.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IAppointmentsDal.cs",
-              "RelativeToolTip": "DAL\\Api\\IAppointmentsDal.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAkwBcAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:13:23.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IAvailableAppointmentsDal.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IAvailableAppointmentsDal.cs",
-              "RelativeDocumentMoniker": "DAL\\Api\\IAvailableAppointmentsDal.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Api\\IAvailableAppointmentsDal.cs",
-              "RelativeToolTip": "DAL\\Api\\IAvailableAppointmentsDal.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAkwBMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:14:45.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AppointmentsDal.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\AppointmentsDal.cs",
-              "RelativeDocumentMoniker": "DAL\\Services\\AppointmentsDal.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\AppointmentsDal.cs",
-              "RelativeToolTip": "DAL\\Services\\AppointmentsDal.cs",
-              "ViewState": "AQIAAKsAAAAAAAAAAAAuwLEAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:13:35.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IAppointmentsManager.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IAppointmentsManager.cs",
-              "RelativeDocumentMoniker": "BL\\Api\\IAppointmentsManager.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\BL\\Api\\IAppointmentsManager.cs",
-              "RelativeToolTip": "BL\\Api\\IAppointmentsManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:08:03.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AvailableAppointmentsDal.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\AvailableAppointmentsDal.cs",
-              "RelativeDocumentMoniker": "DAL\\Services\\AvailableAppointmentsDal.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\AvailableAppointmentsDal.cs",
-              "RelativeToolTip": "DAL\\Services\\AvailableAppointmentsDal.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowCwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:38:55.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AppointmentBase.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\AppointmentBase.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\AppointmentBase.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\AppointmentBase.cs",
-              "RelativeToolTip": "DAL\\Models\\AppointmentBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:37:25.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Appointment.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Appointment.cs",
-              "RelativeToolTip": "DAL\\Models\\Appointment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:36:34.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TherapistsDal.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\TherapistsDal.cs",
-              "RelativeDocumentMoniker": "DAL\\Services\\TherapistsDal.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Services\\TherapistsDal.cs",
-              "RelativeToolTip": "DAL\\Services\\TherapistsDal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:07:25.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Therapist.cs",
-              "DocumentMoniker": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Therapist.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Therapist.cs",
-              "ToolTip": "C:\\Tzip_project\\new4\\Server\\DAL\\Models\\Therapist.cs",
-              "RelativeToolTip": "DAL\\Models\\Therapist.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T17:07:40.893Z"
             }
           ]
         }

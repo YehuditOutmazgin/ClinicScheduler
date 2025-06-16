@@ -4,8 +4,7 @@ import AppointmentsList from './AppointmentsList';
 import PersonalDetails from './PersonalDetails';
 import UsersManagement from './UsersManagement';
 import Button from './ui/Button';
-import styles from '../css/userDashboard.module.css';
-
+import styles from '../css/userDashboard.module.css'; // Assuming you have a CSS file for styles
 export default function UserDashboard() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();

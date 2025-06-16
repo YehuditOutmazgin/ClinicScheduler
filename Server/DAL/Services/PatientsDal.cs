@@ -132,6 +132,8 @@ namespace DAL.Services
             {
                 var appointments = _dB_Manager.Appointments
                     .Where(a => a.PatientId == patientId).Include(a=>a.Therapist)
+
+
                     .ToList();
                 return Task.FromResult(appointments);
             }

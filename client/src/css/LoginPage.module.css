@@ -11,7 +11,7 @@
 body {
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #0077C8 0%, #FFA300 100%);
+  background: linear-gradient(135deg, #0077C8 70%, #FFA300 30%);
   font-family: 'Segoe UI', 'Arial', sans-serif;
 }
 
