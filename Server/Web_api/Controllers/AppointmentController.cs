@@ -28,7 +28,7 @@ namespace Web_api.Controllers
 
         // Get appointments for a therapist on a specific date by therapist ID( sets and available for more details ask Yehudit or Rivka)
         [HttpGet("therapist/{therapistId}/date/{date}")]
-        public async Task<IActionResult> GetAppointmentsByTherapistAndDate(int therapistId, string date)
+        public async Task<IActionResult> GetAppointmentsByTherapistAndDate(int therapistId, string? date)
         {
             DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
             var appointments = await _appointmentsManager.GetAllAppointmentsByDateAndTherapistId(therapistId, dateOnly);

@@ -5,7 +5,7 @@ export default function AppointmentsList({ user }) {
   const [appointments, setAppointments] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = process.env.REACT_APP_API_URL|| "https://localhost:7015/api";
 
   useEffect(() => {
     console.log("useEffect triggered with user:", user);
@@ -35,13 +35,15 @@ export default function AppointmentsList({ user }) {
         }
 
         if (role === 'client') {
-          url = `${apiUrl}/Patients/appointments/${id}`;
+          url = `${apiUrl}/Appointment/future/${id}`;
+                  console.log("Fetching from URL:", url);
+
         } else if (role === 'therapist') {
           const today = new Date().toISOString().split('T')[0];
-          url = `${apiUrl}/Appointment/GetAllAppointmentsByDateAndTherapistId/${id}?date=${today}`;
+          url = `${apiUrl}/Appointment/therapist/${id}/date/${today}`;
+          console.log("Fetching from URL:", url);
         }
 
-        console.log("Fetching from URL:", url);
 
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
