@@ -17,7 +17,7 @@ namespace Web_api.Controllers
             _appointmentsManager = appointmentsManager;
             _BLManager = BLManager;
         }
-        #region Regular Appointments
+        #region Regular Appointments (3 functions) to implement
         // Get all future appointments for a patient by ID
         [HttpGet("future/{patientId}")]
         public async Task<IActionResult> GetFutureAppointmentsByPatientId(int patientId)
@@ -51,12 +51,11 @@ namespace Web_api.Controllers
         { /* Implementation */ return Ok(); }
         #endregion
 
-        #region Appointment Confirmation
+        #region Appointment Confirmation (6 functions) to implement
         // Get a list of appointments for the next business day
         [HttpGet("next-business-day")]
         public async Task<IActionResult> GetAppointmentsForNextBusinessDay()
         { /* Implementation */ return Ok(); }
-
 
         // Confirm arrival for a specific appointment
         [HttpPost("confirm/{appointmentId}")]
@@ -86,7 +85,7 @@ namespace Web_api.Controllers
 
         #endregion
 
-        #region Available Appointments
+        #region Available Appointments (4 functions) to implement
         // Get available appointments for a specific therapist for a given week
         [HttpGet("available/therapist/{therapistId}/week/{weekDate}")]
         public async Task<IActionResult> GetAvailableAppointmentsForTherapistWeek(string therapistId, DateTime weekDate)
@@ -121,7 +120,7 @@ namespace Web_api.Controllers
         }
         #endregion
 
-        #region Past Appointments
+        #region Past Appointments (3 functions) to implement
         // Get past appointments for a therapist by date and therapist ID
         [HttpGet("past/therapist/{therapistId}/date/{date}")]
         public async Task<IActionResult> GetPastAppointmentsByTherapistAndDate(string therapistId, DateTime date)
@@ -138,14 +137,14 @@ namespace Web_api.Controllers
         { /* Implementation */ return Ok(); }
         #endregion
 
-        #region Schedule Appointment
+        #region Schedule Appointment (1 function) to implement
         // Schedule an appointment based on patient ID and appointment ID
         [HttpPost("schedule")]
         public async Task<IActionResult> ScheduleAppointment(string patientId, string appointmentId)
         { /* Implementation */ return Ok(); }
         #endregion
 
-        #region Deletion
+        #region Deletion (4 functions) to implement
         // Delete a future appointment by appointment ID and patient ID
         [HttpDelete("delete/{appointmentId}/patient/{patientId}")]
         public async Task<IActionResult> DeleteAppointment(string appointmentId, string patientId)

@@ -12,6 +12,9 @@ namespace Web_api.Controllers
     [ApiController]
     public class TherapistController : ControllerBase
     {
+        // 5 functions to implement
+
+
         private readonly BLManager _therapistManager;
         private readonly IAppointmentsManager _appointmentsManager;
         //ctor

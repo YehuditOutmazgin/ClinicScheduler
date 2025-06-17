@@ -1,1 +1,15 @@
-1. change the id in patiant to string.
+Everey one can see which functions need implementation i wrote how much functions in each region is without implement and you you can select what to implement. 
+Pay attention!!!!
+if you decide to implement a part,you need to let everyone know in advance (you can send by email with a neat massage of all the functions you decide to implement).
+all your changes you most  push  to a branch!!
+and every imlpement write on a new class (with a name that express the things it do)
+and after- we will merge and go over all together.
+Good luck!!
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+in hebrow:
+כל אחד יכול לראות אילו פונקציות דורשות מימוש. כתבתי כמה פונקציות בכל אזור צריכות מימוש ואתה יכול לבחור מה לממש.
+ שימו לב!!!! 
+אם תחליט לממש חלק, עליך ליידע את כולם מראש (אתה יכול לשלוח במייל סקירה מסודרת של כל הפונקציות שאתה מחליט לממש).
+ את כל השינויים שלך אתה מעביר לענף!! וכל מימוש עליך לכתוב על מחלקה חדשה (עם שם שמבטא את הדברים שהוא עושה)
+ואז נמזג ונעבור על הכל יחד. 
+בהצלחה!!
