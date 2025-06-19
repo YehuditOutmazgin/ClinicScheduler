@@ -2,12 +2,14 @@ using AutoMapper;
 using BL.Api;
 using BL.Models;
 using DAL.Api;
+using DAL.Common;
 using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace BL.Services
 {
     public class AppointmentManager : IAppointmentsManager
@@ -32,10 +34,15 @@ namespace BL.Services
             _workHoursDal = workHoursDal;
             _therapistsDal = therapistsDal;
         }
-
-
-        #region get appointments
-        #region appointments
+        public async Task<BLAppointment> GetAppointmentById(int appointmentId)
+        {
+            var appointment = await _appointmentsDal.GetAppointmentById(appointmentId);
+            if (appointment == null)
+            {
+                throw new NullReferenceException($"Appointment with ID {appointmentId} was not found.");
+            }
+            return _mapper.Map<BLAppointment>(appointment);
+        }
         public async Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly? date)
         {
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAppointmentsTherapistAndDate(therapistId, date ?? DateOnly.FromDateTime(DateTime.Now)));
@@ -84,9 +91,19 @@ namespace BL.Services
             var apps = await _appointmentsDal.GetAppointmentsTherapistAndDate(thrapistId, date);
             if (apps == null)
                 throw new NullReferenceException(nameof(apps));
-
             return await Task.FromResult(_mapper.Map<List<BLAppointment>>(apps));
         }
+
+
+        public Task<List<BLAppointment>> GetPassedAppointmentsByPatientId(int patientId)
+           => throw new NotImplementedException();
+
+        public Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
+            => throw new NotImplementedException();
+
+        public Task<List<BLAppointment>> GetPassedAppointmentsByTherapistAndDate(int therapistId, DateOnly date)
+            => throw new NotImplementedException();
+
         #endregion
 
         #region available appointments
@@ -123,16 +140,7 @@ namespace BL.Services
 
         #endregion
 
-        public Task<List<BLAppointment>> GetPassedAppointmentsByPatientId(int patientId)
-            => throw new NotImplementedException();
-
-        public Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
-            => throw new NotImplementedException();
-
-        public Task<List<BLAppointment>> GetPassedAppointmentsByTherapistAndDate(int therapistId, DateOnly date)
-            => throw new NotImplementedException();
-        #endregion
-
+       
         #region cancel appointments
         public Task<List<BLAppointment>> GetCanceleAppointmentsByPatientId(int patientId)
             => throw new NotImplementedException();
@@ -142,7 +150,6 @@ namespace BL.Services
 
         public Task<List<BLAppointment>> GetCanceleAppointmentsByDate(int therapistId, DateOnly date)
             => throw new NotImplementedException();
-        #endregion
         #endregion
 
         #region set appointments
@@ -230,11 +237,22 @@ namespace BL.Services
         #region passed appointment
         public Task<List<BLPassedAppointment>> SetPassedAppointments()
             => throw new NotImplementedException();
-        #endregion
-        #endregion
 
-        #region update appointments
-        #region appointment
+
+        /// <summary>
+        /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
+        /// </summary>
+        /// <returns></returns>
+        public async Task<BLAppointment> SetAppointmentStatus(int appointmentId,bool isConfirm)
+        {
+            var appointment = await _appointmentsDal.SetAppointmentStatus(appointmentId, isConfirm);
+            if (appointment == null)
+            {
+                throw new ArgumentException($"Appointment with ID {appointmentId} was not found.");
+            }
+            return _mapper.Map<BLAppointment>(appointment);
+        }
+        //--------------------------------------------------------------------
         #endregion
 
         #region available appointment
@@ -357,6 +375,8 @@ namespace BL.Services
             return await _passedAppointmentsDal.DeleteAllPassedAppointmentsOlderThan(endDate.Value);
         }
 
+        #region get
+
         public async Task<List<BLAppointment>> GetAllAppointments()
         {
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointments());
@@ -374,6 +394,8 @@ namespace BL.Services
         //{
         //    return _mapper.Map<List<BLAppointment>>(await .GetAppointmentsByDate(date ?? DateOnly.FromDateTime(DateTime.Now)));
         //}
+
+        #endregion
 
 
 

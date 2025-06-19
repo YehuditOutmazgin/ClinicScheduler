@@ -10,6 +10,7 @@ namespace BL
 {
     public class BLManager
     {
+        private readonly IAvailableQueueManager _availableQueueManager;
         private readonly IAppointmentsManager _appointmentsManager;
         private readonly IPatientsManager _patientsManager;
         private readonly ITherapistManager _therapistManager;
@@ -19,6 +20,23 @@ namespace BL
             _therapistManager = therapistManager;
             _patientsManager = patientsManager;
         }
+
+        /// <summary>
+        /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
+        /// </summary>
+        /// <returns></returns>
+
+        public async Task<DateTime> NextBusinessDay()
+        {
+            int adding = 1;
+            while (await _availableQueueManager.IsHolidayAsync(DateTime.Now.AddDays(adding)))
+            {
+                adding++;
+            }
+            return DateTime.Now.AddDays(adding);
+        }
+
+        //-------------------------------------------------------------------------
 
         //patient
 

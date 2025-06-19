@@ -194,6 +194,29 @@ namespace DAL.Services
                  && a.AppointmentDate <= endOfWeek && a.TherapistId == thrapistId)
                 .ToListAsync();
         }
+
+        /// <summary>
+        /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Appointment> SetAppointmentStatus(int appointmentId, bool isConfirm)
+        {
+            string status = isConfirm ? "ConfirmedByPatient" : "Pending";
+            var appointment = await _DB_Manager.Appointments
+                .FirstOrDefaultAsync(a => a.AppointmentId == appointmentId);
+            if (appointment == null)
+                return null;
+            appointment.Status = status;
+            await _DB_Manager.SaveChangesAsync();
+            return appointment;
+        }
+
+        public async Task<Appointment> GetAppointmentById(int appointmentId)
+        {
+            return await _DB_Manager.Appointments.FindAsync(appointmentId);
+        }
+
+        //----------------------------------------------------------------
     }
 }
 //﻿using DAL.Api;

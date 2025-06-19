@@ -1,4 +1,5 @@
-﻿using DAL.Models;
+﻿using DAL.Common;
+using DAL.Models;
 using DAL.Services;
 using System;
 using System.Collections.Generic;
@@ -32,8 +33,14 @@ namespace DAL.Api
         //delete apointments of therapist that have change working hours 
         Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDayGoingEarlier(int therapistId, DateOnly date, TimeOnly starthour, TimeOnly endhour);
 
-
-
+        /// <summary>
+        /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
+        /// </summary>
+        /// <returns></returns>
+        Task<Appointment>  SetAppointmentStatus(int appointmentId, bool isConfirm);
+        //get appointment by appointment id:
+        Task<Appointment> GetAppointmentById(int appointmentId);
+        //---------------------------------------------------------------------------
 
 
 
