@@ -7,6 +7,8 @@ using AutoMapper;
 using BL;
 using System.Text.Json.Serialization;
 using BL.service;
+using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,23 +49,24 @@ builder.Services.AddHostedService<MonthlyTaskService>();
 */
 //------------------------------------------------------------
 
-builder.Services.AddControllers().AddJsonOptions(opt=>opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+builder.Services.AddControllers().AddJsonOptions(opt => opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll",
-        builder => builder
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
-});
+//Logger
+builder.Logging.ClearProviders(); // clear the logger, so no one will get the logs
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+Log.Logger = new LoggerConfiguration()
+   .MinimumLevel.Information()// log level
+   .WriteTo.Console() // Optional: Log to console
+   .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day) // Log to file
+   .CreateLogger();
 
-
+builder.Host.UseSerilog();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -72,7 +75,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors("AllowAll");
+
+app.UseExceptionHandler("/error");
+
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

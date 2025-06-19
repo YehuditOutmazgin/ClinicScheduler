@@ -194,6 +194,14 @@ namespace DAL.Services
                  && a.AppointmentDate <= endOfWeek && a.TherapistId == thrapistId)
                 .ToListAsync();
         }
+
+        public async Task<Appointment> GetAppointmentById(int appointmentId)
+        {
+            var appointment = await _DB_Manager.Appointments.FindAsync(appointmentId);
+            if (appointment == null)
+                throw new KeyNotFoundException($"Appointment with ID {appointmentId} not found.");
+            return appointment;
+        }
     }
 }
 //﻿using DAL.Api;

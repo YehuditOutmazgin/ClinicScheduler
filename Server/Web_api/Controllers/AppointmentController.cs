@@ -147,8 +147,9 @@ namespace Web_api.Controllers
         #region Deletion (4 functions) to implement
         // Delete a future appointment by appointment ID and patient ID
         [HttpDelete("delete/{appointmentId}/patient/{patientId}")]
-        public async Task<IActionResult> DeleteAppointment(string appointmentId, string patientId)
-        { /* Implementation */ return Ok(); }
+        public async Task<BLAppointment> DeleteAppointment(int appointmentId, int patientId)
+        { return await _BLManager._appointmentsManager.DeleteAppointmentByPatientId(patientId, appointmentId); 
+        }
 
         // Delete a future appointment by appointment ID and patient ID therapist made need to add it to cancle appointment for confimation.
         [HttpDelete("delete/byTherapist/{appointmentId}/patient/{patientId}/")]

@@ -10,9 +10,9 @@ namespace BL
 {
     public class BLManager
     {
-        private readonly IAppointmentsManager _appointmentsManager;
-        private readonly IPatientsManager _patientsManager;
-        private readonly ITherapistManager _therapistManager;
+        public readonly IAppointmentsManager _appointmentsManager;
+        public readonly IPatientsManager _patientsManager;
+        public readonly ITherapistManager _therapistManager;
         public BLManager(IAppointmentsManager appointmentsManager, IPatientsManager patientsManager, ITherapistManager therapistManager)
         {
             _appointmentsManager = appointmentsManager;

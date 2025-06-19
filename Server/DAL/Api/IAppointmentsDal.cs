@@ -13,6 +13,7 @@ namespace DAL.Api
 
         Task AddAppointment(Appointment appointment);
         Task<List<Appointment>> GetAppointmentsByPatientId(int patientId);
+        Task<Appointment> GetAppointmentById(int appointmentId);
         Task<List<Appointment>> GetAppointmentsByPatientIdAndDate(int patientId, DateOnly date);
         Task<List<Appointment>> GetAppointmentsByDate(DateOnly? date);
         Task<List<Appointment>> GetAllAppointments();

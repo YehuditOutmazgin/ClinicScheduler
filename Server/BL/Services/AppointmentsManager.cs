@@ -3,6 +3,7 @@ using BL.Api;
 using BL.Models;
 using DAL.Api;
 using DAL.Models;
+using DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace BL.Services
 {
     public class AppointmentManager : IAppointmentsManager
     {
+        private IPatientManager _patientManager { get; set; }
+        private ITherapistManager _therapistManager { get; set; }
         #region Fields
         IAppointmentsDal _appointmentsDal;
         IAvailableAppointmentsDal _availableAppointmentsDal;
@@ -248,6 +251,29 @@ namespace BL.Services
         #endregion
 
         #region delete appointments
+        public async Task<BLAppointment> DeleteAppointment(int patientId,int appointmentId)
+        {
+            var patient = await _patientManager.GetPatientById(patientId);
+            if (patient == null)
+                throw new InvalidDataException("invalid patient id");
+            var appoint = await _appointmentsDal.GetAppointmentById(appointmentId);
+            if (appoint == null || appoint.PatientId != patientId)
+                throw new InvalidDataException("invalid appointment");
+            var therapist =  await _therapistManager.GetTherapistById(appoint.TherapistId);
+            if (therapist == null)
+                throw new KeyNotFoundException("therapist not found");
+            AvailableAppointment app = new()
+            {
+                AppointmentId = appoint.AppointmentId,
+                AppointmentTime = appoint.AppointmentTime,
+                AppointmentDate = appoint.AppointmentDate,
+                TherapistId = appoint.TherapistId,
+                DurationMinutes = 45/*appoint.AppointmentTime*/,
+                Specialization = _mapper.Map<DAL.Common.Specialization>(therapist.Specialization),
+                };
+            await _availableAppointmentsDal.AddAppointment(app);
+            return _mapper.Map<BLAppointment>(await _appointmentsDal.DeleteAppointment(appointmentId));
+        }
         #region appointment
 
         public async Task<BLAppointment> DeleteAppointmentByPatientId(int patientId, int appointmentId)

@@ -1,0 +1,15 @@
+2025-06-19 19:39:05.946 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-19 19:39:06.114 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-19 19:39:06.396 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 19:39:06.399 +03:00 [INF] Hosting environment: Development
+2025-06-19 19:39:06.401 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\ClinicScheduler\Server\Web_api
+2025-06-19 19:39:12.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-19 19:39:13.124 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 983.4128ms
+2025-06-19 19:39:13.212 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 19:39:13.238 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-19 19:39:13.238 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-19 19:39:13.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 38.3562ms
+2025-06-19 19:39:13.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 77.5045ms
+2025-06-19 19:39:13.502 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 263.4141ms
+2025-06-19 19:39:13.811 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-19 19:39:14.232 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 421.106ms
