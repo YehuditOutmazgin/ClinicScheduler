@@ -1,28 +1,8 @@
-<<<<<<< HEAD
-# Ignore node_modules in any subfolder
-**/node_modules/
-
-# Ignore build outputs
-**/dist/
-**/build/
-
-# Ignore C# bin and obj folders
-**/bin/
-**/obj/
-
-# Ignore environment files
-**/.env
-# Ignore node_modules and build artifacts
-client/node_modules/
-client/dist/
-client/build/
-
-=======
 # ========== .NET / Visual Studio ==========
 
 # Build results
-bin/
-obj/
+**/bin/
+**/obj/
 out/
 publish/
 
@@ -89,34 +69,29 @@ _ReSharper*/
 *.vssscc
 *.vspscc
 
-
 # ========== Node.js / React ==========
 
-# dependencies
-/node_modules/
-/.pnp
-.pnp.js
+# Ignore node_modules in any subfolder
+**/node_modules/
 
-# testing
-/coverage/
+# Ignore build outputs
+**/dist/
+**/build/
 
-# production builds
-/build/
-
-# misc files
-.DS_Store
-
-# environment variables
+# Ignore environment files
+**/.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# logs
+# Ignore testing coverage
+/coverage/
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 # VS Code settings
 .vscode/
->>>>>>> af2b49f46753f5207b1439818f84764073eb1292
