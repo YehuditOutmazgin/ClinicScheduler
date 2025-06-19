@@ -13,7 +13,6 @@ namespace BL.Services
         public string Role { get; set; } // "patient" או "therapist"
         public string FName { get; set; }
         public string LName { get; set; }
-
         public string phoneNumbr { get; set; }
     }
 

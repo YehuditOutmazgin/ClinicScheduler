@@ -13,12 +13,31 @@ namespace BL
         public readonly IAppointmentsManager _appointmentsManager;
         public readonly IPatientsManager _patientsManager;
         public readonly ITherapistManager _therapistManager;
+                public readonly IAvailableQueueManager _availableQueueManager;
+
         public BLManager(IAppointmentsManager appointmentsManager, IPatientsManager patientsManager, ITherapistManager therapistManager)
         {
             _appointmentsManager = appointmentsManager;
             _therapistManager = therapistManager;
             _patientsManager = patientsManager;
         }
+
+        /// <summary>
+        /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
+        /// </summary>
+        /// <returns></returns>
+
+        public async Task<DateTime> NextBusinessDay()
+        {
+            int adding = 1;
+            while (await _availableQueueManager.IsHolidayAsync(DateTime.Now.AddDays(adding)))
+            {
+                adding++;
+            }
+            return DateTime.Now.AddDays(adding);
+        }
+
+        //-------------------------------------------------------------------------
 
         //patient
 
