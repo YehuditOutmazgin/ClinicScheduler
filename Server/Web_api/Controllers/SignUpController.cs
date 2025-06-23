@@ -33,7 +33,7 @@ namespace Web_api.Controllers
 				else if (dto.Role == "therapist")
 				{
 					var blTherapist = new BLTherapist { FirstName = dto.FName, LastName = dto.LName, TherapistId = dto.id, PhoneNumber = dto.phoneNumbr };
-					 await _bLManager.AddTherapist(blTherapist);
+					 await _bLManager._therapistManager.AddTherapist(blTherapist);
 	
 					return Ok(User);
 				}

@@ -12,5 +12,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\DAL\DAL.csproj" />
+	  <ProjectReference Include="..\Exeptions\Exceptions.csproj" />
 	</ItemGroup>
 </Project>

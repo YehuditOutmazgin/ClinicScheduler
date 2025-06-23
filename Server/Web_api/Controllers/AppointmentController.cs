@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using BL.Api;
 using BL.Models;
 using BL;
+using DAL.Models;
+using System;
 namespace Web_api.Controllers
 {
     [Route("api/[controller]")]
@@ -11,18 +13,18 @@ namespace Web_api.Controllers
     {
         IAppointmentsManager _appointmentsManager;
         BLManager _BLManager;
-
-        public AppointmentController(IAppointmentsManager appointmentsManager, BLManager BLManager)
+            public AppointmentController(IAppointmentsManager appointmentsManager, BLManager BLManager)
         {
             _appointmentsManager = appointmentsManager;
-            _BLManager = BLManager;
+           _BLManager = BLManager;
+            
         }
         #region Regular Appointments (3 functions) to implement
         // Get all future appointments for a patient by ID
         [HttpGet("future/{patientId}")]
         public async Task<IActionResult> GetFutureAppointmentsByPatientId(int patientId)
         {
-            List<BLAppointment> appointments = await _BLManager.GatPatientAppointments(patientId);
+            List<BLAppointment> appointments = await _blMana_BLManager._appointmentsManager.GatPatientAppointments(patientId);
             return Ok(appointments);
         }
 
@@ -35,15 +37,28 @@ namespace Web_api.Controllers
             return Ok(appointments);
         }
 
-        // Get appointments for a therapist for the week based on a given date
+        /// <summary>
+        /// Rebecca implement this functions if you have any questions about the implementation or the function, contact me by phone:0548535515
+        /// </summary>
+        /// <returns></returns>
+
+        //// Get appointments for a therapist for the week based on a given date
         [HttpGet("therapist/week/{therapistId}/date/{date}")]
-        public async Task<IActionResult> GetAppointmentsForTherapistWeek(string therapistId, DateTime date)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> GetAppointmentsForTherapistWeek(int therapistId, string? date)
+        {
+            DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
+            var appointments = await _appointmentsManager.GetAppointmentsByTherapistIdAndWeek(therapistId, dateOnly);
+            return Ok(appointments);
+        }
 
         // Get all appointments for a specific date
         [HttpGet("date/{date}")]
-        public async Task<IActionResult> GetAppointmentsByDate(DateTime date)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> GetAppointmentsByDate(string? date)
+        {
+            DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
+            var appointments = await _appointmentsManager.GetAllAppointmentsByDate(dateOnly);
+            return Ok(appointments);
+        }
 
         // update not sure we give this functional
         [HttpPut("update{appointmentId}")]
@@ -55,22 +70,36 @@ namespace Web_api.Controllers
         // Get a list of appointments for the next business day
         [HttpGet("next-business-day")]
         public async Task<IActionResult> GetAppointmentsForNextBusinessDay()
-        { /* Implementation */ return Ok(); }
+        {
+            DateTime date = await _blMana_BLManager._appointmentsManager.NextBusinessDay();
+            DateOnly dateOnly = DateOnly.FromDateTime(date);
+            var appointments = await _appointmentsManager.GetAllAppointmentsByDate(dateOnly);
+            return Ok(appointments);
+        }
 
         // Confirm arrival for a specific appointment
         [HttpPost("confirm/{appointmentId}")]
         public async Task<IActionResult> ConfirmAppointment(int appointmentId)
-        { /* Implementation */ return Ok(); }
+        {
+            var appointment = await _appointmentsManager.SetAppointmentStatus(appointmentId,true);
+            return Ok(appointment);
+        }
 
         // Get the status of a specific appointment
         [HttpGet("status/{appointmentId}")]
         public async Task<IActionResult> GetAppointmentStatus(int appointmentId)
-        { /* Implementation */ return Ok(); }
+        {
+            var appointment = await _appointmentsManager.GetAppointmentById(appointmentId);
+            return Ok(new { appointmentId = appointment.AppointmentId, isConfirmed = appointment.Status });
+        }
 
         // Update the confirmation status of a specific appointment
         [HttpPut("update-confirmation/{appointmentId}")]
-        public async Task<IActionResult> UpdateAppointmentConfirmation(int appointmentId, bool isConfirmed)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> CancelAppointmentConfirmation(int appointmentId)
+        {
+            var appointment = await _appointmentsManager.SetAppointmentStatus(appointmentId, false);
+            return Ok(appointment);
+        }
 
         // Get all canceled appointments for a specific patient
         [HttpGet("patient/{patientId}/canceled")]
@@ -147,8 +176,9 @@ namespace Web_api.Controllers
         #region Deletion (4 functions) to implement
         // Delete a future appointment by appointment ID and patient ID
         [HttpDelete("delete/{appointmentId}/patient/{patientId}")]
-        public async Task<IActionResult> DeleteAppointment(string appointmentId, string patientId)
-        { /* Implementation */ return Ok(); }
+        public async Task<BLAppointment> DeleteAppointment(int appointmentId, int patientId)
+        { return await _blMana_BLManager._appointmentsManager._appointmentsManager.DeleteAppointmentByPatientId(patientId, appointmentId); 
+        }
 
         // Delete a future appointment by appointment ID and patient ID therapist made need to add it to cancle appointment for confimation.
         [HttpDelete("delete/byTherapist/{appointmentId}/patient/{patientId}/")]

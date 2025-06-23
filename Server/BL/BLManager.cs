@@ -10,15 +10,34 @@ namespace BL
 {
     public class BLManager
     {
-        private readonly IAppointmentsManager _appointmentsManager;
-        private readonly IPatientsManager _patientsManager;
-        private readonly ITherapistManager _therapistManager;
+        public readonly IAppointmentsManager _appointmentsManager;
+        public readonly IPatientsManager _patientsManager;
+        public readonly ITherapistManager _therapistManager;
+        public readonly IAvailableQueueManager _availableQueueManager;
+
         public BLManager(IAppointmentsManager appointmentsManager, IPatientsManager patientsManager, ITherapistManager therapistManager)
         {
             _appointmentsManager = appointmentsManager;
             _therapistManager = therapistManager;
             _patientsManager = patientsManager;
         }
+
+        /// <summary>
+        /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
+        /// </summary>
+        /// <returns></returns>
+
+        public async Task<DateTime> NextBusinessDay()
+        {
+            int adding = 1;
+            while (await _availableQueueManager.IsHolidayAsync(DateTime.Now.AddDays(adding)))
+            {
+                adding++;
+            }
+            return DateTime.Now.AddDays(adding);
+        }
+
+        //-------------------------------------------------------------------------
 
         //patient
 
@@ -51,7 +70,7 @@ namespace BL
 
         public async Task<List<BLAppointment>> GatPatientAppointments(int patientId)
         {
-           return await _patientsManager.GetPatientAppointments(patientId);
+            return await _patientsManager.GetPatientAppointments(patientId);
         }
 
 
@@ -79,50 +98,50 @@ namespace BL
         ///</summary>
         /// <returns></returns>
 
-        #region Therapist
-        // Therapist-related methods
-        public async Task<List<BLTherapist>> GetAllTherapists()
-        {
-            return await _therapistManager.GetAllTherapists();
-        }
+        //#region Therapist
+        //// Therapist-related methods
+        //public async Task<List<BLTherapist>> GetAllTherapists()
+        //{
+        //    return await _therapistManager.GetAllTherapists();
+        //}
 
-        public async Task<BLTherapist> GetTherapistById(int therapistId)
-        {
-            return await _therapistManager.GetTherapistById(therapistId);
-        }
+        //public async Task<BLTherapist> GetTherapistById(int therapistId)
+        //{
+        //    return await _therapistManager.GetTherapistById(therapistId);
+        //}
 
-        public async Task AddTherapist(BLTherapist therapist)
-        {
-            await _therapistManager.AddTherapist(therapist);
-        }
+        //public async Task AddTherapist(BLTherapist therapist)
+        //{
+        //    await _therapistManager.AddTherapist(therapist);
+        //}
 
-        public async Task<BLTherapist> UpdateTherapist(BLTherapist therapist)
-        {
-            return await _therapistManager.UpdateTherapist(therapist);
-        }
+        //public async Task<BLTherapist> UpdateTherapist(BLTherapist therapist)
+        //{
+        //    return await _therapistManager.UpdateTherapist(therapist);
+        //}
 
-        public async Task<BLTherapist> DeleteTherapist(int therapistId)
-        {
-            return await _therapistManager.DeleteTherapist(therapistId);
-        }
-        public async Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly? date)
-        {
-            return await _appointmentsManager.GetAllAppointmentsByDateAndTherapistId(therapistId, date);
-        }
+        //public async Task<BLTherapist> DeleteTherapist(int therapistId)
+        //{
+        //    return await _therapistManager.DeleteTherapist(therapistId);
+        //}
+        //public async Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly? date)
+        //{
+        //    return await _appointmentsManager.GetAllAppointmentsByDateAndTherapistId(therapistId, date);
+        //}
 
-        public async Task<List<BLWorkHour>> UpdateWorkHours(BLWorkHour workHour)
-        {
-            return await _therapistManager.UpdateWorkHours(workHour);
-        }
-        public async Task<List<BLWorkHour>> DeleteWorkDay(int therapistId, string dayOfWeek)
-        {
-            return await _therapistManager.DeleteWorkDay(therapistId, dayOfWeek);
-        }
-        public async Task<BLWorkHour> AddWorkDay(BLWorkHour workHour)
-        {
-            return await _therapistManager.AddWorkDay(workHour);
-        }
-        #endregion
+        //public async Task<List<BLWorkHour>> UpdateWorkHours(BLWorkHour workHour)
+        //{
+        //    return await _therapistManager.UpdateWorkHours(workHour);
+        //}
+        //public async Task<List<BLWorkHour>> DeleteWorkDay(int therapistId, string dayOfWeek)
+        //{
+        //    return await _therapistManager.DeleteWorkDay(therapistId, dayOfWeek);
+        //}
+        //public async Task<BLWorkHour> AddWorkDay(BLWorkHour workHour)
+        //{
+        //    return await _therapistManager.AddWorkDay(workHour);
+        //}
+        ////#endregion
     }
 }
 

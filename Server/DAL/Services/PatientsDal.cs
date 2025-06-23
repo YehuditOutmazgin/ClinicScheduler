@@ -138,10 +138,12 @@ namespace DAL.Services
                 return Task.FromResult(appointments);
             }
 
-            public Task<Patient> GetPatientById(int id)
+            public async Task<Patient> GetPatientById(int id)
             {
-                Patient patient = _dB_Manager.Patients.Find(id);
-                return Task.FromResult(patient);
+                Patient patient = await _dB_Manager.Patients.FindAsync(id);
+            if(patient==null)
+                throw new Exception("Patient not found.");  
+            return await Task.FromResult(patient);
             }
 
             public Task UpdatePatient(Patient patient)

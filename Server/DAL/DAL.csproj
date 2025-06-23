@@ -26,6 +26,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Exeptions\Exceptions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Data\ClinicDB.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

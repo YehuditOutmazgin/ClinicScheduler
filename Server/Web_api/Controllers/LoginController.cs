@@ -40,7 +40,7 @@ namespace Web_api.Controllers
             if (client != null)
                 return Ok(new { role = "client", data = client });
 
-            var therapist = _blManager.GetTherapistById(id);
+            var therapist = _blManager._therapistManager.GetTherapistById(id);
             if (therapist != null)
                 return Ok(new { role = "therapist", data = therapist });
 

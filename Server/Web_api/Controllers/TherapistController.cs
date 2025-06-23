@@ -15,29 +15,29 @@ namespace Web_api.Controllers
         // 5 functions to implement
 
 
-        private readonly BLManager _therapistManager;
-        private readonly IAppointmentsManager _appointmentsManager;
+        private readonly BLManager _blManager;
+        //private readonly IAppointmentsManager _appointmentsManager;
         //ctor
         public TherapistController(BLManager therapistManager, IAppointmentsManager appointmentsManager)
         {
-            _therapistManager = therapistManager;
-            _appointmentsManager = appointmentsManager;
+            _blManager = therapistManager;
+            //_appointmentsManager = appointmentsManager;
         }
         // Get a list of all therapists
         [HttpGet]
         public async Task<IActionResult> GetAllTherapists()
         {
-            var list = await _therapistManager.GetAllTherapists();
+            var list = await _blManager._therapistManager.GetAllTherapists();
             if (list == null || list.Count == 0)
                 return NotFound("No patients found.");
             list.ForEach(t => t.Specialization.ToString());
             return Ok(list);
         }
         // Get therapist details by ID
-        [HttpGet("{id}")]
+        [HttpGet("{therapistId}")]
         public async Task<IActionResult> GetTherapistById([FromRoute] int therapistId)
         {
-            var therapist = await _therapistManager.GetTherapistById(therapistId);
+            var therapist = await _blManager._therapistManager.GetTherapistById(therapistId);
             if (therapist == null)
                 return NotFound($"No therapist found with ID {therapistId}");
             return Ok(therapist);
@@ -49,7 +49,7 @@ namespace Web_api.Controllers
             if (therapist == null)
                 return BadRequest("Patient data is required.");
 
-            await _therapistManager.AddTherapist(therapist);
+            await _blManager._therapistManager.AddTherapist(therapist);
             return Ok(new { id = therapist.TherapistId, first_name = therapist.FirstName, last_name = therapist.LastName });
         }
         // Update therapist details by ID
@@ -58,7 +58,7 @@ namespace Web_api.Controllers
         {
             if (therapist == null)
                 return BadRequest("detailes were null");
-            var th = await _therapistManager.UpdateTherapist(therapist);
+            var th = await _blManager._therapistManager.UpdateTherapist(therapist);
             return Ok(new { therapist_id = th.TherapistId, first_name = th.FirstName, last_name = th.LastName, Specializion = th.Specialization.ToString(), message = "Therapist  updeted" });
 
         }
@@ -71,7 +71,7 @@ namespace Web_api.Controllers
 
             var dateOnly = DateOnly.FromDateTime(date);
 
-            var result = await _appointmentsManager.DeleteAppointmentForTherapistAndDate(id, dateOnly);
+            var result = await _blManager._appointmentsManager.DeleteAppointmentForTherapistAndDate(id, dateOnly);
 
             if (!result)
                 return NotFound($"No appointments found for therapist {id} on {dateOnly}.");
@@ -85,7 +85,7 @@ namespace Web_api.Controllers
             if (therapistId <= 0)
                 return BadRequest("Invalid ID");
 
-            var delTherapist = await _therapistManager.DeleteTherapist(therapistId);
+            var delTherapist = await _blManager._therapistManager.DeleteTherapist(therapistId);
             if (delTherapist == null)
                 return NotFound($"No patient found with ID {therapistId}");
 
@@ -108,7 +108,7 @@ namespace Web_api.Controllers
             {
                 // Ensure the work hour is for the correct therapist
                 workHour.TherapistId = id;
-                var result = await _therapistManager.UpdateWorkHours(workHour);
+                var result = await _blManager._therapistManager.UpdateWorkHours(workHour);
                 if (result != null)
                     updatedSchedule.AddRange(result);
             }
@@ -130,7 +130,7 @@ namespace Web_api.Controllers
 
             hours.TherapistId = id;
 
-            var addedWorkHour = await _therapistManager.AddWorkDay(hours);
+            var addedWorkHour = await _blManager._therapistManager.AddWorkDay(hours);
             if (addedWorkHour == null)
                 return StatusCode(StatusCodes.Status500InternalServerError, "Failed to add work hours.");
 
@@ -152,7 +152,7 @@ namespace Web_api.Controllers
                 return BadRequest("Day of week is required to remove work hours.");
 
             // Remove all work hours for the therapist on the specified day
-            var removedWorkHours = await _therapistManager.DeleteWorkDay(id, hours.DayOfWeek);
+            var removedWorkHours = await _blManager._therapistManager.DeleteWorkDay(id, hours.DayOfWeek);
 
             if (removedWorkHours == null || removedWorkHours.Count == 0)
                 return NotFound($"No work hours found for therapist {id} on {hours.DayOfWeek}.");

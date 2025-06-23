@@ -1,0 +1,215 @@
+2025-06-19 19:39:05.946 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-19 19:39:06.114 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-19 19:39:06.396 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 19:39:06.399 +03:00 [INF] Hosting environment: Development
+2025-06-19 19:39:06.401 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\ClinicScheduler\Server\Web_api
+2025-06-19 19:39:12.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-19 19:39:13.124 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 983.4128ms
+2025-06-19 19:39:13.212 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 19:39:13.238 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-19 19:39:13.238 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-19 19:39:13.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 38.3562ms
+2025-06-19 19:39:13.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 77.5045ms
+2025-06-19 19:39:13.502 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 263.4141ms
+2025-06-19 19:39:13.811 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-19 19:39:14.232 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 421.106ms
+2025-06-19 23:06:48.493 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-19 23:06:48.716 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-19 23:06:49.246 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 23:06:49.367 +03:00 [INF] Hosting environment: Development
+2025-06-19 23:06:49.374 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\‏‏תיקיה חדשה\ClinicScheduler\Server\Web_api
+2025-06-19 23:06:51.074 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-19 23:06:51.618 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 548.4794ms
+2025-06-19 23:06:51.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 23:06:51.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-19 23:06:51.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-19 23:06:51.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 24.5448ms
+2025-06-19 23:06:51.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 86.027ms
+2025-06-19 23:06:51.953 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 224.8635ms
+2025-06-19 23:06:52.363 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-19 23:06:52.855 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 492.8743ms
+2025-06-19 23:08:23.730 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/index.html - null null
+2025-06-19 23:08:33.183 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/index.html - 200 null text/html;charset=utf-8 9452.4224ms
+2025-06-19 23:08:34.102 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/index.js - null null
+2025-06-19 23:08:44.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 23:08:53.669 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/index.js - 200 null application/javascript;charset=utf-8 19569.758ms
+2025-06-19 23:09:01.492 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 17386.0726ms
+2025-06-19 23:08:36.299 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/_vs/browserLink - null null
+2025-06-19 23:09:04.295 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-19 23:09:06.958 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30658.7207ms
+2025-06-19 23:09:07.083 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 2788.8351ms
+2025-06-19 23:09:07.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 23:09:07.783 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-19 23:09:28.971 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 21243.2723ms
+2025-06-19 23:09:37.484 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29701.3797ms
+2025-06-19 23:09:07.783 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-19 23:09:47.763 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 39980.3076ms
+2025-06-19 23:09:48.869 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-19 23:09:53.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4508.5803ms
+2025-06-19 23:13:49.517 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:49.543 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:49.546 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:49.549 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 31.7342ms
+2025-06-19 23:13:50.618 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:50.626 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:50.628 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:50.633 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 15.5157ms
+2025-06-19 23:13:51.337 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:51.342 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:51.344 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:51.347 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 9.5684ms
+2025-06-19 23:13:51.968 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:51.976 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:51.978 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:51.984 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 16.2462ms
+2025-06-19 23:13:52.457 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:52.468 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:52.471 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:52.473 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 15.4946ms
+2025-06-19 23:13:52.759 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:52.787 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:52.789 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:52.791 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 32.5923ms
+2025-06-19 23:13:52.973 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:52.978 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:52.981 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:52.983 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 10.1954ms
+2025-06-19 23:13:53.189 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:53.196 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:53.198 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:53.202 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 12.0502ms
+2025-06-19 23:13:53.366 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:53.371 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:53.373 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:53.375 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 9.6208ms
+2025-06-19 23:13:53.577 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:53.583 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:53.586 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:53.588 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 11.5446ms
+2025-06-19 23:13:53.784 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:53.789 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:53.792 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:53.795 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 11.0992ms
+2025-06-19 23:13:54.018 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:54.024 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.026 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.029 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 10.8012ms
+2025-06-19 23:13:54.223 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:54.228 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.230 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.233 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 10.3579ms
+2025-06-19 23:13:54.436 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:54.440 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.443 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.446 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 10.0919ms
+2025-06-19 23:13:54.644 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:54.653 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.655 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.658 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 13.9661ms
+2025-06-19 23:13:54.898 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:54.904 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.910 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:54.912 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 14.1369ms
+2025-06-19 23:13:55.096 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:55.103 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:55.105 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:55.107 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 11.1671ms
+2025-06-19 23:13:55.291 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:55.295 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:55.298 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:55.300 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 9.4ms
+2025-06-19 23:13:55.523 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:55.528 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:55.530 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:55.532 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 9.7308ms
+2025-06-19 23:13:55.957 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:55.966 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:55.972 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:55.974 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 17.064ms
+2025-06-19 23:13:56.226 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:56.234 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:56.237 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:56.240 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 13.5258ms
+2025-06-19 23:13:56.575 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-06-19 23:13:56.580 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:56.586 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:13:56.590 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 14.4834ms
+2025-06-19 23:14:13.603 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/SignUp - null null
+2025-06-19 23:14:13.609 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:14:13.612 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-19 23:14:13.614 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/SignUp - 405 0 null 11.3082ms
+2025-06-19 23:14:44.909 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-19 23:14:47.162 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/index.html - null null
+2025-06-19 23:14:47.389 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 23:14:47.501 +03:00 [INF] Hosting environment: Development
+2025-06-19 23:14:47.503 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\‏‏תיקיה חדשה\ClinicScheduler\Server\Web_api
+2025-06-19 23:14:48.492 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/index.html - 200 null text/html;charset=utf-8 1305.0822ms
+2025-06-19 23:14:48.619 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 23:14:48.621 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/index.js - null null
+2025-06-19 23:14:48.621 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/_vs/browserLink - null null
+2025-06-19 23:14:48.635 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 57.777ms
+2025-06-19 23:14:48.637 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/index.js - 200 null application/javascript;charset=utf-8 16.4234ms
+2025-06-19 23:14:48.809 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/_vs/browserLink - 200 null text/javascript; charset=UTF-8 188.2833ms
+2025-06-19 23:14:49.414 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/v1/swagger.json - null null
+2025-06-19 23:14:49.418 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/favicon-32x32.png - null null
+2025-06-19 23:14:49.549 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-06-19 23:14:49.570 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/favicon-32x32.png - 200 628 image/png 152.2151ms
+2025-06-19 23:14:49.955 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 541.1313ms
+2025-06-19 23:15:29.925 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-19 23:15:30.153 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 23:15:30.155 +03:00 [INF] Hosting environment: Development
+2025-06-19 23:15:30.157 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\‏‏תיקיה חדשה\ClinicScheduler\Server\Web_api
+2025-06-19 23:15:30.768 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/index.html - null null
+2025-06-19 23:15:31.108 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/index.html - 200 null text/html;charset=utf-8 343.4391ms
+2025-06-19 23:15:31.124 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/index.js - null null
+2025-06-19 23:15:31.139 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/_vs/browserLink - null null
+2025-06-19 23:15:31.156 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/index.js - 200 null application/javascript;charset=utf-8 32.4456ms
+2025-06-19 23:15:31.163 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 23:15:31.207 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 44.4751ms
+2025-06-19 23:15:31.236 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.6501ms
+2025-06-19 23:15:31.417 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/v1/swagger.json - null null
+2025-06-19 23:15:31.851 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 434.2648ms
+2025-06-19 23:17:16.317 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-19 23:17:16.758 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 23:17:16.884 +03:00 [INF] Hosting environment: Development
+2025-06-19 23:17:16.911 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\‏‏תיקיה חדשה\ClinicScheduler\Server\Web_api
+2025-06-19 23:17:18.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/index.html - null null
+2025-06-19 23:17:19.716 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/index.html - 200 null text/html;charset=utf-8 1626.2382ms
+2025-06-19 23:17:19.837 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/_vs/browserLink - null null
+2025-06-19 23:17:19.851 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/index.js - null null
+2025-06-19 23:17:20.171 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 23:17:20.196 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/index.js - 200 null application/javascript;charset=utf-8 344.9375ms
+2025-06-19 23:17:20.204 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 32.0742ms
+2025-06-19 23:17:20.350 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/_vs/browserLink - 200 null text/javascript; charset=UTF-8 517.9494ms
+2025-06-19 23:17:21.155 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/swagger/v1/swagger.json - null null
+2025-06-19 23:17:21.572 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 416.5638ms
+2025-06-19 23:17:29.055 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5129/api/Appointment/future/1 - null null
+2025-06-19 23:17:29.073 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-06-19 23:17:29.082 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-06-19 23:17:29.138 +03:00 [INF] Route matched with {action = "GetFutureAppointmentsByPatientId", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFutureAppointmentsByPatientId(Int32) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-19 23:17:36.980 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-19 23:17:37.086 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api) in 7934.1828ms
+2025-06-19 23:17:37.098 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-06-19 23:17:37.120 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5129/api/Appointment/future/1 - 200 null application/json; charset=utf-8 8064.587ms
+2025-06-19 23:18:01.652 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5129/api/Login/1 - null 0
+2025-06-19 23:18:01.660 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-06-19 23:18:01.668 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-06-19 23:18:10.421 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-19 23:18:10.465 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 8792.2199ms
+2025-06-19 23:18:10.468 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-06-19 23:18:10.470 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5129/api/Login/1 - 200 null application/json; charset=utf-8 8818.4455ms
+2025-06-19 23:20:26.829 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-19 23:20:26.930 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-19 23:20:27.167 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-19 23:20:27.473 +03:00 [INF] Hosting environment: Development
+2025-06-19 23:20:27.485 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\‏‏תיקיה חדשה\ClinicScheduler\Server\Web_api
+2025-06-19 23:20:27.684 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-19 23:20:28.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 426.0377ms
+2025-06-19 23:20:28.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-19 23:20:28.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-19 23:20:28.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-19 23:20:28.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 47.0367ms
+2025-06-19 23:20:28.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 47.6581ms
+2025-06-19 23:20:28.367 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 146.2066ms
+2025-06-19 23:20:28.692 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-19 23:20:28.993 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 300.8522ms
