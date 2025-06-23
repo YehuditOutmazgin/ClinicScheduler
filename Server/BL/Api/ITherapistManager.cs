@@ -6,6 +6,7 @@ namespace BL.Api
 {
     public  interface ITherapistManager
     {
+
         Task<BLTherapist> AddTherapist(BLTherapist therapist);
         Task<BLWorkHour> AddWorkDay(BLWorkHour workHour);
         Task<BLTherapist> DeleteTherapist(int id);

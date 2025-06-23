@@ -37,7 +37,10 @@ namespace Web_api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTherapistById([FromRoute] int therapistId)
         {
-            return Ok(await _therapistManager.GetTherapistById(therapistId));
+            var therapist = await _therapistManager.GetTherapistById(therapistId);
+            if (therapist == null)
+                return NotFound($"No therapist found with ID {therapistId}");
+            return Ok(therapist);
         }
         // Register a new therapist
         [HttpPost]
@@ -61,8 +64,20 @@ namespace Web_api.Controllers
         }
         // Cancel a specific work day
         [HttpDelete("{id}/cancel-day")]
-        public async Task<IActionResult> CancelWorkDay(int id, DateTime date)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> CancelWorkDay(int id, [FromQuery] DateTime date)
+        {
+            if (id <= 0)
+                return BadRequest("Invalid therapist ID.");
+
+            var dateOnly = DateOnly.FromDateTime(date);
+
+            var result = await _appointmentsManager.DeleteAppointmentForTherapistAndDate(id, dateOnly);
+
+            if (!result)
+                return NotFound($"No appointments found for therapist {id} on {dateOnly}.");
+
+            return Ok(new { therapist_id = id, date = dateOnly, message = "All appointments for the day have been canceled." });
+        }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<BLPatient>> DeleteTherapist([FromRoute] int therapistId)
@@ -77,19 +92,78 @@ namespace Web_api.Controllers
             return Ok(new { therapist_id = therapistId, first_name = delTherapist.FirstName, last_name = delTherapist.LastName, message = "Therapist  deleted" });
         }
         // Update the regular schedule of a therapist
+        
         [HttpPut("{id}/schedule")]
         public async Task<IActionResult> UpdateRegularSchedule(int id, [FromBody] List<BLWorkHour> schedule)
-        { /* Implementation */ return Ok(); }
+        {
+            if (id <= 0)
+                return BadRequest("Invalid therapist ID.");
 
+            if (schedule == null || schedule.Count == 0)
+                return BadRequest("Schedule data is required.");
+
+            List<BLWorkHour> updatedSchedule = new();
+
+            foreach (var workHour in schedule)
+            {
+                // Ensure the work hour is for the correct therapist
+                workHour.TherapistId = id;
+                var result = await _therapistManager.UpdateWorkHours(workHour);
+                if (result != null)
+                    updatedSchedule.AddRange(result);
+            }
+
+            if (updatedSchedule.Count == 0)
+                return NotFound("No work hours were updated.");
+
+            return Ok(new { therapist_id = id, updated_schedule = updatedSchedule });
+        }
         //// Add work hours for a specific day
         [HttpPost("{id}/add-work-hours")]
         public async Task<IActionResult> AddWorkHours(int id, [FromBody] BLWorkHour hours)
-        { /* Implementation */ return Ok(); }
+        {
+            if (id <= 0)
+                return BadRequest("Invalid therapist ID.");
 
-        //// Remove work hours for a specific day
+            if (hours == null)
+                return BadRequest("Work hour data is required.");
+
+            hours.TherapistId = id;
+
+            var addedWorkHour = await _therapistManager.AddWorkDay(hours);
+            if (addedWorkHour == null)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Failed to add work hours.");
+
+            return Ok(new
+            {
+                therapist_id = id,
+                work_hour = addedWorkHour,
+                message = "Work hour added successfully."
+            });
+        }
+
         [HttpDelete("{id}/remove-work-hours")]
         public async Task<IActionResult> RemoveWorkHours(int id, [FromBody] BLWorkHour hours)
-        { /* Implementation */ return Ok(); }
+        {
+            if (id <= 0)
+                return BadRequest("Invalid therapist ID.");
+
+            if (hours == null || string.IsNullOrWhiteSpace(hours.DayOfWeek))
+                return BadRequest("Day of week is required to remove work hours.");
+
+            // Remove all work hours for the therapist on the specified day
+            var removedWorkHours = await _therapistManager.DeleteWorkDay(id, hours.DayOfWeek);
+
+            if (removedWorkHours == null || removedWorkHours.Count == 0)
+                return NotFound($"No work hours found for therapist {id} on {hours.DayOfWeek}.");
+
+            return Ok(new
+            {
+                therapist_id = id,
+                removed_work_hours = removedWorkHours,
+                message = $"Work hours for {hours.DayOfWeek} removed successfully."
+            });
+        }
 
     }
 }

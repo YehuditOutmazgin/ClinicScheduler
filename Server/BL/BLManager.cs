@@ -109,6 +109,19 @@ namespace BL
         {
             return await _appointmentsManager.GetAllAppointmentsByDateAndTherapistId(therapistId, date);
         }
+
+        public async Task<List<BLWorkHour>> UpdateWorkHours(BLWorkHour workHour)
+        {
+            return await _therapistManager.UpdateWorkHours(workHour);
+        }
+        public async Task<List<BLWorkHour>> DeleteWorkDay(int therapistId, string dayOfWeek)
+        {
+            return await _therapistManager.DeleteWorkDay(therapistId, dayOfWeek);
+        }
+        public async Task<BLWorkHour> AddWorkDay(BLWorkHour workHour)
+        {
+            return await _therapistManager.AddWorkDay(workHour);
+        }
         #endregion
     }
 }
