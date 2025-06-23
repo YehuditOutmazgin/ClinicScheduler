@@ -16,12 +16,10 @@ namespace Web_api.Controllers
 
 
         private readonly BLManager _blManager;
-        //private readonly IAppointmentsManager _appointmentsManager;
         //ctor
         public TherapistController(BLManager therapistManager, IAppointmentsManager appointmentsManager)
         {
             _blManager = therapistManager;
-            //_appointmentsManager = appointmentsManager;
         }
         // Get a list of all therapists
         [HttpGet]

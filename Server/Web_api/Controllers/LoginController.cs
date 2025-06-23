@@ -36,7 +36,7 @@ namespace Web_api.Controllers
         [HttpPost("{id}")]
         public IActionResult Login([FromRoute] int id)
         {
-            var client = _blManager.GetPatientById(id);
+            var client = _blManager._patientsManager.GetPatientById(id);
             if (client != null)
                 return Ok(new { role = "client", data = client });
 

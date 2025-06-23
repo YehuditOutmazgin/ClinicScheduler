@@ -26,7 +26,7 @@ namespace Web_api.Controllers
 				if (dto.Role == "patient")
 				{
 					var bLPatient = new BLPatient { FirstName=dto.FName,LastName=dto.LName,PatientId=dto.id,PhoneNumber=dto.phoneNumbr};
-					await _bLManager.AddPatient(bLPatient);
+					await _bLManager._patientsManager.AddPatient(bLPatient);
 				   
 					return Ok();
 				}

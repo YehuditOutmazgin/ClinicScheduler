@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using BL.Api;
 using BL.Models;
 using BL;
-using DAL.Models;
+
 using System;
 namespace Web_api.Controllers
 {
@@ -11,20 +11,17 @@ namespace Web_api.Controllers
     [ApiController]
     public class AppointmentController : ControllerBase
     {
-        IAppointmentsManager _appointmentsManager;
         BLManager _BLManager;
-            public AppointmentController(IAppointmentsManager appointmentsManager, BLManager BLManager)
+        public AppointmentController(IAppointmentsManager appointmentsManager, BLManager BLManager)
         {
-            _appointmentsManager = appointmentsManager;
-           _BLManager = BLManager;
-            
+            _BLManager = BLManager;
         }
         #region Regular Appointments (3 functions) to implement
         // Get all future appointments for a patient by ID
         [HttpGet("future/{patientId}")]
         public async Task<IActionResult> GetFutureAppointmentsByPatientId(int patientId)
         {
-            List<BLAppointment> appointments = await _blMana_BLManager._appointmentsManager.GatPatientAppointments(patientId);
+            List<BLAppointment> appointments = await _BLManager._appointmentsManager.GetAllAppointmentsByPatientId(patientId);
             return Ok(appointments);
         }
 
@@ -33,7 +30,7 @@ namespace Web_api.Controllers
         public async Task<IActionResult> GetAppointmentsByTherapistAndDate(int therapistId, string? date)
         {
             DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
-            var appointments = await _appointmentsManager.GetAllAppointmentsByDateAndTherapistId(therapistId, dateOnly);
+            var appointments = await _BLManager._appointmentsManager.GetAllAppointmentsByDateAndTherapistId(therapistId, dateOnly);
             return Ok(appointments);
         }
 
@@ -47,7 +44,7 @@ namespace Web_api.Controllers
         public async Task<IActionResult> GetAppointmentsForTherapistWeek(int therapistId, string? date)
         {
             DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
-            var appointments = await _appointmentsManager.GetAppointmentsByTherapistIdAndWeek(therapistId, dateOnly);
+            var appointments = await _BLManager._appointmentsManager.GetAppointmentsByTherapistIdAndWeek(therapistId, dateOnly);
             return Ok(appointments);
         }
 
@@ -56,7 +53,7 @@ namespace Web_api.Controllers
         public async Task<IActionResult> GetAppointmentsByDate(string? date)
         {
             DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
-            var appointments = await _appointmentsManager.GetAllAppointmentsByDate(dateOnly);
+            var appointments = await _BLManager._appointmentsManager.GetAllAppointmentsByDate(dateOnly);
             return Ok(appointments);
         }
 
@@ -71,9 +68,9 @@ namespace Web_api.Controllers
         [HttpGet("next-business-day")]
         public async Task<IActionResult> GetAppointmentsForNextBusinessDay()
         {
-            DateTime date = await _blMana_BLManager._appointmentsManager.NextBusinessDay();
+            DateTime date = await _BLManager._appointmentsManager.NextBusinessDay();
             DateOnly dateOnly = DateOnly.FromDateTime(date);
-            var appointments = await _appointmentsManager.GetAllAppointmentsByDate(dateOnly);
+            var appointments = await _BLManager._appointmentsManager.GetAllAppointmentsByDate(dateOnly);
             return Ok(appointments);
         }
 
@@ -81,7 +78,7 @@ namespace Web_api.Controllers
         [HttpPost("confirm/{appointmentId}")]
         public async Task<IActionResult> ConfirmAppointment(int appointmentId)
         {
-            var appointment = await _appointmentsManager.SetAppointmentStatus(appointmentId,true);
+            var appointment = await _BLManager._appointmentsManager.SetAppointmentStatus(appointmentId, true);
             return Ok(appointment);
         }
 
@@ -89,7 +86,7 @@ namespace Web_api.Controllers
         [HttpGet("status/{appointmentId}")]
         public async Task<IActionResult> GetAppointmentStatus(int appointmentId)
         {
-            var appointment = await _appointmentsManager.GetAppointmentById(appointmentId);
+            var appointment = await _BLManager._appointmentsManager.GetAppointmentById(appointmentId);
             return Ok(new { appointmentId = appointment.AppointmentId, isConfirmed = appointment.Status });
         }
 
@@ -97,7 +94,7 @@ namespace Web_api.Controllers
         [HttpPut("update-confirmation/{appointmentId}")]
         public async Task<IActionResult> CancelAppointmentConfirmation(int appointmentId)
         {
-            var appointment = await _appointmentsManager.SetAppointmentStatus(appointmentId, false);
+            var appointment = await _BLManager._appointmentsManager.SetAppointmentStatus(appointmentId, false);
             return Ok(appointment);
         }
 
@@ -133,7 +130,7 @@ namespace Web_api.Controllers
             {
                 dateOnly = DateOnly.FromDateTime(DateTime.Now);
             }
-            var availapp = await _appointmentsManager.GetAvailableAppointmentsForSpecificSpecializationForWeek(specialty, dateOnly);
+            var availapp = await _BLManager._appointmentsManager.GetAvailableAppointmentsForSpecificSpecializationForWeek(specialty, dateOnly);
             if (availapp == null)
             {
                 return NotFound("No available appointments found for the specified specialization and week.");
@@ -177,7 +174,8 @@ namespace Web_api.Controllers
         // Delete a future appointment by appointment ID and patient ID
         [HttpDelete("delete/{appointmentId}/patient/{patientId}")]
         public async Task<BLAppointment> DeleteAppointment(int appointmentId, int patientId)
-        { return await _blMana_BLManager._appointmentsManager._appointmentsManager.DeleteAppointmentByPatientId(patientId, appointmentId); 
+        {
+            return await _BLManager._appointmentsManager.DeleteAppointmentByPatientId(patientId, appointmentId);
         }
 
         // Delete a future appointment by appointment ID and patient ID therapist made need to add it to cancle appointment for confimation.

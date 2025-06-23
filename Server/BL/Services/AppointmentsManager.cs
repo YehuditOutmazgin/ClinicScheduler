@@ -1,6 +1,7 @@
 using AutoMapper;
 using BL.Api;
 using BL.Models;
+using BL.service;
 using DAL.Api;
 using DAL.Common;
 using DAL.Models;
@@ -407,6 +408,10 @@ namespace BL.Services
         {
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointments());
         }
+        public async Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int patientId)
+        {
+            return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAppointmentsByPatientId(patientId));
+        }
         public async Task<List<BLAppointment>> GetAllAppointmentsSet()
         {
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointmentsSet());
@@ -441,9 +446,19 @@ namespace BL.Services
         {
             throw new NotImplementedException();
         }
+#endregion
+#endregion
 
-
+#region general
+public async Task<DateTime> NextBusinessDay()
+{
+    int adding = 1;
+    while (await _availableQueueManager.IsHolidayAsync(DateTime.Now.AddDays(adding)))
+    {
+        adding++;
     }
+    return DateTime.Now.AddDays(adding);
 }
 #endregion
-#endregion
+    }
+}

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Exeptions.Exceptions;
+using Exeptions;
 namespace Web_api.Controllers
 {
     [Route("api/[controller]")]

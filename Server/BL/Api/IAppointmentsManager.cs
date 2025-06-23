@@ -14,6 +14,7 @@ namespace BL.Api
 
         Task<BLAppointment> GetAppointmentById(int appointmentId);
         Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly? date);
+        Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int patientId);
         Task<List<BLAppointment>> GetAppointmentsByPatientIdAndThetherapistIdAndDate(int therapistId, DateOnly date, int patientId);
         Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date);
         Task<List<BLAppointment>> GetAllAppointments();
@@ -89,14 +90,16 @@ namespace BL.Api
         Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId, DateOnly date);
         Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date); // move after to canceled
         Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null);
-       //delete appointmet range
+        //delete appointmet range
         // Task DeleteRangeAppointments(List<Appointment> appointments);
 
         #endregion
 
         #region general
+        Task<DateTime> NextBusinessDay();
 
         #endregion
+
         // if you think that you need to add something, please discuss it with me
         //good luck!!
     }

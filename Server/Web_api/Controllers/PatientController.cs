@@ -4,24 +4,24 @@ using DAL.Models;
 using DAL.Api;
 using BL.Api;
 using BL.Models;
+using BL;
 
 namespace Web_api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class PatientController : ControllerBase
-    { 
-
-        IPatientsManager _patientsManager;
-        public PatientController(IPatientsManager patientsManager)
+    {
+        BLManager _blManager;
+        public PatientController(BLManager blManager)
         {
-            _patientsManager = patientsManager;
+            _blManager = blManager;
         }
         // Get a list of all patients
         [HttpGet]
         public async Task<IActionResult> GetAllPatients()
         {
-            var patients = await _patientsManager.GetAllPatients();
+            var patients = await _blManager._patientsManager.GetAllPatients();
             if (patients == null || patients.Count == 0)
                 return NotFound("No patients found.");
 
@@ -34,7 +34,7 @@ namespace Web_api.Controllers
             if (id <= 0)
                 return BadRequest("Invalid patient ID.");
 
-            var patient = await _patientsManager.GetPatientById(id);
+            var patient = await _blManager._patientsManager.GetPatientById(id);
             if (patient == null)
                 return NotFound($"Patient with ID {id} not found.");
 
@@ -47,7 +47,7 @@ namespace Web_api.Controllers
             if (patient == null)
                 return BadRequest("Patient data is required.");
 
-            await _patientsManager.AddPatient(patient);
+            await _blManager._patientsManager.AddPatient(patient);
             return CreatedAtAction(nameof(GetPatientById), new { id = patient.PatientId }, patient); // Assuming `BLPatient` has an `Id` property
         }
         // Update patient details by ID
@@ -60,7 +60,7 @@ namespace Web_api.Controllers
             if (id != patient.PatientId) // Assuming `BLPatient` has an `Id` property
                 return BadRequest("Patient ID mismatch.");
 
-            await _patientsManager.UpdatePatient(patient);
+            await _blManager._patientsManager.UpdatePatient(patient);
             return Ok(new { patientId = id, first_name = patient.FirstName, last_name = patient.LastName });
         }
         // Delete a patient by ID
@@ -70,7 +70,7 @@ namespace Web_api.Controllers
             if (id <= 0)
                 return BadRequest("Invalid ID");
 
-            var delPatient = await _patientsManager.DeletePatient(id);
+            var delPatient = await _blManager._patientsManager.DeletePatient(id);
             if (delPatient == null)
                 return NotFound($"No patient found with ID {id}");
 
