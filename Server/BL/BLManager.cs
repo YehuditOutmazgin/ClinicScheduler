@@ -13,7 +13,6 @@ namespace BL
         public readonly IAppointmentsManager _appointmentsManager;
         public readonly IPatientsManager _patientsManager;
         public readonly ITherapistManager _therapistManager;
-        public readonly IAvailableQueueManager _availableQueueManager;
 
         public BLManager(IAppointmentsManager appointmentsManager, IPatientsManager patientsManager, ITherapistManager therapistManager)
         {

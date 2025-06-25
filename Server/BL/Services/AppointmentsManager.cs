@@ -38,6 +38,31 @@ namespace BL.Services
             _workHoursDal = workHoursDal;
             _therapistsDal = therapistsDal;
         }
+
+        // BL layer
+        public async Task<BLAppointment> ScheduleAppointment(int patientId, int appointmentId)
+        {
+            AvailableAppointment? freeSlot =
+                await _availableAppointmentsDal.RemoveAppointment(appointmentId);
+
+            if (freeSlot is null)
+                throw new KeyNotFoundException(
+                    $"No available appointment with ID {appointmentId}.");
+
+            Appointment booked = new Appointment
+            {
+                AppointmentId = freeSlot.AppointmentId,
+                AppointmentDate = freeSlot.AppointmentDate,
+                AppointmentTime = freeSlot.AppointmentTime,
+                TherapistId = freeSlot.TherapistId,
+                PatientId = patientId,
+                Status = "Scheduled"              
+            };
+            await _appointmentsDal.AddAppointment(booked);
+            return _mapper.Map<BLAppointment>(booked);
+        }
+
+
         public async Task<BLAppointment> GetAppointmentById(int appointmentId)
         {
             var appointment = await _appointmentsDal.GetAppointmentById(appointmentId);
@@ -99,14 +124,37 @@ namespace BL.Services
         }
 
 
-        public Task<List<BLAppointment>> GetPassedAppointmentsByPatientId(int patientId)
-           => throw new NotImplementedException();
+        public Task<List<BLPassedAppointment>> GetPassedAppointmentsByPatientId(int patientId)
+        {
+            if (patientId < 0)
+                throw new ArgumentNullException(nameof(patientId));
+            return _passedAppointmentsDal.GetAllPassedAppointmentsByPatientId(patientId)
+                .ContinueWith(task => _mapper.Map<List<BLPassedAppointment>>(task.Result));
+        }
 
         public Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
             => throw new NotImplementedException();
 
-        public Task<List<BLAppointment>> GetPassedAppointmentsByTherapistAndDate(int therapistId, DateOnly date)
-            => throw new NotImplementedException();
+        public async Task<List<BLPassedAppointment>> GetPassedAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date)
+        {
+            if (therapistId < 0)
+                throw new ArgumentNullException(nameof(therapistId));
+            if (date > DateOnly.FromDateTime(DateTime.Now))
+                throw new ArgumentException("Date cannot be in the future", nameof(date));
+            var passedAppointments = await _passedAppointmentsDal.GetAllPassedAppointmentsByTherapistIdAndDate(therapistId, date);
+            return _mapper.Map<List<BLPassedAppointment>>(passedAppointments);
+        }
+
+        public async Task<List<BLPassedAppointment>> GetPastAppointmentsByTherapistInDateRange(int therapistId, DateOnly start, DateOnly end)
+        {
+            if (therapistId < 0)
+                throw new ArgumentNullException(nameof(therapistId));
+            if (start > end)
+                throw new ArgumentException("Start date cannot be after end date", nameof(start));
+            var passedAppointments = await _passedAppointmentsDal.GetAllPassedAppointmentsByTherapistIdAndRangeDate(therapistId, start, end);
+            return _mapper.Map<List<BLPassedAppointment>>(passedAppointments);
+        }
+
 
         #endregion
 
@@ -144,10 +192,30 @@ namespace BL.Services
 
         #endregion
 
-       
+
         #region cancel appointments
-        public Task<List<BLAppointment>> GetCanceleAppointmentsByPatientId(int patientId)
-            => throw new NotImplementedException();
+
+        /// <summary>
+        /// Rebecca implement this functions if you have any questions about the implementation or the function, contact me by phone:0548535515
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<BLCanceledAppointment>> GetCanceleAppointmentsByPatientId(int patientId)
+        {
+            var apps = await _canceledAppointmentsDal.GetCanceledAppointmentsByPatientId(patientId);
+            if (apps == null)
+                throw new NullReferenceException(nameof(apps));
+            return await Task.FromResult(_mapper.Map<List<BLCanceledAppointment>>(apps));
+        }
+
+        public async Task<List<BLCanceledAppointment>> GetAllCanceleAppointments()
+        {
+            var apps = await _canceledAppointmentsDal.GetAllCanceledAppointments();
+            if (apps == null)
+                throw new NullReferenceException(nameof(apps));
+            return await Task.FromResult(_mapper.Map<List<BLCanceledAppointment>>(apps));
+        }
+
+        //-----------------------------------------------------------------
 
         public Task<List<BLAppointment>> GetCanceleAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date)
             => throw new NotImplementedException();
@@ -295,26 +363,28 @@ namespace BL.Services
         }
         #region appointment
 
-        public async Task<BLAppointment> DeleteAppointmentByPatientId(int patientId, int appointmentId)
+        public async Task<BLAppointment> DeleteAppointmentByPatient(int patientId, int appointmentId)
         {
-            if (appointmentId == 0)
-                throw new ArgumentNullException(nameof(appointmentId));
-
-            //we neeed to use with the patient id? think about it.
-            AppointmentBase appointment = await _appointmentsDal.DeleteAppointment(appointmentId);
-            if (appointment == null)
-                throw new NullReferenceException(nameof(appointment));
-            var newAvailableAppointment = new AvailableAppointment
+            var patient = await _patientManager.GetPatientById(patientId);
+            if (patient == null)
+                throw new InvalidDataException("invalid patient id");
+            var appoint = await _appointmentsDal.GetAppointmentById(appointmentId);
+            if (appoint == null || appoint.PatientId != patientId)
+                throw new InvalidDataException("invalid appointment");
+            if (patientId != appoint.PatientId)
+                throw new InvalidDataException("the patient dont has appointment with this id");
+            
+            AvailableAppointment app = new()
             {
-                TherapistId = appointment.TherapistId,
-                AppointmentTime = appointment.AppointmentTime,
-                AppointmentDate = appointment.AppointmentDate,
-                Specialization = appointment.Therapist.Specialization,
-
+                AppointmentId = appoint.AppointmentId,
+                AppointmentTime = appoint.AppointmentTime,
+                AppointmentDate = appoint.AppointmentDate,
+                TherapistId = appoint.TherapistId,
+                DurationMinutes = 45/*appoint.AppointmentTime*/,
+                Specialization = _mapper.Map<DAL.Common.Specialization>(appoint.Therapist.Specialization),
             };
-
-            await _availableAppointmentsDal.AddAppointment(newAvailableAppointment);
-            return await Task.FromResult(_mapper.Map<BLAppointment>(appointment));
+            await _availableAppointmentsDal.AddAppointment(app);
+            return _mapper.Map<BLAppointment>(await _appointmentsDal.DeleteAppointment(appointmentId));
         }
 
         public async Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null)
@@ -346,7 +416,7 @@ namespace BL.Services
         public async Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId, DateOnly date)
         {
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
-                throw new ArgumentException("Date cannot be in the future", nameof(date));
+                throw new ArgumentException("Date cannot be more than 6 months in the future.", nameof(date));
 
             if (therapistId == 0)
                 throw new ArgumentNullException(nameof(therapistId));
@@ -384,7 +454,11 @@ namespace BL.Services
 
         public async Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId)
         {
-            return _mapper.Map<BLCanceledAppointment>(await _canceledAppointmentsDal.RemoveCanceledAppointment(appointmentId));
+            var app = await _canceledAppointmentsDal.RemoveCanceledAppointment(appointmentId);
+            if (app == null)
+                throw new KeyNotFoundException("Appointment with the specified ID does not exist in the system.");
+
+            return _mapper.Map<BLCanceledAppointment>(app);
         }
 
         public async Task<bool> DeleteOldPassedAppointment(DateOnly? endDate = null)

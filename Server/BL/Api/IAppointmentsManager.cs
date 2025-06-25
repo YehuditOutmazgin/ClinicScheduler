@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace BL.Api
 {
     public interface IAppointmentsManager
     {
+
+        Task<BLAppointment> ScheduleAppointment(int patientId, int appointmentId);
         #region get appointments
         #region appointments
 
@@ -28,12 +31,15 @@ namespace BL.Api
         Task<List<BLAvailableAppointment>> GetAvailableAppointmentsForSpecificTherapistForWeek(int therapistId, DateOnly date);
         #endregion
         #region passed appointments
-        Task<List<BLAppointment>> GetPassedAppointmentsByPatientId(int patientId);
+        Task<List<BLPassedAppointment>> GetPassedAppointmentsByPatientId(int patientId);
         Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
-        Task<List<BLAppointment>> GetPassedAppointmentsByTherapistAndDate(int therapistId, DateOnly date);
+        Task<List<BLPassedAppointment>> GetPassedAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date);
+        Task<List<BLPassedAppointment>> GetPastAppointmentsByTherapistInDateRange(int therapistId, DateOnly start, DateOnly end);
         #endregion
         #region cancel appointments
-        Task<List<BLAppointment>> GetCanceleAppointmentsByPatientId(int patientId);
+
+        Task<List<BLCanceledAppointment>> GetAllCanceleAppointments();
+        Task<List<BLCanceledAppointment>> GetCanceleAppointmentsByPatientId(int patientId);
         Task<List<BLAppointment>> GetCanceleAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date);
         Task<List<BLAppointment>> GetCanceleAppointmentsByDate(int therapistId, DateOnly date);
         #endregion
@@ -72,7 +78,7 @@ namespace BL.Api
 
         #region delete appointments
         #region appointment
-        Task<BLAppointment> DeleteAppointmentByPatientId(int patientId, int appointmentId);
+        Task<BLAppointment> DeleteAppointmentByPatient(int patientId, int appointmentId);
         #endregion
         #region available appointment
         Task<BLAvailableAppointment> DeleteAvailableAppointment(int appointmentId);

@@ -101,26 +101,39 @@ namespace Web_api.Controllers
         // Get all canceled appointments for a specific patient
         [HttpGet("patient/{patientId}/canceled")]
         public async Task<IActionResult> GetCanceledAppointmentsForPatient(string patientId)
-        { /* Implementation */ return Ok(); }
+        {
+            var appointments = await _BLManager._appointmentsManager.GetCanceleAppointmentsByPatientId(int.Parse(patientId));
+            return Ok(appointments);
+        }
 
         // Get all canceled appointments
         [HttpGet("canceled")]
         public async Task<IActionResult> GetAllCanceledAppointments()
-        { /* Implementation */ return Ok(); }
+        {
+            var appointments = await _BLManager._appointmentsManager.GetAllCanceleAppointments();
+            return Ok(appointments);
+        }
 
 
         #endregion
 
+
         #region Available Appointments (4 functions) to implement
         // Get available appointments for a specific therapist for a given week
         [HttpGet("available/therapist/{therapistId}/week/{weekDate}")]
-        public async Task<IActionResult> GetAvailableAppointmentsForTherapistWeek(string therapistId, DateTime weekDate)
-        { /* Implementation */ return Ok(); }
-
-        // Get available appointments for a specific therapist for a specific date
-        [HttpGet("available/therapist/{therapistId}/date/{date}")]
-        public async Task<IActionResult> GetAvailableAppointmentsForTherapistByDate(string therapistId, DateTime date)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> GetAvailableAppointmentsForTherapistWeek(int therapistId, string weekDate)
+        {
+            if (!DateOnly.TryParse(weekDate, out DateOnly dateOnly))
+            {
+                dateOnly = DateOnly.FromDateTime(DateTime.Now);
+            }
+            var availapp = await _BLManager._appointmentsManager.GetAvailableAppointmentsForSpecificTherapistForWeek(therapistId, dateOnly);
+            if (availapp == null)
+            {
+                return NotFound("No available appointments found for the specified therapist and week.");
+            }
+            return Ok(availapp);
+        }
 
         // Get available appointments for a specific specialty for a given week
         [HttpGet("available/specialty/{specialty}/week/{weekDate}")]
@@ -138,59 +151,84 @@ namespace Web_api.Controllers
             return Ok(availapp);
         }
 
-        // Get available appointments for a specific specialty and therapist for a specific date
-        [HttpGet("available/specialty/{specialty}/therapist/{therapistId}/date/{date}")]
-        public async Task<IActionResult> GetAvailableAppointmentsForSpecialtyByTherapist(string specialty, string therapistId, DateTime date)
-        { /* Implementation */
-            return Ok();
-        }
-        #endregion
-
-        #region Past Appointments (3 functions) to implement
-        // Get past appointments for a therapist by date and therapist ID
+        // Fix for CS0019: Operator '==' cannot be applied to operands of type 'method group' and 'int'
         [HttpGet("past/therapist/{therapistId}/date/{date}")]
-        public async Task<IActionResult> GetPastAppointmentsByTherapistAndDate(string therapistId, DateTime date)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> GetPastAppointmentsByTherapistAndDate(int therapistId, string date)
+        {
+            if (!DateOnly.TryParse(date, out DateOnly dateOnly))
+            {
+                dateOnly = DateOnly.FromDateTime(DateTime.Now);
+            }
+            var appointments = await _BLManager._appointmentsManager.GetPassedAppointmentsByTherapistIdAndDate(therapistId, dateOnly);
+            if (appointments == null || appointments.Count == 0) // Ensure appointments.Count is properly accessed
+            {
+                return NotFound("No past appointments found for the specified therapist and date.");
+            }
+            return Ok(appointments);
+        }
 
         // Get past appointments for a therapist within a date range (default to six months ago to now)
         [HttpGet("past/therapist/{therapistId}/range")]
-        public async Task<IActionResult> GetPastAppointmentsByTherapistInDateRange(string therapistId, DateTime startDate, DateTime endDate = default)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> GetPastAppointmentsByTherapistInDateRange(int therapistId, string startDate, string endDate)
+        {
+            DateOnly start = DateOnly.TryParse(startDate, out DateOnly parsedStart) ? parsedStart : DateOnly.FromDateTime(DateTime.Now.AddMonths(-6));
+            DateOnly end = DateOnly.TryParse(endDate, out DateOnly parsedEnd) ? parsedEnd : DateOnly.FromDateTime(DateTime.Now);
+            var appointments = await _BLManager._appointmentsManager.GetPastAppointmentsByTherapistInDateRange(therapistId, start, end);
+            if (appointments == null || appointments.Count == 0)
+            {
+                return NotFound("No past appointments found for the specified therapist in the date range.");
+            }
+            return Ok(appointments);
+        }
 
         //Get history appointment for patient.
         [HttpGet("history/{patientId}")]
-        public IActionResult GetPatientAppointmentHistory(int patientId)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> GetPatientAppointmentHistory(int patientId)
+        {
+            var appointments = await _BLManager._appointmentsManager.GetPassedAppointmentsByPatientId(patientId);
+            if (appointments == null || appointments.Count == 0)
+            {
+                return NotFound("No appointment history found for the specified patient.");
+            }
+            return Ok(appointments);
+        }
         #endregion
 
         #region Schedule Appointment (1 function) to implement
         // Schedule an appointment based on patient ID and appointment ID
         [HttpPost("schedule")]
-        public async Task<IActionResult> ScheduleAppointment(string patientId, string appointmentId)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> ScheduleAppointment(int patientId, int appointmentId)
+        {
+            return Ok(await _BLManager._appointmentsManager.ScheduleAppointment(patientId, appointmentId));
+        }
         #endregion
 
         #region Deletion (4 functions) to implement
         // Delete a future appointment by appointment ID and patient ID
         [HttpDelete("delete/{appointmentId}/patient/{patientId}")]
-        public async Task<BLAppointment> DeleteAppointment(int appointmentId, int patientId)
+        public async Task<IActionResult> DeleteAppointment(int appointmentId, int patientId)
         {
-            return await _BLManager._appointmentsManager.DeleteAppointmentByPatientId(patientId, appointmentId);
+            return Ok(await _BLManager._appointmentsManager.DeleteAppointmentByPatient(patientId, appointmentId));
         }
-
         // Delete a future appointment by appointment ID and patient ID therapist made need to add it to cancle appointment for confimation.
         [HttpDelete("delete/byTherapist/{appointmentId}/patient/{patientId}/")]
-        public async Task<IActionResult> DeleteAppointmentByTherapist(string appointmentId, string patientId)
-        { /* Implementation */ return Ok(); }
+        public async Task<IActionResult> DeleteAppointmentByTherapist(int therapistId, string date)
+        {
+            DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
+
+            return Ok(await _BLManager._appointmentsManager.DeleteAppointmentForTherapistAndDate(therapistId, dateOnly));
+        }
         // Delete a past appointment by appointment ID and patient ID
         [HttpDelete("past/delete/{appointmentId}/patient/{patientId}")]
         public async Task<IActionResult> DeletePastAppointment(string appointmentId, string patientId)
-        { /* Implementation */ return Ok(); }
+        { /*I think that this function is not needed*/ return Ok(); }
 
         // Delete a canceled appointment
         [HttpDelete("cancel/{appointmentId}")]
         public async Task<IActionResult> DeleteCanceledAppointment(int appointmentId)
-        { /* Implementation */ return Ok(); }
+        {
+
+        }
         #endregion
     }
 }
