@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Exeptions;
+using System.Diagnostics.Eventing.Reader;
 namespace Web_api.Controllers
 {
     [Route("api/[controller]")]
@@ -40,11 +41,20 @@ namespace Web_api.Controllers
                 statusCode: 777
                 );
             }
+            if( exceptionDetails?.Error is Exception)
+            {
+                return Problem(
+                detail: "Please check the data you entered"+exceptionDetails.ToString(),
+                title: "An error occurred",
+                statusCode: 400
+                );
+            }
             return Problem(
                 detail: "Please restart the website agein",
                 title: "An error occurred",
                 statusCode: 500
             );
+            
         }
     }
 }

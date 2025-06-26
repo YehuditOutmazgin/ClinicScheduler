@@ -56,7 +56,7 @@ public partial class DB_Manager : DbContext
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
             entity.Property(e => e.Status)
                 .HasMaxLength(15)
-                .IsUnicode(false);
+                .IsUnicode(true);
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
 
             entity.HasOne(d => d.Patient).WithMany(p => p.Appointments)
@@ -118,7 +118,7 @@ public partial class DB_Manager : DbContext
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
             entity.Property(e => e.Status)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(true);
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
 
             entity.HasOne(d => d.Patient).WithMany(p => p.PassedAppointments)
@@ -139,13 +139,13 @@ public partial class DB_Manager : DbContext
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
             entity.Property(e => e.FirstName)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(true);
             entity.Property(e => e.LastName)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(true);
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(15)
-                .IsUnicode(false);
+                .IsUnicode(true);
         });
 
         modelBuilder.Entity<Therapist>(entity =>
@@ -158,10 +158,10 @@ public partial class DB_Manager : DbContext
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
             entity.Property(e => e.FirstName)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(true);
             entity.Property(e => e.LastName)
                 .HasMaxLength(50)
-                .IsUnicode(false);
+                .IsUnicode(true);
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(10)
                 .IsFixedLength();
@@ -173,7 +173,7 @@ public partial class DB_Manager : DbContext
 
             entity.Property(e => e.DayOfWeek)
                 .HasMaxLength(20)
-                .IsUnicode(false);
+                .IsUnicode(true);
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.WorkHours)

@@ -28,7 +28,6 @@ namespace Web_api.Controllers
             var list = await _blManager._therapistManager.GetAllTherapists();
             if (list == null || list.Count == 0)
                 return NotFound("No patients found.");
-            list.ForEach(t => t.Specialization.ToString());
             return Ok(list);
         }
         // Get therapist details by ID
@@ -77,7 +76,7 @@ namespace Web_api.Controllers
             return Ok(new { therapist_id = id, date = dateOnly, message = "All appointments for the day have been canceled." });
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{therapistId}")]
         public async Task<ActionResult<BLPatient>> DeleteTherapist([FromRoute] int therapistId)
         {
             if (therapistId <= 0)

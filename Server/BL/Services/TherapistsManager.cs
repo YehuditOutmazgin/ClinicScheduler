@@ -76,15 +76,19 @@ namespace BL.Services
         {
             if (therapist == null)
                 throw new NullReferenceException(nameof(therapist));
-            if (therapist.TherapistId>0)
+            //if (therapist.TherapistId>0)
+            //{
+            //    therapist.TherapistId = 0;
+            //}
+            if(!chackNotEmtyString(therapist.FirstName) || !chackNotEmtyString(therapist.LastName) || therapist.Specialization==0)
             {
-                therapist.TherapistId = 0;
+                throw new Exception("one or more details are invalid");
             }
             var t = _mapper.Map<Therapist>(therapist);
 
             if (t == null)
                 throw new NullReferenceException(nameof(t));
-
+            
             var addedTherapist = await _therapistsDal.AddTherapist(t);
 
             if (addedTherapist == null)
@@ -224,6 +228,9 @@ namespace BL.Services
             return _mapper.Map<List<BLWorkHour>>(updatedWorkHours);
         }
 
-
+        private bool chackNotEmtyString(string s)
+        {
+            return s != null && s != "";
+        }
     }
 }

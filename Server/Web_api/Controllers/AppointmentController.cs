@@ -224,11 +224,12 @@ namespace Web_api.Controllers
         { /*I think that this function is not needed*/ return Ok(); }
 
         // Delete a canceled appointment
-        [HttpDelete("cancel/{appointmentId}")]
-        public async Task<IActionResult> DeleteCanceledAppointment(int appointmentId)
-        {
+        //[HttpDelete("cancel/{appointmentId}")]
+        //------------------------------------------------------------------------------------------------------------------
+        //public async Task<IActionResult> DeleteCanceledAppointment(int appointmentId)
+        //{
 
-        }
+        //}
         #endregion
     }
 }
