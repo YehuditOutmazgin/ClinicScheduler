@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
@@ -9,9 +10,8 @@ public partial class BLCanceledAppointment:BLAppointmentBase
 
     //public int PatientId { get; set; }
 
-
-
     public string? Note { get; set; }
-    public virtual BLPatient Patient { get; set; } = null!;
+
+    public virtual Patient Patient { get; set; } = null!;
 
 }

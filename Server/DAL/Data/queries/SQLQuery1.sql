@@ -1,6 +1,6 @@
 ﻿-- מחיקת נתונים קיימים מכל הטבלאות
 DELETE FROM [dbo].[CanceledAppointments];
-DELETE FROM [dbo].[PassedAppointments];
+DELETE FROM [dbo].[PastAppointments];
 DELETE FROM [dbo].[Appointments];
 DELETE FROM [dbo].[AvailableAppointments];
 DELETE FROM [dbo].[WorkHours];
@@ -81,8 +81,8 @@ VALUES
 (9, 9, '2025-05-17', '14:00:00'),
 (10, 10, '2025-05-17', '15:00:00');
 
--- הכנסת נתונים לטבלה PassedAppointments
-INSERT INTO [dbo].[PassedAppointments] (PatientID, TherapistID, AppointmentDate, AppointmentTime, Status)
+-- הכנסת נתונים לטבלה PastAppointments
+INSERT INTO [dbo].[PastAppointments] (PatientID, TherapistID, AppointmentDate, AppointmentTime, Status)
 VALUES 
 (1, 1, '2025-05-01', '09:00:00', 'Completed'),
 (2, 2, '2025-05-01', '10:00:00', 'Canceled'),

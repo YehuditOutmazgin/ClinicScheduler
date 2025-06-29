@@ -1,20 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace BL.Models
-{
-    public enum Specialization
-    {
-        SpeechTherapy=1,
-        OccupationalTherapy,
-        PhysicalTherapy,
-        Psychology,
-        SocialWork,
-        BehavioralTherapy,
-        EducationalTherapy
+//namespace BL.Models
+//{
+//    public enum Specialization
+//    {
+//        SpeechTherapy=1,
+//        OccupationalTherapy,
+//        PhysicalTherapy,
+//        Psychology,
+//        SocialWork,
+//        BehavioralTherapy,
+//        EducationalTherapy
 
-    }
-}
+//    }
+//}

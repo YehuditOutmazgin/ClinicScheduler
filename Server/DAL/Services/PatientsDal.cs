@@ -94,19 +94,17 @@ namespace DAL.Services
                     AppointmentDate = a.AppointmentDate,
                     TherapistId = a.TherapistId,
                     Specialization = a.Therapist.Specialization, 
-                    AppointmentTime = a.AppointmentTime,
-
                 });
                 var appointmentIds = appointments.Select(a => a.AppointmentId).ToList();
 
                 var canceledAppointments = _dB_Manager.CanceledAppointments
                     .Where(c => appointmentIds.Contains(c.AppointmentId))
                     .ToList();
-                var passedAppointments = _dB_Manager.PassedAppointments
+                var PastAppointments = _dB_Manager.PastAppointments
                 .Where(p => p.PatientId == id)
                 .ToList();
 
-                _dB_Manager.PassedAppointments.RemoveRange(passedAppointments);
+                _dB_Manager.PastAppointments.RemoveRange(PastAppointments);
 
                 _dB_Manager.CanceledAppointments.RemoveRange(canceledAppointments);
 

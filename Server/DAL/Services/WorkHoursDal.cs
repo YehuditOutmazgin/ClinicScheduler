@@ -75,16 +75,18 @@ namespace DAL.Services
 
         public async Task<List<WorkHour>> GetTherapistSchedule(int therapistId)
         {
-            var therapistExists = await _DB_Manager.Therapists
-                .AnyAsync(t => t.TherapistId == therapistId);
+            Therapist therapistExists = await _DB_Manager.Therapists
+                .FirstOrDefaultAsync(t => t.Id == therapistId || t.TherapistId==therapistId);
 
-            if (!therapistExists)
+            if (therapistExists==null )
             {
                 throw new KeyNotFoundException($"Therapist with ID {therapistId} does not exist.");
             }
-            var workHours = await _DB_Manager.WorkHours
-                .Where(wh => wh.TherapistId == therapistId)
-                .ToListAsync();
+           List< WorkHour> workHours =
+                //therapistExists.WorkHours.ToList();
+            await _DB_Manager.WorkHours
+            .Where(wh => wh.TherapistId == therapistExists.Id)
+            .ToListAsync();
 
             if (workHours == null || !workHours.Any())
             {

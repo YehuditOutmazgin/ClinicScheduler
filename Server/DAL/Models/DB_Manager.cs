@@ -21,15 +21,13 @@ public partial class DB_Manager : DbContext
 
     public virtual DbSet<CanceledAppointment> CanceledAppointments { get; set; }
 
-    public virtual DbSet<PassedAppointment> PassedAppointments { get; set; }
+    public virtual DbSet<PastAppointment> PastAppointments { get; set; }
 
     public virtual DbSet<Patient> Patients { get; set; }
 
     public virtual DbSet<Therapist> Therapists { get; set; }
 
     public virtual DbSet<WorkHour> WorkHours { get; set; }
-
-
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -50,121 +48,146 @@ public partial class DB_Manager : DbContext
     {
         modelBuilder.Entity<Appointment>(entity =>
         {
-            entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA29761D564");
+            entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA2922A0C43");
 
-            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.AppointmentId)
+                .ValueGeneratedNever()
+                .HasColumnName("AppointmentID");
+            entity.Property(e => e.AppointmentDate).HasColumnType("datetime");
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.Specialization)
+                  .HasConversion<string>();
             entity.Property(e => e.Status)
                 .HasMaxLength(15)
-                .IsUnicode(true);
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+            entity.Property(e => e.TherapistName).IsUnicode(true)
+                .HasMaxLength(25)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
 
             entity.HasOne(d => d.Patient).WithMany(p => p.Appointments)
                 .HasForeignKey(d => d.PatientId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Appointme__Patie__51300E55");
+                .HasConstraintName("FK__Appointme__Patie__35DCF99B");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.Appointments)
                 .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Appointme__Thera__68D28DBC");
-
+                .HasConstraintName("FK__Appointme__Thera__36D11DD4");
         });
 
         modelBuilder.Entity<AvailableAppointment>(entity =>
         {
-            entity.Property(e => e.Specialization)
-      .HasConversion<string>();
-            entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA26860CDA0");
+            entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA264EB2ED0");
 
             entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.AppointmentDate).HasColumnType("datetime");
+            entity.Property(e => e.Specialization)
+                  .HasConversion<string>();
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+            entity.Property(e => e.TherapistName)
+                .HasMaxLength(25).IsUnicode(true)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.AvailableAppointments)
                 .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Available__Thera__7AF13DF7");
+                .HasConstraintName("FK__Available__Thera__1758727B");
         });
 
         modelBuilder.Entity<CanceledAppointment>(entity =>
         {
-            entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA2BD27A4BF");
+            entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA23D326644");
 
             entity.Property(e => e.AppointmentId)
                 .ValueGeneratedNever()
                 .HasColumnName("AppointmentID");
-            entity.Property(e => e.Note).HasColumnType("text");
+            entity.Property(e => e.AppointmentDate).HasColumnType("datetime");
+            entity.Property(e => e.Note).UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.Specialization)
+                  .HasConversion<string>();
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+            entity.Property(e => e.TherapistName).IsUnicode(true)
+                .HasMaxLength(25)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
 
             entity.HasOne(d => d.Patient).WithMany(p => p.CanceledAppointments)
                 .HasForeignKey(d => d.PatientId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__CanceledA__Patie__5C6CB6D7");
+                .HasConstraintName("FK__CanceledA__Patie__37C5420D");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.CanceledAppointments)
                 .HasForeignKey(d => d.TherapistId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__CanceledA__Thera__69C6B1F5");
+                .HasConstraintName("FK__CanceledA__Thera__38B96646");
         });
 
-        modelBuilder.Entity<PassedAppointment>(entity =>
+        modelBuilder.Entity<PastAppointment>(entity =>
         {
-            entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA2306CC965");
+            entity.HasKey(e => e.AppointmentId).HasName("PK__tmp_ms_x__8ECDFCA2CB4685A3");
 
             entity.Property(e => e.AppointmentId)
                 .ValueGeneratedNever()
                 .HasColumnName("AppointmentID");
+            entity.Property(e => e.AppointmentDate).HasColumnType("datetime");
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.Specialization)
+                  .HasConversion<string>();
             entity.Property(e => e.Status)
                 .HasMaxLength(50)
-                .IsUnicode(true);
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
+            entity.Property(e => e.TherapistName).IsUnicode(true)
+                .HasMaxLength(25)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
 
-            entity.HasOne(d => d.Patient).WithMany(p => p.PassedAppointments)
+            entity.HasOne(d => d.Patient).WithMany(p => p.PastAppointments)
                 .HasForeignKey(d => d.PatientId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__PassedApp__Patie__640DD89F");
+                .HasConstraintName("FK__PastAppoi__Patie__3D7E1B63");
 
-            entity.HasOne(d => d.Therapist).WithMany(p => p.PassedAppointments)
+            entity.HasOne(d => d.Therapist).WithMany(p => p.PastAppointments)
                 .HasForeignKey(d => d.TherapistId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__PassedApp__Thera__6501FCD8");
+                .HasConstraintName("FK__PastAppoi__Thera__3E723F9C");
         });
 
         modelBuilder.Entity<Patient>(entity =>
         {
-            entity.HasKey(e => e.PatientId).HasName("PK__Patients__970EC34695D48E27");
+            entity.HasKey(e => e.PatientId).HasName("PK__tmp_ms_x__970EC346B6A4BD0C");
 
-            entity.Property(e => e.PatientId).HasColumnName("PatientID");
+            entity.Property(e => e.PatientId)
+                .ValueGeneratedNever()
+                .HasColumnName("PatientID");
             entity.Property(e => e.FirstName)
-                .HasMaxLength(50)
-                .IsUnicode(true);
+                .HasMaxLength(50).IsUnicode(true)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.LastName)
-                .HasMaxLength(50)
-                .IsUnicode(true);
+                .HasMaxLength(50).IsUnicode(true)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.PhoneNumber)
-                .HasMaxLength(15)
-                .IsUnicode(true);
+                .HasMaxLength(20)
+                .IsUnicode(true)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
         });
 
         modelBuilder.Entity<Therapist>(entity =>
         {
-            entity.Property(t => t.Specialization)
-                      .HasConversion<string>();
+            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC2718E11720");
 
-            entity.HasKey(e => e.TherapistId).HasName("PK__tmp_ms_x__4D621912942A1C8E");
-
-            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
-            entity.Property(e => e.FirstName)
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.FirstName).IsUnicode(true)
                 .HasMaxLength(50)
-                .IsUnicode(true);
-            entity.Property(e => e.LastName)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
+            entity.Property(e => e.LastName).IsUnicode(true)
                 .HasMaxLength(50)
-                .IsUnicode(true);
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.PhoneNumber)
-                .HasMaxLength(10)
-                .IsFixedLength();
+                .HasMaxLength(20)
+                .IsUnicode(true)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
+            entity.Property(e => e.Specialization)
+                  .HasConversion<string>();
+            entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
         });
 
         modelBuilder.Entity<WorkHour>(entity =>
@@ -173,13 +196,13 @@ public partial class DB_Manager : DbContext
 
             entity.Property(e => e.DayOfWeek)
                 .HasMaxLength(20)
-                .IsUnicode(true);
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.TherapistId).HasColumnName("TherapistID");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.WorkHours)
                 .HasForeignKey(d => d.TherapistId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__WorkHours__Thera__65F62111");
+                .HasConstraintName("FK__WorkHours__Thera__5D2BD0E6");
         });
 
         OnModelCreatingPartial(modelBuilder);

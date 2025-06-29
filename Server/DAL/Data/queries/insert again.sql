@@ -2,7 +2,7 @@
 ----ריקון טבלאות
 --DELETE FROM Appointments;
 --DELETE FROM CanceledAppointments;
---DELETE FROM PassedAppointments;
+--DELETE FROM PastAppointments;
 --DELETE FROM AvailableAppointments;
 --DELETE FROM WorkHours;
 --DELETE FROM Patients;
@@ -32,7 +32,7 @@
 --ALTER TABLE CanceledAppointments ALTER COLUMN Note NTEXT NULL;
 
 ---- פגישות שהתקיימו
---ALTER TABLE PassedAppointments ALTER COLUMN Status NVARCHAR(50) NULL;
+--ALTER TABLE PastAppointments ALTER COLUMN Status NVARCHAR(50) NULL;
 
 ---- שעות עבודה
 --ALTER TABLE WorkHours ALTER COLUMN DayOfWeek NVARCHAR(20) NOT NULL;
@@ -103,7 +103,7 @@
 --(9, 9, 9, '2025-05-22', '10:30', N'הפגישה נדחתה');
 
 ---- Insert passed appointments
---INSERT INTO PassedAppointments (AppointmentID, PatientID, TherapistID, AppointmentDate, AppointmentTime, Status) VALUES
+--INSERT INTO PastAppointments (AppointmentID, PatientID, TherapistID, AppointmentDate, AppointmentTime, Status) VALUES
 --(5, 5, 5, '2025-05-21', '11:00', N'הושלם'),
 --(6, 6, 6, '2025-05-22', '09:00', N'הושלם'),
 --(9, 9, 9, '2025-05-22', '10:30', N'הושלם'),
@@ -130,7 +130,7 @@
 -- Clear tables
 DELETE FROM Appointments;
 DELETE FROM CanceledAppointments;
-DELETE FROM PassedAppointments;
+DELETE FROM PastAppointments;
 DELETE FROM AvailableAppointments;
 DELETE FROM WorkHours;
 DELETE FROM Patients;
@@ -156,8 +156,8 @@ ALTER TABLE Appointments ALTER COLUMN Status NVARCHAR(15) NULL;
 -- CanceledAppointments table ("Note" should be NVARCHAR(MAX))
 ALTER TABLE CanceledAppointments ALTER COLUMN Note NVARCHAR(MAX) NULL;
 
--- PassedAppointments table
-ALTER TABLE PassedAppointments ALTER COLUMN Status NVARCHAR(50) NULL;
+-- PastAppointments table
+ALTER TABLE PastAppointments ALTER COLUMN Status NVARCHAR(50) NULL;
 
 -- WorkHours table
 ALTER TABLE WorkHours ALTER COLUMN DayOfWeek NVARCHAR(20) NOT NULL;
@@ -228,7 +228,7 @@ INSERT INTO CanceledAppointments (AppointmentID, PatientID, TherapistID, Appoint
 (9, 9, 9, '2025-05-22', '10:30', N'Appointment postponed');
 
 -- Insert passed appointments
-INSERT INTO PassedAppointments (AppointmentID, PatientID, TherapistID, AppointmentDate, AppointmentTime, Status) VALUES
+INSERT INTO PastAppointments (AppointmentID, PatientID, TherapistID, AppointmentDate, AppointmentTime, Status) VALUES
 (5, 5, 5, '2025-05-21', '11:00', N'Completed'),
 (6, 6, 6, '2025-05-22', '09:00', N'Completed'),
 (9, 9, 9, '2025-05-22', '10:30', N'Completed'),

@@ -44,7 +44,7 @@ namespace Web_api.Controllers
             if( exceptionDetails?.Error is Exception)
             {
                 return Problem(
-                detail: "Please check the data you entered"+exceptionDetails.ToString(),
+                detail: "Please check the data you entered. exception details: \n"+exceptionDetails.ToString(),
                 title: "An error occurred",
                 statusCode: 400
                 );

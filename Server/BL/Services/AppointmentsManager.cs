@@ -3,35 +3,35 @@ using BL.Api;
 using BL.Models;
 using BL.service;
 using DAL.Api;
-using DAL.Common;
 using DAL.Models;
-using DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using DAL.Api;
 namespace BL.Services
 {
     public class AppointmentManager : IAppointmentsManager
     {
+        #region Fields
         private IPatientManager _patientManager { get; set; }
         private ITherapistManager _therapistManager { get; set; }
-        #region Fields
         IAppointmentsDal _appointmentsDal;
         IAvailableAppointmentsDal _availableAppointmentsDal;
-        IPassedAppointmentsDal _passedAppointmentsDal;
+        IPastAppointmentsDal _PastAppointmentsDal;
         ICanceledAppointmentsDal _canceledAppointmentsDal;
         IMapper _mapper;
         IWorkHoursDal _workHoursDal;
         IAvailableQueueManager _availableQueueManager;
         ITherapistsDal _therapistsDal;
-        public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPassedAppointmentsDal passedAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal, IAvailableQueueManager availableQueueManager, IWorkHoursDal workHoursDal, ITherapistsDal therapistsDal)
+        #endregion
+        public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPastAppointmentsDal PastAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal, IAvailableQueueManager availableQueueManager, IWorkHoursDal workHoursDal, ITherapistsDal therapistsDal)
         {
             _appointmentsDal = appointmentsDal;
             _availableAppointmentsDal = availableAppointmentsDal;
-            _passedAppointmentsDal = passedAppointmentsDal;
+            _PastAppointmentsDal = PastAppointmentsDal;
             _canceledAppointmentsDal = canceledAppointmentsDal;
             _mapper = mapper;
             _availableQueueManager = availableQueueManager;
@@ -53,10 +53,14 @@ namespace BL.Services
             {
                 AppointmentId = freeSlot.AppointmentId,
                 AppointmentDate = freeSlot.AppointmentDate,
-                AppointmentTime = freeSlot.AppointmentTime,
                 TherapistId = freeSlot.TherapistId,
                 PatientId = patientId,
-                Status = "Scheduled"              
+                Status = "Scheduled",
+                DurationMinutes = freeSlot.DurationMinutes,
+                Specialization = freeSlot.Specialization,
+                TherapistName = freeSlot.TherapistName,
+
+
             };
             await _appointmentsDal.AddAppointment(booked);
             return _mapper.Map<BLAppointment>(booked);
@@ -82,7 +86,7 @@ namespace BL.Services
                 throw new ArgumentNullException("there were error in the inserts id's");
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
                 throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
-            var apps = await _appointmentsDal.GetAppointmentsByPatientIdAndThetherapistIdAndDate(therapistId, date, patientId);
+            var apps = await _appointmentsDal.GetAppointmentsByPatientIdAndTherapistIdAndDate(therapistId, date, patientId);
             if (apps == null)
                 throw new NullReferenceException(nameof(apps));
 
@@ -93,7 +97,7 @@ namespace BL.Services
         {
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
                 throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
-            var app = await _appointmentsDal.GetAppointmentsByDate(date);
+            var app = await _appointmentsDal.GetAppointmentsByDate(getDate(date));
             return await Task.FromResult(_mapper.Map<List<BLAppointment>>(app));
         }
 
@@ -123,40 +127,36 @@ namespace BL.Services
             return await Task.FromResult(_mapper.Map<List<BLAppointment>>(apps));
         }
 
-
-        public Task<List<BLPassedAppointment>> GetPassedAppointmentsByPatientId(int patientId)
+        public Task<List<BLPastAppointment>> GetPastAppointmentsByPatientId(int patientId)
         {
             if (patientId < 0)
                 throw new ArgumentNullException(nameof(patientId));
-            return _passedAppointmentsDal.GetAllPassedAppointmentsByPatientId(patientId)
-                .ContinueWith(task => _mapper.Map<List<BLPassedAppointment>>(task.Result));
+            return _PastAppointmentsDal.GetAllPastAppointmentsByPatientId(patientId)
+                .ContinueWith(task => _mapper.Map<List<BLPastAppointment>>(task.Result));
         }
 
-        public Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
+        public Task<List<BLAppointment>> GetPastAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
             => throw new NotImplementedException();
 
-        public async Task<List<BLPassedAppointment>> GetPassedAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date)
+        public async Task<List<BLPastAppointment>> GetPastAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date)
         {
             if (therapistId < 0)
                 throw new ArgumentNullException(nameof(therapistId));
             if (date > DateOnly.FromDateTime(DateTime.Now))
                 throw new ArgumentException("Date cannot be in the future", nameof(date));
-            var passedAppointments = await _passedAppointmentsDal.GetAllPassedAppointmentsByTherapistIdAndDate(therapistId, date);
-            return _mapper.Map<List<BLPassedAppointment>>(passedAppointments);
+            var PastAppointments = await _PastAppointmentsDal.GetAllPastAppointmentsByTherapistIdAndDate(therapistId, date);
+            return _mapper.Map<List<BLPastAppointment>>(PastAppointments);
         }
 
-        public async Task<List<BLPassedAppointment>> GetPastAppointmentsByTherapistInDateRange(int therapistId, DateOnly start, DateOnly end)
+        public async Task<List<BLPastAppointment>> GetPastAppointmentsByTherapistInDateRange(int therapistId, DateOnly start, DateOnly end)
         {
             if (therapistId < 0)
                 throw new ArgumentNullException(nameof(therapistId));
             if (start > end)
                 throw new ArgumentException("Start date cannot be after end date", nameof(start));
-            var passedAppointments = await _passedAppointmentsDal.GetAllPassedAppointmentsByTherapistIdAndRangeDate(therapistId, start, end);
-            return _mapper.Map<List<BLPassedAppointment>>(passedAppointments);
+            var PastAppointments = await _PastAppointmentsDal.GetAllPastAppointmentsByTherapistIdAndRangeDate(therapistId, start, end);
+            return _mapper.Map<List<BLPastAppointment>>(PastAppointments);
         }
-
-
-        #endregion
 
         #region available appointments
         public async Task<List<BLAvailableAppointment>> GetAvailableAppointmentsForSpecificSpecializationForWeek(string specialization, DateOnly date)
@@ -166,7 +166,7 @@ namespace BL.Services
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
                 throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
 
-            if (!Enum.TryParse<DAL.Common.Specialization>(specialization, true, out var specializationEnum))
+            if (!Enum.TryParse<DAL.Models.Specialization>(specialization, true, out var specializationEnum))
                 throw new Exception($"The specialization {specialization} is not valid. Please use a valid specialization.");
 
             var availapp = await _availableAppointmentsDal.GetAppointmentsBySpecializationAndDate(date, specializationEnum);
@@ -231,30 +231,30 @@ namespace BL.Services
         #endregion
 
         #region available appointment
-        public Task<BLAvailableAppointment> SetAvailableAppointment(BLAvailableAppointment availableAppointment)
-            => throw new NotImplementedException();
+        public async Task<BLAvailableAppointment> SetAvailableAppointment(BLAvailableAppointment availableAppointment)
+        {
+            return _mapper.Map<BLAvailableAppointment>(await _availableAppointmentsDal.AddAppointment(_mapper.Map<AvailableAppointment>(availableAppointment)));
+
+        }
+
 
         public async Task<List<BLAvailableAppointment>> SetAvailableAppointmentForPeriod()
         {
-            int therapistId;
             List<Therapist> therapists = await _therapistsDal.GetAllTherapists();
             List<AvailableAppointment> list = new List<AvailableAppointment>();
+
             foreach (Therapist therapist in therapists)
             {
-                therapistId = therapist.TherapistId;
-
+                int therapistId = therapist.Id;
                 List<WorkHour> therapistWorkDays = await _workHoursDal.GetTherapistSchedule(therapistId);
 
                 DateTime startDate = DateTime.Today.AddMonths(2);
                 DateTime endDate = startDate.AddMonths(1);
 
-
                 for (DateTime date = startDate; date < endDate; date = date.AddDays(1))
                 {
-
                     if (date.DayOfWeek == DayOfWeek.Saturday)
                         continue;
-
 
                     var workHoursForDay = therapistWorkDays
                         .Where(wh => Enum.TryParse<DayOfWeek>(wh.DayOfWeek, out var dw) && dw == date.DayOfWeek)
@@ -263,30 +263,28 @@ namespace BL.Services
                     if (!workHoursForDay.Any())
                         continue;
 
-
                     if (await _availableQueueManager.IsHolidayAsync(date))
                         continue;
 
-
                     foreach (var wh in workHoursForDay)
                     {
-
-                        for (var time = wh.StartTime; time < wh.EndTime; time = time.AddMinutes(45))
+                        for (var time = wh.StartTime; time < wh.EndTime; time = time.AddMinutes(therapist.AppointmentDuration))
                         {
+                            DateTime appointmentDateTime = new DateTime(date.Year, date.Month, date.Day, time.Hour, time.Minute, 0);
 
                             AvailableAppointment newAvailable = new AvailableAppointment
                             {
                                 AppointmentId = 0, // Assuming AppointmentId is auto-generated
                                 TherapistId = therapistId,
-                                AppointmentDate = DateOnly.FromDateTime(date),
-                                AppointmentTime = time,
-                                DurationMinutes = 45,
-                                Specialization = _therapistsDal.GetTherapistById(therapistId).Result.Specialization,
-                                Therapist = _therapistsDal.GetTherapistById(therapistId).Result
+                                AppointmentDate = appointmentDateTime,
+                                TherapistName = $"{therapist.FirstName} {therapist.LastName}",
+                                DurationMinutes = therapist.AppointmentDuration,
+                                Specialization = (await _therapistsDal.GetTherapistById(therapistId)).Specialization,
+                                Therapist = await _therapistsDal.GetTherapistById(therapistId)
                             };
 
                             list.Add(newAvailable);
-                            await _availableAppointmentsDal.AddAppointment(_mapper.Map<AvailableAppointment>(newAvailable));
+                            //await _availableAppointmentsDal.AddAppointment(_mapper.Map<AvailableAppointment>(newAvailable));
                         }
                     }
                 }
@@ -300,6 +298,7 @@ namespace BL.Services
             await _availableAppointmentsDal.AddAppointments(list);
             return _mapper.Map<List<BLAvailableAppointment>>(list);
         }
+
         #endregion
 
         #region canceled appointment
@@ -307,7 +306,7 @@ namespace BL.Services
         #endregion
 
         #region passed appointment
-        public Task<List<BLPassedAppointment>> SetPassedAppointments()
+        public Task<List<BLPastAppointment>> SetPastAppointments()
             => throw new NotImplementedException();
 
 
@@ -315,7 +314,7 @@ namespace BL.Services
         /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
         /// </summary>
         /// <returns></returns>
-        public async Task<BLAppointment> SetAppointmentStatus(int appointmentId,bool isConfirm)
+        public async Task<BLAppointment> SetAppointmentStatus(int appointmentId, bool isConfirm)
         {
             var appointment = await _appointmentsDal.SetAppointmentStatus(appointmentId, isConfirm);
             if (appointment == null)
@@ -338,7 +337,7 @@ namespace BL.Services
         #endregion
 
         #region delete appointments
-        public async Task<BLAppointment> DeleteAppointment(int patientId,int appointmentId)
+        public async Task<BLAppointment> DeleteAppointment(int patientId, int appointmentId)
         {
             var patient = await _patientManager.GetPatientById(patientId);
             if (patient == null)
@@ -346,18 +345,18 @@ namespace BL.Services
             var appoint = await _appointmentsDal.GetAppointmentById(appointmentId);
             if (appoint == null || appoint.PatientId != patientId)
                 throw new InvalidDataException("invalid appointment");
-            var therapist =  await _therapistManager.GetTherapistById(appoint.TherapistId);
+            var therapist = await _therapistManager.GetTherapistById(appoint.TherapistId);
             if (therapist == null)
                 throw new KeyNotFoundException("therapist not found");
             AvailableAppointment app = new()
             {
                 AppointmentId = appoint.AppointmentId,
-                AppointmentTime = appoint.AppointmentTime,
                 AppointmentDate = appoint.AppointmentDate,
                 TherapistId = appoint.TherapistId,
-                DurationMinutes = 45/*appoint.AppointmentTime*/,
-                Specialization = _mapper.Map<DAL.Common.Specialization>(therapist.Specialization),
-                };
+                DurationMinutes = appoint.DurationMinutes,
+                Specialization = _mapper.Map<DAL.Models.Specialization>(therapist.Specialization),
+                TherapistName = appoint.TherapistName
+            };
             await _availableAppointmentsDal.AddAppointment(app);
             return _mapper.Map<BLAppointment>(await _appointmentsDal.DeleteAppointment(appointmentId));
         }
@@ -373,15 +372,15 @@ namespace BL.Services
                 throw new InvalidDataException("invalid appointment");
             if (patientId != appoint.PatientId)
                 throw new InvalidDataException("the patient dont has appointment with this id");
-            
+
             AvailableAppointment app = new()
             {
                 AppointmentId = appoint.AppointmentId,
-                AppointmentTime = appoint.AppointmentTime,
                 AppointmentDate = appoint.AppointmentDate,
                 TherapistId = appoint.TherapistId,
-                DurationMinutes = 45/*appoint.AppointmentTime*/,
-                Specialization = _mapper.Map<DAL.Common.Specialization>(appoint.Therapist.Specialization),
+                DurationMinutes = appoint.DurationMinutes,
+                Specialization = _mapper.Map<DAL.Models.Specialization>(appoint.Therapist.Specialization),
+                TherapistName = appoint.TherapistName
             };
             await _availableAppointmentsDal.AddAppointment(app);
             return _mapper.Map<BLAppointment>(await _appointmentsDal.DeleteAppointment(appointmentId));
@@ -438,9 +437,13 @@ namespace BL.Services
                 {
                     AppointmentId = appointment.AppointmentId,
                     PatientId = appointment.PatientId,
-                    AppointmentDate = date,
+                    AppointmentDate = appointment.AppointmentDate,
                     TherapistId = appointment.TherapistId,
-                });
+                    DurationMinutes = appointment.DurationMinutes,
+                    Specialization = appointment.Specialization,
+                    TherapistName = appointment.TherapistName,
+                    Note = "appointment deleted"
+                }) ;
             }
 
             return true;
@@ -473,7 +476,7 @@ namespace BL.Services
             else if (endDate >= DateOnly.FromDateTime(DateTime.Now))
                 throw new ArgumentException("TheDate is not correct.", nameof(endDate));
 
-            return await _passedAppointmentsDal.DeleteAllPassedAppointmentsOlderThan(endDate.Value);
+            return await _PastAppointmentsDal.DeleteAllPastAppointmentsOlderThan(endDate.Value);
         }
 
         #region get
@@ -520,19 +523,28 @@ namespace BL.Services
         {
             throw new NotImplementedException();
         }
-#endregion
-#endregion
+        #endregion
+        #endregion
 
-#region general
-public async Task<DateTime> NextBusinessDay()
-{
-    int adding = 1;
-    while (await _availableQueueManager.IsHolidayAsync(DateTime.Now.AddDays(adding)))
-    {
-        adding++;
-    }
-    return DateTime.Now.AddDays(adding);
-}
-#endregion
+        #region general
+        public async Task<DateTime> NextBusinessDay()
+        {
+            int adding = 1;
+            while (await _availableQueueManager.IsHolidayAsync(DateTime.Now.AddDays(adding)))
+            {
+                adding++;
+            }
+            return DateTime.Now.AddDays(adding);
+        }
+        #endregion
+        private DateOnly getDate(DateOnly? date)
+        {
+            if (date.HasValue)
+            {
+                return date.Value; 
+            }
+            return DateOnly.FromDateTime(DateTime.Now); 
+        }
+
     }
 }

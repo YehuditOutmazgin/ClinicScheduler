@@ -1,5 +1,4 @@
-﻿using DAL.Common;
-using DAL.Models;
+﻿using DAL.Models;
 using DAL.Services;
 using System;
 using System.Collections.Generic;
@@ -16,12 +15,12 @@ namespace DAL.Api
         Task<List<Appointment>> GetAppointmentsByPatientId(int patientId);
         Task<Appointment> GetAppointmentById(int appointmentId);
         Task<List<Appointment>> GetAppointmentsByPatientIdAndDate(int patientId, DateOnly date);
-        Task<List<Appointment>> GetAppointmentsByDate(DateOnly? date);
+        Task<List<Appointment>> GetAppointmentsByDate(DateOnly date=default);
         Task<List<Appointment>> GetAllAppointments();
         Task<List<Appointment>> GetAllAppointmentsCanceled();
         Task<List<Appointment>> GetAllAppointmentsSet();
         Task<List<Appointment>> GetAllAppointmentsByPatientIdAndTherapistId(int patientId,int therapistId);
-        Task<Appointment> GetAppointmentsByPatientIdAndThetherapistIdAndDate(int patientId, DateOnly date, int therapistId);
+        Task<List<Appointment>> GetAppointmentsByPatientIdAndTherapistIdAndDate(int patientId, DateOnly date, int therapistId);
         //on defalut return today  if there is a date return the apointments day of this date 
         Task<List<Appointment>> GetAppointmentsTherapistAndDate(int therapistId, DateOnly? date);
         //delete appointmet range

@@ -108,6 +108,7 @@
 
 #endregion
 using AutoMapper;
+using DAL.Models;
 
 public class Mapper : Profile
 {
@@ -126,7 +127,7 @@ public class Mapper : Profile
         CreateMap<DAL.Models.AvailableAppointment, BL.Models.BLAvailableAppointment>().ReverseMap();
 
         // PassedAppointment
-        CreateMap<DAL.Models.PassedAppointment, BL.Models.BLPassedAppointment>().ReverseMap();
+        CreateMap<DAL.Models.PastAppointment, BL.Models.BLPastAppointment>().ReverseMap();
 
         // CanceledAppointment
         CreateMap<DAL.Models.CanceledAppointment, BL.Models.BLCanceledAppointment>().ReverseMap();
@@ -137,6 +138,6 @@ public class Mapper : Profile
         // Add more mappings here as needed for other models...
 
         // Specialization
-        CreateMap<DAL.Common.Specialization, BL.Models.Specialization>().ReverseMap();
+        CreateMap<Specialization, Specialization>().ReverseMap();
     }
 }

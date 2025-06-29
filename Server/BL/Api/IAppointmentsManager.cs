@@ -31,10 +31,10 @@ namespace BL.Api
         Task<List<BLAvailableAppointment>> GetAvailableAppointmentsForSpecificTherapistForWeek(int therapistId, DateOnly date);
         #endregion
         #region passed appointments
-        Task<List<BLPassedAppointment>> GetPassedAppointmentsByPatientId(int patientId);
-        Task<List<BLAppointment>> GetPassedAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
-        Task<List<BLPassedAppointment>> GetPassedAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date);
-        Task<List<BLPassedAppointment>> GetPastAppointmentsByTherapistInDateRange(int therapistId, DateOnly start, DateOnly end);
+        Task<List<BLPastAppointment>> GetPastAppointmentsByPatientId(int patientId);
+        Task<List<BLAppointment>> GetPastAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
+        Task<List<BLPastAppointment>> GetPastAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date);
+        Task<List<BLPastAppointment>> GetPastAppointmentsByTherapistInDateRange(int therapistId, DateOnly start, DateOnly end);
         #endregion
         #region cancel appointments
 
@@ -57,7 +57,7 @@ namespace BL.Api
         //nothing for now
         #endregion
         #region passed appointment
-        Task<List<BLPassedAppointment>> SetPassedAppointments();//Daily
+        Task<List<BLPastAppointment>> SetPastAppointments();//Daily
         #endregion
         #endregion
 

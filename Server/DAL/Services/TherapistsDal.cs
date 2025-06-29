@@ -59,11 +59,11 @@ namespace DAL.Services
         //            var canceledAppointments = _DB_Manager.CanceledAppointments
         //                .Where(c => appointmentIds.Contains(c.AppointmentId))
         //                .ToList();
-        //            var passedAppointments = _DB_Manager.PassedAppointments
+        //            var PastAppointments = _DB_Manager.PastAppointments
         //            .Where(p => p.PatientId == id)
         //            .ToList();
 
-        //        _DB_Manager.PassedAppointments.RemoveRange(passedAppointments);
+        //        _DB_Manager.PastAppointments.RemoveRange(PastAppointments);
 
         //        _DB_Manager.CanceledAppointments.RemoveRange(canceledAppointments);
 
@@ -128,9 +128,9 @@ namespace DAL.Services
 
 
 
-            var past = await _DB_Manager.PassedAppointments.Where(c => c.TherapistId == id).ToListAsync();
+            var past = await _DB_Manager.PastAppointments.Where(c => c.TherapistId == id).ToListAsync();
             if (past != null && past.Any())
-                _DB_Manager.PassedAppointments.RemoveRange(past);
+                _DB_Manager.PastAppointments.RemoveRange(past);
             await _DB_Manager.SaveChangesAsync();
 
 

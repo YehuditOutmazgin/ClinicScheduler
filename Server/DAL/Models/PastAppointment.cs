@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DAL.Models;
 
-public partial class CanceledAppointment
+public partial class PastAppointment
 {
     public int AppointmentId { get; set; }
 
@@ -11,15 +11,15 @@ public partial class CanceledAppointment
 
     public int? TherapistId { get; set; }
 
+    public string TherapistName { get; set; } = null!;
+
     public DateTime AppointmentDate { get; set; }
 
     public int DurationMinutes { get; set; }
 
-    public string TherapistName { get; set; } = null!;
-
     public Specialization Specialization { get; set; }
 
-    public string? Note { get; set; }
+    public string? Status { get; set; }
 
     public virtual Patient Patient { get; set; } = null!;
 

@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL.Common;
 using DAL.Models;
 namespace DAL.Api
 {
     public interface IAvailableAppointmentsDal
     {
         // add available appointment 
-        Task AddAppointment(AvailableAppointment appointment);
+        Task<AvailableAppointment> AddAppointment(AvailableAppointment appointment);
          Task AddAppointments(List<AvailableAppointment> appointments);
        
         // get all available appointments for a specific therapist and date its return a list of available appointments for this week.

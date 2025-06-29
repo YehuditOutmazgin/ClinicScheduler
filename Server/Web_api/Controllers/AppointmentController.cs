@@ -159,7 +159,7 @@ namespace Web_api.Controllers
             {
                 dateOnly = DateOnly.FromDateTime(DateTime.Now);
             }
-            var appointments = await _BLManager._appointmentsManager.GetPassedAppointmentsByTherapistIdAndDate(therapistId, dateOnly);
+            var appointments = await _BLManager._appointmentsManager.GetPastAppointmentsByTherapistIdAndDate(therapistId, dateOnly);
             if (appointments == null || appointments.Count == 0) // Ensure appointments.Count is properly accessed
             {
                 return NotFound("No past appointments found for the specified therapist and date.");
@@ -185,7 +185,7 @@ namespace Web_api.Controllers
         [HttpGet("history/{patientId}")]
         public async Task<IActionResult> GetPatientAppointmentHistory(int patientId)
         {
-            var appointments = await _BLManager._appointmentsManager.GetPassedAppointmentsByPatientId(patientId);
+            var appointments = await _BLManager._appointmentsManager.GetPastAppointmentsByPatientId(patientId);
             if (appointments == null || appointments.Count == 0)
             {
                 return NotFound("No appointment history found for the specified patient.");
@@ -208,6 +208,8 @@ namespace Web_api.Controllers
         [HttpDelete("delete/{appointmentId}/patient/{patientId}")]
         public async Task<IActionResult> DeleteAppointment(int appointmentId, int patientId)
         {
+            int x=1234567891;
+            long y = 1234567790123456565;
             return Ok(await _BLManager._appointmentsManager.DeleteAppointmentByPatient(patientId, appointmentId));
         }
         // Delete a future appointment by appointment ID and patient ID therapist made need to add it to cancle appointment for confimation.
@@ -230,6 +232,13 @@ namespace Web_api.Controllers
         //{
 
         //}
+        [HttpPost("setAppForPeriod")]
+
+        public async Task<bool> setAppForPeriod()
+        {
+             await _BLManager._appointmentsManager.SetAvailableAppointmentForPeriod();
+            return true;
+        }
         #endregion
     }
 }

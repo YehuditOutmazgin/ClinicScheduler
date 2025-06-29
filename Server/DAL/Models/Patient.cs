@@ -19,5 +19,5 @@ public partial class Patient
 
     public virtual ICollection<CanceledAppointment> CanceledAppointments { get; set; } = new List<CanceledAppointment>();
 
-    public virtual ICollection<PassedAppointment> PassedAppointments { get; set; } = new List<PassedAppointment>();
+    public virtual ICollection<PastAppointment> PastAppointments { get; set; } = new List<PastAppointment>();
 }

@@ -33,7 +33,7 @@ builder.Services.AddSingleton<ITherapistsDal, TherapistsDal>();
 builder.Services.AddSingleton<IAppointmentsDal, AppointmentsDal>();
 builder.Services.AddSingleton<IAvailableAppointmentsDal, AvailableAppointmentsDal>();
 builder.Services.AddSingleton<IPatientsDal, PatientsDal>();
-builder.Services.AddSingleton<IPassedAppointmentsDal, PassedAppointmentsDal>();
+builder.Services.AddSingleton<IPastAppointmentsDal, PastAppointmentsDal>();
 builder.Services.AddSingleton<ICanceledAppointmentsDal, CanceledAppointmentsDal>();
 
 //manager

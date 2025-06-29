@@ -7,12 +7,15 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using BL.Api;
 
 namespace DAL.Services
 {
     public class MonthlyTaskService: IHostedService, IDisposable
     {
         private Timer _timer;
+       public  IAppointmentsManager _appointmentsManager;
+        
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
@@ -29,6 +32,7 @@ namespace DAL.Services
 
         private void DoWork(object state)
         {
+            _appointmentsManager.SetAvailableAppointmentForPeriod();
             // כאן תשים את הקוד שתרצה להריץ
             Console.WriteLine("Monthly task executed: " + DateTime.Now);
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Models;
+using System;
 using System.Collections.Generic;
 
 namespace BL.Models;
@@ -15,5 +16,5 @@ public partial class BLWorkHour
 
     public TimeOnly EndTime { get; set; }
 
-    public virtual BLTherapist Therapist { get; set; } = null!;
+    public virtual Therapist Therapist { get; set; } = null!;
 }

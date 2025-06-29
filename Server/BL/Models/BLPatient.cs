@@ -20,5 +20,5 @@ public partial class BLPatient
 
     //public virtual ICollection<BLCanceledAppointment> CanceledAppointments { get; set; } = new List<BLCanceledAppointment>();
 
-    //public virtual ICollection<BLPassedAppointment> PassedAppointments { get; set; } = new List<BLPassedAppointment>();
+    //public virtual ICollection<BLPassedAppointment> PastAppointments { get; set; } = new List<BLPassedAppointment>();
 }

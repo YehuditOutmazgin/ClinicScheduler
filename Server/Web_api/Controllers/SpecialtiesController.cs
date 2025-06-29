@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BL.Models;
+using DAL.Models;
 namespace Web_api.Controllers
 // not implement it!! may be we not need it!!
 {
