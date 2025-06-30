@@ -242,16 +242,27 @@ namespace BL.Services
         {
             List<Therapist> therapists = await _therapistsDal.GetAllTherapists();
             List<AvailableAppointment> list = new List<AvailableAppointment>();
+            DateTime startDate = DateTime.Today.AddMonths(2);
+            DateTime endDate = startDate.AddMonths(1);
+            List<bool> isHoliday = new List<bool>();
 
+            for (DateTime date = startDate; date < endDate; date = date.AddDays(1))
+            {
+                isHoliday.Add(await _availableQueueManager.IsHolidayAsync(date));
+            }
+
+            int i;
             foreach (Therapist therapist in therapists)
             {
+
                 int therapistId = therapist.Id;
                 List<WorkHour> therapistWorkDays = await _workHoursDal.GetTherapistSchedule(therapistId);
-
-                DateTime startDate = DateTime.Today.AddMonths(2);
-                DateTime endDate = startDate.AddMonths(1);
-
-                for (DateTime date = startDate; date < endDate; date = date.AddDays(1))
+                if (therapistWorkDays == null || therapistWorkDays.Count == 0)
+                {
+                    continue;
+                }
+                i = 0;
+                for (DateTime date = startDate; date < endDate; date = date.AddDays(1),i++)
                 {
                     if (date.DayOfWeek == DayOfWeek.Saturday)
                         continue;
@@ -260,10 +271,11 @@ namespace BL.Services
                         .Where(wh => Enum.TryParse<DayOfWeek>(wh.DayOfWeek, out var dw) && dw == date.DayOfWeek)
                         .ToList();
 
+
                     if (!workHoursForDay.Any())
                         continue;
 
-                    if (await _availableQueueManager.IsHolidayAsync(date))
+                    if (isHoliday[i])
                         continue;
 
                     foreach (var wh in workHoursForDay)
@@ -443,7 +455,7 @@ namespace BL.Services
                     Specialization = appointment.Specialization,
                     TherapistName = appointment.TherapistName,
                     Note = "appointment deleted"
-                }) ;
+                });
             }
 
             return true;
@@ -541,9 +553,9 @@ namespace BL.Services
         {
             if (date.HasValue)
             {
-                return date.Value; 
+                return date.Value;
             }
-            return DateOnly.FromDateTime(DateTime.Now); 
+            return DateOnly.FromDateTime(DateTime.Now);
         }
 
     }

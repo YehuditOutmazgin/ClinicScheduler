@@ -15,6 +15,10 @@ namespace Web_api.Controllers
             _logger = logger;
         }
         [HttpGet("/error")]
+        [HttpDelete("/error")]
+        [HttpPost("/error")]
+        [HttpPut("/error")]
+
         public IActionResult HandleError()
         {
             var exceptionDetails = HttpContext.Features.Get<IExceptionHandlerFeature>();

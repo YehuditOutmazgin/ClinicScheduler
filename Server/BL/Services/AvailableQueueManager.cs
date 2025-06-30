@@ -1,91 +1,60 @@
 ﻿using BL.Api;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace BL.service
 {
     public class AvailableQueueManager : IAvailableQueueManager
     {
+        private readonly HttpClient _httpClient;
 
-        private static AvailableQueueManager _instance;
-        public static AvailableQueueManager Instance
+        public AvailableQueueManager(HttpClient httpClient)
         {
-            get
-            {
-                if (_instance == null)
-                    _instance = new AvailableQueueManager();
-                return _instance;
-            }
+            _httpClient = httpClient;
         }
-
-
-
-        private static readonly string _baseUrl = "https://www.hebcal.com/hebcal";
-
-
-        public AvailableQueueManager() { }
 
         public async Task<bool> IsHolidayAsync(DateTime date)
         {
-            //string year = date.Year.ToString();
-            //string month = date.Month.ToString("D2");
-            //string day = date.Day.ToString("D2");
+            string year = date.Year.ToString();
+            string month = date.Month.ToString("D2");
 
-            //var url = $"{_baseUrl}?v=1&cfg=json&year={year}&month={month}&maj=on&min=off&mod=on&nx=off";
+            // אין צורך ביום – ה־API מחזיר את כל החודש
+            var url = $"?v=1&cfg=json&year={year}&month={month}&maj=on&min=off&mod=on&nx=off";
 
-            //using (HttpClient client = new HttpClient())
-            //{
-            //    var response = await client.GetAsync(url);
+            var response = await _httpClient.GetAsync(url);
 
-            //    if (response.IsSuccessStatusCode)
-            //    {
-            //        var jsonString = await response.Content.ReadAsStringAsync();
-            //        var json = JObject.Parse(jsonString);
+            if (!response.IsSuccessStatusCode)
+                throw new Exception($"API Error: {response.StatusCode}");
 
-            //        // מחפשים את התאריך בתוך רשימת החגים
-            //        var items = json["items"];
-            //        Console.WriteLine(items);
-            //        if (items != null)
-            //        {
-            //            foreach (var item in items)
-            //            {
+            var jsonString = await response.Content.ReadAsStringAsync();
+            var json = JObject.Parse(jsonString);
+            var items = json["items"];
 
-            //                DateTime holidayDate = DateTime.ParseExact(item["date"].ToString(), "yyyy-MM-dd", null);
-            //                if (holidayDate.Date == date.Date)
-            //                {
-            //                    if (item["title"].ToString().Equals("Yom HaAtzma'ut", StringComparison.OrdinalIgnoreCase))
-            //                    {
-            //                        return true;
-            //                    }
-            //                    else if (item["subcat"].ToString().Equals("modern"))
-            //                    {
+            if (items != null)
+            {
+                foreach (var item in items)
+                {
+                    DateTime holidayDate = DateTime.ParseExact(item["date"]!.ToString(), "yyyy-MM-dd", null);
 
-            //                        Console.WriteLine(item["title"]);
-            //                        Console.WriteLine(item["subcat"]);
+                    if (holidayDate.Date == date.Date)
+                    {
+                        var title = item["title"]?.ToString();
+                        var subcat = item["subcat"]?.ToString();
 
-            //                        return false;
-            //                    }
+                        if (title?.Equals("Yom HaAtzma'ut", StringComparison.OrdinalIgnoreCase) == true)
+                            return true;
 
+                        if (subcat?.Equals("modern", StringComparison.OrdinalIgnoreCase) == true)
+                            return false;
 
-            //                    return true;
-            //                }
-            //            }
-            //        }
+                        return true;
+                    }
+                }
+            }
 
-            //    return false; // לא נמצא חג
-            //}
-            //else
-            //{
-            //    throw new Exception($"API Error: {response.StatusCode}");
-            //}
-            //}
             return false;
         }
     }
 }
-

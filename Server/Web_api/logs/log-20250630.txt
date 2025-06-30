@@ -1,0 +1,423 @@
+2025-06-30 00:21:12.227 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-30 00:21:12.328 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-30 00:21:12.568 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-30 00:21:12.582 +03:00 [INF] Hosting environment: Development
+2025-06-30 00:21:12.633 +03:00 [INF] Content root path: C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api
+2025-06-30 00:21:16.857 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-30 00:21:18.214 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 1375.4767ms
+2025-06-30 00:21:18.367 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/swagger-ui.css - null null
+2025-06-30 00:21:18.372 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.css - null null
+2025-06-30 00:21:19.494 +03:00 [INF] The file /index.css was not modified
+2025-06-30 00:21:19.385 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-30 00:21:19.436 +03:00 [INF] The file /swagger-ui.css was not modified
+2025-06-30 00:21:18.372 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-30 00:21:19.518 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.css - 304 null text/css 1145.3399ms
+2025-06-30 00:21:19.639 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2025-06-30 00:21:20.451 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 1066.2625ms
+2025-06-30 00:21:20.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-30 00:21:20.434 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/swagger-ui-bundle.js - null null
+2025-06-30 00:21:20.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/swagger-ui.css - 304 null text/css 1898.388ms
+2025-06-30 00:21:21.048 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-30 00:21:21.105 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2025-06-30 00:21:21.092 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 684.0361ms
+2025-06-30 00:21:21.158 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 2785.8668ms
+2025-06-30 00:21:21.273 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/swagger-ui-bundle.js - 304 null text/javascript 838.9035ms
+2025-06-30 00:21:22.038 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 989.5424ms
+2025-06-30 00:21:22.686 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-30 00:21:22.698 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/favicon-32x32.png - null null
+2025-06-30 00:21:24.821 +03:00 [INF] The file /favicon-32x32.png was not modified
+2025-06-30 00:21:24.919 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2233.15ms
+2025-06-30 00:21:24.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/favicon-32x32.png - 304 null image/png 2242.2218ms
+2025-06-30 00:22:40.792 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - null 0
+2025-06-30 00:22:40.816 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 00:22:40.871 +03:00 [INF] Route matched with {action = "setAppForPeriod", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] setAppForPeriod() on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 00:25:22.832 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api) in 161950.642ms
+2025-06-30 00:25:22.841 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 00:25:22.862 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BL.service.AvailableQueueManager.IsHolidayAsync(DateTime date) in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AvailableQueueManager.cs:line 43
+   at BL.Services.AppointmentManager.SetAvailableAppointmentForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AppointmentsManager.cs:line 266
+   at Web_api.Controllers.AppointmentController.setAppForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api\Controllers\AppointmentController.cs:line 239
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-30 00:25:22.952 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-30 00:25:22.956 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-30 00:25:22.961 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - 405 0 null 162168.81ms
+2025-06-30 00:27:13.259 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - null 0
+2025-06-30 00:27:13.293 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 00:27:13.296 +03:00 [INF] Route matched with {action = "setAppForPeriod", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] setAppForPeriod() on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 00:29:55.067 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api) in 161766.7818ms
+2025-06-30 00:29:55.071 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 00:29:55.075 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BL.service.AvailableQueueManager.IsHolidayAsync(DateTime date) in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AvailableQueueManager.cs:line 43
+   at BL.Services.AppointmentManager.SetAvailableAppointmentForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AppointmentsManager.cs:line 266
+   at Web_api.Controllers.AppointmentController.setAppForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api\Controllers\AppointmentController.cs:line 239
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-30 00:29:55.099 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-30 00:29:55.102 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-30 00:29:55.104 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - 405 0 null 161844.9052ms
+2025-06-30 00:30:14.265 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - null 0
+2025-06-30 00:30:14.270 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 00:30:14.277 +03:00 [INF] Route matched with {action = "setAppForPeriod", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] setAppForPeriod() on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 12:19:39.779 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-30 12:19:39.868 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-30 12:19:40.332 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-30 12:19:40.360 +03:00 [INF] Hosting environment: Development
+2025-06-30 12:19:40.363 +03:00 [INF] Content root path: C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api
+2025-06-30 12:19:44.565 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-30 12:19:46.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 2386.6384ms
+2025-06-30 12:19:48.181 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-30 12:19:48.181 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-30 12:19:48.198 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-30 12:19:48.614 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 432.5275ms
+2025-06-30 12:19:48.697 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 515.9469ms
+2025-06-30 12:19:48.863 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 664.9321ms
+2025-06-30 12:19:51.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-30 12:19:51.526 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.2235ms
+2025-06-30 12:21:22.069 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-30 12:21:22.207 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-30 12:21:22.692 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-30 12:21:22.710 +03:00 [INF] Hosting environment: Development
+2025-06-30 12:21:22.713 +03:00 [INF] Content root path: C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api
+2025-06-30 12:21:24.950 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-30 12:21:26.164 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 1179.1015ms
+2025-06-30 12:21:26.248 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-30 12:21:26.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-30 12:21:26.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-30 12:21:26.720 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 443.5366ms
+2025-06-30 12:21:26.739 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 491.5063ms
+2025-06-30 12:21:26.947 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 670.7295ms
+2025-06-30 12:21:27.187 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-30 12:21:27.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 365.9893ms
+2025-06-30 12:21:49.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/isHoliday?date=2025-06-30 - null null
+2025-06-30 12:21:49.138 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.isHoliday (Web_api)'
+2025-06-30 12:21:49.216 +03:00 [INF] Route matched with {action = "isHoliday", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] isHoliday(System.DateTime) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 12:23:30.130 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.isHoliday (Web_api) in 100901.7698ms
+2025-06-30 12:23:30.135 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.isHoliday (Web_api)'
+2025-06-30 12:23:30.149 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BL.service.AvailableQueueManager.IsHolidayAsync(DateTime date) in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AvailableQueueManager.cs:line 43
+   at Web_api.Controllers.AppointmentController.isHoliday(DateTime date) in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api\Controllers\AppointmentController.cs:line 248
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-30 12:23:30.242 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-06-30 12:23:30.257 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-06-30 12:23:56.683 +03:00 [ERR] The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+2025-06-30 12:23:56.707 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-06-30 12:23:56.750 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 26486.1298ms
+2025-06-30 12:23:56.755 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-06-30 12:23:56.765 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/isHoliday?date=2025-06-30 - 400 null application/problem+json; charset=utf-8 127658.6427ms
+2025-06-30 12:24:31.629 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/isHoliday?date=2025-06-30T14%3A30%3A00 - null null
+2025-06-30 12:24:31.704 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.isHoliday (Web_api)'
+2025-06-30 12:24:31.706 +03:00 [INF] Route matched with {action = "isHoliday", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] isHoliday(System.DateTime) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 12:24:32.367 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2025-06-30 12:24:32.373 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.isHoliday (Web_api) in 663.4123ms
+2025-06-30 12:24:32.386 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.isHoliday (Web_api)'
+2025-06-30 12:24:32.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/isHoliday?date=2025-06-30T14%3A30%3A00 - 200 null application/json; charset=utf-8 764.2164ms
+2025-06-30 12:25:08.787 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/isHoliday?date=2025-04-13T14%3A30%3A00 - null null
+2025-06-30 12:25:08.834 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.isHoliday (Web_api)'
+2025-06-30 12:25:08.837 +03:00 [INF] Route matched with {action = "isHoliday", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] isHoliday(System.DateTime) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 12:25:09.358 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2025-06-30 12:25:09.364 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.isHoliday (Web_api) in 523.7837ms
+2025-06-30 12:25:09.377 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.isHoliday (Web_api)'
+2025-06-30 12:25:09.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/isHoliday?date=2025-04-13T14%3A30%3A00 - 200 null application/json; charset=utf-8 604.3913ms
+2025-06-30 12:28:52.497 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-30 12:28:52.607 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-30 12:28:52.841 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-30 12:28:52.845 +03:00 [INF] Hosting environment: Development
+2025-06-30 12:28:52.860 +03:00 [INF] Content root path: C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api
+2025-06-30 12:28:58.862 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-30 12:29:00.030 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 1215.3649ms
+2025-06-30 12:29:00.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-30 12:29:00.977 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-30 12:29:00.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 24.0698ms
+2025-06-30 12:29:01.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 100.6811ms
+2025-06-30 12:29:01.729 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-30 12:29:01.839 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.8826ms
+2025-06-30 12:29:02.076 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-30 12:29:02.181 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.8052ms
+2025-06-30 12:30:30.060 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - null 0
+2025-06-30 12:30:30.092 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 12:30:30.143 +03:00 [INF] Route matched with {action = "setAppForPeriod", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] setAppForPeriod() on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 12:32:32.785 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api) in 122630.6862ms
+2025-06-30 12:32:32.793 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 12:32:32.804 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BL.service.AvailableQueueManager.IsHolidayAsync(DateTime date) in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AvailableQueueManager.cs:line 43
+   at BL.Services.AppointmentManager.SetAvailableAppointmentForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AppointmentsManager.cs:line 266
+   at Web_api.Controllers.AppointmentController.setAppForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api\Controllers\AppointmentController.cs:line 241
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-30 12:32:33.016 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:32:33.045 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:32:33.059 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - 405 0 null 123000.4343ms
+2025-06-30 12:41:00.513 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - null 0
+2025-06-30 12:41:00.564 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 12:41:00.576 +03:00 [INF] Route matched with {action = "setAppForPeriod", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] setAppForPeriod() on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 12:42:47.944 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api) in 107364.0512ms
+2025-06-30 12:42:47.948 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 12:42:47.951 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BL.service.AvailableQueueManager.IsHolidayAsync(DateTime date) in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AvailableQueueManager.cs:line 43
+   at BL.Services.AppointmentManager.SetAvailableAppointmentForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AppointmentsManager.cs:line 266
+   at Web_api.Controllers.AppointmentController.setAppForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api\Controllers\AppointmentController.cs:line 241
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-30 12:42:47.973 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:42:47.977 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:42:47.980 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - 405 0 null 107470.9439ms
+2025-06-30 12:53:58.334 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-06-30 12:53:58.478 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 145.2427ms
+2025-06-30 12:53:58.550 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7015/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-06-30 12:54:14.057 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/setAppForPeriod - null null
+2025-06-30 12:54:14.090 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:54:14.092 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:54:14.096 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/setAppForPeriod - 405 0 null 38.7728ms
+2025-06-30 12:54:16.191 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/setAppForPeriod - null null
+2025-06-30 12:54:16.216 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:54:16.218 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:54:16.220 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/setAppForPeriod - 405 0 null 29.8005ms
+2025-06-30 12:54:17.238 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/setAppForPeriod - null null
+2025-06-30 12:54:17.254 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:54:17.257 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-06-30 12:54:17.259 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/setAppForPeriod - 405 0 null 21.6525ms
+2025-06-30 18:14:38.774 +03:00 [INF] Now listening on: https://localhost:7015
+2025-06-30 18:14:38.956 +03:00 [INF] Now listening on: http://localhost:5129
+2025-06-30 18:14:42.388 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-30 18:14:42.719 +03:00 [INF] Hosting environment: Development
+2025-06-30 18:14:42.721 +03:00 [INF] Content root path: C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api
+2025-06-30 18:14:43.776 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-06-30 18:14:45.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-30 18:14:45.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-06-30 18:14:45.856 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-06-30 18:14:45.856 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 2126.7462ms
+2025-06-30 18:14:46.592 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 741.9477ms
+2025-06-30 18:14:46.572 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 720.4072ms
+2025-06-30 18:14:46.815 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 959.6362ms
+2025-06-30 18:14:47.018 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-06-30 18:14:47.386 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 370.8625ms
+2025-06-30 18:15:31.570 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - null 0
+2025-06-30 18:15:31.590 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 18:15:31.639 +03:00 [INF] Route matched with {action = "setAppForPeriod", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Boolean] setAppForPeriod() on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-06-30 18:17:24.657 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api) in 113010.2387ms
+2025-06-30 18:17:24.663 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.setAppForPeriod (Web_api)'
+2025-06-30 18:17:24.673 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BL.service.AvailableQueueManager.IsHolidayAsync(DateTime date) in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AvailableQueueManager.cs:line 43
+   at BL.Services.AppointmentManager.SetAvailableAppointmentForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\BL\Services\AppointmentsManager.cs:line 270
+   at Web_api.Controllers.AppointmentController.setAppForPeriod() in C:\Users\גמ''\Desktop\Rivka\proj\ClinicScheduler\Server\Web_api\Controllers\AppointmentController.cs:line 241
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-30 18:17:24.747 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-06-30 18:17:24.755 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-06-30 18:17:24.762 +03:00 [ERR] The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+2025-06-30 18:17:24.777 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-06-30 18:17:24.814 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 54.6115ms
+2025-06-30 18:17:24.832 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-06-30 18:17:24.838 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Appointment/setAppForPeriod - 400 null application/problem+json; charset=utf-8 113267.9905ms

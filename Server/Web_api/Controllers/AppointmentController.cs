@@ -12,9 +12,11 @@ namespace Web_api.Controllers
     public class AppointmentController : ControllerBase
     {
         BLManager _BLManager;
-        public AppointmentController(IAppointmentsManager appointmentsManager, BLManager BLManager)
+        IAvailableQueueManager _availableQueueManager;
+        public AppointmentController( BLManager BLManager,IAvailableQueueManager availableQueueManager)
         {
             _BLManager = BLManager;
+            _availableQueueManager = availableQueueManager;
         }
         #region Regular Appointments (3 functions) to implement
         // Get all future appointments for a patient by ID
@@ -236,9 +238,15 @@ namespace Web_api.Controllers
 
         public async Task<bool> setAppForPeriod()
         {
-             await _BLManager._appointmentsManager.SetAvailableAppointmentForPeriod();
+            await _BLManager._appointmentsManager.SetAvailableAppointmentForPeriod();
             return true;
         }
+
+        /*[HttpGet("isHoliday")]
+        public async Task<bool> isHoliday(DateTime date)
+        {
+            return await _availableQueueManager.IsHolidayAsync(date);
+        }*/
         #endregion
     }
 }
