@@ -24,17 +24,17 @@ namespace BL.Services
         ICanceledAppointmentsDal _canceledAppointmentsDal;
         IMapper _mapper;
         IWorkHoursDal _workHoursDal;
-        IAvailableQueueManager _availableQueueManager;
+        IHolidayService _holidayService;
         ITherapistsDal _therapistsDal;
         #endregion
-        public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPastAppointmentsDal PastAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal, IAvailableQueueManager availableQueueManager, IWorkHoursDal workHoursDal, ITherapistsDal therapistsDal)
+        public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPastAppointmentsDal PastAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal, IHolidayService holidayService, IWorkHoursDal workHoursDal, ITherapistsDal therapistsDal)
         {
             _appointmentsDal = appointmentsDal;
             _availableAppointmentsDal = availableAppointmentsDal;
             _PastAppointmentsDal = PastAppointmentsDal;
             _canceledAppointmentsDal = canceledAppointmentsDal;
             _mapper = mapper;
-            _availableQueueManager = availableQueueManager;
+            _holidayService = holidayService;
             _workHoursDal = workHoursDal;
             _therapistsDal = therapistsDal;
         }
@@ -166,10 +166,7 @@ namespace BL.Services
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
                 throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
 
-            if (!Enum.TryParse<DAL.Models.Specialization>(specialization, true, out var specializationEnum))
-                throw new Exception($"The specialization {specialization} is not valid. Please use a valid specialization.");
-
-            var availapp = await _availableAppointmentsDal.GetAppointmentsBySpecializationAndDate(date, specializationEnum);
+            var availapp = await _availableAppointmentsDal.GetAppointmentsBySpecializationAndDate(date, _mapper.Map<DAL.Models.Specialization>(specialization));
             if (availapp == null)
                 throw new NullReferenceException(nameof(availapp));
 
@@ -184,8 +181,9 @@ namespace BL.Services
                 throw new ArgumentNullException(nameof(date));
             }
             var availapp = await _availableAppointmentsDal.GetAppointmentsByTherapistAndWeek(date, therapistId);
+
             if (availapp == null)
-                throw new NullReferenceException(nameof(availapp));
+                return null;
 
             return await Task.FromResult(_mapper.Map<List<BLAvailableAppointment>>(availapp));
         }
@@ -238,20 +236,15 @@ namespace BL.Services
         }
 
 
-        public async Task<List<BLAvailableAppointment>> SetAvailableAppointmentForPeriod()
+        public async Task<bool> SetAvailableAppointmentForPeriod()
         {
             List<Therapist> therapists = await _therapistsDal.GetAllTherapists();
             List<AvailableAppointment> list = new List<AvailableAppointment>();
-            DateTime startDate = DateTime.Today.AddMonths(2);
+            //DateTime startDate = DateTime.Today.AddMonths(2);
+            //change it according the monthes you want from.
+            DateTime startDate = DateTime.Today.AddDays(1);
             DateTime endDate = startDate.AddMonths(1);
-            List<bool> isHoliday = new List<bool>();
-
-            for (DateTime date = startDate; date < endDate; date = date.AddDays(1))
-            {
-                isHoliday.Add(await _availableQueueManager.IsHolidayAsync(date));
-            }
-
-            int i;
+            List<DateTime> noWorkDays = await _holidayService.GetNoWorkDaysAsync(startDate, endDate);
             foreach (Therapist therapist in therapists)
             {
 
@@ -261,10 +254,9 @@ namespace BL.Services
                 {
                     continue;
                 }
-                i = 0;
-                for (DateTime date = startDate; date < endDate; date = date.AddDays(1),i++)
+                for (DateTime date = startDate; date < endDate; date = date.AddDays(1))
                 {
-                    if (date.DayOfWeek == DayOfWeek.Saturday)
+                    if (noWorkDays.Contains(date))
                         continue;
 
                     var workHoursForDay = therapistWorkDays
@@ -275,8 +267,7 @@ namespace BL.Services
                     if (!workHoursForDay.Any())
                         continue;
 
-                    if (isHoliday[i])
-                        continue;
+
 
                     foreach (var wh in workHoursForDay)
                     {
@@ -296,7 +287,6 @@ namespace BL.Services
                             };
 
                             list.Add(newAvailable);
-                            //await _availableAppointmentsDal.AddAppointment(_mapper.Map<AvailableAppointment>(newAvailable));
                         }
                     }
                 }
@@ -307,8 +297,8 @@ namespace BL.Services
                 appt.AppointmentId = 0; // Make sure it's zero so EF will let SQL Server generate it!
             }
 
-            await _availableAppointmentsDal.AddAppointments(list);
-            return _mapper.Map<List<BLAvailableAppointment>>(list);
+            return await _availableAppointmentsDal.AddAppointments(list);
+            //return _mapper.Map<List<BLAvailableAppointment>>(list);
         }
 
         #endregion
@@ -476,19 +466,12 @@ namespace BL.Services
             return _mapper.Map<BLCanceledAppointment>(app);
         }
 
-        public async Task<bool> DeleteOldPassedAppointment(DateOnly? endDate = null)
+        public async Task<bool> DeleteOldPassedAppointment(DateOnly endDate)
         {
-            if (endDate == null)
-            {
-                endDate = new DateOnly();
-                DateTime dateTime = DateTime.Now;
-                dateTime = dateTime.AddYears(-1);
-                endDate = DateOnly.FromDateTime(dateTime).AddDays(-1);
-            }
-            else if (endDate >= DateOnly.FromDateTime(DateTime.Now))
+             if (endDate >= DateOnly.FromDateTime(DateTime.Now))
                 throw new ArgumentException("TheDate is not correct.", nameof(endDate));
 
-            return await _PastAppointmentsDal.DeleteAllPastAppointmentsOlderThan(endDate.Value);
+            return await _PastAppointmentsDal.DeleteAllPastAppointmentsOlderThan(endDate);
         }
 
         #region get
@@ -542,7 +525,7 @@ namespace BL.Services
         public async Task<DateTime> NextBusinessDay()
         {
             int adding = 1;
-            while (await _availableQueueManager.IsHolidayAsync(DateTime.Now.AddDays(adding)))
+            while (await _holidayService.IsHolidayAsync(DateTime.Now.AddDays(adding)))
             {
                 adding++;
             }

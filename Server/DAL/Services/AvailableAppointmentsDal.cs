@@ -25,13 +25,13 @@ namespace DAL.Services
         }
 
         //--------------------------------------------------------------------------
-        public async Task AddAppointments(List<AvailableAppointment> appointments)
+        public async Task<bool> AddAppointments(List<AvailableAppointment> appointments)
         {
             foreach (var appointment in appointments)
             {
                 await _DB_Manager.AvailableAppointments.AddAsync(appointment);
             }
-            await _DB_Manager.SaveChangesAsync();
+           return (await _DB_Manager.SaveChangesAsync())>0;
         }
         //----------------------------------------------------------------------
 

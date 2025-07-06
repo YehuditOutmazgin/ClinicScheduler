@@ -10,7 +10,7 @@ namespace DAL.Api
     {
         // add available appointment 
         Task<AvailableAppointment> AddAppointment(AvailableAppointment appointment);
-         Task AddAppointments(List<AvailableAppointment> appointments);
+        Task<bool> AddAppointments(List<AvailableAppointment> appointments);
        
         // get all available appointments for a specific therapist and date its return a list of available appointments for this week.
         Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId);

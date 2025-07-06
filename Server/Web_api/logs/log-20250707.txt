@@ -1,0 +1,121 @@
+2025-07-07 00:01:17.686 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-07 00:01:17.826 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-07 00:01:18.141 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-07 00:01:18.147 +03:00 [INF] Hosting environment: Development
+2025-07-07 00:01:18.149 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\ClinicScheduler\Server\Web_api
+2025-07-07 00:01:19.550 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Patient - null null
+2025-07-07 00:01:19.710 +03:00 [INF] Executing endpoint 'Web_api.Controllers.PatientController.GetAllPatients (Web_api)'
+2025-07-07 00:01:19.749 +03:00 [INF] Route matched with {action = "GetAllPatients", controller = "Patient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPatients() on controller Web_api.Controllers.PatientController (Web_api).
+2025-07-07 00:01:24.128 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-07 00:01:25.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 1172.9047ms
+2025-07-07 00:01:25.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-07 00:01:25.479 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-07 00:01:25.546 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-07 00:01:25.633 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 163.8691ms
+2025-07-07 00:01:25.642 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 95.9465ms
+2025-07-07 00:01:25.848 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 368.4239ms
+2025-07-07 00:01:26.119 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-07 00:01:26.724 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 605.1521ms
+2025-07-07 00:01:29.661 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-07 00:01:29.694 +03:00 [INF] Executed action Web_api.Controllers.PatientController.GetAllPatients (Web_api) in 9926.998ms
+2025-07-07 00:01:29.698 +03:00 [INF] Executed endpoint 'Web_api.Controllers.PatientController.GetAllPatients (Web_api)'
+2025-07-07 00:01:29.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Patient - 200 null application/json; charset=utf-8 10155.7495ms
+2025-07-07 00:01:42.563 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Therapist - null null
+2025-07-07 00:01:42.572 +03:00 [INF] Executing endpoint 'Web_api.Controllers.TherapistController.GetAllTherapists (Web_api)'
+2025-07-07 00:01:42.587 +03:00 [INF] Route matched with {action = "GetAllTherapists", controller = "Therapist"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTherapists() on controller Web_api.Controllers.TherapistController (Web_api).
+2025-07-07 00:01:48.011 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLTherapist, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-07 00:01:48.020 +03:00 [INF] Executed action Web_api.Controllers.TherapistController.GetAllTherapists (Web_api) in 5430.2282ms
+2025-07-07 00:01:48.023 +03:00 [INF] Executed endpoint 'Web_api.Controllers.TherapistController.GetAllTherapists (Web_api)'
+2025-07-07 00:01:48.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Therapist - 200 null application/json; charset=utf-8 5463.855ms
+2025-07-07 00:02:43.118 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/therapist/1/date/07-07-2025 - null null
+2025-07-07 00:02:43.144 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api)'
+2025-07-07 00:02:43.170 +03:00 [INF] Route matched with {action = "GetAppointmentsByTherapistAndDate", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAppointmentsByTherapistAndDate(Int32, System.String) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-07 00:03:25.889 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-07 00:03:25.919 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api) in 42743.6379ms
+2025-07-07 00:03:25.922 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api)'
+2025-07-07 00:03:25.925 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/therapist/1/date/07-07-2025 - 200 null application/json; charset=utf-8 42806.5112ms
+2025-07-07 00:03:28.015 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/therapist/1/date/07-07-2025 - null null
+2025-07-07 00:03:28.029 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api)'
+2025-07-07 00:03:28.033 +03:00 [INF] Route matched with {action = "GetAppointmentsByTherapistAndDate", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAppointmentsByTherapistAndDate(Int32, System.String) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-07 00:05:12.405 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-07 00:05:12.408 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api) in 104371.7248ms
+2025-07-07 00:05:12.411 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api)'
+2025-07-07 00:05:12.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/therapist/1/date/07-07-2025 - 200 null application/json; charset=utf-8 104397.481ms
+2025-07-07 00:05:14.875 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/therapist/1/date/07-07-2025 - null null
+2025-07-07 00:05:14.936 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api)'
+2025-07-07 00:05:14.940 +03:00 [INF] Route matched with {action = "GetAppointmentsByTherapistAndDate", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAppointmentsByTherapistAndDate(Int32, System.String) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-07 00:05:51.899 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-07 00:05:51.902 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api) in 36900.6024ms
+2025-07-07 00:05:51.905 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetAppointmentsByTherapistAndDate (Web_api)'
+2025-07-07 00:05:51.907 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/therapist/1/date/07-07-2025 - 200 null application/json; charset=utf-8 37032.2511ms
+2025-07-07 00:06:34.202 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/available/therapist/1/week/07-07-2025 - null null
+2025-07-07 00:06:34.232 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api)'
+2025-07-07 00:06:34.241 +03:00 [INF] Route matched with {action = "GetAvailableAppointmentsForTherapistWeek", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableAppointmentsForTherapistWeek(Int32, System.String) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-07 00:08:55.351 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAvailableAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-07 00:08:55.407 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api) in 141160.0179ms
+2025-07-07 00:08:55.415 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api)'
+2025-07-07 00:08:55.418 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/available/therapist/1/week/07-07-2025 - 200 null application/json; charset=utf-8 141215.1892ms
+2025-07-07 00:11:00.814 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/available/therapist/2/week/07-07-2025 - null null
+2025-07-07 00:11:00.855 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api)'
+2025-07-07 00:11:00.873 +03:00 [INF] Route matched with {action = "GetAvailableAppointmentsForTherapistWeek", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableAppointmentsForTherapistWeek(Int32, System.String) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-07 00:11:07.088 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAvailableAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-07 00:11:07.104 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api) in 6224.883ms
+2025-07-07 00:11:07.107 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api)'
+2025-07-07 00:11:07.109 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/available/therapist/2/week/07-07-2025 - 200 null application/json; charset=utf-8 6295.0828ms
+2025-07-07 00:12:30.278 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/available/therapist/4/week/07-07-2025 - null null
+2025-07-07 00:12:30.292 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api)'
+2025-07-07 00:12:30.294 +03:00 [INF] Route matched with {action = "GetAvailableAppointmentsForTherapistWeek", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableAppointmentsForTherapistWeek(Int32, System.String) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-07 00:12:32.763 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAvailableAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-07 00:12:32.794 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api) in 2496.7732ms
+2025-07-07 00:12:32.806 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForTherapistWeek (Web_api)'
+2025-07-07 00:12:32.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/available/therapist/4/week/07-07-2025 - 200 null application/json; charset=utf-8 2531.6296ms
+2025-07-07 00:12:57.814 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/available/specialty/Psychology/week/07-07-2025 - null null
+2025-07-07 00:12:57.857 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForSpecialtyWeek (Web_api)'
+2025-07-07 00:12:57.870 +03:00 [INF] Route matched with {action = "GetAvailableAppointmentsForSpecialtyWeek", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableAppointmentsForSpecialtyWeek(System.String, System.String) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-07 00:18:00.332 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForSpecialtyWeek (Web_api) in 302458.2461ms
+2025-07-07 00:18:00.468 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForSpecialtyWeek (Web_api)'
+2025-07-07 00:18:00.483 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Value to add was out of range. (Parameter 'value')
+   at System.DateOnly.<AddDays>g__ThrowOutOfRange|25_0()
+   at System.DateOnly.AddDays(Int32 value)
+   at DAL.Services.AvailableAppointmentsDal.GetAppointmentsBySpecializationAndDate(DateOnly date, Specialization specialization) in C:\Users\אוטמזגין\Desktop\ליהודית\project\ClinicScheduler\Server\DAL\Services\AvailableAppointmentsDal.cs:line 50
+   at BL.Services.AppointmentManager.GetAvailableAppointmentsForSpecificSpecializationForWeek(String specialization, DateOnly date)
+   at Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForSpecialtyWeek(String specialty, String weekDate)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-07 00:18:00.599 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-07 00:18:00.602 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-07 00:18:02.667 +03:00 [ERR] Value to add was out of range. (Parameter 'value')
+2025-07-07 00:18:02.677 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-07 00:18:02.711 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 2105.3781ms
+2025-07-07 00:18:02.714 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-07 00:18:02.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/available/specialty/Psychology/week/07-07-2025 - 400 null application/problem+json; charset=utf-8 304901.5885ms
+2025-07-07 00:18:05.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/available/specialty/Psychology/week/07-07-2025 - null null
+2025-07-07 00:18:05.398 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetAvailableAppointmentsForSpecialtyWeek (Web_api)'
+2025-07-07 00:18:05.463 +03:00 [INF] Route matched with {action = "GetAvailableAppointmentsForSpecialtyWeek", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableAppointmentsForSpecialtyWeek(System.String, System.String) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-07 01:28:54.625 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-07 01:28:54.698 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-07 01:28:54.985 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-07 01:28:54.990 +03:00 [INF] Hosting environment: Development
+2025-07-07 01:28:54.991 +03:00 [INF] Content root path: C:\Users\אוטמזגין\Desktop\ליהודית\project\ClinicScheduler\Server\Web_api
+2025-07-07 01:28:56.237 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-07 01:28:56.800 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 557.787ms
+2025-07-07 01:28:56.879 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-07 01:28:56.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-07 01:28:56.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-07 01:28:56.921 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 39.9793ms
+2025-07-07 01:28:56.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 64.5291ms
+2025-07-07 01:28:57.203 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 321.3145ms
+2025-07-07 01:28:57.446 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-07 01:28:57.834 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 388.047ms

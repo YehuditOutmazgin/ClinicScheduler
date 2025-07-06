@@ -5,6 +5,7 @@ using BL.Models;
 using BL;
 
 using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Web_api.Controllers
 {
     [Route("api/[controller]")]
@@ -12,13 +13,11 @@ namespace Web_api.Controllers
     public class AppointmentController : ControllerBase
     {
         BLManager _BLManager;
-        IAvailableQueueManager _availableQueueManager;
-        public AppointmentController( BLManager BLManager,IAvailableQueueManager availableQueueManager)
+        public AppointmentController( BLManager BLManager )
         {
             _BLManager = BLManager;
-            _availableQueueManager = availableQueueManager;
         }
-        #region Regular Appointments (3 functions) to implement
+        #region Regular Appointments 
         // Get all future appointments for a patient by ID
         [HttpGet("future/{patientId}")]
         public async Task<IActionResult> GetFutureAppointmentsByPatientId(int patientId)
@@ -31,21 +30,16 @@ namespace Web_api.Controllers
         [HttpGet("therapist/{therapistId}/date/{date}")]
         public async Task<IActionResult> GetAppointmentsByTherapistAndDate(int therapistId, string? date)
         {
-            DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
+            DateOnly dateOnly = ParseDate(date);
             var appointments = await _BLManager._appointmentsManager.GetAllAppointmentsByDateAndTherapistId(therapistId, dateOnly);
             return Ok(appointments);
         }
 
-        /// <summary>
-        /// Rebecca implement this functions if you have any questions about the implementation or the function, contact me by phone:0548535515
-        /// </summary>
-        /// <returns></returns>
-
         //// Get appointments for a therapist for the week based on a given date
-        [HttpGet("therapist/week/{therapistId}/date/{date}")]
+        [HttpGet("therapist/{therapistId}/date/{date}/week")]
         public async Task<IActionResult> GetAppointmentsForTherapistWeek(int therapistId, string? date)
         {
-            DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
+            DateOnly dateOnly = ParseDate(date);
             var appointments = await _BLManager._appointmentsManager.GetAppointmentsByTherapistIdAndWeek(therapistId, dateOnly);
             return Ok(appointments);
         }
@@ -54,18 +48,14 @@ namespace Web_api.Controllers
         [HttpGet("date/{date}")]
         public async Task<IActionResult> GetAppointmentsByDate(string? date)
         {
-            DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
+            DateOnly dateOnly =ParseDate(date);
             var appointments = await _BLManager._appointmentsManager.GetAllAppointmentsByDate(dateOnly);
             return Ok(appointments);
         }
 
-        // update not sure we give this functional
-        [HttpPut("update{appointmentId}")]
-        public async Task<IActionResult> UpdateAppointment(int appointmentId, [FromBody] BLAppointment appointment)
-        { /* Implementation */ return Ok(); }
         #endregion
 
-        #region Appointment Confirmation (6 functions) to implement
+        #region Appointment Confirmation 
         // Get a list of appointments for the next business day
         [HttpGet("next-business-day")]
         public async Task<IActionResult> GetAppointmentsForNextBusinessDay()
@@ -120,15 +110,13 @@ namespace Web_api.Controllers
         #endregion
 
 
-        #region Available Appointments (4 functions) to implement
+        #region Available Appointments 
         // Get available appointments for a specific therapist for a given week
-        [HttpGet("available/therapist/{therapistId}/week/{weekDate}")]
-        public async Task<IActionResult> GetAvailableAppointmentsForTherapistWeek(int therapistId, string weekDate)
+        [HttpGet("available/therapist/{therapistId}/week")]
+        public async Task<IActionResult> GetAvailableAppointmentsForTherapistWeek(int therapistId, string? weekDate)
         {
-            if (!DateOnly.TryParse(weekDate, out DateOnly dateOnly))
-            {
-                dateOnly = DateOnly.FromDateTime(DateTime.Now);
-            }
+            DateOnly dateOnly = ParseDate(weekDate);
+
             var availapp = await _BLManager._appointmentsManager.GetAvailableAppointmentsForSpecificTherapistForWeek(therapistId, dateOnly);
             if (availapp == null)
             {
@@ -136,15 +124,31 @@ namespace Web_api.Controllers
             }
             return Ok(availapp);
         }
-
-        // Get available appointments for a specific specialty for a given week
-        [HttpGet("available/specialty/{specialty}/week/{weekDate}")]
-        public async Task<IActionResult> GetAvailableAppointmentsForSpecialtyWeek(string specialty, string weekDate)
+        private DateOnly ParseDate(string? dateString)
         {
-            if (!DateOnly.TryParse(weekDate, out DateOnly dateOnly))
-            {
-                dateOnly = DateOnly.FromDateTime(DateTime.Now);
-            }
+            // If the string is empty or null, return today
+            if (string.IsNullOrWhiteSpace(dateString))
+                return DateOnly.FromDateTime(DateTime.Now);
+
+            // Try parsing using standard and common formats
+            if (DateOnly.TryParse(dateString, out var dateOnly))
+                return dateOnly;
+
+            // You can add specific formats if you expect "dd-MM-yyyy"
+            if (DateOnly.TryParseExact(dateString, "dd-MM-yyyy",
+                System.Globalization.CultureInfo.InvariantCulture,
+                System.Globalization.DateTimeStyles.None, out dateOnly))
+                return dateOnly;
+
+            // Fallback to today if all parsing fails
+            return DateOnly.FromDateTime(DateTime.Now);
+        }
+        // Get available appointments for a specific specialty for a given week
+        [HttpGet("available/specialty/{specialty}/week")]
+        public async Task<IActionResult> GetAvailableAppointmentsForSpecialtyWeek(string specialty, string? weekDate)
+        {
+            DateOnly dateOnly = ParseDate(weekDate);
+
             var availapp = await _BLManager._appointmentsManager.GetAvailableAppointmentsForSpecificSpecializationForWeek(specialty, dateOnly);
             if (availapp == null)
             {
@@ -162,7 +166,7 @@ namespace Web_api.Controllers
                 dateOnly = DateOnly.FromDateTime(DateTime.Now);
             }
             var appointments = await _BLManager._appointmentsManager.GetPastAppointmentsByTherapistIdAndDate(therapistId, dateOnly);
-            if (appointments == null || appointments.Count == 0) // Ensure appointments.Count is properly accessed
+            if (appointments == null || appointments.Count == 0) 
             {
                 return NotFound("No past appointments found for the specified therapist and date.");
             }
@@ -196,7 +200,7 @@ namespace Web_api.Controllers
         }
         #endregion
 
-        #region Schedule Appointment (1 function) to implement
+        #region Schedule Appointment 
         // Schedule an appointment based on patient ID and appointment ID
         [HttpPost("schedule")]
         public async Task<IActionResult> ScheduleAppointment(int patientId, int appointmentId)
@@ -205,17 +209,15 @@ namespace Web_api.Controllers
         }
         #endregion
 
-        #region Deletion (4 functions) to implement
+        #region Deletion 
         // Delete a future appointment by appointment ID and patient ID
         [HttpDelete("delete/{appointmentId}/patient/{patientId}")]
         public async Task<IActionResult> DeleteAppointment(int appointmentId, int patientId)
         {
-            int x=1234567891;
-            long y = 1234567790123456565;
             return Ok(await _BLManager._appointmentsManager.DeleteAppointmentByPatient(patientId, appointmentId));
         }
         // Delete a future appointment by appointment ID and patient ID therapist made need to add it to cancle appointment for confimation.
-        [HttpDelete("delete/byTherapist/{appointmentId}/patient/{patientId}/")]
+        [HttpDelete("delete/byTherapist/{therapistId}/date/{date}/")]
         public async Task<IActionResult> DeleteAppointmentByTherapist(int therapistId, string date)
         {
             DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));

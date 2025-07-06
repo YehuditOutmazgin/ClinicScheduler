@@ -27,16 +27,14 @@ builder.Services.AddSingleton<ITherapistManager, TherapistsManager>();
 
 
 // זה השורה החשובה!
-builder.Services.AddHttpClient<IAvailableQueueManager, AvailableQueueManager>(client =>
+builder.Services.AddHttpClient<IHolidayService, HolidayService>(client =>
 {
     client.BaseAddress = new Uri("https://www.hebcal.com/hebcal");
+    //client.Timeout = TimeSpan.FromMinutes(5);
+
 });
 
-// או אם את צריכה להגדיר Timeout:
-builder.Services.AddHttpClient<IAvailableQueueManager, AvailableQueueManager>(client =>
-{
-    client.Timeout = TimeSpan.FromMinutes(5);
-});
+
 //--------------------------------------------------------------------------------------------------------------
 
 //Dal
