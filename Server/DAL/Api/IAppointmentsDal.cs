@@ -22,7 +22,7 @@ namespace DAL.Api
         Task<List<Appointment>> GetAllAppointmentsByPatientIdAndTherapistId(int patientId,int therapistId);
         Task<List<Appointment>> GetAppointmentsByPatientIdAndTherapistIdAndDate(int patientId, DateOnly date, int therapistId);
         //on defalut return today  if there is a date return the apointments day of this date 
-        Task<List<Appointment>> GetAppointmentsTherapistAndDate(int therapistId, DateOnly? date);
+        Task<List<Appointment>> GetAppointmentsTherapistAndDate(int therapistId, DateOnly date);
         //delete appointmet range
         Task DeleteRangeAppointments(List<Appointment> appointments);
         //delete one

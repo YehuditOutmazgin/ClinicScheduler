@@ -151,7 +151,7 @@ namespace DAL.Services
                 {
                     existingPatient.FirstName = patient.FirstName;
                     existingPatient.LastName = patient.LastName;
-                    existingPatient.Age = patient.Age;
+                    existingPatient.BirthDate = patient.BirthDate;
                     existingPatient.PhoneNumber = patient.PhoneNumber;
                     _dB_Manager.SaveChanges();
                 }

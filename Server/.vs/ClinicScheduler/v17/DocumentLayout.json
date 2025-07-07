@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\web_api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\bl\\services\\holidayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\holidayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\dal\\services\\appointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\appointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\bl\\services\\appointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\appointmentsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\web_api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\web_api\\controllers\\errorshendlercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\dal\\services\\appointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\services\\appointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\web_api\\controllers\\therapistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC8C637-C427-4CFD-89DA-CD0550D63252}|Web_api\\Web_api.csproj|solutionrelative:web_api\\controllers\\therapistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\dal\\api\\iavailableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CD8AFEF-1B00-4DE6-9029-129AF7C9786B}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iavailableappointmentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\bl\\services\\holidayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|solutionrelative:bl\\services\\holidayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB54CC0D-5F36-46CC-9027-225B0E68FFA9}|BL\\BL.csproj|c:\\users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\clinicscheduler\\server\\bl\\api\\iholidayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -169,7 +169,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -181,46 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppointmentsManager.cs",
-              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Services\\AppointmentsManager.cs",
-              "RelativeDocumentMoniker": "BL\\Services\\AppointmentsManager.cs",
-              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Services\\AppointmentsManager.cs*",
-              "RelativeToolTip": "BL\\Services\\AppointmentsManager.cs*",
-              "ViewState": "AQIAAAsCAAAAAAAAAAAqwBYCAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T16:52:13.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "Web_api\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\AppointmentController.cs*",
-              "RelativeToolTip": "Web_api\\Controllers\\AppointmentController.cs*",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAUwEcAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T16:52:13.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ErrorsHendlerController.cs",
-              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\ErrorsHendlerController.cs",
-              "RelativeDocumentMoniker": "Web_api\\Controllers\\ErrorsHendlerController.cs",
-              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\ErrorsHendlerController.cs",
-              "RelativeToolTip": "Web_api\\Controllers\\ErrorsHendlerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T14:41:31.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AvailableAppointmentsDal.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\DAL\\Services\\AvailableAppointmentsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\AvailableAppointmentsDal.cs",
@@ -228,12 +189,11 @@
               "RelativeToolTip": "DAL\\Services\\AvailableAppointmentsDal.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAmwDEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:46:13.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T03:46:13.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BLManager.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\BLManager.cs",
               "RelativeDocumentMoniker": "BL\\BLManager.cs",
@@ -241,12 +201,11 @@
               "RelativeToolTip": "BL\\BLManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T21:15:52.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T21:15:52.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Mapper.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Mapper.cs",
               "RelativeDocumentMoniker": "BL\\Mapper.cs",
@@ -254,25 +213,63 @@
               "RelativeToolTip": "BL\\Mapper.cs",
               "ViewState": "AQIAAIIAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T21:16:01.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T21:16:01.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "AppointmentsDal.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\DAL\\Services\\AppointmentsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\AppointmentsDal.cs",
               "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\DAL\\Services\\AppointmentsDal.cs",
               "RelativeToolTip": "DAL\\Services\\AppointmentsDal.cs",
-              "ViewState": "AQIAAHcBAAAAAAAAAAAAwJEBAAAIAAAA",
+              "ViewState": "AQIAAGsBAAAAAAAAAAAAwJEBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T21:01:11.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "HolidayService.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Services\\HolidayService.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\HolidayService.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Services\\HolidayService.cs",
+              "RelativeToolTip": "BL\\Services\\HolidayService.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAIAwwHgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T03:18:10.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\AppointmentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:52:13.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppointmentsManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Services\\AppointmentsManager.cs",
+              "RelativeDocumentMoniker": "BL\\Services\\AppointmentsManager.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Services\\AppointmentsManager.cs",
+              "RelativeToolTip": "BL\\Services\\AppointmentsManager.cs",
+              "ViewState": "AQIAAAsCAAAAAAAAAAAqwBYCAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:52:13.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TherapistController.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\TherapistController.cs",
               "RelativeDocumentMoniker": "Web_api\\Controllers\\TherapistController.cs",
@@ -285,7 +282,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "ErrorsHendlerController.cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\ErrorsHendlerController.cs",
+              "RelativeDocumentMoniker": "Web_api\\Controllers\\ErrorsHendlerController.cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\Web_api\\Controllers\\ErrorsHendlerController.cs",
+              "RelativeToolTip": "Web_api\\Controllers\\ErrorsHendlerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:41:31.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IAppointmentsManager.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Api\\IAppointmentsManager.cs",
               "RelativeDocumentMoniker": "BL\\Api\\IAppointmentsManager.cs",
@@ -293,12 +302,11 @@
               "RelativeToolTip": "BL\\Api\\IAppointmentsManager.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAgwDUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T21:00:44.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T21:00:44.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IAvailableAppointmentsDal.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\DAL\\Api\\IAvailableAppointmentsDal.cs",
               "RelativeDocumentMoniker": "DAL\\Api\\IAvailableAppointmentsDal.cs",
@@ -306,21 +314,7 @@
               "RelativeToolTip": "DAL\\Api\\IAvailableAppointmentsDal.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAADwvw0AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:46:03.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HolidayService.cs",
-              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Services\\HolidayService.cs",
-              "RelativeDocumentMoniker": "BL\\Services\\HolidayService.cs",
-              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05D8\u05DE\u05D6\u05D2\u05D9\u05DF\\Desktop\\\u05DC\u05D9\u05D4\u05D5\u05D3\u05D9\u05EA\\project\\ClinicScheduler\\Server\\BL\\Services\\HolidayService.cs",
-              "RelativeToolTip": "BL\\Services\\HolidayService.cs",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAMwJUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T03:18:10.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T03:46:03.49Z"
             },
             {
               "$type": "Document",
@@ -574,7 +568,8 @@
               "RelativeToolTip": "Web_api\\Controllers\\PatientController.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAcwAMAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T04:15:17.446Z"
+              "WhenOpened": "2025-06-29T04:15:17.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

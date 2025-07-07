@@ -11,7 +11,7 @@ public partial class Patient
 
     public string LastName { get; set; } = null!;
 
-    public int Age { get; set; }
+    public DateOnly BirthDate { get; set; }
 
     public string PhoneNumber { get; set; } = null!;
 

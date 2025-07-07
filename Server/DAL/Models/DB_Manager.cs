@@ -68,7 +68,7 @@ public partial class DB_Manager : DbContext
             entity.HasOne(d => d.Patient).WithMany(p => p.Appointments)
                 .HasForeignKey(d => d.PatientId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Appointme__Patie__35DCF99B");
+                .HasConstraintName("FK__Appointme__Patie__4CC05EF3");
 
             entity.HasOne(d => d.Therapist).WithMany(p => p.Appointments)
                 .HasForeignKey(d => d.TherapistId)
@@ -153,16 +153,16 @@ public partial class DB_Manager : DbContext
 
         modelBuilder.Entity<Patient>(entity =>
         {
-            entity.HasKey(e => e.PatientId).HasName("PK__tmp_ms_x__970EC346B6A4BD0C");
+            entity.HasKey(e => e.PatientId).HasName("PK__tmp_ms_x__970EC3465111F9CA");
 
             entity.Property(e => e.PatientId)
                 .ValueGeneratedNever()
                 .HasColumnName("PatientID");
-            entity.Property(e => e.FirstName)
-                .HasMaxLength(50).IsUnicode(true)
+            entity.Property(e => e.FirstName).IsUnicode(true)
+                .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS");
-            entity.Property(e => e.LastName)
-                .HasMaxLength(50).IsUnicode(true)
+            entity.Property(e => e.LastName).IsUnicode(true)
+                .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(20)

@@ -76,9 +76,9 @@ namespace BL.Services
             }
             return _mapper.Map<BLAppointment>(appointment);
         }
-        public async Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly? date)
+        public async Task<List<BLAppointment>> GetAllAppointmentsByDateAndTherapistId(int therapistId, DateOnly date)
         {
-            return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAppointmentsTherapistAndDate(therapistId, date ?? DateOnly.FromDateTime(DateTime.Now)));
+            return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAppointmentsTherapistAndDate(therapistId, date));
         }
         public async Task<List<BLAppointment>> GetAppointmentsByPatientIdAndThetherapistIdAndDate(int therapistId, DateOnly date, int patientId)
         {
@@ -93,7 +93,7 @@ namespace BL.Services
             return await Task.FromResult(_mapper.Map<List<BLAppointment>>(apps));
         }
 
-        public async Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date)
+        public async Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly date)
         {
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
                 throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
@@ -110,15 +110,12 @@ namespace BL.Services
             return await Task.FromResult(_mapper.Map<List<BLAppointment>>(apps));
         }
 
-        public async Task<List<BLAppointment>> GetAppointmentsByTherapistIdAndWeek(int thrapistId, DateOnly? date)
+        public async Task<List<BLAppointment>> GetAppointmentsByTherapistIdAndWeek(int thrapistId, DateOnly date)
         {
 
             if (thrapistId < 0)
                 throw new ArgumentNullException(nameof(thrapistId));
-            if (date == null)
-            {
-                date = new DateOnly();
-            }
+
             if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
                 throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
             var apps = await _appointmentsDal.GetAppointmentsTherapistAndDate(thrapistId, date);

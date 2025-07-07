@@ -119,7 +119,7 @@ namespace BL.service
 
         public async Task<bool> IsHolidayAsync(DateTime date)
         {
-            var noWorkDays = await GetNoWorkDaysAsync(date.Date, date.Date);
+            var noWorkDays = await GetNoWorkDaysAsync(date.AddDays(-1), date.AddDays(1));
 
             return noWorkDays.Contains(date.Date);
         }

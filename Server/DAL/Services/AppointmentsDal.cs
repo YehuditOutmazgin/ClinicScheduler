@@ -377,16 +377,14 @@ namespace DAL.Services
         }
 
 
-        public async Task<List<Appointment>> GetAppointmentsTherapistAndDate(int therapistId, DateOnly? date)
+        public async Task<List<Appointment>> GetAppointmentsTherapistAndDate(int therapistId, DateOnly date)
         {
             try
             {
-                if (date == null)
-                    date = DateOnly.FromDateTime(DateTime.Now); // Set to current date if null
 
-                int diff = date.Value.DayOfWeek - DayOfWeek.Sunday;
+                int diff = date.DayOfWeek - DayOfWeek.Sunday;
                 if (diff < 0) diff += 7;
-                var startOfWeek = date.Value.AddDays(-diff);
+                var startOfWeek = date.AddDays(-diff);
                 var endOfWeek = startOfWeek.AddDays(6);
 
                 return await _DB_Manager.Appointments
