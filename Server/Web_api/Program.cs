@@ -75,6 +75,15 @@ Log.Logger = new LoggerConfiguration()
    .WriteTo.Console() // Optional: Log to console
    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day) // Log to file
    .CreateLogger();
+//react
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder => builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
 
 builder.Host.UseSerilog();
 var app = builder.Build();
@@ -87,7 +96,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseExceptionHandler("/error");
-
+app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
