@@ -1,0 +1,1338 @@
+2025-07-13 11:41:22.981 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=454545459&pass=1234 - null null
+2025-07-13 11:41:22.999 +03:00 [INF] CORS policy execution successful.
+2025-07-13 11:41:23.001 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=454545459&pass=1234 - 204 null null 21.2233ms
+2025-07-13 11:41:23.005 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - application/json 0
+2025-07-13 11:41:23.007 +03:00 [INF] CORS policy execution successful.
+2025-07-13 11:41:23.009 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 11:41:23.011 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 11:41:25.365 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BL.Models.BLTherapist, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-13 11:41:25.368 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 2354.6288ms
+2025-07-13 11:41:25.371 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 11:41:25.373 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - 200 null application/json; charset=utf-8 2368.0631ms
+2025-07-13 12:41:18.477 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=454545459&pass=1234 - null null
+2025-07-13 12:41:18.485 +03:00 [INF] CORS policy execution successful.
+2025-07-13 12:41:18.486 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=454545459&pass=1234 - 204 null null 10.0819ms
+2025-07-13 12:41:18.489 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - application/json 0
+2025-07-13 12:41:18.494 +03:00 [INF] CORS policy execution successful.
+2025-07-13 12:41:18.495 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 12:41:18.496 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 12:41:20.280 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BL.Models.BLTherapist, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-13 12:41:20.282 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 1784.3416ms
+2025-07-13 12:41:20.284 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 12:41:20.285 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - 200 null application/json; charset=utf-8 1796.1993ms
+2025-07-13 12:42:30.425 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=234537891&pass=1234 - null null
+2025-07-13 12:42:30.428 +03:00 [INF] CORS policy execution successful.
+2025-07-13 12:42:30.429 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=234537891&pass=1234 - 204 null null 3.9856ms
+2025-07-13 12:42:30.432 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=234537891&pass=1234 - application/json 0
+2025-07-13 12:42:30.443 +03:00 [INF] CORS policy execution successful.
+2025-07-13 12:42:30.444 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 12:42:30.445 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 12:42:32.642 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-13 12:42:32.668 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 2218.736ms
+2025-07-13 12:42:32.670 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 12:42:32.671 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=234537891&pass=1234 - 200 null application/json; charset=utf-8 2238.8146ms
+2025-07-13 12:53:23.012 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=454545459&pass=1234 - null null
+2025-07-13 12:53:23.019 +03:00 [INF] CORS policy execution successful.
+2025-07-13 12:53:23.019 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=454545459&pass=1234 - 204 null null 7.4535ms
+2025-07-13 12:53:23.023 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - application/json 0
+2025-07-13 12:53:23.028 +03:00 [INF] CORS policy execution successful.
+2025-07-13 12:53:23.029 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 12:53:23.030 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 12:53:25.036 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BL.Models.BLTherapist, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-13 12:53:25.038 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 2005.0796ms
+2025-07-13 12:53:25.039 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 12:53:25.041 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - 200 null application/json; charset=utf-8 2017.7062ms
+2025-07-13 13:13:34.359 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Patients/undefined - null null
+2025-07-13 13:13:34.372 +03:00 [INF] CORS policy execution successful.
+2025-07-13 13:13:34.373 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Patients/undefined - 204 null null 13.6514ms
+2025-07-13 13:13:34.376 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7015/api/Patients/undefined - application/json 183
+2025-07-13 13:13:34.383 +03:00 [INF] CORS policy execution successful.
+2025-07-13 13:13:34.384 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7015/api/Patients/undefined - 404 0 null 8.0792ms
+2025-07-13 13:13:34.393 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT https://localhost:7015/api/Patients/undefined, Response status code: 404
+2025-07-13 13:42:29.392 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=7777777777&pass=1234 - null null
+2025-07-13 13:42:29.447 +03:00 [INF] CORS policy execution successful.
+2025-07-13 13:42:29.448 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=7777777777&pass=1234 - 204 null null 56.5967ms
+2025-07-13 13:42:29.492 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=7777777777&pass=1234 - application/json 0
+2025-07-13 13:42:29.496 +03:00 [INF] CORS policy execution successful.
+2025-07-13 13:42:29.497 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 13:42:29.498 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 13:42:29.542 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-13 13:42:29.583 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 81.3859ms
+2025-07-13 13:42:29.585 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 13:42:29.586 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=7777777777&pass=1234 - 400 null application/problem+json; charset=utf-8 93.7229ms
+2025-07-13 13:43:33.620 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/SignUp - null null
+2025-07-13 13:43:33.622 +03:00 [INF] CORS policy execution successful.
+2025-07-13 13:43:33.623 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/SignUp - 204 null null 3.0651ms
+2025-07-13 13:43:33.646 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 99
+2025-07-13 13:43:33.652 +03:00 [INF] CORS policy execution successful.
+2025-07-13 13:43:33.653 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 13:43:33.671 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 13:43:33.924 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-07-13 13:43:33.931 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 255.1555ms
+2025-07-13 13:43:33.932 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 13:43:33.933 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 200 0 null 287.224ms
+2025-07-13 17:35:04.748 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=111111111&pass=2345 - null null
+2025-07-13 17:35:04.766 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:04.767 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=111111111&pass=2345 - 204 null null 27.9894ms
+2025-07-13 17:35:04.771 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=111111111&pass=2345 - application/json 0
+2025-07-13 17:35:04.800 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:04.803 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 17:35:04.805 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 17:35:07.553 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-13 17:35:07.559 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 2747.2329ms
+2025-07-13 17:35:07.563 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 17:35:07.567 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=111111111&pass=2345 - 400 null text/plain; charset=utf-8 2795.5524ms
+2025-07-13 17:35:56.636 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/SignUp - null null
+2025-07-13 17:35:56.674 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:56.699 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/SignUp - 204 null null 63.1513ms
+2025-07-13 17:35:56.709 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 94
+2025-07-13 17:35:56.735 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:56.737 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:35:56.740 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:35:56.903 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 159.6696ms
+2025-07-13 17:35:56.909 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:35:56.917 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:35:57.191 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:57.193 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:35:57.201 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:35:57.212 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:35:57.232 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:35:57.247 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 42.0613ms
+2025-07-13 17:35:57.250 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:35:57.258 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 548.297ms
+2025-07-13 17:35:57.788 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 94
+2025-07-13 17:35:57.837 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:57.841 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:35:58.015 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:35:58.108 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 86.3992ms
+2025-07-13 17:35:58.126 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:35:58.131 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:35:58.155 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:58.157 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:35:58.170 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:35:58.174 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:35:58.186 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:35:58.192 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 18.1775ms
+2025-07-13 17:35:58.200 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:35:58.204 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 415.1302ms
+2025-07-13 17:35:58.490 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 94
+2025-07-13 17:35:58.534 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:58.535 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:35:58.537 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:35:58.745 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 202.1941ms
+2025-07-13 17:35:58.751 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:35:58.766 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:35:58.842 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:58.845 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:35:58.857 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:35:58.867 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:35:58.874 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:35:58.883 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 15.2775ms
+2025-07-13 17:35:58.886 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:35:58.892 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 402.0469ms
+2025-07-13 17:35:59.668 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 94
+2025-07-13 17:35:59.677 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:35:59.684 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:35:59.692 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:35:59.949 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 249.6306ms
+2025-07-13 17:35:59.954 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:35:59.958 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:36:00.098 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:36:00.101 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:36:00.104 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:36:00.110 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:36:00.115 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:36:00.119 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 9.2908ms
+2025-07-13 17:36:00.122 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:36:00.124 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 455.8043ms
+2025-07-13 17:36:00.320 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 94
+2025-07-13 17:36:00.391 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:36:00.550 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:36:00.553 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:36:00.822 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 264.0328ms
+2025-07-13 17:36:00.826 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:36:00.832 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:36:00.862 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:36:00.876 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:36:00.880 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:36:00.882 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:36:00.885 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:36:00.888 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 5.8532ms
+2025-07-13 17:36:00.891 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:36:00.893 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 572.4581ms
+2025-07-13 17:36:02.446 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/SignUp - null null
+2025-07-13 17:36:02.453 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:36:02.456 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/SignUp - 204 null null 10.8359ms
+2025-07-13 17:36:02.460 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 94
+2025-07-13 17:36:02.478 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:36:02.484 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:36:02.490 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:36:02.714 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 213.02ms
+2025-07-13 17:36:02.720 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:36:02.727 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:36:02.747 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:36:02.767 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:36:02.769 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:36:02.774 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:36:02.777 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:36:02.784 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 9.5164ms
+2025-07-13 17:36:02.790 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:36:02.795 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 334.9971ms
+2025-07-13 17:37:09.136 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/SignUp - null null
+2025-07-13 17:37:09.201 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:37:09.204 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/SignUp - 204 null null 67.4336ms
+2025-07-13 17:37:09.217 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 94
+2025-07-13 17:37:09.243 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:37:09.243 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:37:09.248 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:37:09.382 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 132.7748ms
+2025-07-13 17:37:09.386 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:37:09.389 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:37:09.398 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:37:09.399 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:37:09.400 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:37:09.403 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:37:09.404 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:37:09.405 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 2.8224ms
+2025-07-13 17:37:09.408 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:37:09.411 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 193.543ms
+2025-07-13 17:38:48.091 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 122
+2025-07-13 17:38:48.101 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:38:48.102 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:38:48.105 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:38:48.226 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 115.7409ms
+2025-07-13 17:38:48.231 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:38:48.234 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:38:48.257 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:38:48.260 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:38:48.262 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:38:48.266 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:38:48.272 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:38:48.274 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 8.5055ms
+2025-07-13 17:38:48.279 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:38:48.281 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 189.636ms
+2025-07-13 17:39:24.846 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 122
+2025-07-13 17:39:24.890 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:39:24.906 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:39:24.912 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:41:07.566 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 102648.8491ms
+2025-07-13 17:41:07.569 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:41:07.572 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:41:07.576 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:41:07.576 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:41:07.577 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:41:12.446 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:41:12.448 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:41:12.489 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 4911.6608ms
+2025-07-13 17:41:12.491 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:41:12.492 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 107646.2755ms
+2025-07-13 17:49:04.367 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 122
+2025-07-13 17:49:04.430 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:49:04.430 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:49:04.431 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:49:46.640 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 42207.7204ms
+2025-07-13 17:49:46.647 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:49:46.653 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient)
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 35
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:49:46.669 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:49:46.672 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:49:46.675 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:49:49.772 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:49:49.803 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:49:49.804 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 3123.7171ms
+2025-07-13 17:49:49.806 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:49:49.808 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 45441.1563ms
+2025-07-13 17:50:00.476 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 122
+2025-07-13 17:50:00.486 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:50:00.491 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:50:00.509 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:50:59.921 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 59401.0139ms
+2025-07-13 17:50:59.927 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:50:59.934 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient)
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient)
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:50:59.944 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:50:59.944 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:50:59.962 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:51:07.899 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:51:07.906 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:51:07.911 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 7947.1655ms
+2025-07-13 17:51:07.915 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:51:07.923 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 67447.0485ms
+2025-07-13 17:52:31.671 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 17:52:31.793 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 17:52:31.799 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 17:52:31.802 +03:00 [INF] Hosting environment: Development
+2025-07-13 17:52:31.804 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 17:52:32.791 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 17:52:32.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 148.2311ms
+2025-07-13 17:52:32.965 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 17:52:32.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 17:52:32.983 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 17:52:33.002 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 27.3569ms
+2025-07-13 17:52:33.006 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 40.9924ms
+2025-07-13 17:52:33.053 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.4618ms
+2025-07-13 17:52:33.117 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 17:52:33.272 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 154.2984ms
+2025-07-13 17:54:43.847 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 120
+2025-07-13 17:54:43.871 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:54:43.888 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:54:43.966 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:54:46.537 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-07-13 17:54:46.547 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 2567.4225ms
+2025-07-13 17:54:46.554 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:54:46.563 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 200 0 null 2716.8548ms
+2025-07-13 17:55:40.441 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 120
+2025-07-13 17:55:40.452 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:55:40.456 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:55:40.469 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:55:40.504 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 15.863ms
+2025-07-13 17:55:40.539 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:55:40.551 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityStateAsync(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintActionAsync(EntityEntryGraphNode`1 node, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraphAsync[TState](EntityEntryGraphNode`1 node, Func`3 handleNode, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraphAsync(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.AddAsync(TEntity entity, CancellationToken cancellationToken)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 36
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:55:40.761 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:55:40.817 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:55:40.822 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:55:40.830 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:55:40.840 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:55:40.945 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 117.1642ms
+2025-07-13 17:55:40.948 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:55:40.952 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 510.9715ms
+2025-07-13 17:55:50.047 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 120
+2025-07-13 17:55:50.228 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:55:50.231 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:55:50.233 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:55:50.243 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 5.0533ms
+2025-07-13 17:55:50.247 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:55:50.248 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityStateAsync(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintActionAsync(EntityEntryGraphNode`1 node, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraphAsync[TState](EntityEntryGraphNode`1 node, Func`3 handleNode, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraphAsync(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.AddAsync(TEntity entity, CancellationToken cancellationToken)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 24
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 36
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:55:50.286 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:55:50.288 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:55:50.292 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:55:50.297 +03:00 [ERR] The instance of entity type 'Patient' cannot be tracked because another instance with the same key value for {'PatientId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-07-13 17:55:50.300 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:55:50.303 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 6.4494ms
+2025-07-13 17:55:50.305 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:55:50.308 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 261.2901ms
+2025-07-13 17:56:57.128 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 17:56:57.157 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 17:56:57.160 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 17:56:57.162 +03:00 [INF] Hosting environment: Development
+2025-07-13 17:56:57.163 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 17:56:58.086 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 17:56:58.442 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 366.8498ms
+2025-07-13 17:56:58.486 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 17:56:58.486 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 17:56:58.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 17:56:58.538 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 52.1879ms
+2025-07-13 17:56:58.555 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 69.5225ms
+2025-07-13 17:56:58.595 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.5252ms
+2025-07-13 17:56:58.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 17:56:58.855 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.1841ms
+2025-07-13 17:57:14.574 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 120
+2025-07-13 17:57:14.597 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:57:14.622 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:57:14.683 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 17:57:43.694 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 28993.3768ms
+2025-07-13 17:57:43.697 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 17:57:43.699 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__tmp_ms_x__970EC3465111F9CA'. Cannot insert duplicate key in object 'dbo.Patients'. The duplicate key value is (112233445).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b71442a1-79b0-4874-940d-bea1b214ffc4
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 25
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 36
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 17:57:43.740 +03:00 [INF] CORS policy execution successful.
+2025-07-13 17:57:43.741 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:57:43.743 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 17:57:59.989 +03:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+2025-07-13 17:58:00.001 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 17:58:00.043 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 16298.5431ms
+2025-07-13 17:58:00.097 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 17:58:00.102 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 45527.3115ms
+2025-07-13 18:02:20.000 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 120
+2025-07-13 18:02:20.012 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:02:20.013 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:02:20.014 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 18:02:46.950 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:02:46.987 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:02:46.990 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:02:46.991 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:02:46.993 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:02:47.619 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:02:47.919 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 311.5086ms
+2025-07-13 18:02:47.996 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:02:48.002 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:02:47.997 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:02:48.029 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 32.1332ms
+2025-07-13 18:02:48.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 40.4886ms
+2025-07-13 18:02:48.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.302ms
+2025-07-13 18:02:48.118 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:02:48.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 183.9753ms
+2025-07-13 18:03:08.800 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 120
+2025-07-13 18:03:08.841 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:03:08.854 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:03:08.909 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 18:03:34.442 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:03:34.473 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:03:34.477 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:03:34.479 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:03:34.480 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:03:35.141 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:03:35.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 243.558ms
+2025-07-13 18:03:35.451 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:03:35.451 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:03:35.453 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:03:35.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 12.6716ms
+2025-07-13 18:03:35.486 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 35.8622ms
+2025-07-13 18:03:35.537 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.2906ms
+2025-07-13 18:03:35.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:03:35.730 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 150.4151ms
+2025-07-13 18:03:44.550 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 120
+2025-07-13 18:03:44.571 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:03:44.580 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:03:44.647 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 18:05:02.510 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 77850.3426ms
+2025-07-13 18:05:02.513 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:05:02.516 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__tmp_ms_x__970EC3465111F9CA'. Cannot insert duplicate key in object 'dbo.Patients'. The duplicate key value is (112233445).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e6b9a29b-fd02-469f-9f96-a6233927f41d
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at DAL.Services.PatientsDal.AddPatient(Patient patient) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 25
+   at BL.Services.PatientsManager.AddPatient(BLPatient bLPatient) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 36
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\SignUpController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 18:05:02.561 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:05:02.562 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:05:02.564 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 18:05:15.968 +03:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+2025-07-13 18:05:44.870 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 18:05:44.902 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 42336.7428ms
+2025-07-13 18:05:44.906 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:05:44.908 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 120357.942ms
+2025-07-13 18:08:33.202 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:08:33.259 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:08:33.267 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:08:33.269 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:08:33.270 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:08:34.195 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:08:34.431 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 243.7518ms
+2025-07-13 18:08:34.451 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:08:34.458 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:08:34.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:08:34.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 14.514ms
+2025-07-13 18:08:34.485 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 33.8143ms
+2025-07-13 18:08:34.544 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.5449ms
+2025-07-13 18:08:34.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:08:34.807 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 218.6706ms
+2025-07-13 18:08:37.718 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=%20112233445&pass=1234 - null null
+2025-07-13 18:08:37.729 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:08:37.735 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=%20112233445&pass=1234 - 204 null null 17.3825ms
+2025-07-13 18:08:37.754 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=%20112233445&pass=1234 - application/json 0
+2025-07-13 18:08:37.772 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:08:37.777 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:08:37.799 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:08:41.276 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-13 18:08:41.308 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 3501.07ms
+2025-07-13 18:08:41.310 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:08:41.312 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=%20112233445&pass=1234 - 200 null application/json; charset=utf-8 3573.9696ms
+2025-07-13 18:14:16.137 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 121
+2025-07-13 18:14:16.149 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:14:16.153 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:14:16.168 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 18:14:16.310 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-13 18:14:16.372 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 195.2861ms
+2025-07-13 18:14:16.374 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:14:16.376 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 239.009ms
+2025-07-13 18:14:26.554 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 121
+2025-07-13 18:14:26.558 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:14:26.559 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:14:26.560 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 18:14:26.574 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-13 18:14:26.583 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 13.5808ms
+2025-07-13 18:14:26.620 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:14:26.625 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 71.0009ms
+2025-07-13 18:14:34.863 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:14:34.930 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:14:34.935 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:14:34.937 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:14:34.939 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:14:35.567 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:14:35.844 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 287.5144ms
+2025-07-13 18:14:35.901 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:14:35.901 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:14:35.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:14:35.909 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 9.9386ms
+2025-07-13 18:14:35.939 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 40.0477ms
+2025-07-13 18:14:35.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.9667ms
+2025-07-13 18:14:36.040 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:14:36.176 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.9408ms
+2025-07-13 18:14:59.233 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 120
+2025-07-13 18:14:59.286 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:14:59.332 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:14:59.390 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 18:15:34.824 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-07-13 18:15:34.832 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 35425.7ms
+2025-07-13 18:15:34.838 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:15:34.844 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 200 0 null 35611.3893ms
+2025-07-13 18:15:54.698 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=887755669&pass=1234 - null null
+2025-07-13 18:15:54.705 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:15:54.710 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=887755669&pass=1234 - 204 null null 12.3465ms
+2025-07-13 18:15:54.741 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=887755669&pass=1234 - application/json 0
+2025-07-13 18:15:54.748 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:15:54.750 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:15:54.771 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:16:20.291 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-13 18:16:20.296 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 25522.0801ms
+2025-07-13 18:16:20.299 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:16:20.301 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=887755669&pass=1234 - 400 null text/plain; charset=utf-8 25560.699ms
+2025-07-13 18:17:20.396 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/SignUp - null null
+2025-07-13 18:17:20.415 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:17:20.436 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/SignUp - 204 null null 40.3782ms
+2025-07-13 18:17:20.448 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 95
+2025-07-13 18:17:20.474 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:17:20.476 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:17:20.483 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-13 18:17:23.535 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-07-13 18:17:23.541 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 3055.1714ms
+2025-07-13 18:17:23.547 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-13 18:17:23.553 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 200 0 null 3104.3873ms
+2025-07-13 18:17:29.931 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=774448855&pass=1234 - null null
+2025-07-13 18:17:29.936 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:17:29.947 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=774448855&pass=1234 - 204 null null 15.8377ms
+2025-07-13 18:17:29.963 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=774448855&pass=1234 - application/json 0
+2025-07-13 18:17:29.989 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:17:29.994 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:17:30.001 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:17:31.889 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-13 18:17:31.940 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 1919.8385ms
+2025-07-13 18:17:31.959 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:17:31.961 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=774448855&pass=1234 - 200 null application/json; charset=utf-8 1997.9292ms
+2025-07-13 18:20:02.481 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=987654885&pass=1234 - null null
+2025-07-13 18:20:02.491 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:20:02.492 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=987654885&pass=1234 - 204 null null 10.8503ms
+2025-07-13 18:20:02.495 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=987654885&pass=1234 - application/json 0
+2025-07-13 18:20:02.499 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:20:02.500 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:20:02.502 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:20:05.504 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-13 18:20:05.512 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 3007.6257ms
+2025-07-13 18:20:05.516 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:20:05.516 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=987654885&pass=1234 - 400 null text/plain; charset=utf-8 3021.0389ms
+2025-07-13 18:21:32.032 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=9855475214&pass=1234 - null null
+2025-07-13 18:21:32.052 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:21:32.055 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=9855475214&pass=1234 - 204 null null 23.8576ms
+2025-07-13 18:21:32.071 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=9855475214&pass=1234 - application/json 0
+2025-07-13 18:21:32.100 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:21:32.101 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:21:32.105 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:21:32.229 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-13 18:21:32.285 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 172.0922ms
+2025-07-13 18:21:32.292 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:21:32.302 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=9855475214&pass=1234 - 400 null application/problem+json; charset=utf-8 231.0359ms
+2025-07-13 18:21:46.991 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=328228697&pass=1238 - null null
+2025-07-13 18:21:47.019 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:21:47.025 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=328228697&pass=1238 - 204 null null 31.5162ms
+2025-07-13 18:21:47.030 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=328228697&pass=1238 - application/json 0
+2025-07-13 18:21:47.052 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:21:47.061 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:21:47.064 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:21:49.343 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-13 18:21:49.349 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 2281.3092ms
+2025-07-13 18:21:49.351 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:21:49.353 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=328228697&pass=1238 - 400 null text/plain; charset=utf-8 2323.404ms
+2025-07-13 18:29:02.734 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:29:02.803 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:29:02.808 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:29:02.810 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:29:02.815 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:29:03.606 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:29:03.929 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 323.0135ms
+2025-07-13 18:29:03.973 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:29:03.977 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:29:03.988 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:29:03.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 25.7511ms
+2025-07-13 18:29:04.009 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 36.5784ms
+2025-07-13 18:29:04.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.0939ms
+2025-07-13 18:29:04.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:29:04.558 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 215.2997ms
+2025-07-13 18:29:17.437 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=328228697&pass=1238 - null null
+2025-07-13 18:29:17.453 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:29:17.464 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=328228697&pass=1238 - 204 null null 26.5466ms
+2025-07-13 18:29:17.479 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=328228697&pass=1238 - application/json 0
+2025-07-13 18:29:17.496 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:29:17.503 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:29:17.561 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:29:23.084 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 5507.7991ms
+2025-07-13 18:29:23.097 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:29:23.104 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'the ditailes you entered were worng')
+   at DAL.Services.PatientsDal.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 152
+   at BL.Services.PatientsManager.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 87
+   at Web_api.Controllers.LoginController.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\LoginController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 18:29:23.224 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:29:23.227 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:29:23.236 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 18:29:23.244 +03:00 [ERR] Value cannot be null. (Parameter 'the ditailes you entered were worng')
+2025-07-13 18:29:23.261 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 18:29:23.347 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 104.8727ms
+2025-07-13 18:29:23.381 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:29:23.385 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=328228697&pass=1238 - 400 null application/problem+json; charset=utf-8 5906.1396ms
+2025-07-13 18:29:24.878 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login?id=328228697&pass=1238 - null null
+2025-07-13 18:29:24.882 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:29:24.883 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login?id=328228697&pass=1238 - 204 null null 5.2005ms
+2025-07-13 18:29:24.887 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=328228697&pass=1238 - application/json 0
+2025-07-13 18:29:24.902 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:29:24.908 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:29:24.916 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:29:41.236 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 16311.988ms
+2025-07-13 18:29:41.240 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:29:41.244 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'the ditailes you entered were worng')
+   at DAL.Services.PatientsDal.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 152
+   at BL.Services.PatientsManager.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 87
+   at Web_api.Controllers.LoginController.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\LoginController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 18:29:41.250 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:29:41.251 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:29:41.253 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 18:29:53.188 +03:00 [ERR] Value cannot be null. (Parameter 'the ditailes you entered were worng')
+2025-07-13 18:30:06.089 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 18:30:06.090 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 24835.6077ms
+2025-07-13 18:30:06.093 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:30:06.093 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=328228697&pass=1238 - 400 null application/problem+json; charset=utf-8 41206.2988ms
+2025-07-13 18:30:18.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Login?id=328228697&pass=1238 - null null
+2025-07-13 18:30:18.312 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-13 18:30:18.316 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-13 18:30:18.318 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Login?id=328228697&pass=1238 - 405 0 null 125.0345ms
+2025-07-13 18:31:15.719 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - null 0
+2025-07-13 18:31:15.769 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:31:15.772 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:31:15.775 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:31:19.560 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-13 18:31:19.566 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 3783.4337ms
+2025-07-13 18:31:19.631 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:31:19.638 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - 400 null text/plain; charset=utf-8 3918.8255ms
+2025-07-13 18:34:33.050 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:34:33.086 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:34:33.089 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:34:33.091 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:34:33.094 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:34:56.980 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:34:57.022 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:34:57.027 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:34:57.028 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:34:57.029 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:34:57.753 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:34:57.964 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 215.8823ms
+2025-07-13 18:34:58.132 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:34:58.139 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:34:58.152 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:34:58.154 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 21.5121ms
+2025-07-13 18:34:58.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 32.3647ms
+2025-07-13 18:34:58.232 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.197ms
+2025-07-13 18:34:58.362 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:34:58.533 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 170.2796ms
+2025-07-13 18:35:57.285 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - null 0
+2025-07-13 18:35:57.300 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:35:57.312 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:35:57.389 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:36:04.316 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-13 18:36:04.327 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 6929.3026ms
+2025-07-13 18:36:04.330 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:36:04.333 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - 400 null text/plain; charset=utf-8 7051.379ms
+2025-07-13 18:41:07.502 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - null 0
+2025-07-13 18:41:07.517 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:41:07.519 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:41:07.521 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:41:34.289 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-13 18:41:34.291 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 26767.2377ms
+2025-07-13 18:41:34.296 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:41:34.299 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - 400 null text/plain; charset=utf-8 26796.8382ms
+2025-07-13 18:41:39.025 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - null 0
+2025-07-13 18:41:39.043 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:41:39.046 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:41:39.049 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:44:43.423 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-13 18:44:43.434 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 184381.7525ms
+2025-07-13 18:44:43.436 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:44:43.437 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - 400 null text/plain; charset=utf-8 184411.9543ms
+2025-07-13 18:45:11.654 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:45:11.707 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:45:11.737 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:45:11.743 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:45:11.747 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:45:12.598 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:45:12.853 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 268.9793ms
+2025-07-13 18:45:12.943 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:45:12.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:45:12.951 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:45:12.967 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 19.0106ms
+2025-07-13 18:45:12.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 32.6861ms
+2025-07-13 18:45:13.058 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 107.0474ms
+2025-07-13 18:45:13.133 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:45:13.338 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 205.9978ms
+2025-07-13 18:45:48.680 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - null 0
+2025-07-13 18:45:48.708 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:45:48.719 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:45:48.781 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:49:46.029 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 237192.1687ms
+2025-07-13 18:49:46.032 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:49:46.035 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'your ditailes were worng please check them ')
+   at DAL.Services.TherapistsDal.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\TherapistsDal.cs:line 167
+   at BL.Services.TherapistsManager.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\TherapistsManager.cs:line 64
+   at Web_api.Controllers.LoginController.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\LoginController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 18:49:46.123 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:49:46.124 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:49:46.127 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 18:49:46.134 +03:00 [ERR] Value cannot be null. (Parameter 'your ditailes were worng please check them ')
+2025-07-13 18:49:46.141 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 18:49:46.175 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 43.8201ms
+2025-07-13 18:49:46.177 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:49:46.179 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1237 - 410 null application/problem+json; charset=utf-8 237499.7064ms
+2025-07-13 18:53:31.039 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:53:31.079 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:53:31.083 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:53:31.085 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:53:31.087 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:53:31.900 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:53:32.148 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 258.9627ms
+2025-07-13 18:53:32.281 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:53:32.281 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:53:32.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:53:32.295 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 14.66ms
+2025-07-13 18:53:32.355 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 73.9891ms
+2025-07-13 18:53:32.398 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.2948ms
+2025-07-13 18:53:32.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:53:32.865 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 231.9076ms
+2025-07-13 18:53:49.230 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1235 - null 0
+2025-07-13 18:53:49.290 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:53:49.301 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:53:49.369 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:54:11.234 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 21848.9581ms
+2025-07-13 18:54:11.238 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:54:11.241 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'your password was worng')
+   at DAL.Services.PatientsDal.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 155
+   at BL.Services.PatientsManager.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 87
+   at Web_api.Controllers.LoginController.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\LoginController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 18:54:11.309 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:54:11.310 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:54:11.312 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 18:54:19.362 +03:00 [ERR] Value cannot be null. (Parameter 'your password was worng')
+2025-07-13 18:54:25.770 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 18:54:25.801 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 14485.1021ms
+2025-07-13 18:54:25.806 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:54:25.808 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1235 - 410 null application/problem+json; charset=utf-8 36578.8829ms
+2025-07-13 18:55:57.088 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:55:57.149 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:55:57.155 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:55:57.158 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:55:57.160 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:55:57.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:55:58.006 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 258.0561ms
+2025-07-13 18:55:58.097 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:55:58.097 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:55:58.097 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:55:58.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 32.7319ms
+2025-07-13 18:55:58.145 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 47.6642ms
+2025-07-13 18:55:58.168 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.3612ms
+2025-07-13 18:55:58.210 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:55:58.387 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 177.699ms
+2025-07-13 18:56:16.286 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1235 - null 0
+2025-07-13 18:56:16.334 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:56:16.343 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:56:16.412 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:56:22.309 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 5873.9402ms
+2025-07-13 18:56:22.316 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:56:22.324 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'your password was worng')
+   at DAL.Services.PatientsDal.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 155
+   at BL.Services.PatientsManager.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 87
+   at Web_api.Controllers.LoginController.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\LoginController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 18:56:22.395 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:56:22.396 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:56:22.402 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 18:56:22.410 +03:00 [ERR] Value cannot be null. (Parameter 'your password was worng')
+2025-07-13 18:56:22.425 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 18:56:22.463 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 55.1839ms
+2025-07-13 18:56:22.465 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:56:22.471 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1235 - 410 null application/problem+json; charset=utf-8 6184.857ms
+2025-07-13 18:57:27.538 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1235 - null 0
+2025-07-13 18:57:27.563 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:57:27.565 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:57:27.567 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:57:28.895 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 1324.8929ms
+2025-07-13 18:57:28.898 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:57:28.901 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'your password was worng')
+   at DAL.Services.PatientsDal.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 155
+   at BL.Services.PatientsManager.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 87
+   at Web_api.Controllers.LoginController.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\LoginController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 18:57:28.916 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:57:28.918 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:57:28.919 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 18:57:28.922 +03:00 [ERR] Value cannot be null. (Parameter 'your password was worng')
+2025-07-13 18:57:28.924 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 18:57:28.927 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 4.7657ms
+2025-07-13 18:57:28.931 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:57:28.933 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1235 - 410 null application/problem+json; charset=utf-8 1396.1755ms
+2025-07-13 18:58:18.306 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-13 18:58:18.348 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-13 18:58:18.353 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-13 18:58:18.356 +03:00 [INF] Hosting environment: Development
+2025-07-13 18:58:18.360 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-13 18:58:19.020 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-13 18:58:19.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 289.1763ms
+2025-07-13 18:58:19.328 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-13 18:58:19.329 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-13 18:58:19.338 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 10.7754ms
+2025-07-13 18:58:19.329 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-13 18:58:19.357 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 28.7871ms
+2025-07-13 18:58:19.390 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.2682ms
+2025-07-13 18:58:19.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-13 18:58:19.576 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 144.8359ms
+2025-07-13 18:58:35.142 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1236 - null 0
+2025-07-13 18:58:35.156 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:58:35.165 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:58:35.236 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-13 18:58:40.694 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 5442.5338ms
+2025-07-13 18:58:40.698 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-13 18:58:40.704 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'your password was worng')
+   at DAL.Services.PatientsDal.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 155
+   at BL.Services.PatientsManager.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 87
+   at Web_api.Controllers.LoginController.Login(Int32 id, String pass) in C:\Tzip_project\new9\ClinicScheduler\Server\Web_api\Controllers\LoginController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-13 18:58:40.799 +03:00 [INF] CORS policy execution successful.
+2025-07-13 18:58:40.800 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:58:40.803 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-13 18:58:40.806 +03:00 [ERR] Value cannot be null. (Parameter 'your password was worng')
+2025-07-13 18:58:40.816 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-13 18:58:40.849 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 44.2014ms
+2025-07-13 18:58:40.851 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-13 18:58:40.853 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=112233445&pass=1236 - 410 null application/problem+json; charset=utf-8 5713.0824ms

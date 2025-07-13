@@ -1,0 +1,447 @@
+2025-07-09 19:18:07.563 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-09 19:18:07.645 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-09 19:18:07.649 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-09 19:18:07.651 +03:00 [INF] Hosting environment: Development
+2025-07-09 19:18:07.653 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-09 19:18:08.331 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger - null null
+2025-07-09 19:18:08.601 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger - 301 0 null 278.3933ms
+2025-07-09 19:18:08.612 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-09 19:18:08.746 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 133.6886ms
+2025-07-09 19:18:08.778 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/swagger-ui.css - null null
+2025-07-09 19:18:08.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/swagger-ui-bundle.js - null null
+2025-07-09 19:18:08.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-09 19:18:08.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.css - null null
+2025-07-09 19:18:08.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-09 19:18:08.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-09 19:18:08.888 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 109.1044ms
+2025-07-09 19:18:08.902 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-09 19:18:08.946 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 166.7265ms
+2025-07-09 19:18:08.955 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 176.3212ms
+2025-07-09 19:18:08.902 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-09 19:18:08.870 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-07-09 19:18:08.972 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/swagger-ui.css - 200 154948 text/css 194.1771ms
+2025-07-09 19:18:08.964 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-09 19:18:08.977 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-09 19:18:08.977 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.css - 200 202 text/css 198.2945ms
+2025-07-09 19:18:08.987 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 207.8423ms
+2025-07-09 19:18:09.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.5192ms
+2025-07-09 19:18:09.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-09 19:18:09.427 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/favicon-32x32.png - null null
+2025-07-09 19:18:09.436 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-09 19:18:09.440 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/favicon-32x32.png - 200 628 image/png 13.9087ms
+2025-07-09 19:18:09.645 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 219.1008ms
+2025-07-09 19:29:51.094 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-07-09 19:29:51.223 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:29:51.225 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:29:51.235 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 141.4526ms
+2025-07-09 19:29:53.993 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - null null
+2025-07-09 19:29:54.013 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:29:54.014 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:29:54.016 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/1 - 405 0 null 23.2336ms
+2025-07-09 19:30:31.740 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/1 - null 0
+2025-07-09 19:30:31.751 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 19:30:31.840 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 19:30:47.019 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 19:30:49.922 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 18073.7433ms
+2025-07-09 19:30:49.927 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 19:30:49.933 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (Patient not found.)
+ ---> System.Exception: Patient not found.
+   at DAL.Services.PatientsDal.GetPatientById(Int32 id) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 143
+   at BL.Services.PatientsManager.GetPatientById(Int32 id) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 69
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at ResultGetter(Object)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-09 19:30:50.049 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 19:30:50.055 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-09 19:30:50.069 +03:00 [ERR] One or more errors occurred. (Patient not found.)
+2025-07-09 19:30:50.076 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-09 19:30:50.108 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 41.1979ms
+2025-07-09 19:30:50.172 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 19:30:50.174 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/1 - 400 null application/problem+json; charset=utf-8 18433.3368ms
+2025-07-09 19:31:55.169 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:31:55.194 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:31:55.195 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:31:55.196 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 405 0 null 26.8621ms
+2025-07-09 19:32:02.480 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:32:02.519 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:32:02.532 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:32:02.535 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 405 0 null 56.8299ms
+2025-07-09 19:32:11.562 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:32:11.585 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:32:11.586 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:32:11.629 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 405 0 null 67.2403ms
+2025-07-09 19:32:48.624 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/123456780 - null 0
+2025-07-09 19:32:48.636 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 19:32:48.637 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 19:32:55.938 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 19:32:56.022 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 7383.4492ms
+2025-07-09 19:32:56.056 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 19:32:56.059 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/123456780 - 200 null application/json; charset=utf-8 7435.2711ms
+2025-07-09 19:34:07.843 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:34:07.910 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:34:07.914 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:34:07.917 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Login/123456780 - 405 0 null 71.7836ms
+2025-07-09 19:34:19.825 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:34:19.844 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:34:19.845 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:34:19.846 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 405 0 null 21.4973ms
+2025-07-09 19:36:31.312 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:36:31.544 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:36:31.600 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:36:31.603 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 405 0 null 290.3908ms
+2025-07-09 19:37:50.264 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:37:50.300 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:37:50.302 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:37:50.303 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 405 0 null 39.1895ms
+2025-07-09 19:39:42.032 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:39:42.040 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:39:42.041 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-09 19:39:42.043 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 405 0 null 10.7212ms
+2025-07-09 19:46:57.054 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-09 19:46:57.136 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-09 19:46:57.156 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-09 19:46:57.159 +03:00 [INF] Hosting environment: Development
+2025-07-09 19:46:57.164 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-09 19:46:58.996 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-09 19:46:59.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 785.8361ms
+2025-07-09 19:47:00.106 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-09 19:47:00.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-09 19:47:00.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-09 19:47:00.140 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 31.4204ms
+2025-07-09 19:47:00.157 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 50.7298ms
+2025-07-09 19:47:00.315 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 205.1081ms
+2025-07-09 19:47:00.479 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-09 19:47:00.948 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 469.463ms
+2025-07-09 19:47:06.321 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 19:47:06.337 +03:00 [INF] CORS policy execution successful.
+2025-07-09 19:47:06.342 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 204 null null 22.1141ms
+2025-07-09 19:47:06.366 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/123456780 - application/json 0
+2025-07-09 19:47:06.435 +03:00 [INF] CORS policy execution successful.
+2025-07-09 19:47:06.461 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 19:47:06.487 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 19:47:33.572 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 19:47:33.935 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 27432.7193ms
+2025-07-09 19:47:33.937 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 19:47:33.938 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/123456780 - 200 null application/json; charset=utf-8 27572.7903ms
+2025-07-09 20:13:14.646 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-09 20:13:14.807 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-09 20:13:14.820 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-09 20:13:14.893 +03:00 [INF] Hosting environment: Development
+2025-07-09 20:13:14.931 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-09 20:13:18.165 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-09 20:13:19.304 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 1158.9853ms
+2025-07-09 20:13:19.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-09 20:13:19.346 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-09 20:13:19.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-09 20:13:19.396 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 57.4708ms
+2025-07-09 20:13:19.402 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 63.8356ms
+2025-07-09 20:13:19.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 434.8509ms
+2025-07-09 20:13:19.903 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-09 20:13:20.476 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 572.2248ms
+2025-07-09 20:24:12.970 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-09 20:24:13.023 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-09 20:24:13.026 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-09 20:24:13.029 +03:00 [INF] Hosting environment: Development
+2025-07-09 20:24:13.032 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-09 20:24:13.865 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-09 20:24:14.212 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 358.2076ms
+2025-07-09 20:24:14.248 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-09 20:24:14.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-09 20:24:14.275 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 27.0835ms
+2025-07-09 20:24:14.248 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-09 20:24:14.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 65.4663ms
+2025-07-09 20:24:14.440 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 178.4543ms
+2025-07-09 20:24:14.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-09 20:24:14.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 191.3463ms
+2025-07-09 20:25:42.778 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - null null
+2025-07-09 20:25:42.788 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:25:42.792 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/123456780 - 204 null null 13.8619ms
+2025-07-09 20:25:42.794 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/123456780 - application/json 0
+2025-07-09 20:25:42.797 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:25:42.800 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:25:42.816 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 20:25:55.728 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 20:26:12.835 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 30012.4289ms
+2025-07-09 20:26:12.837 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:26:12.839 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/123456780 - 200 null application/json; charset=utf-8 30044.962ms
+2025-07-09 20:26:16.695 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - null null
+2025-07-09 20:26:16.722 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:26:16.726 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:16.739 +03:00 [INF] Route matched with {action = "GetFutureAppointmentsByPatientId", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFutureAppointmentsByPatientId(Int32) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-09 20:26:24.000 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-09 20:26:24.067 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api) in 7321.8814ms
+2025-07-09 20:26:24.068 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:24.069 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - 200 null application/json; charset=utf-8 7374.4035ms
+2025-07-09 20:26:24.133 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - null null
+2025-07-09 20:26:24.157 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:26:24.168 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:24.169 +03:00 [INF] Route matched with {action = "GetFutureAppointmentsByPatientId", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFutureAppointmentsByPatientId(Int32) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-09 20:26:26.501 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-09 20:26:26.544 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api) in 2374.4884ms
+2025-07-09 20:26:26.546 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - null null
+2025-07-09 20:26:26.568 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:26.574 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:26:26.577 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - 200 null application/json; charset=utf-8 2444.1787ms
+2025-07-09 20:26:26.583 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:26.635 +03:00 [INF] Route matched with {action = "GetFutureAppointmentsByPatientId", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFutureAppointmentsByPatientId(Int32) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-09 20:26:27.585 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-09 20:26:27.681 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api) in 1042.4279ms
+2025-07-09 20:26:27.683 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:27.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - 200 null application/json; charset=utf-8 1137.6455ms
+2025-07-09 20:26:44.962 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - null null
+2025-07-09 20:26:44.973 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:26:44.975 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:44.977 +03:00 [INF] Route matched with {action = "GetFutureAppointmentsByPatientId", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFutureAppointmentsByPatientId(Int32) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-09 20:26:48.754 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-09 20:26:48.758 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api) in 3778.9933ms
+2025-07-09 20:26:48.760 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:48.762 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - 200 null application/json; charset=utf-8 3800.2315ms
+2025-07-09 20:26:48.771 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - null null
+2025-07-09 20:26:48.775 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:26:48.775 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:26:48.777 +03:00 [INF] Route matched with {action = "GetFutureAppointmentsByPatientId", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFutureAppointmentsByPatientId(Int32) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-09 20:26:59.254 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-09 20:27:04.940 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - null null
+2025-07-09 20:27:05.293 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:27:05.298 +03:00 [INF] Executing endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:27:05.299 +03:00 [INF] Route matched with {action = "GetFutureAppointmentsByPatientId", controller = "Appointment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFutureAppointmentsByPatientId(Int32) on controller Web_api.Controllers.AppointmentController (Web_api).
+2025-07-09 20:27:09.027 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BL.Models.BLAppointment, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-09 20:27:13.198 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api) in 24418.5903ms
+2025-07-09 20:27:13.199 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:27:13.202 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - 200 null application/json; charset=utf-8 24430.3102ms
+2025-07-09 20:27:19.606 +03:00 [INF] Executed action Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api) in 14307.331ms
+2025-07-09 20:27:19.612 +03:00 [INF] Executed endpoint 'Web_api.Controllers.AppointmentController.GetFutureAppointmentsByPatientId (Web_api)'
+2025-07-09 20:27:19.624 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/api/Appointment/future/123456780 - 200 null application/json; charset=utf-8 14684.221ms
+2025-07-09 20:27:26.985 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/2 - null null
+2025-07-09 20:27:26.991 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:27:26.993 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/2 - 204 null null 8.0265ms
+2025-07-09 20:27:26.997 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/2 - application/json 0
+2025-07-09 20:27:27.004 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:27:27.010 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:27:27.012 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 20:27:31.432 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 20:27:32.774 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 5759.0578ms
+2025-07-09 20:27:32.794 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:27:32.882 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (Patient not found.)
+ ---> System.Exception: Patient not found.
+   at DAL.Services.PatientsDal.GetPatientById(Int32 id) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 143
+   at BL.Services.PatientsManager.GetPatientById(Int32 id) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 69
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at ResultGetter(Object)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-09 20:27:32.923 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:27:32.925 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 20:27:32.928 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-09 20:27:32.932 +03:00 [ERR] One or more errors occurred. (Patient not found.)
+2025-07-09 20:27:32.936 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-09 20:27:32.950 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 18.7933ms
+2025-07-09 20:27:32.955 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 20:27:32.956 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/2 - 400 null application/problem+json; charset=utf-8 5959.8324ms
+2025-07-09 20:28:30.145 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/234567896 - null null
+2025-07-09 20:28:30.156 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:28:30.157 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/234567896 - 204 null null 13.2818ms
+2025-07-09 20:28:30.162 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/234567896 - application/json 0
+2025-07-09 20:28:30.195 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:28:30.197 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:28:30.201 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 20:28:44.079 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 20:28:44.128 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 13918.3444ms
+2025-07-09 20:28:44.136 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:28:44.136 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/234567896 - 200 null application/json; charset=utf-8 13974.1213ms
+2025-07-09 20:29:54.872 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/234567893 - null null
+2025-07-09 20:29:54.948 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:29:54.950 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/234567893 - 204 null null 77.7427ms
+2025-07-09 20:29:54.965 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/234567893 - application/json 0
+2025-07-09 20:29:54.980 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:29:54.981 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:29:54.983 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 20:29:57.452 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 20:29:57.477 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 2484.8095ms
+2025-07-09 20:29:57.482 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:29:57.484 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/234567893 - 200 null application/json; charset=utf-8 2518.4754ms
+2025-07-09 20:36:10.801 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/454545459 - null null
+2025-07-09 20:36:10.814 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:36:10.816 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/454545459 - 204 null null 15.2968ms
+2025-07-09 20:36:10.823 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/454545459 - application/json 0
+2025-07-09 20:36:10.837 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:36:10.839 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:36:10.841 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 20:36:20.908 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 20:36:20.985 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 10140.5392ms
+2025-07-09 20:36:20.988 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:36:20.989 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (Patient not found.)
+ ---> System.Exception: Patient not found.
+   at DAL.Services.PatientsDal.GetPatientById(Int32 id) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 143
+   at BL.Services.PatientsManager.GetPatientById(Int32 id) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 69
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at ResultGetter(Object)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-09 20:36:21.041 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:36:21.046 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 20:36:21.099 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-09 20:36:21.104 +03:00 [ERR] One or more errors occurred. (Patient not found.)
+2025-07-09 20:36:21.105 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-09 20:36:21.108 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 3.8654ms
+2025-07-09 20:36:21.113 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 20:36:21.116 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/454545459 - 400 null application/problem+json; charset=utf-8 10292.5092ms
+2025-07-09 20:36:21.914 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-09 20:36:21.942 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 29.2206ms
+2025-07-09 20:36:22.056 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-09 20:36:22.056 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-09 20:36:22.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 7.0503ms
+2025-07-09 20:36:22.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 21.8154ms
+2025-07-09 20:36:22.063 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-09 20:36:22.164 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.3504ms
+2025-07-09 20:36:22.439 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-09 20:36:22.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.8869ms
+2025-07-09 20:36:42.672 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/SignUp - null null
+2025-07-09 20:36:42.724 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:36:42.766 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/SignUp - 204 null null 94.3027ms
+2025-07-09 20:36:42.769 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/SignUp - application/json 103
+2025-07-09 20:36:42.793 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:36:42.797 +03:00 [INF] Executing endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-09 20:36:42.806 +03:00 [INF] Route matched with {action = "SignUp", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(BL.Services.Dto) on controller Web_api.Controllers.SignUpController (Web_api).
+2025-07-09 20:36:43.333 +03:00 [INF] Executed action Web_api.Controllers.SignUpController.SignUp (Web_api) in 523.2902ms
+2025-07-09 20:36:43.340 +03:00 [INF] Executed endpoint 'Web_api.Controllers.SignUpController.SignUp (Web_api)'
+2025-07-09 20:36:43.362 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: one or more details are invalid
+   at BL.Services.TherapistsManager.AddTherapist(BLTherapist therapist) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\TherapistsManager.cs:line 85
+   at Web_api.Controllers.SignUpController.SignUp(Dto dto)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-09 20:36:43.412 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:36:43.416 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 20:36:43.420 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-09 20:36:43.423 +03:00 [ERR] one or more details are invalid
+2025-07-09 20:36:43.425 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-09 20:36:43.435 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 11.6673ms
+2025-07-09 20:36:43.436 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 20:36:43.436 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/SignUp - 400 null application/problem+json; charset=utf-8 667.2368ms
+2025-07-09 20:39:26.860 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7015/api/Login/454545459 - null null
+2025-07-09 20:39:26.865 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:39:26.867 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7015/api/Login/454545459 - 204 null null 7.3484ms
+2025-07-09 20:39:26.873 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/454545459 - application/json 0
+2025-07-09 20:39:26.883 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:39:26.888 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:39:26.892 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-09 20:39:35.542 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-09 20:39:35.647 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 8750.9833ms
+2025-07-09 20:39:35.653 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-09 20:39:35.668 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (Patient not found.)
+ ---> System.Exception: Patient not found.
+   at DAL.Services.PatientsDal.GetPatientById(Int32 id) in C:\Tzip_project\new9\ClinicScheduler\Server\DAL\Services\PatientsDal.cs:line 143
+   at BL.Services.PatientsManager.GetPatientById(Int32 id) in C:\Tzip_project\new9\ClinicScheduler\Server\BL\Services\PatientsManager.cs:line 69
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-09 20:39:35.677 +03:00 [INF] CORS policy execution successful.
+2025-07-09 20:39:35.677 +03:00 [INF] Executing endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 20:39:35.678 +03:00 [INF] Route matched with {action = "HandleError", controller = "ErrorsHendler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleError() on controller Web_api.Controllers.ErrorsHendlerController (Web_api).
+2025-07-09 20:39:42.318 +03:00 [ERR] One or more errors occurred. (Patient not found.)
+2025-07-09 20:39:49.843 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-09 20:39:49.861 +03:00 [INF] Executed action Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api) in 14181.064ms
+2025-07-09 20:39:49.866 +03:00 [INF] Executed endpoint 'Web_api.Controllers.ErrorsHendlerController.HandleError (Web_api)'
+2025-07-09 20:39:49.878 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/454545459 - 400 null application/problem+json; charset=utf-8 23004.9342ms

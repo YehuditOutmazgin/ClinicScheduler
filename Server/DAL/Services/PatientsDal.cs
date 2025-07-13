@@ -9,22 +9,22 @@ using System.Threading.Tasks;
 
 namespace DAL.Services
 {
-    public class PatientsDal:IPatientsDal
+    public class PatientsDal : IPatientsDal
     {
-        
-            private readonly DB_Manager _dB_Manager;
 
-            public PatientsDal(DB_Manager dbContext)
-            {
-                _dB_Manager = dbContext;
-            }
+        private readonly DB_Manager _dB_Manager;
 
-            public Task AddPatient(Patient patient)
-            {
-                _dB_Manager.Patients.Add(patient);
-                _dB_Manager.SaveChanges();
-                return Task.CompletedTask;
-            }
+        public PatientsDal(DB_Manager dbContext)
+        {
+            _dB_Manager = dbContext;
+        }
+
+        public async Task AddPatient(Patient patient)
+        {
+            await _dB_Manager.Patients.AddAsync(patient);
+            await _dB_Manager.SaveChangesAsync();
+        }
+
 
         //    public async Task<Patient> DeletePatient(int id)
         //    {
@@ -93,7 +93,7 @@ namespace DAL.Services
                     AppointmentId = 0,
                     AppointmentDate = a.AppointmentDate,
                     TherapistId = a.TherapistId,
-                    Specialization = a.Therapist.Specialization, 
+                    Specialization = a.Therapist.Specialization,
                 });
                 var appointmentIds = appointments.Select(a => a.AppointmentId).ToList();
 
@@ -121,43 +121,56 @@ namespace DAL.Services
         }
 
         public Task<List<Patient>> GetAllPatients()
-            {
-                var patients = _dB_Manager.Patients.ToList();
-                return Task.FromResult(patients);
-            }
-
-            public Task<List<Appointment>> GetPatientAppointments(int patientId)
-            {
-                var appointments = _dB_Manager.Appointments
-                    .Where(a => a.PatientId == patientId).Include(a=>a.Therapist)
-
-
-                    .ToList();
-                return Task.FromResult(appointments);
-            }
-
-            public async Task<Patient> GetPatientById(int id)
-            {
-                Patient patient = await _dB_Manager.Patients.FindAsync(id);
-            if(patient==null)
-                throw new Exception("Patient not found.");  
-            return await Task.FromResult(patient);
-            }
-
-            public Task UpdatePatient(Patient patient)
-            {
-                Patient existingPatient = _dB_Manager.Patients.Find(patient.PatientId);
-                if (existingPatient != null)
-                {
-                    existingPatient.FirstName = patient.FirstName;
-                    existingPatient.LastName = patient.LastName;
-                    existingPatient.BirthDate = patient.BirthDate;
-                    existingPatient.PhoneNumber = patient.PhoneNumber;
-                    _dB_Manager.SaveChanges();
-                }
-                return Task.CompletedTask;
-            }
-
+        {
+            var patients = _dB_Manager.Patients.ToList();
+            return Task.FromResult(patients);
         }
+
+        public Task<List<Appointment>> GetPatientAppointments(int patientId)
+        {
+            var appointments = _dB_Manager.Appointments
+                .Where(a => a.PatientId == patientId).Include(a => a.Therapist)
+
+
+                .ToList();
+            return Task.FromResult(appointments);
+        }
+
+        public async Task<Patient> GetPatientById(int id)
+        {
+            Patient patient = await _dB_Manager.Patients.FindAsync(id);
+            if (patient == null)
+                throw new Exception("Patient not found.");
+            return await Task.FromResult(patient);
+        }
+
+        public async Task<Patient> Login(int id, string pass)
+        {
+            var pc = await _dB_Manager.Patients.FirstOrDefaultAsync
+      (p => p.PatientId == id);
+            if (pc != null)
+            {
+                pc = await _dB_Manager.Patients.FirstOrDefaultAsync(p => p.PatientId == id && pass == "1234");
+                if (pc == null)
+                    throw new ArgumentNullException("your password was worng");
+            }
+
+            return pc;
+        }
+        public Task UpdatePatient(Patient patient)
+        {
+            Patient existingPatient = _dB_Manager.Patients.Find(patient.PatientId);
+            if (existingPatient != null)
+            {
+                existingPatient.FirstName = patient.FirstName;
+                existingPatient.LastName = patient.LastName;
+                existingPatient.BirthDate = patient.BirthDate;
+                existingPatient.PhoneNumber = patient.PhoneNumber;
+                _dB_Manager.SaveChanges();
+            }
+            return Task.CompletedTask;
+        }
+
+    }
 
 }

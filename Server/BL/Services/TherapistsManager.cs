@@ -3,6 +3,7 @@ using BL.Api;
 using BL.Models;
 using DAL.Api;
 using DAL.Models;
+using DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,22 @@ namespace BL.Services
                 throw new NullReferenceException(nameof(therapist));
 
             return _mapper.Map<BLTherapist>(therapist);
+        }
+
+        public async Task<BLTherapist> Login(int id, string pass)
+        {
+            if (id < 0 || pass == null)
+                throw new NullReferenceException(nameof(id));
+
+            var p = await _therapistsDal.Login(id, pass);
+            if (p == null)
+                return null;
+
+            var mp = _mapper.Map<BLTherapist>(p);
+
+            if (mp == null)
+                throw new NullReferenceException("coudent mapp this type");
+            return mp;
         }
         public async Task<BLTherapist> GetTherapistByName(string firstName, string lastName)
         {
@@ -232,5 +249,7 @@ namespace BL.Services
         {
             return s != null && s != "";
         }
+
+
     }
 }

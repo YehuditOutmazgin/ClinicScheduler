@@ -31,9 +31,10 @@ namespace BL.Services
 
             if (p == null)
                 throw new NullReferenceException(nameof(p));
-            else p.PatientId = 0;
-             await   _patientsDal.AddPatient(p);
-
+            else
+            {
+                await _patientsDal.AddPatient(p);
+            }
         }
 
         public async Task<BLPatient> DeletePatient(int id)
@@ -77,6 +78,22 @@ namespace BL.Services
             return mp;
         }
 
+
+        public async Task<BLPatient> Login(int id,string pass)
+        {
+            if (id < 0||pass==null)
+                throw new NullReferenceException(nameof(id));
+
+            var p = await _patientsDal.Login(id,pass);
+            if (p == null)
+                return null;
+
+            var mp = _mapper.Map<BLPatient>(p);
+
+            if (mp == null)
+                throw new NullReferenceException("coudn't mapp to this type");
+            return mp;
+        }
         public  async Task UpdatePatient(BLPatient patient)
         {
             if (patient == null)

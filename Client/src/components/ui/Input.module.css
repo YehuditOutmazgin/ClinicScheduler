@@ -4,6 +4,8 @@
   color: #0077C8;
   font-size: 1rem;
   font-weight: 500;
+  flex-direction: rtl;
+  text-align: right;
 }
 .input {
   width: 100%;
@@ -14,6 +16,8 @@
   margin-bottom: 16px;
   background: #f6f8fa;
   transition: border 0.2s;
+  text-align: right;
+
 }
 .input:focus {
   border-color: #0077C8;

@@ -1,0 +1,80 @@
+2025-07-11 02:28:48.091 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-11 02:28:48.125 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-11 02:28:48.130 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-11 02:28:48.133 +03:00 [INF] Hosting environment: Development
+2025-07-11 02:28:48.137 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-11 02:28:48.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-11 02:28:48.748 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 211.8224ms
+2025-07-11 02:28:48.769 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-11 02:28:48.769 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-11 02:28:48.770 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-11 02:28:48.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 10.5795ms
+2025-07-11 02:28:48.794 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 24.399ms
+2025-07-11 02:28:48.820 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.1023ms
+2025-07-11 02:28:48.861 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-11 02:28:49.004 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.2283ms
+2025-07-11 02:30:33.294 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=234567895&pass=1234 - null 0
+2025-07-11 02:30:33.306 +03:00 [INF] CORS policy execution successful.
+2025-07-11 02:30:33.316 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:30:33.349 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-11 02:30:34.937 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-11 02:30:35.246 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 1880.2388ms
+2025-07-11 02:30:35.249 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:30:35.250 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=234567895&pass=1234 - 200 null application/json; charset=utf-8 1956.1815ms
+2025-07-11 02:31:17.883 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - null 0
+2025-07-11 02:31:17.901 +03:00 [INF] CORS policy execution successful.
+2025-07-11 02:31:17.906 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:31:17.912 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-11 02:31:17.928 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-11 02:31:17.938 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 14.0624ms
+2025-07-11 02:31:17.947 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:31:17.955 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - 200 null application/json; charset=utf-8 71.5627ms
+2025-07-11 02:31:37.651 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-11 02:31:37.665 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 13.8772ms
+2025-07-11 02:31:37.692 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-11 02:31:37.692 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-11 02:31:37.693 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-11 02:31:37.697 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.0136ms
+2025-07-11 02:31:37.700 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 8.1688ms
+2025-07-11 02:31:37.707 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.7534ms
+2025-07-11 02:31:37.889 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-11 02:31:37.908 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.9451ms
+2025-07-11 02:31:45.813 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-11 02:31:45.844 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-11 02:31:45.849 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-11 02:31:45.850 +03:00 [INF] Hosting environment: Development
+2025-07-11 02:31:45.851 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-11 02:31:46.534 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-11 02:31:46.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 222.2399ms
+2025-07-11 02:31:46.766 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-11 02:31:46.766 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-11 02:31:46.775 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 8.9699ms
+2025-07-11 02:31:46.775 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-11 02:31:46.787 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 22.2888ms
+2025-07-11 02:31:46.821 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.5079ms
+2025-07-11 02:31:46.854 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-11 02:31:46.969 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 115.2833ms
+2025-07-11 02:32:11.637 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - null 0
+2025-07-11 02:32:11.657 +03:00 [INF] CORS policy execution successful.
+2025-07-11 02:32:11.668 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:32:11.715 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-11 02:32:13.718 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-11 02:32:13.983 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 2250.0656ms
+2025-07-11 02:32:13.987 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:32:13.989 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - 200 null application/json; charset=utf-8 2351.9096ms
+2025-07-11 02:32:54.267 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - null 0
+2025-07-11 02:32:54.286 +03:00 [INF] CORS policy execution successful.
+2025-07-11 02:32:54.289 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:32:54.295 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-11 02:33:05.744 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-11 02:33:19.686 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 25383.5992ms
+2025-07-11 02:33:19.693 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:33:19.700 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - 200 null application/json; charset=utf-8 25433.6144ms
+2025-07-11 02:34:01.016 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - null 0
+2025-07-11 02:34:01.036 +03:00 [INF] CORS policy execution successful.
+2025-07-11 02:34:01.041 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:34:01.047 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-11 02:34:14.520 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-11 02:34:34.312 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 33255.249ms
+2025-07-11 02:34:34.317 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-11 02:34:34.323 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login?id=454545459&pass=1234 - 200 null application/json; charset=utf-8 33307.6644ms

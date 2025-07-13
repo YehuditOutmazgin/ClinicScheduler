@@ -21,7 +21,7 @@ export default function UserDashboard() {
     <div className={styles.dashboard}>
       <header className={styles.header}>
 
-        <span className={styles.header}>שלום, {user.data.result.firstName} {user.data.result.lastName}</span>
+        <span className={styles.miniTitle}>שלום, {user.data.firstName} {user.data.lastName}</span>
         <Button onClick={() => { localStorage.clear(); navigate('/'); }}>התנתק</Button>
       </header>
       <nav className={styles.nav}>

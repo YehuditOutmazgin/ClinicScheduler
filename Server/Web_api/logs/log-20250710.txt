@@ -1,0 +1,42 @@
+2025-07-10 18:27:32.607 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-10 18:27:32.652 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-10 18:27:32.658 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-10 18:27:32.662 +03:00 [INF] Hosting environment: Development
+2025-07-10 18:27:32.664 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-10 18:27:33.434 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-10 18:27:33.814 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 392.2309ms
+2025-07-10 18:27:33.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-10 18:27:33.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-10 18:27:33.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-10 18:27:33.863 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 22.6008ms
+2025-07-10 18:27:33.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 34.3797ms
+2025-07-10 18:27:33.917 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.7588ms
+2025-07-10 18:27:33.973 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-10 18:27:34.262 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 289.3289ms
+2025-07-10 18:29:35.512 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/234567895?pass=1234 - null 0
+2025-07-10 18:29:35.520 +03:00 [INF] CORS policy execution successful.
+2025-07-10 18:29:35.527 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-10 18:29:35.549 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-10 18:31:01.237 +03:00 [INF] Now listening on: https://localhost:7015
+2025-07-10 18:31:01.273 +03:00 [INF] Now listening on: http://localhost:5129
+2025-07-10 18:31:01.276 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-10 18:31:01.277 +03:00 [INF] Hosting environment: Development
+2025-07-10 18:31:01.278 +03:00 [INF] Content root path: C:\Tzip_project\new9\ClinicScheduler\Server\Web_api
+2025-07-10 18:31:02.389 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.html - null null
+2025-07-10 18:31:02.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.html - 200 null text/html;charset=utf-8 406.3966ms
+2025-07-10 18:31:02.827 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-10 18:31:02.827 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/index.js - null null
+2025-07-10 18:31:02.849 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/index.js - 200 null application/javascript;charset=utf-8 21.1529ms
+2025-07-10 18:31:02.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/_vs/browserLink - null null
+2025-07-10 18:31:02.868 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 41.0254ms
+2025-07-10 18:31:02.952 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.8069ms
+2025-07-10 18:31:03.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - null null
+2025-07-10 18:31:03.705 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 173.953ms
+2025-07-10 18:31:15.617 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7015/api/Login/234567895?pass=1234 - null 0
+2025-07-10 18:31:15.633 +03:00 [INF] CORS policy execution successful.
+2025-07-10 18:31:15.640 +03:00 [INF] Executing endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-10 18:31:15.675 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Int32, System.String) on controller Web_api.Controllers.LoginController (Web_api).
+2025-07-10 18:31:24.640 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[BL.Models.BLPatient, BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-10 18:31:35.697 +03:00 [INF] Executed action Web_api.Controllers.LoginController.Login (Web_api) in 20010.0736ms
+2025-07-10 18:31:35.699 +03:00 [INF] Executed endpoint 'Web_api.Controllers.LoginController.Login (Web_api)'
+2025-07-10 18:31:35.701 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7015/api/Login/234567895?pass=1234 - 200 null application/json; charset=utf-8 20084.2019ms

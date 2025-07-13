@@ -1,5 +1,5 @@
 .btn {
-  background: linear-gradient(90deg, #0077C8 100%);
+  background: linear-gradient(90deg, #FFA300 100%);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -12,13 +12,13 @@
   display: flex;
   gap: 12px;
   margin-bottom: 20px;
-  justify-content: flex-end; /* אפשר גם center או start */
+  justify-content: flex-end; 
+  align-items: center;
 }
-
 
 .nav {
   margin-bottom: 24px;
 }
 .btn:hover {
-  background: linear-gradient(90deg, #FFA300 100%);
+  background: linear-gradient(90deg, #0077C8 100%);
 }

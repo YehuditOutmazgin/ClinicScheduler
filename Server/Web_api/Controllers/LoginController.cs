@@ -33,19 +33,20 @@ namespace Web_api.Controllers
 
         //    return NotFound("User not found");
         //}
-        [HttpPost("{id}")]
-        public IActionResult Login([FromRoute] int id)
+        [HttpPost]
+        public async Task<IActionResult> Login([FromQuery] int id, [FromQuery] string pass)
         {
-            var client = _blManager._patientsManager.GetPatientById(id);
+            var client =await _blManager._patientsManager.Login(id, pass);
             if (client != null)
                 return Ok(new { role = "client", data = client });
 
-            var therapist = _blManager._therapistManager.GetTherapistById(id);
+            var therapist =await _blManager._therapistManager.Login(id, pass);
             if (therapist != null)
                 return Ok(new { role = "therapist", data = therapist });
 
-            return NotFound("User not found");
+            return BadRequest("Invalid credentials");
         }
+
     }
 }
 

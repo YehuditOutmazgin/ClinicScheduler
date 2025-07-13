@@ -13,6 +13,7 @@ namespace BL.Api
         Task <List<BLWorkHour>> DeleteWorkDay(int therapistId, string DayOfWeek);
         Task<List<BLTherapist>> GetAllTherapists();
         Task<BLTherapist> GetTherapistById(int id);
+        Task<BLTherapist> Login(int id, string pass);
         Task<BLTherapist> GetTherapistByName(string firstName, string lastName);
         Task<List<BLWorkHour>> GetTherapistSchedule(string firstName, string lastName);
         Task <BLTherapist> UpdateTherapist(BLTherapist therapist);

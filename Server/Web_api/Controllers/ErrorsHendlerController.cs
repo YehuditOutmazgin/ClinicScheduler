@@ -45,6 +45,14 @@ namespace Web_api.Controllers
                 statusCode: 777
                 );
             }
+            if (exceptionDetails?.Error is ArgumentNullException)
+            {
+                return Problem(
+                detail: $"Please check the data you entered. exception details: {exceptionDetails?.Error.Message}",
+                title: "An error occurred",
+                statusCode: 410
+                );
+            }
             if (exceptionDetails?.Error is Exception)
             {
                 return Problem(

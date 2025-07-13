@@ -11,6 +11,7 @@ namespace BL.Api
     {
         Task<List<BLPatient>> GetAllPatients();
         Task<BLPatient> GetPatientById(int id);
+        Task<BLPatient> Login(int id, string pass);
         Task AddPatient(BLPatient patient);
         Task UpdatePatient(BLPatient patient);
         Task<BLPatient> DeletePatient(int id);

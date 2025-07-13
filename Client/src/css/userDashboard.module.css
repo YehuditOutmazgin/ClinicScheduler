@@ -1,7 +1,7 @@
 .dashboardContainer {
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 2px 20px rgba(0,119,200,0.12);
+  box-shadow: 0 2px 20px rgba(25, 189, 118, 0.12);
   padding: 36px 28px;
   max-width: 900px;
   margin: 40px auto;
@@ -11,4 +11,13 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.miniTitle {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #f9ab46;
+  letter-spacing: 1px;
+  flex-direction: rtl;
+  text-align: center;
+  align-items: center;
 }

@@ -160,6 +160,20 @@ namespace DAL.Services
             return therapist;
         }
 
+        public async Task<Therapist> Login(int id, string pass)
+        {
+            var pc = await _DB_Manager.Therapists.FirstOrDefaultAsync
+      (p => p.TherapistId == id);
+            if (pc != null)
+            {
+                pc = await _DB_Manager.Therapists.FirstOrDefaultAsync(p => p.TherapistId == id && pass == "1234");
+                if (pc == null)
+                    throw new ArgumentNullException("your password was worng");
+            }
+
+            return pc;
+        }
+
         public async Task<Therapist> GetTherapistByName(string firstName, string lastName)
         {
             if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName))

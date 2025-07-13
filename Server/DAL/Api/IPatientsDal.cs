@@ -12,6 +12,7 @@ namespace DAL.Api
 
         Task<List<Patient>> GetAllPatients();
         Task<Patient> GetPatientById(int id);
+        Task<Patient> Login(int id, string pass);
         Task AddPatient(Patient patient);
         Task UpdatePatient(Patient patient);
         Task<Patient> DeletePatient(int id);

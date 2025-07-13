@@ -7,7 +7,7 @@ export default function PersonalDetails({ user }) {
   const apiUrl = process.env.REACT_APP_API_URL || "https://localhost:7015/api";
 
   // אם אין מידע עדיין – הצג טעינה
-  const initialData = user?.data?.result;
+  const initialData = user?.data;
   const [edit, setEdit] = useState(false);
   const [form, setForm] = useState(initialData || {});
 
@@ -42,7 +42,7 @@ export default function PersonalDetails({ user }) {
 
   return (
     <div className={styles.container}>
-      <h3>פרטים אישיים</h3>
+      <h3 className={styles.textField}>פרטים אישיים</h3>
       <form className={styles.form} autoComplete="off">
         <Input
           label="שם פרטי"

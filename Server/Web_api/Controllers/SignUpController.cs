@@ -25,14 +25,14 @@ namespace Web_api.Controllers
 
 				if (dto.Role == "patient")
 				{
-					var bLPatient = new BLPatient { FirstName=dto.FName,LastName=dto.LName,PatientId=dto.id,PhoneNumber=dto.phoneNumbr};
+					var bLPatient = new BLPatient { FirstName=dto.FName,LastName=dto.LName,PatientId=dto.id,PhoneNumber=dto.phoneNumbr };
 					await _bLManager._patientsManager.AddPatient(bLPatient);
 				   
 					return Ok();
 				}
 				else if (dto.Role == "therapist")
 				{
-					var blTherapist = new BLTherapist { FirstName = dto.FName, LastName = dto.LName, TherapistId = dto.id, PhoneNumber = dto.phoneNumbr };
+					var blTherapist = new BLTherapist { FirstName = dto.FName, LastName = dto.LName, TherapistId = dto.id, PhoneNumber = dto.phoneNumbr,Specialization= dto.Specialization };
 					 await _bLManager._therapistManager.AddTherapist(blTherapist);
 	
 					return Ok(User);

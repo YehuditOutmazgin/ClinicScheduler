@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace BL.Services
         public string FName { get; set; }
         public string LName { get; set; }
         public string phoneNumbr { get; set; }
+        public Specialization Specialization { get; set; } = 0;
     }
 
 }
