@@ -1,7 +1,7 @@
 ﻿using BL;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using BL.Models;
 namespace Web_api.Controllers
 {
     [Route("api/[controller]")]
@@ -34,17 +34,17 @@ namespace Web_api.Controllers
         //    return NotFound("User not found");
         //}
         [HttpPost("{id}")]
-        public IActionResult Login([FromRoute] int id)
+        public IActionResult Login([FromRoute] int id,int pass)
         {
-            var client = _blManager._patientsManager.GetPatientById(id);
-            if (client != null)
-                return Ok(new { role = "client", data = client });
+            Task<BLPatient> client = _blManager._patientsManager.GetPatientById(id);
+            if (client.Result != null)
+                return Ok(new { role = "client", data = client.Result });
 
-            var therapist = _blManager._therapistManager.GetTherapistById(id);
-            if (therapist != null)
-                return Ok(new { role = "therapist", data = therapist });
-
-            return NotFound("User not found");
+            Task<BLTherapist> therapist = _blManager._therapistManager.GetTherapistById(id);
+            if (therapist.Result != null)
+                return Ok(new { role = "therapist", data = therapist.Result });
+            return Ok(new { role = "secretary", data = new { fistName = "secre", lastName = "tary" } });
+            //return NotFound("User not found");
         }
     }
 }
