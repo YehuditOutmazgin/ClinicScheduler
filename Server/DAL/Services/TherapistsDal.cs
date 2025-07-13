@@ -154,7 +154,8 @@ namespace DAL.Services
 
             if (therapist == null)
             {
-                throw new KeyNotFoundException($"Therapist with ID {id} was not found.");
+                //throw new KeyNotFoundException($"Therapist with ID {id} was not found.");
+                return null;
             }
 
             return therapist;

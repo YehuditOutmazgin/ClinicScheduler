@@ -139,8 +139,7 @@ namespace DAL.Services
             public async Task<Patient> GetPatientById(int id)
             {
                 Patient patient = await _dB_Manager.Patients.FindAsync(id);
-            if(patient==null)
-                throw new Exception("Patient not found.");  
+            //if(patient==null)
             return await Task.FromResult(patient);
             }
 

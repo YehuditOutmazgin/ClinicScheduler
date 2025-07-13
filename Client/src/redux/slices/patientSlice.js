@@ -39,11 +39,11 @@ const patientSlice = createSlice({
       })
       .addCase(fetchAllPatients.fulfilled, (state, action) => {
         state.loading = false
-        state.patients = action.payload
+        state.patients = action.payload.$values
       })
       .addCase(fetchAllPatients.rejected, (state, action) => {
         state.loading = false
-        state.error = action.payload
+        state.error = action.payload.$values
       })
   },
 })

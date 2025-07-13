@@ -13,7 +13,6 @@ const PatientAppointments = () => {
   const { user } = useSelector((state) => state.auth)
   const { futureAppointments, loading, error } = useSelector((state) => state.appointments)
   const [filter, setFilter] = useState("all")
-    user.patientId=123456780
   useEffect(() => {
     if (user?.patientId) {
       dispatch(fetchFutureAppointments(user.patientId))

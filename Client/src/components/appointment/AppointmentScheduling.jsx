@@ -30,21 +30,26 @@ const AppointmentScheduling = ({ userType }) => {
 
   useEffect(() => {
     if (selectedTherapist || selectedSpecialty) {
-      const weekDate = formatDateForAPI(currentWeek)
+      const weekDate = getWeekDateString(currentWeek)
       dispatch(
         fetchAvailableAppointments({
           therapistId: selectedTherapist || null,
           specialty: selectedSpecialty || null,
           weekDate,
-        }).apply.$values,
+        }),
       )
     }
   }, [dispatch, selectedTherapist, selectedSpecialty, currentWeek])
 
-  const formatDateForAPI = (date) => {
-    return date.toISOString().split("T")[0]
+  // const formatDateForAPI = (date) => {
+  //   return date.toISOString().split("T")[0]
+  // }
+  function getWeekDateString(date) {
+    // מחזיר תאריך במבנה DD-MM-YYYY
+    if (!date) return "";
+    const d = new Date(date);
+    return `${String(d.getDate()).padStart(2, '0')}-${String(d.getMonth() + 1).padStart(2, '0')}-${d.getFullYear()}`;
   }
-
   const handleTherapistChange = (therapistId) => {
     setSelectedTherapist(therapistId)
     setSelectedSpecialty("")
@@ -70,7 +75,7 @@ const AppointmentScheduling = ({ userType }) => {
     if (!selectedAppointment) return
 
     const patientIdToUse = userType === "patient" ? user.patientId : Number.parseInt(patientId)
-
+alert(JSON.stringify(user))
     try {
       await dispatch(
         scheduleAppointment({
@@ -83,7 +88,7 @@ const AppointmentScheduling = ({ userType }) => {
       setSelectedAppointment(null)
 
       // Refresh available appointments
-      const weekDate = formatDateForAPI(currentWeek)
+      const weekDate = getWeekDateString(currentWeek)
       dispatch(
         fetchAvailableAppointments({
           therapistId: selectedTherapist || null,
@@ -139,10 +144,14 @@ const AppointmentScheduling = ({ userType }) => {
                   onChange={(e) => handleTherapistChange(e.target.value)}
                 >
                   <option value="">-- בחר מטפל --</option>
-                  {therapists.map((therapist) => (
+                  {/* {therapists.map((therapist) => (
                     <option key={therapist.therapistId} value={therapist.therapistId}>
                       {therapist.firstName} {therapist.lastName} - {therapist.specialization}
                     </option>
+                  ))} */}
+                  <option value="">בחר/י...</option>
+                  {(therapists || []).map(t => (
+                    <option key={t.id || t.therapistId} value={t.id || t.therapistId}>{t.name || `${t.firstName} ${t.lastName} - ${t.specialization}`}</option>
                   ))}
                 </select>
               </div>

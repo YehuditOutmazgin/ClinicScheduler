@@ -6,6 +6,9 @@
 out/
 publish/
 
+#Logs
+Server/Web_api/logs/
+
 # NuGet packages
 *.nupkg
 *.snupkg

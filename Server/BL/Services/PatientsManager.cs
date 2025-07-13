@@ -67,9 +67,9 @@ namespace BL.Services
 
 
            var p= await _patientsDal.GetPatientById(id);
-            if(p == null)
-                throw new NullReferenceException($"{nameof(p)} does not exist");
-
+            if (p == null)
+                //throw new NullReferenceException($"{nameof(p)} does not exist");
+                return null;
             var mp = _mapper.Map<BLPatient>(p);
 
             if (mp == null)

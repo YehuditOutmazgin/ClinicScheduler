@@ -71,7 +71,7 @@ namespace DAL.Services
             var endOfWeek = startOfWeek.AddDays(6); // Get the end of the week
 
             return await _DB_Manager.AvailableAppointments
-                .Where(a => a.TherapistId == therapistId &&
+                .Where(a => a.TherapistId == therapistId || a.Therapist.Id == therapistId &&
                              a.AppointmentDate.Date >= startOfWeek.ToDateTime(TimeOnly.MinValue).Date &&
                              a.AppointmentDate.Date <= endOfWeek.ToDateTime(TimeOnly.MinValue).Date)
                 .ToListAsync();

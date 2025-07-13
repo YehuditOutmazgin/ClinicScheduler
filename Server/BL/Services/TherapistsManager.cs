@@ -50,8 +50,9 @@ namespace BL.Services
             var therapist = await _therapistsDal.GetTherapistById(id);
 
             if (therapist == null)
-                throw new NullReferenceException(nameof(therapist));
-
+                //throw new NullReferenceException(nameof(therapist));
+           
+            return null;
             return _mapper.Map<BLTherapist>(therapist);
         }
         public async Task<BLTherapist> GetTherapistByName(string firstName, string lastName)
