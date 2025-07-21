@@ -50,6 +50,8 @@ function App() {
               <Route path="reminders" element={<SecretaryReminders />} />
               <Route path="schedule" element={<AppointmentScheduling/>} />
             </Route>
+
+            
           </Routes>
         </div>
       </Router>

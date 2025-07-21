@@ -1,26 +1,33 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { getNextBusinessDayAppointments, confirmAppointment } from "../../api/appointmentFetch"
+import { getNextBusinessDayAppointments, confirmAppointment, getCancelledAppointments } from "../../api/appointmentFetch"
 import Navigation from "../common/Navigation"
 import LoadingSpinner from "../common/LoadingSpinner"
 import "../../styles/SecretaryReminders.css"
 
 const SecretaryReminders = () => {
   const [appointments, setAppointments] = useState([])
+  const [cancelledAppointments, setCancelledAppointments] = useState([])
   const [loading, setLoading] = useState(true)
   const [confirmedAppointments, setConfirmedAppointments] = useState(new Set())
   const [successMessage, setSuccessMessage] = useState("")
+  const [viewType, setViewType] = useState("next") // "next" | "cancelled"
 
   useEffect(() => {
     fetchReminders()
-  }, [])
+  }, [viewType])
 
   const fetchReminders = async () => {
     try {
       setLoading(true)
-      const data = await getNextBusinessDayAppointments()
-      setAppointments(data)
+      if (viewType === "next") {
+        const data = await getNextBusinessDayAppointments()
+        setAppointments(data)
+      } else {
+        const data = await getCancelledAppointments()
+        setCancelledAppointments(data)
+      }
     } catch (error) {
       console.error("Error fetching reminders:", error)
     } finally {
@@ -75,84 +82,127 @@ const SecretaryReminders = () => {
       <div className="container">
         <div className="reminders-header">
           <h1>תזכורות תורים</h1>
-          <p>נהל תזכורות לתורים של יום העסקים הבא</p>
+          <p>נהל תזכורות לתורים של יום העסקים הבא או לתורים שבוטלו</p>
+
+          <div className="reminders-tabs">
+            <button className={viewType === "next" ? "active" : ""} onClick={() => setViewType("next")}>תורים ליום הבא</button>
+            <button className={viewType === "cancelled" ? "active" : ""} onClick={() => setViewType("cancelled")}>תורים שבוטלו</button>
+          </div>
         </div>
 
         {successMessage && <div className="alert alert-success">{successMessage}</div>}
 
-        <div className="reminders-stats">
-          <div className="stat-card pending">
-            <div className="stat-number">{getPendingReminders().length}</div>
-            <div className="stat-label">תזכורות ממתינות</div>
-          </div>
-          <div className="stat-card confirmed">
-            <div className="stat-number">{getConfirmedReminders().length}</div>
-            <div className="stat-label">תזכורות שאושרו</div>
-          </div>
-          <div className="stat-card total">
-            <div className="stat-number">{appointments.length}</div>
-            <div className="stat-label">סה"כ תורים</div>
-          </div>
-        </div>
-
-        <div className="reminders-sections">
-          {/* Pending Reminders */}
-          <div className="reminders-section">
-            <h2 className="section-title">תזכורות ממתינות</h2>
-            {getPendingReminders().length > 0 ? (
-              <div className="reminders-list">
-                {getPendingReminders().map((appointment) => {
-                  const { date, time } = formatDateTime(appointment.appointmentDate)
-                  return (
-                    <div key={appointment.appointmentId} className="reminder-card pending">
-                      <div className="reminder-info">
-                        <div className="patient-details">
-                          <div className="patient-name">
-                            {appointment.patient?.firstName} {appointment.patient?.lastName}
-                          </div>
-                          <div className="patient-phone">{appointment.patient?.phoneNumber}</div>
-                        </div>
-                        <div className="appointment-details">
-                          <div className="appointment-datetime">
-                            <div className="appointment-date">{date}</div>
-                            <div className="appointment-time">{time}</div>
-                          </div>
-                          <div className="therapist-info">
-                            <div className="therapist-name">{appointment.therapistName}</div>
-                            <div className="specialization">{appointment.specialization}</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="reminder-actions">
-                        <button
-                          className="btn btn-primary confirm-btn"
-                          onClick={() => handleConfirmReminder(appointment.appointmentId)}
-                        >
-                          אשר תזכורת
-                        </button>
-                        <div className="appointment-id">תור #{appointment.appointmentId}</div>
-                      </div>
-                    </div>
-                  )
-                })}
+        {viewType === "next" && (
+          <>
+            <div className="reminders-stats">
+              <div className="stat-card pending">
+                <div className="stat-number">{getPendingReminders().length}</div>
+                <div className="stat-label">תזכורות ממתינות</div>
               </div>
-            ) : (
-              <div className="no-reminders">
-                <div className="no-reminders-icon">✅</div>
-                <p>כל התזכורות אושרו!</p>
+              <div className="stat-card confirmed">
+                <div className="stat-number">{getConfirmedReminders().length}</div>
+                <div className="stat-label">תזכורות שאושרו</div>
+              </div>
+              <div className="stat-card total">
+                <div className="stat-number">{appointments.length}</div>
+                <div className="stat-label">סה"כ תורים</div>
+              </div>
+            </div>
+
+            <div className="reminders-sections">
+              <div className="reminders-section">
+                <h2 className="section-title">תזכורות ממתינות</h2>
+                {getPendingReminders().length > 0 ? (
+                  <div className="reminders-list">
+                    {getPendingReminders().map((appointment) => {
+                      const { date, time } = formatDateTime(appointment.appointmentDate)
+                      return (
+                        <div key={appointment.appointmentId} className="reminder-card pending">
+                          <div className="reminder-info">
+                            <div className="patient-details">
+                              <div className="patient-name">
+                                {appointment.patient?.firstName} {appointment.patient?.lastName}
+                              </div>
+                              <div className="patient-phone">{appointment.patient?.phoneNumber}</div>
+                            </div>
+                            <div className="appointment-details">
+                              <div className="appointment-datetime">
+                                <div className="appointment-date">{date}</div>
+                                <div className="appointment-time">{time}</div>
+                              </div>
+                              <div className="therapist-info">
+                                <div className="therapist-name">{appointment.therapistName}</div>
+                                <div className="specialization">{appointment.specialization}</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="reminder-actions">
+                            <button className="btn btn-primary confirm-btn" onClick={() => handleConfirmReminder(appointment.appointmentId)}>
+                              אשר תזכורת
+                            </button>
+                            <div className="appointment-id">תור #{appointment.appointmentId}</div>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                ) : (
+                  <div className="no-reminders">
+                    <div className="no-reminders-icon">✅</div>
+                    <p>כל התזכורות אושרו!</p>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {getConfirmedReminders().length > 0 && (
+              <div className="reminders-section">
+                <h2 className="section-title">תזכורות שאושרו</h2>
+                <div className="reminders-list">
+                  {getConfirmedReminders().map((appointment) => {
+                    const { date, time } = formatDateTime(appointment.appointmentDate)
+                    return (
+                      <div key={appointment.appointmentId} className="reminder-card confirmed">
+                        <div className="reminder-info">
+                          <div className="patient-details">
+                            <div className="patient-name">
+                              {appointment.patient?.firstName} {appointment.patient?.lastName}
+                            </div>
+                            <div className="patient-phone">{appointment.patient?.phoneNumber}</div>
+                          </div>
+                          <div className="appointment-details">
+                            <div className="appointment-datetime">
+                              <div className="appointment-date">{date}</div>
+                              <div className="appointment-time">{time}</div>
+                            </div>
+                            <div className="therapist-info">
+                              <div className="therapist-name">{appointment.therapistName}</div>
+                              <div className="specialization">{appointment.specialization}</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="reminder-status">
+                          <div className="status-badge confirmed">אושר</div>
+                          <div className="appointment-id">תור #{appointment.appointmentId}</div>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
             )}
-          </div>
+          </>
+        )}
 
-          {/* Confirmed Reminders */}
-          {getConfirmedReminders().length > 0 && (
-            <div className="reminders-section">
-              <h2 className="section-title">תזכורות שאושרו</h2>
+        {viewType === "cancelled" && (
+          <div className="reminders-section">
+            <h2 className="section-title">תורים שבוטלו</h2>
+            {cancelledAppointments.length > 0 ? (
               <div className="reminders-list">
-                {getConfirmedReminders().map((appointment) => {
+                {cancelledAppointments.map((appointment) => {
                   const { date, time } = formatDateTime(appointment.appointmentDate)
                   return (
-                    <div key={appointment.appointmentId} className="reminder-card confirmed">
+                    <div key={appointment.appointmentId} className="reminder-card cancelled">
                       <div className="reminder-info">
                         <div className="patient-details">
                           <div className="patient-name">
@@ -172,16 +222,20 @@ const SecretaryReminders = () => {
                         </div>
                       </div>
                       <div className="reminder-status">
-                        <div className="status-badge confirmed">אושר</div>
+                        <div className="status-badge cancelled">בוטל</div>
                         <div className="appointment-id">תור #{appointment.appointmentId}</div>
                       </div>
                     </div>
                   )
                 })}
               </div>
-            </div>
-          )}
-        </div>
+            ) : (
+              <div className="no-reminders">
+                <p>אין תורים שבוטלו</p>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   )

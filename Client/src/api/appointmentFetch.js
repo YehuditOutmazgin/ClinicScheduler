@@ -97,3 +97,13 @@ export const getNextBusinessDayAppointments = async () => {
     throw new Error(error.message)
   }
 }
+
+export const getCancelledAppointments = async (patientId) => {
+  try {
+    const response = await fetch(`${BASE_URL}/patient/${patientId}/canceled`);
+    if (!response.ok) throw new Error("Failed to fetch canceled appointments");
+    return await response.json();
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
