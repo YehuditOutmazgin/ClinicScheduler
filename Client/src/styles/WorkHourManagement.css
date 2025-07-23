@@ -1,0 +1,274 @@
+.work-hour-management {
+  padding: 20px 0;
+}
+
+.work-hour-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.work-hour-title {
+  color: var(--dark-purple);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.add-work-hour-section {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray);
+}
+
+.section-header {
+  color: var(--dark-purple);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.work-hour-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--dark-gray);
+  font-size: 14px;
+}
+
+.form-input,
+.form-select {
+  padding: 12px 16px;
+  border: 2px solid var(--gray);
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  background: var(--white);
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--dark-purple);
+  box-shadow: 0 0 0 3px rgba(163, 143, 204, 0.1);
+}
+
+.time-inputs {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.time-separator {
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.existing-work-hours {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray);
+}
+
+.therapist-schedule {
+  margin-bottom: 32px;
+}
+
+.therapist-name {
+  color: var(--dark-purple);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--pastel-lavender);
+  border-radius: var(--radius-md);
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.day-column {
+  background: var(--light-gray);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  min-height: 200px;
+}
+
+.day-header {
+  font-weight: 700;
+  color: var(--dark-purple);
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+}
+
+.work-hour-item {
+  background: var(--pastel-mint);
+  border: 1px solid var(--dark-mint);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.work-hour-item:hover {
+  background: var(--dark-mint);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.work-hour-time {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.no-work-hours {
+  text-align: center;
+  color: var(--dark-gray);
+  font-style: italic;
+  padding: 20px;
+}
+
+.cancel-day-section {
+  background: var(--pastel-coral);
+  border: 1px solid var(--dark-coral);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-top: 32px;
+}
+
+.cancel-day-header {
+  color: var(--dark-coral);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cancel-day-form {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+}
+
+.cancel-day-form .form-group {
+  flex: 1;
+}
+
+.work-hour-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.modal-title {
+  color: var(--dark-purple);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--dark-gray);
+  padding: 4px;
+}
+
+.close-button:hover {
+  color: var(--dark-coral);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .work-hour-form {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .day-column {
+    min-height: auto;
+  }
+
+  .cancel-day-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-actions,
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .time-inputs {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -150,8 +150,8 @@ namespace DAL.Services
 
         public async Task<Therapist> GetTherapistById(int id)
         {
-            var therapist = await _DB_Manager.Therapists.FindAsync(id);
-
+            var therapist = await _DB_Manager.Therapists.FirstOrDefaultAsync(t=>t.Id==id || t.TherapistId==id);
+            var therapists = await _DB_Manager.Therapists.ToListAsync();
             if (therapist == null)
             {
                 //throw new KeyNotFoundException($"Therapist with ID {id} was not found.");

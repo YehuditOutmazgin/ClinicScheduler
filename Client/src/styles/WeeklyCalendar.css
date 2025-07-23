@@ -1,120 +1,245 @@
 .weekly-calendar {
-  overflow-x: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: var(--pastel-lavender);
+  border-bottom: 1px solid var(--gray);
+}
+
+.calendar-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-purple);
+}
+
+.calendar-navigation {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-button {
+  padding: 8px 16px;
+  background: var(--white);
+  border: 2px solid var(--dark-purple);
+  border-radius: var(--radius-md);
+  color: var(--dark-purple);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+  background: var(--dark-purple);
+  color: var(--white);
 }
 
 .calendar-grid {
   display: grid;
   grid-template-columns: 80px repeat(7, 1fr);
-  min-width: 800px;
-  background: white;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
-  overflow: hidden;
+  gap: 1px;
+  background: var(--gray);
 }
 
 .time-header {
-  background: var(--primary-color);
-  color: white;
+  background: var(--pastel-lavender);
   padding: 16px 8px;
   font-weight: 600;
+  color: var(--dark-purple);
   text-align: center;
-  border-bottom: 1px solid #dee2e6;
 }
 
 .day-header {
-  background: var(--primary-color);
-  color: white;
+  background: var(--pastel-lavender);
   padding: 16px 8px;
   text-align: center;
-  border-bottom: 1px solid #dee2e6;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--dark-purple);
 }
 
 .day-name {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
   margin-bottom: 4px;
 }
 
 .day-date {
-  font-size: 12px;
-  opacity: 0.9;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
 .time-slot-label {
-  background: #f8f9fa;
+  background: var(--light-gray);
   padding: 8px;
-  text-align: center;
   font-size: 12px;
-  font-weight: 500;
-  color: var(--text-light);
-  border-bottom: 1px solid #e9ecef;
-  border-left: 1px solid #e9ecef;
+  font-weight: 600;
+  color: var(--dark-gray);
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 40px;
+  border-right: 1px solid var(--gray);
 }
 
 .calendar-cell {
-  border-bottom: 1px solid #e9ecef;
-  border-left: 1px solid #e9ecef;
+  background: var(--white);
   min-height: 40px;
-  position: relative;
-}
-
-.empty-slot {
-  background: #fafafa;
-  cursor: not-allowed;
-}
-
-.appointment-available {
-  background: linear-gradient(135deg, var(--success-color) 0%, #28a745 100%);
-  color: white;
+  border: 1px solid var(--gray);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  position: relative;
+}
+
+.calendar-cell:hover {
+  background: var(--light-gray);
+}
+
+.empty-slot {
+  background: var(--white);
+}
+
+.empty-slot:hover {
+  background: var(--pastel-mint);
+}
+
+.appointment-available {
+  background: var(--pastel-green);
+  border: 2px solid var(--dark-green);
+  color: var(--dark-green);
 }
 
 .appointment-available:hover {
+  background: var(--dark-green);
+  color: var(--white);
   transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
-  z-index: 10;
+}
+
+.appointment-booked {
+  background: var(--pastel-coral);
+  border: 2px solid var(--dark-coral);
+  color: var(--dark-coral);
+}
+
+.appointment-booked:hover {
+  background: var(--dark-coral);
+  color: var(--white);
+  transform: scale(1.02);
 }
 
 .appointment-content {
+  padding: 4px;
   text-align: center;
-  font-size: 12px;
-  line-height: 1.3;
+  width: 100%;
 }
 
 .appointment-time {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 12px;
   margin-bottom: 2px;
 }
 
 .appointment-duration {
   font-size: 10px;
-  opacity: 0.9;
+  opacity: 0.8;
   margin-bottom: 2px;
 }
 
 .appointment-therapist {
   font-size: 10px;
-  opacity: 0.8;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-/* Responsive design */
+.appointment-patient {
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: var(--light-gray);
+  border-top: 1px solid var(--gray);
+}
+
+.specialty-selector,
+.therapist-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.specialty-selector label,
+.therapist-selector label {
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+
+.specialty-selector select,
+.therapist-selector select {
+  padding: 8px 12px;
+  border: 2px solid var(--gray);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  color: var(--dark-gray);
+  font-size: 14px;
+}
+
+.specialty-selector select:focus,
+.therapist-selector select:focus {
+  outline: none;
+  border-color: var(--dark-purple);
+}
+
+.calendar-legend {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gray);
+}
+
+.legend-available {
+  background: var(--pastel-green);
+}
+
+.legend-booked {
+  background: var(--pastel-coral);
+}
+
+.legend-empty {
+  background: var(--white);
+}
+
 @media (max-width: 768px) {
   .calendar-grid {
-    grid-template-columns: 60px repeat(7, minmax(80px, 1fr));
-    min-width: 600px;
+    grid-template-columns: 60px repeat(7, 1fr);
+    font-size: 12px;
   }
 
   .time-slot-label {
@@ -123,19 +248,19 @@
   }
 
   .day-header {
-    padding: 12px 4px;
+    padding: 8px 4px;
   }
 
   .day-name {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .day-date {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .appointment-content {
-    font-size: 10px;
+    padding: 2px;
   }
 
   .appointment-time {
@@ -143,17 +268,18 @@
   }
 
   .appointment-duration,
-  .appointment-therapist {
+  .appointment-therapist,
+  .appointment-patient {
     font-size: 8px;
   }
-}
 
-@media (max-width: 480px) {
-  .weekly-calendar {
-    margin: 0 -20px;
+  .calendar-controls {
+    flex-direction: column;
+    gap: 16px;
   }
 
-  .calendar-grid {
-    border-radius: 0;
+  .calendar-legend {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

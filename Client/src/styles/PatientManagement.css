@@ -1,0 +1,268 @@
+.patient-management {
+  padding: 20px 0;
+}
+
+.patient-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.patient-title {
+  color: var(--dark-purple);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.patient-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.patient-info-card {
+  background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+  color: var(--dark-purple);
+}
+
+.patient-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.patient-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.patient-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.detail-value {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.appointments-section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  color: var(--dark-purple);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.appointment-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  background: var(--light-gray);
+  border-radius: var(--radius-lg);
+  padding: 4px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--dark-gray);
+}
+
+.tab-button.active {
+  background: var(--white);
+  color: var(--dark-purple);
+  box-shadow: var(--shadow-sm);
+}
+
+.tab-button:hover:not(.active) {
+  background: var(--gray);
+}
+
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.appointment-item {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 1px solid var(--gray);
+  transition: all 0.2s ease;
+}
+
+.appointment-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.appointment-date-time {
+  font-weight: 700;
+  color: var(--dark-purple);
+  font-size: 16px;
+}
+
+.appointment-status {
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-scheduled {
+  background: var(--pastel-green);
+  color: var(--dark-green);
+}
+
+.status-completed {
+  background: var(--pastel-blue);
+  color: var(--dark-blue);
+}
+
+.status-cancelled {
+  background: var(--pastel-coral);
+  color: var(--dark-coral);
+}
+
+.appointment-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.appointment-detail {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.action-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-button {
+  background: var(--pastel-yellow);
+  color: var(--dark-yellow);
+}
+
+.edit-button:hover {
+  background: var(--dark-yellow);
+  color: var(--white);
+}
+
+.delete-button {
+  background: var(--pastel-coral);
+  color: var(--dark-coral);
+}
+
+.delete-button:hover {
+  background: var(--dark-coral);
+  color: var(--white);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: var(--dark-gray);
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-state-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.empty-state-subtext {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .patient-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .patient-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .patient-actions .btn {
+    flex: 1;
+  }
+
+  .patient-details {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-tabs {
+    flex-direction: column;
+  }
+
+  .appointment-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .appointment-details {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-actions {
+    justify-content: flex-start;
+  }
+}

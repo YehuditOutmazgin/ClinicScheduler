@@ -36,14 +36,17 @@ namespace Web_api.Controllers
         [HttpPost("{id}")]
         public IActionResult Login([FromRoute] int id,int pass)
         {
-            Task<BLPatient> client = _blManager._patientsManager.GetPatientById(id);
-            if (client.Result != null)
-                return Ok(new { role = "client", data = client.Result });
+
 
             Task<BLTherapist> therapist = _blManager._therapistManager.GetTherapistById(id);
             if (therapist.Result != null)
                 return Ok(new { role = "therapist", data = therapist.Result });
-            return Ok(new { role = "secretary", data = new { fistName = "secre", lastName = "tary" } });
+
+            Task<BLPatient> client = _blManager._patientsManager.GetPatientById(id);
+            if (client.Result != null)
+                return Ok(new { role = "client", data = client.Result });
+
+            return Ok(new { role = "secretary", data = new { firstName = "secre", lastName = "tary" } });
             //return NotFound("User not found");
         }
     }
