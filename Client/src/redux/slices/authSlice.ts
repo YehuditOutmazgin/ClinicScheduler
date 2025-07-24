@@ -2,26 +2,11 @@ import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/tool
 import { authAPI } from "../../api/authAPI"
 import type { AuthState, LoginResponse } from "../../types"
 
-// Retrieve user and role from local storage
-const getStoredUser = () => {
-  try {
-    const storedUser = localStorage.getItem("user")
-    return storedUser ? JSON.parse(storedUser) : null
-  } catch {
-    return null
-  }
-}
-
-const getStoredRole = (): "client" | "therapist" | "secretary" | null => {
-  return localStorage.getItem("role") as "client" | "therapist" | "secretary" | null
-}
-
 export const login = createAsyncThunk(
   "auth/login",
   async ({ id, password }: { id: number; password: number }, { rejectWithValue }) => {
     try {
-      const response = await authAPI.login(id, password)
-      return response
+      return await authAPI.login(id, password)
     } catch (error: any) {
       return rejectWithValue(error.message)
     }
@@ -29,9 +14,9 @@ export const login = createAsyncThunk(
 )
 
 const initialState: AuthState = {
-  user: getStoredUser(),
-  role: getStoredRole(),
-  isAuthenticated: !!getStoredUser(),
+  user: null,
+  role: null,
+  isAuthenticated: false,
   loading: false,
   error: null,
 }
@@ -45,8 +30,6 @@ const authSlice = createSlice({
       state.role = null
       state.isAuthenticated = false
       state.error = null
-      localStorage.removeItem("user")
-      localStorage.removeItem("role")
     },
     clearError: (state) => {
       state.error = null
@@ -63,8 +46,7 @@ const authSlice = createSlice({
         state.user = action.payload.data
         state.role = action.payload.role
         state.isAuthenticated = true
-        localStorage.setItem("user", JSON.stringify(action.payload.data))
-        localStorage.setItem("role", action.payload.role)
+        state.error = null
       })
       .addCase(login.rejected, (state, action) => {
         state.loading = false

@@ -62,13 +62,13 @@ export interface CanceledAppointment extends AppointmentBase {
 }
 
 export interface LoginResponse {
-  role: "client" | "therapist" | "secretary"
+  role: "patient" | "therapist" | "secretary"
   data: Patient | Therapist | { firstName: string; lastName: string }
 }
 
 export interface AuthState {
   user: Patient | Therapist | { firstName: string; lastName: string } | null
-  role: "client" | "therapist" | "secretary" | null
+  role: "patient" | "therapist" | "secretary" | null
   isAuthenticated: boolean
   loading: boolean
   error: string | null

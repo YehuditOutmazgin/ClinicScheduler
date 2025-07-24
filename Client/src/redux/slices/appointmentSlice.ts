@@ -12,7 +12,9 @@ export const fetchFutureAppointmentsByPatient = createAsyncThunk(
   "appointments/fetchFutureByPatient",
   async (patientId: number, { rejectWithValue }) => {
     try {
-      return await appointmentAPI.getFutureByPatientId(patientId)
+      const res = await appointmentAPI.getFutureByPatientId(patientId)
+      console.log(res)
+      return res
     } catch (error: any) {
       return rejectWithValue(error.message)
     }

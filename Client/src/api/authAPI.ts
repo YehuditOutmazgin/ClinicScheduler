@@ -19,7 +19,7 @@ export const authAPI = {
 
       const data = await response.json()
       return {
-        role: data.role === "client" ? "client" : data.role,
+        role: data.role === "patient" ? "patient" : data.role,
         data: data.data,
       }
     } catch (error: any) {
