@@ -10,10 +10,12 @@ namespace Web_api.Controllers
     {
 
         private readonly BLManager _blManager;
+        private readonly IConfiguration _configuration;
 
-        public LoginController(BLManager blManager)
+        public LoginController(BLManager blManager, IConfiguration configuration)
         {
             _blManager = blManager;
+            _configuration = configuration;
         }
 
         //[HttpPost("{id}")]
@@ -34,21 +36,42 @@ namespace Web_api.Controllers
         //    return NotFound("User not found");
         //}
         [HttpPost("{id}")]
-        public IActionResult Login([FromRoute] int id,int pass)
+        public IActionResult Login([FromRoute] int id, [FromQuery] string pass)
         {
+            // נסיון התחברות כתרפיסט
+            var therapist = _blManager._therapistManager.GetTherapistById(id).Result;
+            if (therapist != null && therapist.PhoneNumber == pass)
+            {
+                return Ok(new { role = "therapist", data = therapist });
+            }
 
+            // נסיון התחברות כמטופל
+            var client = _blManager._patientsManager.GetPatientById(id).Result;
+            if (client != null && client.BirthDate.Year.ToString() == pass)
+            {
+                return Ok(new { role = "patient", data = client });
+            }
 
-            Task<BLTherapist> therapist = _blManager._therapistManager.GetTherapistById(id);
-            if (therapist.Result != null)
-                return Ok(new { role = "therapist", data = therapist.Result });
+            // נסיון התחברות כמזכירה מהקונפיג
+            string secId = _configuration["Secretary:IdNumber"];
+            string secPass = _configuration["Secretary:Password"];
 
-            Task<BLPatient> client = _blManager._patientsManager.GetPatientById(id);
-            if (client.Result != null)
-                return Ok(new { role = "client", data = client.Result });
+            if (secId == id.ToString() && secPass == pass.ToString())
+            {
+                return Ok(new
+                {
+                    role = "secretary",
+                    data = new
+                    {
+                        firstName = _configuration["Secretary:FirstName"],
+                        lastName = _configuration["Secretary:LastName"]
+                    }
+                });
+            }
 
-            return Ok(new { role = "secretary", data = new { firstName = "secre", lastName = "tary" } });
-            //return NotFound("User not found");
+            return NotFound("User not found");
         }
+
     }
 }
 
