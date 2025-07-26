@@ -1,0 +1,88 @@
+.appointment-booking {
+  padding: 20px;
+}
+
+.booking-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.booking-form {
+  margin-bottom: 24px;
+}
+
+.form-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.appointments-section {
+  margin-top: 24px;
+}
+
+.appointments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.appointment-slot {
+  padding: 12px;
+  border: 2px solid;
+  border-radius: var(--radius-md);
+  background: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.appointment-slot.available {
+  border-color: var(--dark-green);
+  color: var(--dark-green);
+}
+
+.appointment-slot.available:hover {
+  background: var(--pastel-green);
+}
+
+.appointment-slot.selected {
+  background: var(--dark-purple);
+  border-color: var(--dark-purple);
+  color: var(--white);
+}
+
+.slot-time {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.slot-duration {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.booking-actions {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.booking-btn {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    grid-template-columns: 1fr;
+  }
+
+  .appointments-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}

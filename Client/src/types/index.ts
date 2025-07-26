@@ -48,7 +48,7 @@ export interface Appointment extends AppointmentBase {
   patient?: Patient
 }
 
-export interface AvailableAppointment extends AppointmentBase { }
+export interface AvailableAppointment extends AppointmentBase {}
 
 export interface PastAppointment extends AppointmentBase {
   patientId: number
@@ -79,13 +79,6 @@ export interface AppointmentState {
   availableAppointments: AvailableAppointment[]
   pastAppointments: PastAppointment[]
   canceledAppointments: CanceledAppointment[]
-  loading: boolean
-  error: string | null
-}
-
-export interface UserState {
-  patients: Patient[]
-  therapists: Therapist[]
   loading: boolean
   error: string | null
 }
@@ -130,12 +123,3 @@ export const getUserName = (user: Patient | Therapist | { firstName: string; las
   }
   return ""
 }
-
-
-// export interface Secretary {
-//   id: string,
-//   name: string,
-//   email: string,
-//   phone: string,
-//   birthYear: 1988,
-// }

@@ -2,16 +2,6 @@ import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/tool
 import { therapistAPI } from "../../api/therapistAPI"
 import type { WorkHourState, WorkHour } from "../../types"
 
-export const fetchWorkHours = createAsyncThunk("workHours/fetch", async (therapistId: number, { rejectWithValue }) => {
-  try {
-    // return await therapistAPI.getWorkHours(therapistId)
-    const h :WorkHour []=[]
-    return  h;
-  } catch (error: any) {
-    return rejectWithValue(error.message)
-  }
-})
-
 export const addWorkHours = createAsyncThunk(
   "workHours/add",
   async ({ therapistId, workHour }: { therapistId: number; workHour: WorkHour }, { rejectWithValue }) => {
@@ -23,23 +13,12 @@ export const addWorkHours = createAsyncThunk(
   },
 )
 
-// export const updateWorkHours = createAsyncThunk(
-//   "workHours/update",
-//   async ({ therapistId, workHour }: { therapistId: number; workHour: WorkHour }, { rejectWithValue }) => {
-//     try {
-//       return await therapistAPI.updateWorkHours(therapistId, workHour)
-//     } catch (error: any) {
-//       return rejectWithValue(error.message)
-//     }
-//   },
-// )
-
 export const removeWorkHours = createAsyncThunk(
   "workHours/remove",
-  async ({ therapistId, workHourId }: { therapistId: number; workHourId: WorkHour }, { rejectWithValue }) => {
+  async ({ therapistId, workHour }: { therapistId: number; workHour: WorkHour }, { rejectWithValue }) => {
     try {
-      await therapistAPI.removeWorkHours(therapistId, workHourId)
-      return workHourId
+      await therapistAPI.removeWorkHours(therapistId, workHour)
+      return workHour
     } catch (error: any) {
       return rejectWithValue(error.message)
     }
@@ -85,18 +64,6 @@ const workHourSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchWorkHours.pending, (state) => {
-        state.loading = true
-        state.error = null
-      })
-      .addCase(fetchWorkHours.fulfilled, (state, action: PayloadAction<WorkHour[]>) => {
-        state.loading = false
-        state.workHours = action.payload
-      })
-      .addCase(fetchWorkHours.rejected, (state, action) => {
-        state.loading = false
-        state.error = action.payload as string
-      })
       .addCase(addWorkHours.pending, (state) => {
         state.loading = true
         state.error = null
@@ -109,15 +76,11 @@ const workHourSlice = createSlice({
         state.loading = false
         state.error = action.payload as string
       })
-      // .addCase(updateWorkHours.fulfilled, (state, action: PayloadAction<WorkHour>) => {
-      //   const index = state.workHours.findIndex((wh) => wh.id === action.payload.id)
-      //   if (index !== -1) {
-      //     state.workHours[index] = action.payload
-      //   }
-      // })
-      // .addCase(removeWorkHours.fulfilled, (state, action: PayloadAction<number>) => {
-      //   // state.workHours = state.workHours.filter((wh) => wh.id !== action.payload)
-      // })
+      .addCase(removeWorkHours.fulfilled, (state, action: PayloadAction<WorkHour>) => {
+        state.workHours = state.workHours.filter(
+          (wh) => !(wh.therapistId === action.payload.therapistId && wh.dayOfWeek === action.payload.dayOfWeek),
+        )
+      })
       .addCase(updateSchedule.fulfilled, (state, action: PayloadAction<WorkHour[]>) => {
         state.workHours = action.payload
       })

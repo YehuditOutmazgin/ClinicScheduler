@@ -1,0 +1,18 @@
+.patients-table,
+.therapists-table {
+  padding: 20px;
+}
+
+.table-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .patients-table,
+  .therapists-table {
+    padding: 10px;
+  }
+}

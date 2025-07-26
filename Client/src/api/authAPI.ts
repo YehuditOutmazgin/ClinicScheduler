@@ -4,10 +4,7 @@ import type { LoginResponse } from "../types"
 export const authAPI = {
   login: async (id: number, password: number): Promise<LoginResponse> => {
     try {
-      const url=`${API_BASE_URL}/Login/${id}?pass=${password}`
-            alert("apifetch: "+ url)
-
-      const response = await fetch(url, {
+      const response = await fetch(`${API_BASE_URL}/Login/${id}?pass=${password}`, {
         method: "POST",
         ...apiConfig,
         body: "",

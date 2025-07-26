@@ -1,0 +1,116 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-title {
+  color: var(--dark-purple);
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.dashboard-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.appointment-item {
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid;
+}
+
+.appointment-item.upcoming {
+  background: var(--pastel-mint);
+  border-color: var(--dark-mint);
+}
+
+.appointment-item.today {
+  background: var(--pastel-blue);
+  border-color: var(--dark-blue);
+}
+
+.appointment-time {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.appointment-item.upcoming .appointment-time {
+  color: var(--dark-mint);
+}
+
+.appointment-item.today .appointment-time {
+  color: var(--dark-blue);
+}
+
+.appointment-therapist,
+.appointment-duration {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.daily-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-item {
+  text-align: center;
+  padding: 12px;
+  background: var(--pastel-green);
+  border-radius: var(--radius-md);
+}
+
+.overview-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-green);
+}
+
+.overview-label {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+  }
+}

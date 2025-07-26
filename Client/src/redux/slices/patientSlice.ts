@@ -24,7 +24,7 @@ export const fetchPatientsThunk = createAsyncThunk("patients/getAll", async (_, 
 })
 
 export const createPatientThunk = createAsyncThunk(
-  "patients/create",
+  "users/createPatient",
   async (patient: Omit<Patient, "patientId">, { rejectWithValue }) => {
     try {
       return await patientAPI.create(patient)
@@ -35,7 +35,7 @@ export const createPatientThunk = createAsyncThunk(
 )
 
 export const updatePatientThunk = createAsyncThunk(
-  "patients/update",
+  "users/updatePatient",
   async ({ id, patient }: { id: number; patient: Patient }, { rejectWithValue }) => {
     try {
       return await patientAPI.update(id, patient)
@@ -45,7 +45,7 @@ export const updatePatientThunk = createAsyncThunk(
   },
 )
 
-export const deletePatientThunk = createAsyncThunk("patients/delete", async (id: number, { rejectWithValue }) => {
+export const deletePatientThunk = createAsyncThunk("users/deletePatient", async (id: number, { rejectWithValue }) => {
   try {
     await patientAPI.delete(id)
     return id

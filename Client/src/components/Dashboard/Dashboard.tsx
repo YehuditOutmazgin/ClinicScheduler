@@ -1,4 +1,5 @@
 "use client"
+
 import type React from "react"
 import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
@@ -6,16 +7,19 @@ import type { RootState, AppDispatch } from "../../redux/store"
 import PatientDashboard from "./PatientDashboard"
 import TherapistDashboard from "./TherapistDashboard"
 import SecretaryDashboard from "./SecretaryDashboard"
-import "../../styles/globals.css"
 import { fetchPatientsThunk } from "../../redux/slices/patientSlice"
-import { fetchAllTherapistsThunk } from "../../redux/slices/therapisrSlice"
+import { fetchAllTherapistsThunk } from "../../redux/slices/therapistSlice"
+import "../../styles/Dashboard.css"
+
 const Dashboard: React.FC = () => {
   const { role } = useSelector((state: RootState) => state.auth)
   const dispatch = useDispatch<AppDispatch>()
+
   useEffect(() => {
     dispatch(fetchPatientsThunk())
     dispatch(fetchAllTherapistsThunk())
   }, [dispatch])
+
   const renderDashboard = () => {
     switch (role) {
       case "patient":
@@ -28,6 +32,8 @@ const Dashboard: React.FC = () => {
         return <div>Invalid role</div>
     }
   }
-  return <div className="container">{renderDashboard()}</div>
+
+  return <div className="dashboard-container">{renderDashboard()}</div>
 }
+
 export default Dashboard

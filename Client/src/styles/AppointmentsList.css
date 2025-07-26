@@ -1,0 +1,44 @@
+.appointments-list {
+  padding: 20px;
+}
+
+.appointments-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 12px;
+  text-align: right;
+  border-bottom: 1px solid var(--pastel-gray);
+}
+
+.appointments-table th {
+  background-color: var(--pastel-purple);
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+
+.appointment-date {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .appointments-table {
+    font-size: 12px;
+  }
+
+  .appointments-table th,
+  .appointments-table td {
+    padding: 8px;
+  }
+}

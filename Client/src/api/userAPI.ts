@@ -1,4 +1,4 @@
-// import type { Patient, Therapist } from "../types"
+// import type { Patient, Therapist, Secretary } from "../types"
 
 // // Mock data
 // const mockPatients: Patient[] = [
@@ -45,16 +45,16 @@
 //   },
 // ]
 
-// // const mockSecretaries: Secretary[] = [
-// //   {
-// //     id: "secretary1",
-// //     name: "Mary Johnson",
-// //     email: "mary@clinic.com",
-// //     phone: "123-456-7894",
-// //     birthYear: 1988,
-// //     department: "Reception",
-// //   },
-// // ]
+// const mockSecretaries: Secretary[] = [
+//   {
+//     id: "secretary1",
+//     name: "Mary Johnson",
+//     email: "mary@clinic.com",
+//     phone: "123-456-7894",
+//     birthYear: 1988,
+//     department: "Reception",
+//   },
+// ]
 
 // export const userAPI = {
 //   getAll: async () => {
@@ -64,7 +64,7 @@
 //           resolve({
 //             patients: mockPatients,
 //             therapists: mockTherapists,
-//             // secretaries: mockSecretaries,
+//             secretaries: mockSecretaries,
 //           }),
 //         500,
 //       )

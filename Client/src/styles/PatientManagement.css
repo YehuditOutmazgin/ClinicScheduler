@@ -1,18 +1,12 @@
 .patient-management {
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .patient-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
-}
-
-.patient-title {
-  color: var(--dark-purple);
-  font-size: 32px;
-  font-weight: 700;
+  margin-bottom: 24px;
 }
 
 .patient-actions {
@@ -21,122 +15,113 @@
 }
 
 .patient-info-card {
-  background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
-  border-radius: var(--radius-lg);
+  background: var(--white);
+  border-radius: var(--radius-md);
   padding: 24px;
+  box-shadow: var(--shadow-md);
   margin-bottom: 24px;
-  color: var(--dark-purple);
+}
+
+.patient-info {
+  text-align: center;
 }
 
 .patient-name {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 8px;
+  color: var(--dark-purple);
+  margin-bottom: 20px;
 }
 
 .patient-details {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
-  margin-top: 16px;
 }
 
-.patient-detail {
+.detail-item {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--pastel-gray);
 }
 
 .detail-label {
-  font-size: 14px;
   font-weight: 600;
-  opacity: 0.8;
+  color: var(--dark-gray);
 }
 
 .detail-value {
-  font-size: 16px;
-  font-weight: 700;
+  color: var(--dark-purple);
+  font-weight: 500;
 }
 
 .appointments-section {
-  margin-bottom: 32px;
-}
-
-.section-title {
-  color: var(--dark-purple);
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
 }
 
 .appointment-tabs {
   display: flex;
   gap: 4px;
-  margin-bottom: 20px;
-  background: var(--light-gray);
-  border-radius: var(--radius-lg);
-  padding: 4px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--pastel-gray);
 }
 
 .tab-button {
-  flex: 1;
-  padding: 12px 16px;
+  padding: 12px 24px;
   border: none;
-  background: transparent;
-  border-radius: var(--radius-md);
+  background: none;
+  color: var(--dark-gray);
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
-  color: var(--dark-gray);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .tab-button.active {
-  background: var(--white);
   color: var(--dark-purple);
-  box-shadow: var(--shadow-sm);
+  border-bottom-color: var(--dark-purple);
 }
 
-.tab-button:hover:not(.active) {
-  background: var(--gray);
+.tab-button:hover {
+  color: var(--dark-purple);
 }
 
 .appointment-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
 .appointment-item {
-  background: var(--white);
+  border: 1px solid var(--pastel-gray);
   border-radius: var(--radius-md);
   padding: 16px;
-  border: 1px solid var(--gray);
-  transition: all 0.2s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .appointment-item:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
 
 .appointment-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .appointment-date-time {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--dark-purple);
   font-size: 16px;
 }
 
 .appointment-status {
-  padding: 4px 8px;
+  padding: 4px 12px;
   border-radius: var(--radius-sm);
   font-size: 12px;
   font-weight: 600;
@@ -159,14 +144,14 @@
 
 .appointment-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 12px;
   margin-bottom: 12px;
 }
 
 .appointment-detail {
-  font-size: 14px;
   color: var(--dark-gray);
+  font-size: 14px;
 }
 
 .appointment-actions {
@@ -182,16 +167,16 @@
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .edit-button {
-  background: var(--pastel-yellow);
-  color: var(--dark-yellow);
+  background: var(--pastel-blue);
+  color: var(--dark-blue);
 }
 
 .edit-button:hover {
-  background: var(--dark-yellow);
+  background: var(--dark-blue);
   color: var(--white);
 }
 
@@ -205,47 +190,15 @@
   color: var(--white);
 }
 
-.empty-state {
-  text-align: center;
-  padding: 40px;
-  color: var(--dark-gray);
-}
-
-.empty-state-icon {
-  font-size: 48px;
-  margin-bottom: 16px;
-  opacity: 0.5;
-}
-
-.empty-state-text {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.empty-state-subtext {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
 @media (max-width: 768px) {
   .patient-header {
     flex-direction: column;
     gap: 16px;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .patient-actions {
-    width: 100%;
-    justify-content: stretch;
-  }
-
-  .patient-actions .btn {
-    flex: 1;
-  }
-
-  .patient-details {
-    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .appointment-tabs {
@@ -263,6 +216,6 @@
   }
 
   .appointment-actions {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
