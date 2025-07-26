@@ -16,8 +16,8 @@ namespace BL.Services
     public class AppointmentManager : IAppointmentsManager
     {
         #region Fields
-        private IPatientManager _patientManager { get; set; }
-        private ITherapistManager _therapistManager { get; set; }
+        IPatientsManager _patientManager;
+        ITherapistManager _therapistManager;
         IAppointmentsDal _appointmentsDal;
         IAvailableAppointmentsDal _availableAppointmentsDal;
         IPastAppointmentsDal _PastAppointmentsDal;
@@ -27,7 +27,7 @@ namespace BL.Services
         IHolidayService _holidayService;
         ITherapistsDal _therapistsDal;
         #endregion
-        public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPastAppointmentsDal PastAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal, IHolidayService holidayService, IWorkHoursDal workHoursDal, ITherapistsDal therapistsDal)
+        public AppointmentManager(IMapper mapper, IAppointmentsDal appointmentsDal, IAvailableAppointmentsDal availableAppointmentsDal, IPastAppointmentsDal PastAppointmentsDal, ICanceledAppointmentsDal canceledAppointmentsDal, IHolidayService holidayService, IWorkHoursDal workHoursDal, ITherapistsDal therapistsDal, IPatientsManager patientManager, ITherapistManager therapistManager)
         {
             _appointmentsDal = appointmentsDal;
             _availableAppointmentsDal = availableAppointmentsDal;
@@ -37,6 +37,8 @@ namespace BL.Services
             _holidayService = holidayService;
             _workHoursDal = workHoursDal;
             _therapistsDal = therapistsDal;
+            _patientManager = patientManager;
+            _therapistManager = therapistManager;
         }
 
         // BL layer
@@ -366,23 +368,23 @@ namespace BL.Services
             var patient = await _patientManager.GetPatientById(patientId);
             if (patient == null)
                 throw new InvalidDataException("invalid patient id");
-            var appoint = await _appointmentsDal.GetAppointmentById(appointmentId);
+            var appoint = await _appointmentsDal.DeleteAppointment(appointmentId);
             if (appoint == null || appoint.PatientId != patientId)
                 throw new InvalidDataException("invalid appointment");
             if (patientId != appoint.PatientId)
                 throw new InvalidDataException("the patient dont has appointment with this id");
 
-            AvailableAppointment app = new()
+            var app = new AvailableAppointment
             {
-                AppointmentId = appoint.AppointmentId,
+                AppointmentId = 0,
                 AppointmentDate = appoint.AppointmentDate,
                 TherapistId = appoint.TherapistId,
                 DurationMinutes = appoint.DurationMinutes,
-                Specialization = _mapper.Map<DAL.Models.Specialization>(appoint.Therapist.Specialization),
+                Specialization = appoint.Specialization,
                 TherapistName = appoint.TherapistName
             };
             await _availableAppointmentsDal.AddAppointment(app);
-            return _mapper.Map<BLAppointment>(await _appointmentsDal.DeleteAppointment(appointmentId));
+            return _mapper.Map<BLAppointment>(appoint);
         }
 
         public async Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null)

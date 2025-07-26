@@ -31,8 +31,9 @@ namespace BL.Services
 
             if (p == null)
                 throw new NullReferenceException(nameof(p));
-            else p.PatientId = 0;
-             await   _patientsDal.AddPatient(p);
+
+            await _patientsDal.AddPatient(p);
+
 
         }
 

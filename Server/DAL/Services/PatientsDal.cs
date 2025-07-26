@@ -79,40 +79,64 @@ namespace DAL.Services
 
             if (patient == null)
             {
-                throw new Exception("Patient not found.");
+                return null;
             }
 
             var appointments = await _dB_Manager.Appointments.Include(a => a.Therapist)
                 .Where(pa => pa.PatientId == id)
                 .ToListAsync();
 
+            //var appointmentIds = appointments.Select(a => a.AppointmentId).ToList();
+
+            //var canceledAppointments = await _dB_Manager.CanceledAppointments
+            //    .Where(c => appointmentIds.Contains(c.AppointmentId))
+            //    .ToListAsync();
+
             if (appointments.Any())
             {
+                // Pseudocode:
+                // For each appointment being deleted, create an AvailableAppointment with all relevant fields:
+                // - AppointmentDate, TherapistId, Specialization, DurationMinutes, TherapistName
+                // - Set AppointmentId to 0 (or let DB auto-generate if needed)
+                // - Copy DurationMinutes from Appointment
+                // - Copy TherapistName from Appointment or Therapist
+
                 var availableAppointments = appointments.Select(a => new AvailableAppointment
                 {
-                    AppointmentId = 0,
+                    AppointmentId = 0, // Let DB generate if needed
                     AppointmentDate = a.AppointmentDate,
                     TherapistId = a.TherapistId,
-                    Specialization = a.Therapist.Specialization, 
+                    Specialization = a.Therapist.Specialization,
+                    DurationMinutes = a.DurationMinutes,
+                    TherapistName = a.TherapistName ?? (a.Therapist != null ? $"{a.Therapist.FirstName} {a.Therapist.LastName}" : string.Empty)
                 });
-                var appointmentIds = appointments.Select(a => a.AppointmentId).ToList();
 
-                var canceledAppointments = _dB_Manager.CanceledAppointments
-                    .Where(c => appointmentIds.Contains(c.AppointmentId))
-                    .ToList();
-                var PastAppointments = _dB_Manager.PastAppointments
-                .Where(p => p.PatientId == id)
-                .ToList();
-
-                _dB_Manager.PastAppointments.RemoveRange(PastAppointments);
-
-                _dB_Manager.CanceledAppointments.RemoveRange(canceledAppointments);
+                //_dB_Manager.CanceledAppointments.RemoveRange(canceledAppointments);
 
                 // שלב 2: מחיקת הפגישות עצמן
                 _dB_Manager.Appointments.RemoveRange(appointments);
 
                 _dB_Manager.AvailableAppointments.AddRange(availableAppointments);
+                await _dB_Manager.SaveChangesAsync();
+
             }
+
+            var PastAppointments = await _dB_Manager.PastAppointments
+                .Where(p => p.PatientId == id)
+                .ToListAsync();
+
+            _dB_Manager.PastAppointments.RemoveRange(PastAppointments);
+            await _dB_Manager.SaveChangesAsync();
+
+
+            var canceledAppointments = await _dB_Manager.CanceledAppointments
+                .Where(p => p.PatientId == id)
+                .ToListAsync();
+
+            _dB_Manager.CanceledAppointments.RemoveRange(canceledAppointments);
+            await _dB_Manager.SaveChangesAsync();
+
+
             _dB_Manager.Patients.Remove(patient);
 
             await _dB_Manager.SaveChangesAsync();
