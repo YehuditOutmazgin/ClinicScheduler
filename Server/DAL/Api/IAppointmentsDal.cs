@@ -14,7 +14,7 @@ namespace DAL.Api
         Task AddAppointment(Appointment appointment);
         Task<List<Appointment>> GetAppointmentsByPatientId(int patientId);
         Task<Appointment> GetAppointmentById(int appointmentId);
-        Task<List<Appointment>> GetAppointmentsByPatientIdAndDate(int patientId, DateOnly date);
+        //Task<List<Appointment>> GetAppointmentsByPatientIdAndDate(int patientId, DateOnly date);
         Task<List<Appointment>> GetAppointmentsByDate(DateOnly date=default);
         Task<List<Appointment>> GetAllAppointments();
         Task<List<Appointment>> GetAllAppointmentsCanceled();
@@ -29,9 +29,9 @@ namespace DAL.Api
         Task<Appointment> DeleteAppointment(int id);
         //delete apointments of therapist that cant work on a specific day
         Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDay(int therapistId, DateOnly date);
-        Task<List<Appointment>> DeleteAppointmentsByDate(DateOnly date);
+        //Task<List<Appointment>> DeleteAppointmentsByDate(DateOnly date);
         //delete apointments of therapist that have change working hours 
-        Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDayGoingEarlier(int therapistId, DateOnly date, TimeOnly starthour, TimeOnly endhour);
+        //Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDayGoingEarlier(int therapistId, DateOnly date, TimeOnly starthour, TimeOnly endhour);
 
         /// <summary>
         /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515

@@ -30,12 +30,12 @@ namespace DAL.Services
 
         }
 
-        public async void DeleteAllPastAppointments(List<PastAppointment> appointments)
-        {
-            _DB_Manager.PastAppointments.RemoveRange(appointments);
-            await _DB_Manager.SaveChangesAsync();
+        //public async void DeleteAllPastAppointments(List<PastAppointment> appointments)
+        //{
+        //    _DB_Manager.PastAppointments.RemoveRange(appointments);
+        //    await _DB_Manager.SaveChangesAsync();
 
-        }
+        //}
 
         public async Task<bool> DeleteAllPastAppointmentsOlderThan(DateOnly date)
         {
@@ -59,16 +59,16 @@ namespace DAL.Services
             return await _DB_Manager.PastAppointments.Where(c => c.PatientId == patientId).ToListAsync();
         }
 
-        public async Task<List<PastAppointment>> GetAllPastAppointmentsByPatientIdAndSpecialization(int patientId, Specialization specialization)
-        {
-            return await _DB_Manager.PastAppointments.Where(c => c.PatientId == patientId && c.Therapist.Specialization == specialization).ToListAsync();
+        //public async Task<List<PastAppointment>> GetAllPastAppointmentsByPatientIdAndSpecialization(int patientId, Specialization specialization)
+        //{
+        //    return await _DB_Manager.PastAppointments.Where(c => c.PatientId == patientId && c.Therapist.Specialization == specialization).ToListAsync();
 
-        }
+        //}
 
-        public async Task<List<PastAppointment>> GetAllPastAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
-        {
-            return await _DB_Manager.PastAppointments.Where(c => c.PatientId == patientId && c.TherapistId == therapistId).ToListAsync();
-        }
+        //public async Task<List<PastAppointment>> GetAllPastAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
+        //{
+        //    return await _DB_Manager.PastAppointments.Where(c => c.PatientId == patientId && c.TherapistId == therapistId).ToListAsync();
+        //}
 
 
         // ======= THERAPIST =======
@@ -79,33 +79,34 @@ namespace DAL.Services
         }
 
 
-        public async Task<List<PastAppointment>> GetAllPastAppointmentsByTherapistIdAndMonthDate(int therapistId, DateOnly month)
-        {
-            return await _DB_Manager.PastAppointments.Where(c => c.TherapistId == therapistId && c.AppointmentDate.Year == month.Year && c.AppointmentDate.Month == month.Month).ToListAsync();
+        //public async Task<List<PastAppointment>> GetAllPastAppointmentsByTherapistIdAndMonthDate(int therapistId, DateOnly month)
+        //{
+        //    return await _DB_Manager.PastAppointments.Where(c => c.TherapistId == therapistId && c.AppointmentDate.Year == month.Year && c.AppointmentDate.Month == month.Month).ToListAsync();
 
-        }
+        //}
 
         public async Task<List<PastAppointment>> GetAllPastAppointmentsByTherapistIdAndRangeDate(int therapistId, DateOnly startDate, DateOnly endDate)
         {
             return await _DB_Manager.PastAppointments.Where(c => c.TherapistId == therapistId &&
-      c.AppointmentDate.CompareTo(startDate.ToDateTime(TimeOnly.MinValue)) >= 0 &&
-      c.AppointmentDate.CompareTo(endDate.ToDateTime(TimeOnly.MaxValue)) < 0)
-.ToListAsync();
+                  c.AppointmentDate.CompareTo(startDate.ToDateTime(TimeOnly.MinValue)) >= 0 &&
+                  c.AppointmentDate.CompareTo(endDate.ToDateTime(TimeOnly.MaxValue)) < 0)
+                  .ToListAsync();
 
         }
 
-        public async Task<List<PastAppointment>> GetAllPastAppointmentsBySpecialization(Specialization specialization)
-        {
-            return await _DB_Manager.PastAppointments.Where(c => c.Specialization == specialization).ToListAsync();
 
-        }
+        //public async Task<List<PastAppointment>> GetAllPastAppointmentsBySpecialization(Specialization specialization)
+        //{
+        //    return await _DB_Manager.PastAppointments.Where(c => c.Specialization == specialization).ToListAsync();
+
+        //}
         // ======= GENERAL FILTERS =======
 
-        public async Task<List<PastAppointment>> GetAllPastAppointmentsByMonthDate(DateOnly month)
-        {
-            return await _DB_Manager.PastAppointments.Where(c => c.AppointmentDate.Year == month.Year && c.AppointmentDate.Month == c.AppointmentDate.Month).ToListAsync();
+        //public async Task<List<PastAppointment>> GetAllPastAppointmentsByMonthDate(DateOnly month)
+        //{
+        //    return await _DB_Manager.PastAppointments.Where(c => c.AppointmentDate.Year == month.Year && c.AppointmentDate.Month == c.AppointmentDate.Month).ToListAsync();
 
-        }
+        //}
 
 
 

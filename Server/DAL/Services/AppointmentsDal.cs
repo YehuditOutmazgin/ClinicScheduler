@@ -19,9 +19,9 @@ namespace DAL.Services
 
         public async Task AddAppointment(Appointment appointment)
         {
-            if (appointment == null)
-                //!!! check if the appointment have all the fields.
-                throw new DALValidationException("Appointment cannot be null.");
+            //if (appointment == null)
+            //    //!!! check if the appointment have all the fields.
+            //    throw new DALValidationException("Appointment cannot be null.");
 
             try
             {
@@ -61,10 +61,10 @@ namespace DAL.Services
             if (appointments == null)
                 throw new DALValidationException("Appointments list cannot be null.");
             bool flag = true;
-                appointments.ForEach(a => { 
-                    if (!checkAppointmentNotNull(a)) 
-                        flag = false;
-                });
+            appointments.ForEach(a => { 
+                if (!checkAppointmentNotNull(a)) 
+                    flag = false;
+            });
             if(!flag)
                 throw new DALValidationException();
             try
@@ -96,23 +96,23 @@ namespace DAL.Services
             }
         }
 
-        public async Task<List<Appointment>> GetAppointmentsByPatientIdAndDate(int patientId, DateOnly date)
-        {
-            try
-            {
-                Patient patientExists = await _DB_Manager.Patients.FindAsync(patientId);
-                if (patientExists==null)
-                    throw new DALNotFoundException("Patient details were wrong.");
+        //public async Task<List<Appointment>> GetAppointmentsByPatientIdAndDate(int patientId, DateOnly date)
+        //{
+        //    try
+        //    {
+        //        Patient patientExists = await _DB_Manager.Patients.FindAsync(patientId);
+        //        if (patientExists==null)
+        //            throw new DALNotFoundException("Patient details were wrong.");
 
-                return  patientExists.Appointments
-                    .Where(a => a.PatientId == patientId && IsDateInRange(a.AppointmentDate,date))
-                    .ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new DALDataAccessException($"Error retrieving appointments for patient ID {patientId} on date {date}.", ex);
-            }
-        }
+        //        return  patientExists.Appointments
+        //            .Where(a => a.PatientId == patientId && IsDateInRange(a.AppointmentDate,date))
+        //            .ToList();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new DALDataAccessException($"Error retrieving appointments for patient ID {patientId} on date {date}.", ex);
+        //    }
+        //}
         private bool IsDateInRange(DateTime date, DateOnly startDate)
         {
             DateTime startDateTime = startDate.ToDateTime(TimeOnly.MinValue);
@@ -134,9 +134,6 @@ namespace DAL.Services
                     throw new DALNotFoundException("Therapist details were wrong.");
 
                 var appointments = patientExists.Appointments.Where(a => a.TherapistId == therapistId && IsDateInRange(a.AppointmentDate, date)).ToList();
-
-                if (appointments == null)
-                    throw new DALNotFoundException("Appointment not found.");
 
                 return appointments;
             }
@@ -252,42 +249,42 @@ namespace DAL.Services
                 throw new DALDataAccessException("Error retrieving all canceled appointments.", ex);
             }
         }
-        public async Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDayGoingEarlier(int therapistId, DateOnly date, TimeOnly starthour, TimeOnly endhour)
-        {
-            try
-            {
-                var therapistExists = await _DB_Manager.Therapists.AnyAsync(c => c.TherapistId == therapistId);
-                if (!therapistExists)
-                    throw new DALNotFoundException("Therapist details were wrong.");
+        //public async Task<List<Appointment>> DeleteAppointmentsByTherapistIdAndDayGoingEarlier(int therapistId, DateOnly date, TimeOnly starthour, TimeOnly endhour)
+        //{
+        //    try
+        //    {
+        //        var therapistExists = await _DB_Manager.Therapists.AnyAsync(c => c.TherapistId == therapistId);
+        //        if (!therapistExists)
+        //            throw new DALNotFoundException("Therapist details were wrong.");
 
-                var dateExists = await _DB_Manager.Appointments.AnyAsync(c => c.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date);
-                if (!dateExists)
-                    throw new DALValidationException($"Therapist doesn't work on this date: {date} or date details were wrong. Try again!");
+        //        var dateExists = await _DB_Manager.Appointments.AnyAsync(c => c.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date);
+        //        if (!dateExists)
+        //            throw new DALValidationException($"Therapist doesn't work on this date: {date} or date details were wrong. Try again!");
 
-                var deleteAppointments = await _DB_Manager.Appointments
-                    .Where(c => c.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date &&
-                                c.TherapistId == therapistId &&
-                                (c.AppointmentDate.TimeOfDay >= starthour.ToTimeSpan() && c.AppointmentDate.TimeOfDay <= endhour.ToTimeSpan()))
-                    .ToListAsync();
+        //        var deleteAppointments = await _DB_Manager.Appointments
+        //            .Where(c => c.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date &&
+        //                        c.TherapistId == therapistId &&
+        //                        (c.AppointmentDate.TimeOfDay >= starthour.ToTimeSpan() && c.AppointmentDate.TimeOfDay <= endhour.ToTimeSpan()))
+        //            .ToListAsync();
 
-                _DB_Manager.Appointments.RemoveRange(deleteAppointments);
-                await _DB_Manager.SaveChangesAsync();
+        //        _DB_Manager.Appointments.RemoveRange(deleteAppointments);
+        //        await _DB_Manager.SaveChangesAsync();
 
-                return deleteAppointments;
-            }
-            catch (DALNotFoundException)
-            {
-                throw;
-            }
-            catch (DALValidationException)
-            {
-                throw;
-            }
-            catch (Exception ex)
-            {
-                throw new DALDataAccessException($"Error deleting appointments by therapist {therapistId} on date {date} in time range.", ex);
-            }
-        }
+        //        return deleteAppointments;
+        //    }
+        //    catch (DALNotFoundException)
+        //    {
+        //        throw;
+        //    }
+        //    catch (DALValidationException)
+        //    {
+        //        throw;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new DALDataAccessException($"Error deleting appointments by therapist {therapistId} on date {date} in time range.", ex);
+        //    }
+        //}
 
 
         public async Task<List<Appointment>> GetAppointmentsByDate(DateOnly date = default)
@@ -357,9 +354,6 @@ namespace DAL.Services
                 var appointments = await _DB_Manager.Appointments
                     .Where(c => c.PatientId == patientId && c.TherapistId == therapistId)
                     .ToListAsync();
-
-                if (appointments == null || appointments.Count == 0)
-                    throw new DALNotFoundException("Appointments not found.");
 
                 return appointments;
             }

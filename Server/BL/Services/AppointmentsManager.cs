@@ -82,18 +82,18 @@ namespace BL.Services
         {
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAppointmentsTherapistAndDate(therapistId, date));
         }
-        public async Task<List<BLAppointment>> GetAppointmentsByPatientIdAndThetherapistIdAndDate(int therapistId, DateOnly date, int patientId)
-        {
-            if (therapistId < 0 || patientId < 0)
-                throw new ArgumentNullException("there were error in the inserts id's");
-            if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
-                throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
-            var apps = await _appointmentsDal.GetAppointmentsByPatientIdAndTherapistIdAndDate(therapistId, date, patientId);
-            if (apps == null)
-                throw new NullReferenceException(nameof(apps));
+        //public async Task<List<BLAppointment>> GetAppointmentsByPatientIdAndThetherapistIdAndDate(int therapistId, DateOnly date, int patientId)
+        //{
+        //    if (therapistId < 0 || patientId < 0)
+        //        throw new ArgumentNullException("there were error in the inserts id's");
+        //    if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
+        //        throw new ArgumentException("Date cannot be more than 6 months ahead", nameof(date));
+        //    var apps = await _appointmentsDal.GetAppointmentsByPatientIdAndTherapistIdAndDate(therapistId, date, patientId);
+        //    if (apps == null)
+        //        throw new NullReferenceException(nameof(apps));
 
-            return await Task.FromResult(_mapper.Map<List<BLAppointment>>(apps));
-        }
+        //    return await Task.FromResult(_mapper.Map<List<BLAppointment>>(apps));
+        //}
 
         public async Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly date)
         {
@@ -103,14 +103,14 @@ namespace BL.Services
             return await Task.FromResult(_mapper.Map<List<BLAppointment>>(app));
         }
 
-        public async Task<List<BLAppointment>> GetAllAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
-        {
-            if (therapistId < 0 || patientId < 0)
-                throw new ArgumentNullException("there were error in the inserts id's");
-            var apps = _appointmentsDal.GetAllAppointmentsByPatientIdAndTherapistId(patientId, therapistId);
-            if (apps == null) throw new NullReferenceException(nameof(apps));
-            return await Task.FromResult(_mapper.Map<List<BLAppointment>>(apps));
-        }
+        //public async Task<List<BLAppointment>> GetAllAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
+        //{
+        //    if (therapistId < 0 || patientId < 0)
+        //        throw new ArgumentNullException("there were error in the inserts id's");
+        //    var apps = _appointmentsDal.GetAllAppointmentsByPatientIdAndTherapistId(patientId, therapistId);
+        //    if (apps == null) throw new NullReferenceException(nameof(apps));
+        //    return await Task.FromResult(_mapper.Map<List<BLAppointment>>(apps));
+        //}
 
         public async Task<List<BLAppointment>> GetAppointmentsByTherapistIdAndWeek(int thrapistId, DateOnly date)
         {
@@ -134,8 +134,8 @@ namespace BL.Services
                 .ContinueWith(task => _mapper.Map<List<BLPastAppointment>>(task.Result));
         }
 
-        public Task<List<BLAppointment>> GetPastAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
-            => throw new NotImplementedException();
+        //public Task<List<BLAppointment>> GetPastAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId)
+        //    => throw new NotImplementedException();
 
         public async Task<List<BLPastAppointment>> GetPastAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date)
         {
@@ -214,25 +214,25 @@ namespace BL.Services
 
         //-----------------------------------------------------------------
 
-        public Task<List<BLAppointment>> GetCanceleAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date)
-            => throw new NotImplementedException();
+        //public Task<List<BLAppointment>> GetCanceleAppointmentsByTherapistIdAndDate(int therapistId, DateOnly date)
+        //    => throw new NotImplementedException();
 
-        public Task<List<BLAppointment>> GetCanceleAppointmentsByDate(int therapistId, DateOnly date)
-            => throw new NotImplementedException();
+        //public Task<List<BLAppointment>> GetCanceleAppointmentsByDate(int therapistId, DateOnly date)
+        //    => throw new NotImplementedException();
         #endregion
 
         #region set appointments
-        #region appointment
-        public Task<BLAppointment> SetAppointment(int availAppointmentId)
-            => throw new NotImplementedException();
-        #endregion
+        //#region appointment
+        //public Task<BLAppointment> SetAppointment(int availAppointmentId)
+        //    => throw new NotImplementedException();
+        //#endregion
 
         #region available appointment
-        public async Task<BLAvailableAppointment> SetAvailableAppointment(BLAvailableAppointment availableAppointment)
-        {
-            return _mapper.Map<BLAvailableAppointment>(await _availableAppointmentsDal.AddAppointment(_mapper.Map<AvailableAppointment>(availableAppointment)));
+        //public async Task<BLAvailableAppointment> SetAvailableAppointment(BLAvailableAppointment availableAppointment)
+        //{
+        //    return _mapper.Map<BLAvailableAppointment>(await _availableAppointmentsDal.AddAppointment(_mapper.Map<AvailableAppointment>(availableAppointment)));
 
-        }
+        //}
 
 
         public async Task<bool> SetAvailableAppointmentForPeriod()
@@ -302,14 +302,8 @@ namespace BL.Services
 
         #endregion
 
-        #region canceled appointment
-        //nothing for now
-        #endregion
 
         #region passed appointment
-        public Task<List<BLPastAppointment>> SetPastAppointments()
-            => throw new NotImplementedException();
-
 
         /// <summary>
         /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
@@ -325,15 +319,6 @@ namespace BL.Services
             return _mapper.Map<BLAppointment>(appointment);
         }
         //--------------------------------------------------------------------
-        #endregion
-
-        #region available appointment
-        #endregion
-
-        #region canceled appointment
-        #endregion
-
-        #region passed appointment
         #endregion
         #endregion
 
@@ -427,46 +412,46 @@ namespace BL.Services
         }
 
 
-        public async Task<BLAvailableAppointment> DeleteAvailableAppointment(int appointmentId)
-        {
-            return _mapper.Map<BLAvailableAppointment>(await _availableAppointmentsDal.RemoveAppointment(appointmentId));
-        }
+        //public async Task<BLAvailableAppointment> DeleteAvailableAppointment(int appointmentId)
+        //{
+        //    return _mapper.Map<BLAvailableAppointment>(await _availableAppointmentsDal.RemoveAppointment(appointmentId));
+        //}
 
-        public async Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId)
-        {
-            var app = await _canceledAppointmentsDal.RemoveCanceledAppointment(appointmentId);
-            if (app == null)
-                throw new KeyNotFoundException("Appointment with the specified ID does not exist in the system.");
+        //public async Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId)
+        //{
+        //    var app = await _canceledAppointmentsDal.RemoveCanceledAppointment(appointmentId);
+        //    if (app == null)
+        //        throw new KeyNotFoundException("Appointment with the specified ID does not exist in the system.");
 
-            return _mapper.Map<BLCanceledAppointment>(app);
-        }
+        //    return _mapper.Map<BLCanceledAppointment>(app);
+        //}
 
-        public async Task<bool> DeleteOldPassedAppointment(DateOnly endDate)
-        {
-             if (endDate >= DateOnly.FromDateTime(DateTime.Now))
-                throw new ArgumentException("TheDate is not correct.", nameof(endDate));
+        //public async Task<bool> DeleteOldPassedAppointment(DateOnly endDate)
+        //{
+        //     if (endDate >= DateOnly.FromDateTime(DateTime.Now))
+        //        throw new ArgumentException("TheDate is not correct.", nameof(endDate));
 
-            return await _PastAppointmentsDal.DeleteAllPastAppointmentsOlderThan(endDate);
-        }
+        //    return await _PastAppointmentsDal.DeleteAllPastAppointmentsOlderThan(endDate);
+        //}
 
         #region get
 
-        public async Task<List<BLAppointment>> GetAllAppointments()
-        {
-            return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointments());
-        }
+        //public async Task<List<BLAppointment>> GetAllAppointments()
+        //{
+        //    return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointments());
+        //}
         public async Task<List<BLAppointment>> GetAllAppointmentsByPatientId(int patientId)
         {
             return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAppointmentsByPatientId(patientId));
         }
-        public async Task<List<BLAppointment>> GetAllAppointmentsSet()
-        {
-            return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointmentsSet());
-        }
-        public async Task<List<BLAppointment>> GetAllAppointmentsCanceled()
-        {
-            return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointmentsCanceled());
-        }
+        //public async Task<List<BLAppointment>> GetAllAppointmentsSet()
+        //{
+        //    return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointmentsSet());
+        //}
+        //public async Task<List<BLAppointment>> GetAllAppointmentsCanceled()
+        //{
+        //    return _mapper.Map<List<BLAppointment>>(await _appointmentsDal.GetAllAppointmentsCanceled());
+        //}
 
         //public async Task<List<BLAppointment>> GetAllAppointmentsByDate(DateOnly? date)
         //{
@@ -479,22 +464,21 @@ namespace BL.Services
 
 
 
-        public Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public Task<bool> DeleteAppointmentForDate(DateOnly date, string? reason = null)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<bool> DeleteAppointmentForDate(DateOnly date, string? reason = null)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public Task DeleteRangeAppointments(List<Appointment> appointments)
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
-        #endregion
+        //public Task DeleteRangeAppointments(List<Appointment> appointments)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
 
         #region general
         public async Task<DateTime> NextBusinessDay()

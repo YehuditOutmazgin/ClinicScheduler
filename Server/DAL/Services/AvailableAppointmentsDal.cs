@@ -35,12 +35,12 @@ namespace DAL.Services
         }
         //----------------------------------------------------------------------
 
-        public async Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId)
-        {
-            return await _DB_Manager.AvailableAppointments
-                .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date && a.TherapistId == therapistId)
-                .ToListAsync();
-        }
+        //public async Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId)
+        //{
+        //    return await _DB_Manager.AvailableAppointments
+        //        .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date && a.TherapistId == therapistId)
+        //        .ToListAsync();
+        //}
 
 
         public async Task<List<AvailableAppointment>> GetAppointmentsBySpecializationAndDate(DateOnly date, Specialization specialization)
@@ -57,13 +57,13 @@ namespace DAL.Services
                 .ToListAsync();
         }
 
-        public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId)
-        {
-            return await _DB_Manager.AvailableAppointments
-                .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date &&
-                             a.TherapistId == therapistId)
-                .ToListAsync();
-        }
+        //public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId)
+        //{
+        //    return await _DB_Manager.AvailableAppointments
+        //        .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date &&
+        //                     a.TherapistId == therapistId)
+        //        .ToListAsync();
+        //}
 
         public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndWeek(DateOnly date, int therapistId)
         {
@@ -77,16 +77,16 @@ namespace DAL.Services
                 .ToListAsync();
         }
 
-        public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date)
-        {
-            var appointments = await _DB_Manager.AvailableAppointments
-                .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
-                .ToListAsync();
+        //public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date)
+        //{
+        //    var appointments = await _DB_Manager.AvailableAppointments
+        //        .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
+        //        .ToListAsync();
 
-            _DB_Manager.AvailableAppointments.RemoveRange(appointments);
-            await _DB_Manager.SaveChangesAsync();
-            return appointments;
-        }
+        //    _DB_Manager.AvailableAppointments.RemoveRange(appointments);
+        //    await _DB_Manager.SaveChangesAsync();
+        //    return appointments;
+        //}
 
 
         public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDateAndTherapist(int therapistId, DateOnly date)

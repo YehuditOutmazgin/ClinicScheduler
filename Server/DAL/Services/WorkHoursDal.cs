@@ -88,11 +88,6 @@ namespace DAL.Services
             .Where(wh => wh.TherapistId == therapistExists.Id)
             .ToListAsync();
 
-            if (workHours == null || !workHours.Any())
-            {
-                throw new KeyNotFoundException($"No schedule found for TherapistId {therapistId}.");
-            }
-
             return workHours;
         }
     }
