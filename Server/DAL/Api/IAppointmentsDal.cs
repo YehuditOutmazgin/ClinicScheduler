@@ -37,6 +37,8 @@ namespace DAL.Api
         /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
         /// </summary>
         /// <returns></returns>
+        Task<List<Appointment>> GetPassedAppointments();
+
         Task<Appointment>  SetAppointmentStatus(int appointmentId, bool isConfirm);
         //get appointment by appointment id:
         //---------------------------------------------------------------------------

@@ -14,7 +14,7 @@ namespace BL.Api
         Task<List<BLTherapist>> GetAllTherapists();
         Task<BLTherapist> GetTherapistById(int id);
         Task<BLTherapist> GetTherapistByName(string firstName, string lastName);
-        Task<List<BLWorkHour>> GetTherapistSchedule(string firstName, string lastName);
+        Task<List<BLWorkHour>> GetTherapistSchedule(int id);
         Task <BLTherapist> UpdateTherapist(BLTherapist therapist);
         Task<List<BLWorkHour>> UpdateWorkHours(BLWorkHour workHour);
     }

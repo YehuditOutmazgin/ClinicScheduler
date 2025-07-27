@@ -303,9 +303,6 @@ namespace DAL.Services
                     .Where(c => c.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
                     .ToListAsync();
 
-                if (appointments == null || appointments.Count == 0)
-                    throw new DALNotFoundException("No appointments found for the given date.");
-
                 return appointments;
             }
             catch (DALNotFoundException)
@@ -402,6 +399,19 @@ namespace DAL.Services
         /// <summary>
         /// Rebecca add this function if you have any questions about the implementation or the function, contact me by phone:0548535515
         /// </summary>
+        /// 
+        public async Task<List<Appointment>> GetPassedAppointments()
+        {
+            var now = DateTime.Now;
+
+            var appointments = await _DB_Manager.Appointments
+                .Where(a => a.AppointmentDate.AddMinutes(a.DurationMinutes) <= now)
+                .Include(a => a.Patient)
+                .Include(a => a.Therapist)
+                .ToListAsync();
+
+            return appointments;
+        }
         public async Task<Appointment> SetAppointmentStatus(int appointmentId, bool isConfirm)
         {
             try

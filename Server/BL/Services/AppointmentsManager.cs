@@ -337,31 +337,6 @@ namespace BL.Services
         #endregion
         #endregion
 
-        #region delete appointments
-        public async Task<BLAppointment> DeleteAppointment(int patientId, int appointmentId)
-        {
-            var patient = await _patientManager.GetPatientById(patientId);
-            if (patient == null)
-                throw new InvalidDataException("invalid patient id");
-            var appoint = await _appointmentsDal.GetAppointmentById(appointmentId);
-            if (appoint == null || appoint.PatientId != patientId)
-                throw new InvalidDataException("invalid appointment");
-            var therapist = await _therapistManager.GetTherapistById(appoint.TherapistId);
-            if (therapist == null)
-                throw new KeyNotFoundException("therapist not found");
-            AvailableAppointment app = new()
-            {
-                AppointmentId = appoint.AppointmentId,
-                AppointmentDate = appoint.AppointmentDate,
-                TherapistId = appoint.TherapistId,
-                DurationMinutes = appoint.DurationMinutes,
-                Specialization = _mapper.Map<DAL.Models.Specialization>(therapist.Specialization),
-                TherapistName = appoint.TherapistName
-            };
-            await _availableAppointmentsDal.AddAppointment(app);
-            return _mapper.Map<BLAppointment>(await _appointmentsDal.DeleteAppointment(appointmentId));
-        }
-        #region appointment
 
         public async Task<BLAppointment> DeleteAppointmentByPatient(int patientId, int appointmentId)
         {
@@ -384,34 +359,35 @@ namespace BL.Services
                 TherapistName = appoint.TherapistName
             };
             await _availableAppointmentsDal.AddAppointment(app);
+            await _appointmentsDal.DeleteAppointment(appointmentId);
             return _mapper.Map<BLAppointment>(appoint);
         }
 
-        public async Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null)
-        {
+        //public async Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null)
+        //{
 
-            if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
-                throw new ArgumentException("Date cannot be in the future", nameof(date));
+        //    if (date > DateOnly.FromDateTime(DateTime.Now).AddMonths(6))
+        //        throw new ArgumentException("Date cannot be in the future", nameof(date));
 
-            List<Appointment> app = await _appointmentsDal.GetAppointmentsByDate(date);
-            if (app == null)
-                throw new ArgumentNullException(nameof(app));
-            if (app.Count == 0)
-                return false;
-            await _appointmentsDal.DeleteRangeAppointments(app);
-            foreach (var appointment in app)
-            {
-                appointment.Status = "cancel";
+        //    List<Appointment> app = await _appointmentsDal.GetAppointmentsByDate(date);
+        //    if (app == null)
+        //        throw new ArgumentNullException(nameof(app));
+        //    if (app.Count == 0)
+        //        return false;
+        //    await _appointmentsDal.DeleteRangeAppointments(app);
+        //    foreach (var appointment in app)
+        //    {
+        //        appointment.Status = "cancel";
 
-                await _canceledAppointmentsDal.AddCanceledAppointment(new CanceledAppointment()
-                {
-                    AppointmentId = appointment.AppointmentId,
-                    PatientId = appointment.PatientId,
-                    Note = reason
-                });
-            }
-            return true;
-        }
+        //        await _canceledAppointmentsDal.AddCanceledAppointment(new CanceledAppointment()
+        //        {
+        //            AppointmentId = appointment.AppointmentId,
+        //            PatientId = appointment.PatientId,
+        //            Note = reason
+        //        });
+        //    }
+        //    return true;
+        //}
 
         public async Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId, DateOnly date)
         {
@@ -539,6 +515,44 @@ namespace BL.Services
             }
             return DateOnly.FromDateTime(DateTime.Now);
         }
+        public async Task<int> MovePastAppointmentsToHistory()
+        {
+            var now = DateTime.Now;
 
+            // Await the task to get the list, then filter
+            var appointments = await _appointmentsDal.GetPassedAppointments();
+            var pastAppointments = appointments
+                .Where(app => app.AppointmentDate < now)
+                .ToList();
+
+            if (!pastAppointments.Any())
+                return 0;
+
+            List<PastAppointment> pasts = new List<PastAppointment>();
+
+            foreach (var app in pastAppointments)
+            {
+                var past = new PastAppointment
+                {
+                    AppointmentId = app.AppointmentId,
+                    PatientId = app.PatientId,
+                    TherapistId = app.TherapistId,
+                    TherapistName = app.TherapistName,
+                    AppointmentDate = app.AppointmentDate,
+                    DurationMinutes = app.DurationMinutes,
+                    Specialization = app.Specialization,
+                    Status = app.Status,
+                    Patient = app.Patient,
+                    Therapist = app.Therapist
+                };
+                pasts.Add(past);
+
+                // You may want to add each 'past' to the past appointments table here
+                // e.g., await _PastAppointmentsDal.AddPastAppointment(past);
+            }
+            _PastAppointmentsDal.AddAllPastAppointments(pasts);
+            _appointmentsDal.DeleteRangeAppointments(pastAppointments);
+            return pasts.Count;
+        }
     }
 }

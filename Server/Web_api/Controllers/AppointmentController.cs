@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using BL;
 using BL.Api;
 using BL.Models;
-using BL;
-
+using BL.Services;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Web_api.Controllers
@@ -250,5 +250,13 @@ namespace Web_api.Controllers
             return await _availableQueueManager.IsHolidayAsync(date);
         }*/
         #endregion
+
+        [HttpPost("move-past-appointments")]
+        public async Task<IActionResult> MovePastAppointments()
+        {
+            var count = await _BLManager._appointmentsManager.MovePastAppointmentsToHistory();
+            return Ok($"{count} appointments moved to history.");
+        }
+
     }
 }

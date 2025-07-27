@@ -179,14 +179,9 @@ namespace BL.Services
             return _mapper.Map<List<BLWorkHour>>(workHour);
         }
 
-        public async Task<List<BLWorkHour>> GetTherapistSchedule(string firstName, string lastName)
+        public async Task<List<BLWorkHour>> GetTherapistSchedule(int id)
         {
-            if (string.IsNullOrWhiteSpace(firstName))
-                throw new ArgumentException("First name cannot be null or empty.", nameof(firstName));
-
-            if (string.IsNullOrWhiteSpace(lastName))
-                throw new ArgumentException("Last name cannot be null or empty.", nameof(lastName));
-            var therapist = await _therapistsDal.GetTherapistByName(firstName, lastName);
+            var therapist = await _therapistsDal.GetTherapistById(id);
             if(therapist == null)
                 throw new NullReferenceException(nameof(therapist));
 
