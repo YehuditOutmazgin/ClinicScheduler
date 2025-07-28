@@ -28,5 +28,5 @@ public partial class BLTherapist
 
     //public virtual ICollection<BLPassedAppointment> PastAppointments { get; set; } = new List<BLPassedAppointment>();
 
-    //public virtual ICollection<BLAppointment> WorkHours { get; set; } = new List<BLAppointment>();
+    public virtual ICollection<BLAppointment> WorkHours { get; set; } = new List<BLAppointment>();
 }

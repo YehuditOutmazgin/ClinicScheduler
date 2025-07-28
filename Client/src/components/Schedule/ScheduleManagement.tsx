@@ -35,10 +35,6 @@ const ScheduleManagement: React.FC = () => {
     { value: "7", label: "טיפול חינוכי" },
   ]
 
-  const filteredTherapists = selectedSpecialty
-    ? therapists.filter((t) => t.specialization.toString() === selectedSpecialty)
-    : therapists
-
   return (
     <div className="schedule-management">
       <h2 className="page-title">ניהול לוח זמנים</h2>

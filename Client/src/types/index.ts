@@ -1,12 +1,11 @@
-export enum Specialization {
-  SpeechTherapy = 1,
-  OccupationalTherapy = 2,
-  PhysicalTherapy = 3,
-  Psychology = 4,
-  SocialWork = 5,
-  BehavioralTherapy = 6,
-  EducationalTherapy = 7,
-}
+export type Specialization =
+  | 'SpeechTherapy'
+  | 'OccupationalTherapy'
+  | 'PhysicalTherapy'
+  | 'Psychology'
+  | 'SocialWork'
+  | 'BehavioralTherapy'
+  | 'EducationalTherapy';
 
 export interface WorkHour {
   id: number
@@ -48,7 +47,7 @@ export interface Appointment extends AppointmentBase {
   patient?: Patient
 }
 
-export interface AvailableAppointment extends AppointmentBase {}
+export interface AvailableAppointment extends AppointmentBase { }
 
 export interface PastAppointment extends AppointmentBase {
   patientId: number
@@ -96,17 +95,19 @@ export interface TimeSlot {
 }
 
 // Helper functions
+
 export const getSpecializationName = (specialization: Specialization): string => {
-  const names = {
-    [Specialization.SpeechTherapy]: "ריפוי בדיבור",
-    [Specialization.OccupationalTherapy]: "ריפוי בעיסוק",
-    [Specialization.PhysicalTherapy]: "פיזיותרפיה",
-    [Specialization.Psychology]: "פסיכולוגיה",
-    [Specialization.SocialWork]: "עבודה סוציאלית",
-    [Specialization.BehavioralTherapy]: "טיפול התנהגותי",
-    [Specialization.EducationalTherapy]: "טיפול חינוכי",
-  }
-  return names[specialization] || "לא ידוע"
+  const names: Record<Specialization, string> = {
+    SpeechTherapy: "ריפוי בדיבור",
+    OccupationalTherapy: "ריפוי בעיסוק",
+    PhysicalTherapy: "פיזיותרפיה",
+    Psychology: "פסיכולוגיה",
+    SocialWork: "עבודה סוציאלית",
+    BehavioralTherapy: "טיפול התנהגותי",
+    EducationalTherapy: "טיפול חינוכי",
+  };
+
+  return names[specialization] || "לא ידוע";
 }
 
 export const getUserId = (user: Patient | Therapist | { firstName: string; lastName: string } | null): number => {

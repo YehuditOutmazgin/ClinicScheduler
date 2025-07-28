@@ -9,8 +9,9 @@ import {
   fetchFutureAppointmentsByPatient,
   fetchPatientHistory,
   fetchCanceledAppointments,
+  deleteAppointment,
 } from "../../redux/slices/appointmentSlice"
-import type { Patient } from "../../types"
+import type { Appointment, Patient } from "../../types"
 import { getSpecializationName } from "../../types"
 import { deletePatientThunk, fetchPatientsThunk, updatePatientThunk } from "../../redux/slices/patientSlice"
 import "../../styles/PatientManagement.css"
@@ -74,6 +75,16 @@ const PatientManagement: React.FC = () => {
     navigate(`/schedule?patientId=${patientId}`)
   }
 
+
+  const handleCancel = async (appointment: Appointment) => {
+    if (window.confirm("האם אתה בטוח שברצונך לבטל את התור?")) {
+      const userId = appointment.patient?.patientId;
+      if (userId)
+        await dispatch(deleteAppointment({ appointmentId: appointment.appointmentId, patientId: userId }))
+
+// dispatch()
+    }
+  }
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("he-IL")
   }
@@ -236,8 +247,7 @@ const PatientManagement: React.FC = () => {
                       </div>
                     </div>
                     <div className="appointment-actions">
-                      <button className="action-button edit-button">עריכה</button>
-                      <button className="action-button delete-button">ביטול</button>
+                      <button className="action-button delete-button" >ביטול</button>
                     </div>
                   </div>
                 ))
@@ -298,7 +308,7 @@ const PatientManagement: React.FC = () => {
                     </div>
                     <div className="appointment-details">
                       <div className="appointment-detail">
-                        <strong>מטפל:</strong> {getTherapistName(appointment.therapistId)}
+                        <strong>מטפל:</strong> {appointment.therapistName}
                       </div>
                       <div className="appointment-detail">
                         <strong>התמחות:</strong> {getSpecializationName(appointment.specialization)}

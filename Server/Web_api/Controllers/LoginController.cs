@@ -39,15 +39,15 @@ namespace Web_api.Controllers
         public IActionResult Login([FromRoute] int id, [FromQuery] string pass)
         {
             // נסיון התחברות כתרפיסט
-            var therapist = _blManager._therapistManager.GetTherapistById(id).Result;
-            if (therapist != null && therapist.PhoneNumber == pass)
+            var therapist = _blManager._therapistManager.GetTherapistById(id);
+            if (therapist.Result != null && therapist.Result.PhoneNumber == pass)
             {
                 return Ok(new { role = "therapist", data = therapist });
             }
 
             // נסיון התחברות כמטופל
-            var client = _blManager._patientsManager.GetPatientById(id).Result;
-            if (client != null && client.BirthDate.Year.ToString() == pass)
+            var client = _blManager._patientsManager.GetPatientById(id);
+            if (client.Result != null && client.Result.BirthDate.Year.ToString() == pass)
             {
                 return Ok(new { role = "patient", data = client });
             }

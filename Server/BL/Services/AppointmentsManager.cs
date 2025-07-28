@@ -384,7 +384,9 @@ namespace BL.Services
                 TherapistName = appoint.TherapistName
             };
             await _availableAppointmentsDal.AddAppointment(app);
+            await _appointmentsDal.DeleteAppointment(appointmentId); 
             return _mapper.Map<BLAppointment>(appoint);
+
         }
 
         public async Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null)

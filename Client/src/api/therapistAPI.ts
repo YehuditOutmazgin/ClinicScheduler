@@ -120,7 +120,20 @@ export const therapistAPI = {
       throw new Error(handleApiError(error))
     }
   },
-
+getWorkHours:async (therapistId:number): Promise<WorkHour[]> => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/Therapist/${therapistId}/work-hours`, {
+        method: "GET",
+        ...apiConfig,
+      })
+      if (!response.ok) {
+        throw new Error(`Failed to fetch work hours: ${response.statusText}`)
+      }
+      return await response.json()
+    } catch (error: any) {
+      throw new Error(handleApiError(error))
+    }
+  },
   addWorkHours: async (id: number, workHour: WorkHour): Promise<WorkHour> => {
     try {
       const response = await fetch(`${API_BASE_URL}/Therapist/${id}/add-work-hours`, {

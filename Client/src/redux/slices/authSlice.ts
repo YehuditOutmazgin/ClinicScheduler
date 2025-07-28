@@ -12,11 +12,30 @@ export const login = createAsyncThunk(
     }
   },
 )
+// Retrieve user and role from local storage
+const getStoredUser = () => {
+  try {
+    const storedUser = localStorage.getItem("user")
+    return storedUser ? JSON.parse(storedUser) : null
+  } catch {
+    return null
+  }
+}
+const getStoredRole = () => {
+  try {
+    const storedRole = localStorage.getItem("role")
+    return storedRole && (storedRole === 'therapist' || 
+      storedRole === 'patient' || storedRole === 'secretary') ?
+      storedRole : null
+  } catch {
+    return null
+  }
+}
 
 const initialState: AuthState = {
-  user: null,
-  role: null,
-  isAuthenticated: false,
+  user:  getStoredUser(),
+  role: getStoredRole(),
+  isAuthenticated: getStoredRole()==null? false :true,
   loading: false,
   error: null,
 }
@@ -30,6 +49,8 @@ const authSlice = createSlice({
       state.role = null
       state.isAuthenticated = false
       state.error = null
+      localStorage.removeItem("user")
+      localStorage.removeItem("role")
     },
     clearError: (state) => {
       state.error = null
@@ -47,6 +68,8 @@ const authSlice = createSlice({
         state.role = action.payload.role
         state.isAuthenticated = true
         state.error = null
+        localStorage.setItem("user", JSON.stringify(action.payload.data))
+        localStorage.setItem("role", action.payload.role)
       })
       .addCase(login.rejected, (state, action) => {
         state.loading = false

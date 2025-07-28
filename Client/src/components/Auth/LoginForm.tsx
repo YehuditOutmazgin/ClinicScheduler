@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { useNavigate } from "react-router-dom"
+import { Navigate, useNavigate } from "react-router-dom"
 import { login, clearError } from "../../redux/slices/authSlice"
 import type { RootState, AppDispatch } from "../../redux/store"
 import "../../styles/LoginForm.css"
@@ -16,8 +16,10 @@ const LoginForm: React.FC = () => {
 
   const dispatch = useDispatch<AppDispatch>()
   const navigate = useNavigate()
-  const { loading, error } = useSelector((state: RootState) => state.auth)
-
+  const { loading, error,role } = useSelector((state: RootState) => state.auth)
+  if ( role ) {
+    return <Navigate to="/dashboard" replace />
+  }
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({

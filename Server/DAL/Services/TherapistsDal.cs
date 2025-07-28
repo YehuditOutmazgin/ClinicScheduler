@@ -83,7 +83,7 @@ namespace DAL.Services
         #endregion
         public async Task<Therapist> DeleteTherapist(int id)
         {
-            var therapist = await _DB_Manager.Therapists.FindAsync(id);
+            var therapist = await _DB_Manager.Therapists.FirstOrDefaultAsync(t=>t.Id==id || t.TherapistId==id);
             if (therapist == null)
                 throw new NullReferenceException(nameof(therapist));
             
@@ -97,26 +97,30 @@ namespace DAL.Services
 
             // Find all appointments for this therapist
             var appointments = await _DB_Manager.Appointments
-                .Where(th => th.TherapistId == id)
+                .Where(th => th.TherapistId == therapist.Id)
                 .ToListAsync();
 
             if (appointments.Any())
             {
-               /* var canceledAppointments = appointments.Select(a => new CanceledAppointment()
+               List< CanceledAppointment> canceledAppointments = appointments.Select(a => new CanceledAppointment()
                 {
                     AppointmentDate = a.AppointmentDate,
                     TherapistId = a.TherapistId,
                     AppointmentId = a.AppointmentId,
-                    AppointmentTime = a.AppointmentTime,
+                    DurationMinutes=a.DurationMinutes,
+                    PatientId=a.PatientId,
+                    TherapistName=a.TherapistName,
+                    Specialization=a.Specialization,
                     Note = "Therapist deleted, appointment canceled.",
                 }).ToList();
 
                 await _DB_Manager.CanceledAppointments.AddRangeAsync(canceledAppointments);
-                if (canceledAppointments.Any()) { */
+                if (canceledAppointments.Any())
+                {
 
-                 _DB_Manager.Appointments.RemoveRange(appointments);
-                await _DB_Manager.SaveChangesAsync();
-                /*}*/
+                    _DB_Manager.Appointments.RemoveRange(appointments);
+                    await _DB_Manager.SaveChangesAsync();
+                }
                 // Do NOT add available appointments for this therapist here!
             }
 
@@ -134,10 +138,10 @@ namespace DAL.Services
             await _DB_Manager.SaveChangesAsync();
 
 
-            var can = await _DB_Manager.CanceledAppointments.Where(c => c.TherapistId == id).ToListAsync();
-            if (can != null && can.Any())
-                _DB_Manager.CanceledAppointments.RemoveRange(can);
-            await _DB_Manager.SaveChangesAsync();
+            //var can = await _DB_Manager.CanceledAppointments.Where(c => c.TherapistId == id).ToListAsync();
+            //if (can != null && can.Any())
+            //    _DB_Manager.CanceledAppointments.RemoveRange(can);
+            //await _DB_Manager.SaveChangesAsync();
 
             _DB_Manager.Therapists.Remove(therapist);
             await _DB_Manager.SaveChangesAsync();
@@ -186,7 +190,7 @@ namespace DAL.Services
                 throw new ArgumentNullException(nameof(therapist), "Therapist cannot be null.");
             }
 
-            var existingTherapist = await _DB_Manager.Therapists.FindAsync(therapist.TherapistId);
+            var existingTherapist = await _DB_Manager.Therapists.FindAsync(therapist.Id);
             if (existingTherapist == null)
             {
                 throw new KeyNotFoundException($"Therapist with ID {therapist.TherapistId} was not found.");
