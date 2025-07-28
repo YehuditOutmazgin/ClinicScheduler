@@ -38,8 +38,6 @@ namespace BL.Services
             {
                 return new List<BLTherapist>();
             }
-
-
             return _mapper.Map<List<BLTherapist>>(therapists);
         }
         public async Task<BLTherapist> GetTherapistById(int id)
@@ -50,9 +48,7 @@ namespace BL.Services
             var therapist = await _therapistsDal.GetTherapistById(id);
 
             if (therapist == null)
-                //throw new NullReferenceException(nameof(therapist));
-           
-            return null;
+                return null;
             return _mapper.Map<BLTherapist>(therapist);
         }
         public async Task<BLTherapist> GetTherapistByName(string firstName, string lastName)
@@ -93,7 +89,7 @@ namespace BL.Services
             var addedTherapist = await _therapistsDal.AddTherapist(t);
 
             if (addedTherapist == null)
-                throw new InvalidOperationException("Failed to add the therapist to the database.");
+                return null;
 
             return _mapper.Map<BLTherapist>(addedTherapist);
         }
@@ -189,7 +185,7 @@ namespace BL.Services
 
             if (workHours == null )
             {
-                throw new NullReferenceException(nameof(workHours));
+                return null;
 
             }
             return _mapper.Map<List<BLWorkHour>>(workHours);

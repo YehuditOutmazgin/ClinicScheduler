@@ -46,19 +46,13 @@ namespace BL.Api
         #endregion
 
         #region set appointments
-        #region appointment
-        //Task<BLAppointment> SetAppointment(int availAppointmentId);
-        #endregion
+       
         #region available appointment
         //Task<BLAvailableAppointment> SetAvailableAppointment(BLAvailableAppointment availableAppointment);
         Task<bool> SetAvailableAppointmentForPeriod();// monthly or yearly
         #endregion
-        #region canceled appointment
-        //nothing for now
-        #endregion
-        #region passed appointment
-        //Task<List<BLPastAppointment>> SetPastAppointments();//Daily
-        #endregion
+       
+
         #endregion
 
         #region delete appointments
@@ -80,9 +74,9 @@ namespace BL.Api
         #endregion
         Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId, DateOnly date);
         Task<int> MovePastAppointmentsToHistory();
-        Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date); // move after to canceled
-        Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null);
-        Task<BLAppointment> DeleteAppointment(int patientId, int appointmentId);
+        //Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date); // move after to canceled
+        //Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null);
+        //Task<BLAppointment> DeleteAppointment(int patientId, int appointmentId);
         //delete appointmet range
         // Task DeleteRangeAppointments(List<Appointment> appointments);
 

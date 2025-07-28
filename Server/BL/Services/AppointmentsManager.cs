@@ -187,6 +187,8 @@ namespace BL.Services
             if (start > end)
                 throw new ArgumentException("Start date cannot be after end date", nameof(start));
             var PastAppointments = await _PastAppointmentsDal.GetAllPastAppointmentsByTherapistIdAndRangeDate(therapistId, start, end);
+            if (PastAppointments == null)
+                return null;
             return _mapper.Map<List<BLPastAppointment>>(PastAppointments);
         }
 
@@ -200,7 +202,7 @@ namespace BL.Services
 
             var availapp = await _availableAppointmentsDal.GetAppointmentsBySpecializationAndDate(date, _mapper.Map<DAL.Models.Specialization>(specialization));
             if (availapp == null)
-                throw new NullReferenceException(nameof(availapp));
+                return null;
 
             return await Task.FromResult(_mapper.Map<List<BLAvailableAppointment>>(availapp));
         }
@@ -233,7 +235,7 @@ namespace BL.Services
         {
             var apps = await _canceledAppointmentsDal.GetCanceledAppointmentsByPatientId(patientId);
             if (apps == null)
-                throw new NullReferenceException(nameof(apps));
+                return null;
             return await Task.FromResult(_mapper.Map<List<BLCanceledAppointment>>(apps));
         }
 
@@ -241,7 +243,7 @@ namespace BL.Services
         {
             var apps = await _canceledAppointmentsDal.GetAllCanceledAppointments();
             if (apps == null)
-                throw new NullReferenceException(nameof(apps));
+                return null;
             return await Task.FromResult(_mapper.Map<List<BLCanceledAppointment>>(apps));
         }
 
@@ -448,14 +450,14 @@ namespace BL.Services
         //    return _mapper.Map<BLAvailableAppointment>(await _availableAppointmentsDal.RemoveAppointment(appointmentId));
         //}
 
-        //public async Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId)
-        //{
-        //    var app = await _canceledAppointmentsDal.RemoveCanceledAppointment(appointmentId);
-        //    if (app == null)
-        //        throw new KeyNotFoundException("Appointment with the specified ID does not exist in the system.");
+        public async Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId)
+        {
+            var app = await _canceledAppointmentsDal.RemoveCanceledAppointment(appointmentId);
+            if (app == null)
+                return null;
 
-        //    return _mapper.Map<BLCanceledAppointment>(app);
-        //}
+            return _mapper.Map<BLCanceledAppointment>(app);
+        }
 
         //public async Task<bool> DeleteOldPassedAppointment(DateOnly endDate)
         //{
@@ -534,11 +536,15 @@ namespace BL.Services
         {
             var now = DateTime.Now;
 
+            
+            var avialableAppointments = await _availableAppointmentsDal.GetPassedAppointments();
+            if (avialableAppointments != null && avialableAppointments.Count > 0)
+            {
+                await _availableAppointmentsDal.RemoveAllAppointmentsByDateAndTherapist(0, DateOnly.FromDateTime(now));
+            }
+
             // Await the task to get the list, then filter
-            var appointments = await _appointmentsDal.GetPassedAppointments();
-            var pastAppointments = appointments
-                .Where(app => app.AppointmentDate < now)
-                .ToList();
+            var pastAppointments = await _appointmentsDal.GetPassedAppointments();
 
             if (!pastAppointments.Any())
                 return 0;
@@ -565,29 +571,30 @@ namespace BL.Services
                 // You may want to add each 'past' to the past appointments table here
                 // e.g., await _PastAppointmentsDal.AddPastAppointment(past);
             }
+
             _PastAppointmentsDal.AddAllPastAppointments(pasts);
             _appointmentsDal.DeleteRangeAppointments(pastAppointments);
             return pasts.Count;
         }
 
-        public Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public Task<BLAppointment> DeleteAppointment(int patientId, int appointmentId)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<BLAppointment> DeleteAppointment(int patientId, int appointmentId)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<BLCanceledAppointment> DeleteCanceleAppointment(int appointmentId)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

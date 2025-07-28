@@ -54,9 +54,8 @@ namespace BL.Services
         public async Task<List<BLPatient>> GetAllPatients()
         {
             var list =await _patientsDal.GetAllPatients();
-          if(list == null )
-                throw new NullReferenceException(nameof(list));
-
+            if (list == null)
+                return null;
             return  _mapper.Map<List<BLPatient>>(list);
 
         }
@@ -71,11 +70,7 @@ namespace BL.Services
             if (p == null)
                 //throw new NullReferenceException($"{nameof(p)} does not exist");
                 return null;
-            var mp = _mapper.Map<BLPatient>(p);
-
-            if (mp == null)
-                throw new NullReferenceException(nameof(mp));
-            return mp;
+            return _mapper.Map<BLPatient>(p);
         }
 
         public  async Task UpdatePatient(BLPatient patient)

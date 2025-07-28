@@ -22,5 +22,6 @@ namespace DAL.Api
         Task<AvailableAppointment> RemoveAppointment(int appointmentId);
         //Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date);
         Task<List<AvailableAppointment>> RemoveAllAppointmentsByDateAndTherapist(int therapistId, DateOnly date);
+        Task<List<AvailableAppointment>> GetPassedAppointments();
     }
 }

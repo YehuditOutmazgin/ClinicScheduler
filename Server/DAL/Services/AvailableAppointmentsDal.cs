@@ -78,16 +78,17 @@ namespace DAL.Services
                 .ToListAsync();
         }
 
-        //public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date)
-        //{
-        //    var appointments = await _DB_Manager.AvailableAppointments
-        //        .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
-        //        .ToListAsync();
+        public async Task<List<AvailableAppointment>> GetPassedAppointments()
+        {
+            var now = DateTime.Now;
 
-        //    _DB_Manager.AvailableAppointments.RemoveRange(appointments);
-        //    await _DB_Manager.SaveChangesAsync();
-        //    return appointments;
-        //}
+            var appointments = await _DB_Manager.AvailableAppointments
+                .Where(a => a.AppointmentDate.AddMinutes(a.DurationMinutes) <= now)
+                .Include(a => a.Therapist)
+                .ToListAsync();
+
+            return appointments;
+        }
 
 
         public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDateAndTherapist(int therapistId, DateOnly date)

@@ -237,7 +237,7 @@ namespace Web_api.Controllers
             {
                 try
                 {
-                    var b = await _BLManager._appointmentsManager.DeleteAppointment(appointmentId, patientId);
+                    var b = await _BLManager._appointmentsManager.DeleteAppointmentByPatient(patientId, appointmentId);
                     return Ok();
                 }
                 catch
