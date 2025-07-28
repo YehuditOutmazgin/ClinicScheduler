@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
       case "patient":
         return [{ to: "/appointments", label: "התורים שלי" }, { to: "/book-appointment", label: "קביעת תור" },]
       case "therapist": return [{ to: "/schedule", label: "לוח הזמנים שלי" }, { to: "/patients", label: "מטופלים" },]
-      case "secretary": return [{ to: "/schedule", label: "נהול תורים" }, { to: "/therapists", label: "נהול מטפלים" }, { to: "/patients", label: "נהול מטופלים" }, { to: "/appointments", label: "נהול תזכורות" },]
+      case "secretary": return [{ to: "/schedule", label: "נהול תורים" }, { to: "/therapists", label: "נהול מטפלים" }, { to: "/patients", label: "נהול מטופלים" }, { to: "/manage-reminder", label: "נהול תזכורות" },]
       default: return []
     }
   }

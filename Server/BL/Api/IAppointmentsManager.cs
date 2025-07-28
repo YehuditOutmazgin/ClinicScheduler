@@ -79,8 +79,10 @@ namespace BL.Api
         //Task<bool> DeleteOldPassedAppointment(DateOnly endDate);
         #endregion
         Task<bool> DeleteAppointmentForTherapistAndDate(int therapistId, DateOnly date);
-        //Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date); // move after to canceled
         Task<int> MovePastAppointmentsToHistory();
+        Task<bool> DeleteAppointmentForTherapistAndAppointmentId(int therapistId, DateOnly date); // move after to canceled
+        Task<bool> DeleteAppointmentsForDate(DateOnly date, string? reason = null);
+        Task<BLAppointment> DeleteAppointment(int patientId, int appointmentId);
         //delete appointmet range
         // Task DeleteRangeAppointments(List<Appointment> appointments);
 

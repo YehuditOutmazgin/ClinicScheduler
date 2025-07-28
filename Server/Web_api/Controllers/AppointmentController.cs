@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Linq.Expressions;
 namespace Web_api.Controllers
 {
     [Route("api/[controller]")]
@@ -223,6 +224,27 @@ namespace Web_api.Controllers
             DateOnly dateOnly = DateOnly.Parse(date ?? DateTime.Now.ToString("yyyy-MM-dd"));
 
             return Ok(await _BLManager._appointmentsManager.DeleteAppointmentForTherapistAndDate(therapistId, dateOnly));
+        }
+        [HttpDelete("confirmCanceled/delete/{appointmentId}/patient/{patientId}")]
+        public async Task<IActionResult> ConfirmCanceledAppointment(int appointmentId, int patientId)
+        {
+            try
+            {
+                var a = await _BLManager._appointmentsManager.DeleteCanceleAppointment(appointmentId);
+                return Ok();
+            }
+            catch
+            {
+                try
+                {
+                    var b = await _BLManager._appointmentsManager.DeleteAppointment(appointmentId, patientId);
+                    return Ok();
+                }
+                catch
+                {
+                    return BadRequest();
+                }
+            }
         }
         // Delete a past appointment by appointment ID and patient ID
         [HttpDelete("past/delete/{appointmentId}/patient/{patientId}")]

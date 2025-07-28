@@ -121,6 +121,28 @@ export const confirmAppointment = createAsyncThunk(
   },
 )
 
+export const confirmCanceledAppointments = createAsyncThunk(
+  "appointments/confirmCanceledAppointments",
+  async ({ appointmentId, patientId }: { appointmentId: number; patientId: number }, { rejectWithValue }) => {
+    try {
+      return await appointmentAPI.confirmCanceledAppointments(appointmentId, patientId)
+    } catch (error: any) {
+      return rejectWithValue(error.message)
+    }
+  },
+)
+
+export const fetchNextBusinessDayAppointments = createAsyncThunk(
+  "appointments/fetchNextBusinessDay",
+  async (_, { rejectWithValue }) => {
+    try {
+      return await appointmentAPI.getNextBusinessDay()
+    } catch (error: any) {
+      return rejectWithValue(error.message)
+    }
+  },
+)
+
 const initialState: AppointmentState = {
   appointments: [],
   availableAppointments: [],
@@ -159,54 +181,183 @@ const appointmentSlice = createSlice({
         state.loading = false
         state.error = action.payload as string
       })
+
       // Fetch appointments by therapist and date
+      .addCase(fetchAppointmentsByTherapistAndDate.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(fetchAppointmentsByTherapistAndDate.fulfilled, (state, action: PayloadAction<Appointment[]>) => {
+        state.loading = false
         state.appointments = action.payload
       })
+      .addCase(fetchAppointmentsByTherapistAndDate.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
       // Fetch therapist week appointments
+      .addCase(fetchTherapistWeekAppointments.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(fetchTherapistWeekAppointments.fulfilled, (state, action: PayloadAction<Appointment[]>) => {
+        state.loading = false
         state.appointments = action.payload
       })
+      .addCase(fetchTherapistWeekAppointments.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
       // Fetch available appointments for therapist week
+      .addCase(fetchAvailableAppointmentsForTherapistWeek.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(
         fetchAvailableAppointmentsForTherapistWeek.fulfilled,
         (state, action: PayloadAction<AvailableAppointment[]>) => {
+          state.loading = false
           state.availableAppointments = action.payload
         },
       )
+      .addCase(fetchAvailableAppointmentsForTherapistWeek.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
       // Fetch available appointments for specialty week
+      .addCase(fetchAvailableAppointmentsForSpecialtyWeek.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(
         fetchAvailableAppointmentsForSpecialtyWeek.fulfilled,
         (state, action: PayloadAction<AvailableAppointment[]>) => {
+          state.loading = false
           state.availableAppointments = action.payload
         },
       )
+      .addCase(fetchAvailableAppointmentsForSpecialtyWeek.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
       // Fetch patient history
+      .addCase(fetchPatientHistory.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(fetchPatientHistory.fulfilled, (state, action: PayloadAction<PastAppointment[]>) => {
+        state.loading = false
         state.pastAppointments = action.payload
       })
+      .addCase(fetchPatientHistory.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
       // Fetch canceled appointments
+      .addCase(fetchCanceledAppointments.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(fetchCanceledAppointments.fulfilled, (state, action: PayloadAction<CanceledAppointment[]>) => {
+        state.loading = false
         state.canceledAppointments = action.payload
       })
+      .addCase(fetchCanceledAppointments.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
+      // Fetch next business day appointments
+      .addCase(fetchNextBusinessDayAppointments.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
+      .addCase(fetchNextBusinessDayAppointments.fulfilled, (state, action: PayloadAction<Appointment[]>) => {
+        state.loading = false
+        state.appointments = action.payload
+      })
+      .addCase(fetchNextBusinessDayAppointments.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
       // Schedule appointment
+      .addCase(scheduleAppointment.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(scheduleAppointment.fulfilled, (state, action: PayloadAction<Appointment>) => {
+        state.loading = false
         // Remove from available appointments and add to scheduled
         state.availableAppointments = state.availableAppointments.filter(
           (apt) => apt.appointmentId !== action.payload.appointmentId,
         )
         state.appointments.push(action.payload)
       })
-      // Delete appointment
-      .addCase(deleteAppointment.fulfilled, (state, action: PayloadAction<number>) => {
-        state.appointments = state.appointments.filter((apt) => apt.appointmentId !== action.payload)
+      .addCase(scheduleAppointment.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
       })
+
+      // Delete appointment
+      .addCase(deleteAppointment.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
+      .addCase(deleteAppointment.fulfilled, (state, action: PayloadAction<number>) => {
+        state.loading = false
+        // Remove from appointments
+        state.appointments = state.appointments.filter((apt) => apt.appointmentId !== action.payload)
+        // Remove from canceled appointments if exists
+        state.canceledAppointments = state.canceledAppointments.filter((apt) => apt.appointmentId !== action.payload)
+      })
+      .addCase(deleteAppointment.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
       // Confirm appointment
+      .addCase(confirmAppointment.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(confirmAppointment.fulfilled, (state, action: PayloadAction<Appointment>) => {
+        state.loading = false
+        // Update appointment in the list
         const index = state.appointments.findIndex((apt) => apt.appointmentId === action.payload.appointmentId)
         if (index !== -1) {
           state.appointments[index] = action.payload
         }
+        // Remove from appointments list (since it's confirmed)
+        state.appointments = state.appointments.filter((apt) => apt.appointmentId !== action.payload.appointmentId)
+      })
+      .addCase(confirmAppointment.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
+      })
+
+      // Confirm canceled appointments
+      .addCase(confirmCanceledAppointments.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
+      .addCase(confirmCanceledAppointments.fulfilled, (state, action: PayloadAction<any>) => {
+        state.loading = false
+        // Remove from canceled appointments list
+        if (action.payload && action.payload.appointmentId) {
+          state.canceledAppointments = state.canceledAppointments.filter(
+            (apt) => apt.appointmentId !== action.payload.appointmentId,
+          )
+        }
+      })
+      .addCase(confirmCanceledAppointments.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.payload as string
       })
   },
 })

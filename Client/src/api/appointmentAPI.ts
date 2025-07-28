@@ -1,5 +1,6 @@
 import { API_BASE_URL, apiConfig, handleApiError } from "./config"
 import type { Appointment, AvailableAppointment, PastAppointment, CanceledAppointment } from "../types"
+import { confirmCanceledAppointments } from "../redux/slices/appointmentSlice"
 
 export const appointmentAPI = {
   // Get future appointments by patient ID
@@ -114,6 +115,34 @@ export const appointmentAPI = {
       throw new Error(handleApiError(error))
     }
   },
+  // Confirm appointment
+  confirmCanceledAppointments: async (appointmentId: number, patientId: number): Promise<Appointment> => {
+    try {
+
+      const url = `${API_BASE_URL}/Appointment/confirmCanceled/delete/${appointmentId}/patient/${patientId}`
+
+      const response = await fetch(url, {
+        method: "DELETE",
+        ...apiConfig,
+      })
+
+      if (!response.ok) {
+        const errorText = await response.text()
+        console.error("❌ API error response:", errorText)
+        throw new Error(
+          `Failed to confirm canceled appointment: ${response.status} ${response.statusText} - ${errorText}`,
+        )
+      }
+
+      const responseText = await response.text()
+      console.log("✅ API success response:", responseText)
+
+      return { appointmentId } as Appointment
+    } catch (error: any) {
+      console.error("💥 API error in confirmCanceledAppointments:", error)
+      throw new Error(handleApiError(error))
+    }
+  },
 
   // Get appointment status
   getStatus: async (appointmentId: number): Promise<{ appointmentId: number; isConfirmed: boolean }> => {
@@ -133,23 +162,7 @@ export const appointmentAPI = {
     }
   },
 
-  // Cancel appointment confirmation
-  cancelConfirmation: async (appointmentId: number): Promise<Appointment> => {
-    try {
-      const response = await fetch(`${API_BASE_URL}/Appointment/update-confirmation/${appointmentId}`, {
-        method: "PUT",
-        ...apiConfig,
-      })
 
-      if (!response.ok) {
-        throw new Error(`Failed to cancel confirmation: ${response.statusText}`)
-      }
-
-      return await response.json()
-    } catch (error: any) {
-      throw new Error(handleApiError(error))
-    }
-  },
 
   // Get canceled appointments for patient
   getCanceledByPatient: async (patientId: string): Promise<CanceledAppointment[]> => {

@@ -13,6 +13,7 @@ import ScheduleManagement from "./components/Schedule/ScheduleManagement"
 import PatientManagement from "./components/Patient/PatientManagement"
 import ProtectedRoute from "./components/Auth/ProtectedRoute"
 import "./styles/globals.css"
+import ManageReminder from "./components/Appointments/ManageReminder"
 const App: React.FC = () => {
   return (<Provider store={store}>
     <Router>
@@ -53,10 +54,11 @@ const App: React.FC = () => {
           </ProtectedRoute>} />
           <Route path="/appointments" element={<ProtectedRoute>
             <AppointmentsList />
-          </ProtectedRoute>
+          </ProtectedRoute>} />
 
-          }
-          />
+            <Route path="/manage-reminder" element={<ProtectedRoute>
+            <ManageReminder />
+          </ProtectedRoute>} />
         </Routes>
       </div>
     </Router>

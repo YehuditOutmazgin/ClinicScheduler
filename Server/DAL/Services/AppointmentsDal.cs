@@ -38,7 +38,7 @@ namespace DAL.Services
         {
             try
             {
-                var appointment = await _DB_Manager.Appointments.FindAsync(id);
+                var appointment = await _DB_Manager.Appointments.FirstOrDefaultAsync(c=>c.AppointmentId== id);
                 if (!checkAppointmentNotNull(appointment))
                     throw new DALNotFoundException($"Appointment with ID {id} not found.");
 
@@ -189,13 +189,18 @@ namespace DAL.Services
         {
             try
             {
-                var therapistExists = await _DB_Manager.Therapists.AnyAsync(c => c.TherapistId == therapistId);
-                if (!therapistExists)
+                var therapistExists = await _DB_Manager.Therapists.FirstOrDefaultAsync(c =>c.TherapistId == therapistId);
+                if (therapistExists==null)
                     throw new DALNotFoundException("Therapist details were wrong.");
 
-                DateTime dateTime = date.ToDateTime(TimeOnly.MinValue);
+                DateTime dateStart = date.ToDateTime(TimeOnly.MinValue); // 2025-07-29 00:00:00
+                DateTime dateEnd = date.ToDateTime(TimeOnly.MaxValue);   // 2025-07-29 23:59:59.9999999
+
                 var deleteAppointments = await _DB_Manager.Appointments
-                    .Where(c => c.AppointmentDate.Date == dateTime.Date && c.TherapistId == therapistId)
+                    .Where(c =>
+                        c.AppointmentDate >= dateStart &&
+                        c.AppointmentDate <= dateEnd &&
+                        c.TherapistId == therapistExists.Id)
                     .ToListAsync();
 
 
@@ -410,7 +415,7 @@ namespace DAL.Services
         {
             try
             {
-                string status = isConfirm ? "ConfirmedByPatient" : "Pending";
+                string status = isConfirm ? "Pconfirmed" : "Pending";
 
                 var appointment = await _DB_Manager.Appointments.FirstOrDefaultAsync(a => a.AppointmentId == appointmentId);
 
