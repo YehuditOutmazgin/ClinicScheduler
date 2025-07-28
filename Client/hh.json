@@ -1,0 +1,416 @@
+{
+  "$id": "1",
+  "$values": [
+    {
+      "$id": "2",
+      "patientId": 234567896,
+      "status": "Scheduled",
+      "patient": {
+        "$id": "3",
+        "patientId": 234567896,
+        "firstName": "George",
+        "lastName": "Lopez",
+        "birthDate": "1999-10-31",
+        "phoneNumber": "050-5678902",
+        "appointments": {
+          "$id": "4",
+          "$values": []
+        },
+        "canceledAppointments": {
+          "$id": "5",
+          "$values": []
+        },
+        "pastAppointments": {
+          "$id": "6",
+          "$values": [
+            {
+              "$id": "7",
+              "appointmentId": 60,
+              "patientId": 234567896,
+              "therapistId": 1,
+              "therapistName": "אורית כהן",
+              "appointmentDate": "2025-07-24T12:00:00",
+              "durationMinutes": 60,
+              "specialization": "SpeechTherapy",
+              "status": "Scheduled",
+              "patient": {
+                "$ref": "3"
+              },
+              "therapist": {
+                "$id": "8",
+                "id": 1,
+                "therapistId": 234567890,
+                "firstName": "אורית",
+                "lastName": "כהן",
+                "specialization": "SpeechTherapy",
+                "phoneNumber": "050-1234568",
+                "appointmentDuration": 60,
+                "appointments": {
+                  "$id": "9",
+                  "$values": [
+                    {
+                      "$id": "10",
+                      "appointmentId": 81,
+                      "patientId": 123456789,
+                      "therapistId": 1,
+                      "therapistName": "אורית כהן",
+                      "appointmentDate": "2025-07-31T09:00:00",
+                      "durationMinutes": 60,
+                      "specialization": "SpeechTherapy",
+                      "status": "Scheduled",
+                      "patient": {
+                        "$id": "11",
+                        "patientId": 123456789,
+                        "firstName": "yosef",
+                        "lastName": "כהן",
+                        "birthDate": "1999-10-31",
+                        "phoneNumber": "050-1234567",
+                        "appointments": {
+                          "$id": "12",
+                          "$values": [
+                            {
+                              "$ref": "10"
+                            },
+                            {
+                              "$id": "13",
+                              "appointmentId": 208,
+                              "patientId": 123456789,
+                              "therapistId": 2,
+                              "therapistName": "דוד לוי",
+                              "appointmentDate": "2025-07-28T13:00:00",
+                              "durationMinutes": 45,
+                              "specialization": "OccupationalTherapy",
+                              "status": "Scheduled",
+                              "patient": {
+                                "$ref": "11"
+                              },
+                              "therapist": {
+                                "$id": "14",
+                                "id": 2,
+                                "therapistId": 234567891,
+                                "firstName": "דוד",
+                                "lastName": "לוי",
+                                "specialization": "OccupationalTherapy",
+                                "phoneNumber": "052-2345679",
+                                "appointmentDuration": 45,
+                                "appointments": {
+                                  "$id": "15",
+                                  "$values": [
+                                    {
+                                      "$ref": "13"
+                                    },
+                                    {
+                                      "$id": "16",
+                                      "appointmentId": 226,
+                                      "patientId": 123456789,
+                                      "therapistId": 2,
+                                      "therapistName": "דוד לוי",
+                                      "appointmentDate": "2025-08-01T10:00:00",
+                                      "durationMinutes": 45,
+                                      "specialization": "OccupationalTherapy",
+                                      "status": "Scheduled",
+                                      "patient": {
+                                        "$ref": "11"
+                                      },
+                                      "therapist": {
+                                        "$ref": "14"
+                                      }
+                                    }
+                                  ]
+                                },
+                                "availableAppointments": {
+                                  "$id": "17",
+                                  "$values": []
+                                },
+                                "canceledAppointments": {
+                                  "$id": "18",
+                                  "$values": [
+                                    {
+                                      "$id": "19",
+                                      "appointmentId": 162,
+                                      "patientId": 234567898,
+                                      "therapistId": 2,
+                                      "appointmentDate": "2025-07-18T11:30:00",
+                                      "durationMinutes": 45,
+                                      "therapistName": "דוד לוי",
+                                      "specialization": "OccupationalTherapy",
+                                      "note": "Therapist deleted, appointment canceled.",
+                                      "patient": {
+                                        "$id": "20",
+                                        "patientId": 234567898,
+                                        "firstName": "Isaac",
+                                        "lastName": "Wilson",
+                                        "birthDate": "1985-03-15",
+                                        "phoneNumber": "054-7890124",
+                                        "appointments": {
+                                          "$id": "21",
+                                          "$values": []
+                                        },
+                                        "canceledAppointments": {
+                                          "$id": "22",
+                                          "$values": [
+                                            {
+                                              "$ref": "19"
+                                            }
+                                          ]
+                                        },
+                                        "pastAppointments": {
+                                          "$id": "23",
+                                          "$values": []
+                                        }
+                                      },
+                                      "therapist": {
+                                        "$ref": "14"
+                                      }
+                                    },
+                                    {
+                                      "$id": "24",
+                                      "appointmentId": 204,
+                                      "patientId": 234567890,
+                                      "therapistId": 2,
+                                      "appointmentDate": "2025-07-28T10:00:00",
+                                      "durationMinutes": 45,
+                                      "therapistName": "דוד לוי",
+                                      "specialization": "OccupationalTherapy",
+                                      "note": "Therapist deleted, appointment canceled.",
+                                      "patient": {
+                                        "$id": "25",
+                                        "patientId": 234567890,
+                                        "firstName": "Alice",
+                                        "lastName": "Johnson",
+                                        "birthDate": "2018-03-18",
+                                        "phoneNumber": "050-1234568",
+                                        "appointments": {
+                                          "$id": "26",
+                                          "$values": []
+                                        },
+                                        "canceledAppointments": {
+                                          "$id": "27",
+                                          "$values": [
+                                            {
+                                              "$ref": "24"
+                                            }
+                                          ]
+                                        },
+                                        "pastAppointments": {
+                                          "$id": "28",
+                                          "$values": []
+                                        }
+                                      },
+                                      "therapist": {
+                                        "$ref": "14"
+                                      }
+                                    },
+                                    {
+                                      "$id": "29",
+                                      "appointmentId": 216,
+                                      "patientId": 234567893,
+                                      "therapistId": 2,
+                                      "appointmentDate": "2025-07-30T10:45:00",
+                                      "durationMinutes": 45,
+                                      "therapistName": "דוד לוי",
+                                      "specialization": "OccupationalTherapy",
+                                      "note": "Therapist deleted, appointment canceled.",
+                                      "patient": {
+                                        "$id": "30",
+                                        "patientId": 234567893,
+                                        "firstName": "Diana",
+                                        "lastName": "Garcia",
+                                        "birthDate": "2008-08-31",
+                                        "phoneNumber": "050-2345679",
+                                        "appointments": {
+                                          "$id": "31",
+                                          "$values": []
+                                        },
+                                        "canceledAppointments": {
+                                          "$id": "32",
+                                          "$values": [
+                                            {
+                                              "$ref": "29"
+                                            }
+                                          ]
+                                        },
+                                        "pastAppointments": {
+                                          "$id": "33",
+                                          "$values": []
+                                        }
+                                      },
+                                      "therapist": {
+                                        "$ref": "14"
+                                      }
+                                    },
+                                    {
+                                      "$id": "34",
+                                      "appointmentId": 1081,
+                                      "patientId": 123456789,
+                                      "therapistId": 2,
+                                      "appointmentDate": "2025-08-01T10:45:00",
+                                      "durationMinutes": 45,
+                                      "therapistName": "דוד לוי",
+                                      "specialization": "OccupationalTherapy",
+                                      "note": "Therapist deleted, appointment canceled.",
+                                      "patient": {
+                                        "$ref": "11"
+                                      },
+                                      "therapist": {
+                                        "$ref": "14"
+                                      }
+                                    }
+                                  ]
+                                },
+                                "pastAppointments": {
+                                  "$id": "35",
+                                  "$values": []
+                                },
+                                "workHours": {
+                                  "$id": "36",
+                                  "$values": []
+                                }
+                              }
+                            },
+                            {
+                              "$ref": "16"
+                            },
+                            {
+                              "$id": "37",
+                              "appointmentId": 422,
+                              "patientId": 123456789,
+                              "therapistId": 3,
+                              "therapistName": "מיכל מאיר",
+                              "appointmentDate": "2025-07-31T09:30:00",
+                              "durationMinutes": 30,
+                              "specialization": "PhysicalTherapy",
+                              "status": "Scheduled",
+                              "patient": {
+                                "$ref": "11"
+                              },
+                              "therapist": {
+                                "$id": "38",
+                                "id": 3,
+                                "therapistId": 234567892,
+                                "firstName": "מיכל",
+                                "lastName": "מאיר",
+                                "specialization": "PhysicalTherapy",
+                                "phoneNumber": "054-3456790",
+                                "appointmentDuration": 30,
+                                "appointments": {
+                                  "$id": "39",
+                                  "$values": [
+                                    {
+                                      "$ref": "37"
+                                    }
+                                  ]
+                                },
+                                "availableAppointments": {
+                                  "$id": "40",
+                                  "$values": []
+                                },
+                                "canceledAppointments": {
+                                  "$id": "41",
+                                  "$values": []
+                                },
+                                "pastAppointments": {
+                                  "$id": "42",
+                                  "$values": []
+                                },
+                                "workHours": {
+                                  "$id": "43",
+                                  "$values": []
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "canceledAppointments": {
+                          "$id": "44",
+                          "$values": [
+                            {
+                              "$ref": "34"
+                            }
+                          ]
+                        },
+                        "pastAppointments": {
+                          "$id": "45",
+                          "$values": []
+                        }
+                      },
+                      "therapist": {
+                        "$ref": "8"
+                      }
+                    }
+                  ]
+                },
+                "availableAppointments": {
+                  "$id": "46",
+                  "$values": []
+                },
+                "canceledAppointments": {
+                  "$id": "47",
+                  "$values": []
+                },
+                "pastAppointments": {
+                  "$id": "48",
+                  "$values": [
+                    {
+                      "$ref": "7"
+                    },
+                    {
+                      "$id": "49",
+                      "appointmentId": 1001,
+                      "patientId": 234567896,
+                      "therapistId": 1,
+                      "therapistName": "אורית כהן",
+                      "appointmentDate": "2025-07-20T12:00:00",
+                      "durationMinutes": 60,
+                      "specialization": "SpeechTherapy",
+                      "status": "Scheduled",
+                      "patient": {
+                        "$ref": "3"
+                      },
+                      "therapist": {
+                        "$ref": "8"
+                      }
+                    }
+                  ]
+                },
+                "workHours": {
+                  "$id": "50",
+                  "$values": []
+                }
+              }
+            },
+            {
+              "$ref": "49"
+            }
+          ]
+        }
+      },
+      "appointmentDate": "2025-07-24T12:00:00",
+      "appointmentId": 60,
+      "durationMinutes": 60,
+      "specialization": "SpeechTherapy",
+      "therapist": {
+        "$ref": "8"
+      },
+      "therapistId": 1,
+      "therapistName": "אורית כהן"
+    },
+    {
+      "$id": "51",
+      "patientId": 234567896,
+      "status": "Scheduled",
+      "patient": {
+        "$ref": "3"
+      },
+      "appointmentDate": "2025-07-20T12:00:00",
+      "appointmentId": 1001,
+      "durationMinutes": 60,
+      "specialization": "SpeechTherapy",
+      "therapist": {
+        "$ref": "8"
+      },
+      "therapistId": 1,
+      "therapistName": "אורית כהן"
+    }
+  ]
+}

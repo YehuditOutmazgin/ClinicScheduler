@@ -26,23 +26,23 @@ namespace DAL.Services
             await _DB_Manager.SaveChangesAsync();
         }
 
-        public async Task AddCanceledAppointments(List<CanceledAppointment> appointments)
-        {
-            await _DB_Manager.CanceledAppointments.AddRangeAsync(appointments);
-            await _DB_Manager.SaveChangesAsync();
-        }
+        //public async Task AddCanceledAppointments(List<CanceledAppointment> appointments)
+        //{
+        //    await _DB_Manager.CanceledAppointments.AddRangeAsync(appointments);
+        //    await _DB_Manager.SaveChangesAsync();
+        //}
 
         public async Task<List<CanceledAppointment>> GetAllCanceledAppointments()
         {
             return await _DB_Manager.CanceledAppointments.ToListAsync();
         }
 
-        public async Task<List<CanceledAppointment>> GetCanceledAppointmentsByDate(DateOnly date)
-        {
-            return await _DB_Manager.CanceledAppointments
-                .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
-                .ToListAsync();
-        }
+        //public async Task<List<CanceledAppointment>> GetCanceledAppointmentsByDate(DateOnly date)
+        //{
+        //    return await _DB_Manager.CanceledAppointments
+        //        .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
+        //        .ToListAsync();
+        //}
 
         public async Task<List<CanceledAppointment>> GetCanceledAppointmentsByPatientId(int patientId)
         {
@@ -59,21 +59,21 @@ namespace DAL.Services
             return appointment;
         }
 
-        public async Task<List<CanceledAppointment>> RemoveCanceledAppointmentsOlderThan(DateOnly date)
-        {
-            List<CanceledAppointment> appointments = await _DB_Manager.CanceledAppointments
-                .Where(a => a.AppointmentDate.Date <= date.ToDateTime(TimeOnly.MinValue).Date)
-                .ToListAsync();
+        //public async Task<List<CanceledAppointment>> RemoveCanceledAppointmentsOlderThan(DateOnly date)
+        //{
+        //    List<CanceledAppointment> appointments = await _DB_Manager.CanceledAppointments
+        //        .Where(a => a.AppointmentDate.Date <= date.ToDateTime(TimeOnly.MinValue).Date)
+        //        .ToListAsync();
 
-            if (appointments.Count == 0)
-            {
-                throw new KeyNotFoundException("There are no appointments to remove");
-            }
+        //    if (appointments.Count == 0)
+        //    {
+        //        throw new KeyNotFoundException("There are no appointments to remove");
+        //    }
 
-            _DB_Manager.CanceledAppointments.RemoveRange(appointments);
-            await _DB_Manager.SaveChangesAsync();
-            return appointments;
-        }
+        //    _DB_Manager.CanceledAppointments.RemoveRange(appointments);
+        //    await _DB_Manager.SaveChangesAsync();
+        //    return appointments;
+        //}
 
     }
 }

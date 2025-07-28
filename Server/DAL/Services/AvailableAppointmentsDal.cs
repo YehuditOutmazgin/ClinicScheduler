@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL.Api;
 using DAL.Models;
+using Exeptions;
 using Microsoft.EntityFrameworkCore;
 namespace DAL.Services
 {
@@ -35,12 +36,12 @@ namespace DAL.Services
         }
         //----------------------------------------------------------------------
 
-        public async Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId)
-        {
-            return await _DB_Manager.AvailableAppointments
-                .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date && a.TherapistId == therapistId)
-                .ToListAsync();
-        }
+        //public async Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId)
+        //{
+        //    return await _DB_Manager.AvailableAppointments
+        //        .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date && a.TherapistId == therapistId)
+        //        .ToListAsync();
+        //}
 
 
         public async Task<List<AvailableAppointment>> GetAppointmentsBySpecializationAndDate(DateOnly date, Specialization specialization)
@@ -57,13 +58,13 @@ namespace DAL.Services
                 .ToListAsync();
         }
 
-        public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId)
-        {
-            return await _DB_Manager.AvailableAppointments
-                .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date &&
-                             a.TherapistId == therapistId)
-                .ToListAsync();
-        }
+        //public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId)
+        //{
+        //    return await _DB_Manager.AvailableAppointments
+        //        .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date &&
+        //                     a.TherapistId == therapistId)
+        //        .ToListAsync();
+        //}
 
         public async Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndWeek(DateOnly date, int therapistId)
         {
@@ -77,23 +78,34 @@ namespace DAL.Services
                 .ToListAsync();
         }
 
-        public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date)
-        {
-            var appointments = await _DB_Manager.AvailableAppointments
-                .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
-                .ToListAsync();
+        //public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date)
+        //{
+        //    var appointments = await _DB_Manager.AvailableAppointments
+        //        .Where(a => a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
+        //        .ToListAsync();
 
-            _DB_Manager.AvailableAppointments.RemoveRange(appointments);
-            await _DB_Manager.SaveChangesAsync();
-            return appointments;
-        }
+        //    _DB_Manager.AvailableAppointments.RemoveRange(appointments);
+        //    await _DB_Manager.SaveChangesAsync();
+        //    return appointments;
+        //}
 
 
         public async Task<List<AvailableAppointment>> RemoveAllAppointmentsByDateAndTherapist(int therapistId, DateOnly date)
         {
+            var therapistExists = await _DB_Manager.Therapists.FirstOrDefaultAsync(c => c.TherapistId == therapistId);
+            if (therapistExists == null)
+                throw new DALNotFoundException("Therapist details were wrong.");
+
+            DateTime dateStart = date.ToDateTime(TimeOnly.MinValue); // 2025-07-29 00:00:00
+            DateTime dateEnd = date.ToDateTime(TimeOnly.MaxValue);   // 2025-07-29 23:59:59.9999999
+
             var appointments = await _DB_Manager.AvailableAppointments
-                .Where(a => a.TherapistId == therapistId && a.AppointmentDate.Date == date.ToDateTime(TimeOnly.MinValue).Date)
+                .Where(c =>
+                    c.AppointmentDate >= dateStart &&
+                    c.AppointmentDate <= dateEnd &&
+                        c.TherapistId == therapistExists.Id)
                 .ToListAsync();
+
 
             _DB_Manager.AvailableAppointments.RemoveRange(appointments);
             await _DB_Manager.SaveChangesAsync();

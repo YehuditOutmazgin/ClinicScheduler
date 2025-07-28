@@ -13,14 +13,14 @@ namespace DAL.Api
         Task<bool> AddAppointments(List<AvailableAppointment> appointments);
        
         // get all available appointments for a specific therapist and date its return a list of available appointments for this week.
-        Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId);
+        //Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndDate(DateOnly date, int therapistId);
         // get get an available appointment for a specific therapist and datetime ;
         Task<List<AvailableAppointment>> GetAppointmentsByTherapistAndWeek(DateOnly date, int therapistId);
-        Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId);
+        //Task<List<AvailableAppointment>> GetAppointmentByTherapistAndFullDate(DateOnly date, int therapistId);
         // get all available appointments for a specific date and specialization its return a list of available appointments for this week.
         Task<List<AvailableAppointment>> GetAppointmentsBySpecializationAndDate(DateOnly date, Specialization specialization);
         Task<AvailableAppointment> RemoveAppointment(int appointmentId);
-        Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date);
+        //Task<List<AvailableAppointment>> RemoveAllAppointmentsByDate(DateOnly date);
         Task<List<AvailableAppointment>> RemoveAllAppointmentsByDateAndTherapist(int therapistId, DateOnly date);
     }
 }

@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           { to: "/schedule", label: "ניהול תורים" },
           { to: "/therapists", label: "ניהול מטפלים" },
           { to: "/patients", label: "ניהול מטופלים" },
-          { to: "/appointments", label: "ניהול תזכורות" },
+          { to: "/manage-reminder", label: "ניהול תזכורות" },
         ]
       default:
         return []

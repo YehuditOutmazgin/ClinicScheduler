@@ -16,7 +16,7 @@ namespace DAL.Api
         /// <summary>
         /// Adds a new canceled appointments to the system.
         /// </summary>
-        Task AddCanceledAppointments(List<CanceledAppointment> appointments);
+        //Task AddCanceledAppointments(List<CanceledAppointment> appointments);
 
         /// <summary>
         /// Retrieves all canceled appointments.
@@ -31,7 +31,7 @@ namespace DAL.Api
         /// <summary>
         /// Retrieves canceled appointments by date.
         /// </summary>
-        Task<List<CanceledAppointment>> GetCanceledAppointmentsByDate(DateOnly date);
+        //Task<List<CanceledAppointment>> GetCanceledAppointmentsByDate(DateOnly date);
 
         /// <summary>
         /// Removes a canceled appointment by its ID.
@@ -41,6 +41,6 @@ namespace DAL.Api
         /// <summary>
         /// Removes all canceled appointments older than a specific date.
         /// </summary>
-        Task<List<CanceledAppointment>> RemoveCanceledAppointmentsOlderThan(DateOnly date);
+        //Task<List<CanceledAppointment>> RemoveCanceledAppointmentsOlderThan(DateOnly date);
     }
 }

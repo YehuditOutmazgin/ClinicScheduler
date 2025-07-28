@@ -89,7 +89,7 @@ namespace Web_api.Controllers
             return Ok(new { therapist_id = therapistId, first_name = delTherapist.FirstName, last_name = delTherapist.LastName, message = "Therapist  deleted" });
         }
         // Update the regular schedule of a therapist
-        
+
         [HttpPut("{id}/schedule")]
         public async Task<IActionResult> UpdateRegularSchedule(int id, [FromBody] List<BLWorkHour> schedule)
         {
@@ -162,6 +162,20 @@ namespace Web_api.Controllers
             });
         }
 
+        [HttpGet("{id}/work-hours")]
+        public async Task<IActionResult> GetTherapistWorkHours(int id)
+        {
+            if (id <= 0)
+                return BadRequest("Invalid therapist ID.");
+            var workHours = await _blManager._therapistManager.GetTherapistSchedule(id);
+            if (workHours == null || workHours.Count == 0)
+                return NotFound($"No work hours found for therapist {id}.");
+            return Ok(new
+            {
+                therapist_id = id,
+                work_hours = workHours
+            });
+        }
     }
 }
 

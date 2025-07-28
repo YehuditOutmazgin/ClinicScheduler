@@ -12,7 +12,7 @@ namespace BL.Models
 
         public Specialization Specialization { get; set; }
 
-        //public virtual Therapist Therapist { get; set; } = null!;
+        public virtual Therapist Therapist { get; set; } = null!;
 
         public int TherapistId { get; set; }
 

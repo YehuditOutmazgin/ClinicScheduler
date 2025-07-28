@@ -54,7 +54,7 @@ builder.Services.AddScoped<BLManager>();
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
 //------------------------------------------------------------
 
-builder.Services.AddHostedService<MonthlyTaskService>();
+builder.Services.AddHostedService<ScheduledTasksService>();
 /*builder.Services.AddHttpClient<IAvailableQueueManager, AvailableQueueManager>();
 */
 //------------------------------------------------------------

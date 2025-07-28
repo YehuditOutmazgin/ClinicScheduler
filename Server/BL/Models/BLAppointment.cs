@@ -7,7 +7,7 @@ namespace BL.Models;
 
 public partial class BLAppointment : BLAppointmentBase
 {
-    //public int PatientId { get; set; }
+    public int PatientId { get; set; }
 
     public string? Status { get; set; }
 

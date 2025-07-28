@@ -8,7 +8,7 @@ namespace BL.Models;
 public partial class BLCanceledAppointment:BLAppointmentBase
 {
 
-    //public int PatientId { get; set; }
+    public int PatientId { get; set; }
 
     public string? Note { get; set; }
 

@@ -18,7 +18,7 @@ namespace DAL.Api
         /// <summary>
         /// Returns all passed appointments for a specific therapist in a given month.
         /// </summary>
-        Task<List<PastAppointment>> GetAllPastAppointmentsByTherapistIdAndMonthDate(int therapistId, DateOnly month);
+        //Task<List<PastAppointment>> GetAllPastAppointmentsByTherapistIdAndMonthDate(int therapistId, DateOnly month);
 
         /// <summary>
         /// Returns all passed appointments for a specific therapist within a date range.
@@ -35,24 +35,24 @@ namespace DAL.Api
         /// <summary>
         /// Returns all passed appointments for a specific patient in a specific specialization.
         /// </summary>
-        Task<List<PastAppointment>> GetAllPastAppointmentsByPatientIdAndSpecialization(int patientId, Specialization specialization);
+        //Task<List<PastAppointment>> GetAllPastAppointmentsByPatientIdAndSpecialization(int patientId, Specialization specialization);
 
         /// <summary>
         /// Returns all passed appointments between a specific patient and therapist.
         /// </summary>
-        Task<List<PastAppointment>> GetAllPastAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
+        //Task<List<PastAppointment>> GetAllPastAppointmentsByPatientIdAndTherapistId(int patientId, int therapistId);
 
         // ======= GENERAL FILTERS =======
 
         /// <summary>
         /// Returns all passed appointments for a specific month.
         /// </summary>
-        Task<List<PastAppointment>> GetAllPastAppointmentsByMonthDate(DateOnly month);
+        //Task<List<PastAppointment>> GetAllPastAppointmentsByMonthDate(DateOnly month);
 
         /// <summary>
         /// Returns all passed appointments for a given specialization.
         /// </summary>
-        Task<List<PastAppointment>> GetAllPastAppointmentsBySpecialization(Specialization specialization);
+        //Task<List<PastAppointment>> GetAllPastAppointmentsBySpecialization(Specialization specialization);
 
         // ======= ADMIN ACTIONS =======
 
@@ -69,7 +69,7 @@ namespace DAL.Api
         /// <summary>
         /// Deletes all passed appointments that were send.
         /// </summary>
-        void DeleteAllPastAppointments(List<PastAppointment> appointments);
+        //void DeleteAllPastAppointments(List<PastAppointment> appointments);
 
     }
 }

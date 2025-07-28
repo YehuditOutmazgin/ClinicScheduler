@@ -156,12 +156,6 @@ namespace DAL.Services
         {
             var therapist = await _DB_Manager.Therapists.FirstOrDefaultAsync(t=>t.Id==id || t.TherapistId==id);
             var therapists = await _DB_Manager.Therapists.ToListAsync();
-            if (therapist == null)
-            {
-                //throw new KeyNotFoundException($"Therapist with ID {id} was not found.");
-                return null;
-            }
-
             return therapist;
         }
 
@@ -174,12 +168,6 @@ namespace DAL.Services
 
             var therapist = await _DB_Manager.Therapists
                 .FirstOrDefaultAsync(t => t.FirstName == firstName && t.LastName == lastName);
-
-            if (therapist == null)
-            {
-                throw new KeyNotFoundException($"Therapist with name {firstName} {lastName} was not found.");
-            }
-
             return therapist;
         }
 

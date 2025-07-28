@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using BL;
 using BL.Api;
 using BL.Models;
-using BL;
-
+using BL.Services;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Linq.Expressions;
 namespace Web_api.Controllers
 {
     [Route("api/[controller]")]
@@ -224,6 +225,27 @@ namespace Web_api.Controllers
 
             return Ok(await _BLManager._appointmentsManager.DeleteAppointmentForTherapistAndDate(therapistId, dateOnly));
         }
+        [HttpDelete("confirmCanceled/delete/{appointmentId}/patient/{patientId}")]
+        public async Task<IActionResult> ConfirmCanceledAppointment(int appointmentId, int patientId)
+        {
+            try
+            {
+                var a = await _BLManager._appointmentsManager.DeleteCanceleAppointment(appointmentId);
+                return Ok();
+            }
+            catch
+            {
+                try
+                {
+                    var b = await _BLManager._appointmentsManager.DeleteAppointment(appointmentId, patientId);
+                    return Ok();
+                }
+                catch
+                {
+                    return BadRequest();
+                }
+            }
+        }
         // Delete a past appointment by appointment ID and patient ID
         [HttpDelete("past/delete/{appointmentId}/patient/{patientId}")]
         public async Task<IActionResult> DeletePastAppointment(string appointmentId, string patientId)
@@ -250,5 +272,13 @@ namespace Web_api.Controllers
             return await _availableQueueManager.IsHolidayAsync(date);
         }*/
         #endregion
+
+        [HttpPost("move-past-appointments")]
+        public async Task<IActionResult> MovePastAppointments()
+        {
+            var count = await _BLManager._appointmentsManager.MovePastAppointmentsToHistory();
+            return Ok($"{count} appointments moved to history.");
+        }
+
     }
 }

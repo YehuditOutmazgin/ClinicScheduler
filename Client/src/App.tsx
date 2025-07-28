@@ -14,6 +14,7 @@ import PatientManagement from "./components/Patient&TherapistManagement/PatientM
 import TherapistManagement from "./components/Patient&TherapistManagement/TherapistManagement"
 import ProtectedRoute from "./components/Auth/ProtectedRoute"
 import "./styles/globals.css"
+import ManageReminders from "./components/Appointments/ManageReminder"
 
 const App: React.FC = () => {
   return (
@@ -80,6 +81,9 @@ const App: React.FC = () => {
                 </ProtectedRoute>
               }
             />
+            <Route path="/manage-reminder" element={<ProtectedRoute>
+            <ManageReminders />
+          </ProtectedRoute>} />
             <Route
               path="/appointments"
               element={
